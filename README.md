@@ -10,6 +10,6 @@
 
 安装包附带 `SHA256SUMS.txt` 与 `release-manifest.json`，用于核实文件完整性、源码提交和签名状态。初版采用本地黑粉科技代码签名证书，没有 Apple Developer ID 公证。
 
-当前版本：[黑粉录屏 0.2.0 · 私有预览版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v0.2.0)。加入上下分屏、摄像头背景替换、主轨道缩略图和波形、达芬奇式快捷键、Codex 订阅剪辑与 LocalBrain 转写。实际验收范围及已知限制以对应发行说明为准。
+当前版本：[黑粉录屏 0.2.1 · 私有预览版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v0.2.1)。修复默认全览时滚轮平移无响应，以及素材尺寸信息缺失时添加画框造成的拉伸；继续提供上下分屏、摄像头背景替换、主轨道缩略图和波形、达芬奇式快捷键、订阅剪辑与本地转写。实际验收范围及已知限制以对应发行说明为准。
 
 版权所有 © 2026 黑粉科技。
