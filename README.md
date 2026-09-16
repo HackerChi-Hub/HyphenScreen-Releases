@@ -10,7 +10,7 @@
 
 | 平台 | 文件 | SHA-256 |
 |---|---|---|
-| macOS 13+（Apple 芯片（arm64）） | `HyphenScreen_0.4.16_arm64.dmg` | `79197aca24c2b27027de453aed71fef429b0f0b15d2c1e61cee77495a1fb14d5` |
+| macOS 13+（Apple 芯片 arm64） | `HyphenScreen_0.4.16_arm64.dmg` | `79197aca24c2b27027de453aed71fef429b0f0b15d2c1e61cee77495a1fb14d5` |
 | Windows 10/11（x64） | `HyphenScreen_0.4.16_x64-setup.exe` | `0ba9598a74d442624c324af134a6f3c748d65d6baeaf31873aff017ab1da5ecd` |
 | Linux（x86_64） | `HyphenScreen_0.4.16_x86_64.AppImage` | `de33638c1d04bd833d409a09192cd17bf1c145162788670915ada2cd233b1a21` |
 | Debian / Ubuntu（amd64） | `HyphenScreen_0.4.16_amd64.deb` | `a1bffbaaba57e61f7d5eee3ad787f34be3358b77e600a8f219324e4a565e7017` |
