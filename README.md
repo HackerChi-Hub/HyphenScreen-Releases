@@ -2,9 +2,7 @@
 
 黑粉科技的桌面录屏与智能剪辑软件。本仓库只存放安装包、校验和与发行说明；源码在独立的私有仓库。
 
-**当前版本：[黑粉录屏 0.4.26 · 预览版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v0.4.26)**（预览版：功能可用，仍在实测中；每个平台只保留最新的一版）。
-
-> 0.4.26 目前提供 Windows、Linux 安装包；macOS 暂为 [黑粉录屏 0.4.16 · 预览版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v0.4.16)，0.4.26 的 macOS 版稍后补上。
+**当前版本：[黑粉录屏 0.4.26 · 预览版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v0.4.26)**（预览版：功能可用，仍在实测中；只保留最新一版）。
 
 ## 软件介绍
 
@@ -47,15 +45,13 @@
 
 | 平台 | 文件 | SHA-256 |
 |---|---|---|
+| macOS 13+（Apple 芯片 arm64） | `HyphenScreen_0.4.26_arm64.dmg` | `b554a851250627618e457b43ebe8fd7605488c68386a6fde3b5167958eb6ceaf` |
 | Windows 10/11（x64） | `HyphenScreen_0.4.26_x64-setup.exe` | `2db0dfce0594c684f466c5d38ff39f4f102c5e986c5cfc5bd110e5e0e81ab2d8` |
 | Linux（x86_64） | `HyphenScreen_0.4.26_x86_64.AppImage` | `0cfe5e20f7dc4b572c1808822fde64b0c3a31b80ad93d8e5d6a4db5a4090e7be` |
 | Debian / Ubuntu（amd64） | `HyphenScreen_0.4.26_amd64.deb` | `c2a9c44668c010bec453b5c4688cfbc2eb460106c33263875c86917051a3e21f` |
 | Arch Linux（x86_64） | `HyphenScreen_0.4.26_x64.pacman` | `5b399ef9b691d2c00ad598d0af6856a2a0902eecc257f3770c707ed9b4dfc279` |
-| macOS 13+（Apple 芯片 arm64）· 0.4.16 版 | `HyphenScreen_0.4.16_arm64.dmg` | `79197aca24c2b27027de453aed71fef429b0f0b15d2c1e61cee77495a1fb14d5` |
 
 同一页附带各平台的 `SHA256SUMS*.txt` 与 `release-manifest.json`，可核对文件完整性与构建来源。
-
-> 下面的功能一览按 0.4.26 介绍；macOS 暂为 0.4.16，不包含之后加入的功能，各版变化见发行页面上的发行说明。
 
 ## 功能一览
 
