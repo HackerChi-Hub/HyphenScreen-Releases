@@ -2,9 +2,9 @@
 
 黑粉科技的桌面录屏与智能剪辑软件。本仓库只存放安装包、校验和与发行说明；源码在独立的私有仓库。
 
-**当前版本：[黑粉录屏 0.4.28 · 预览版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v0.4.28)**（预览版：功能可用，仍在实测中；每个平台只保留最新的一版）。
+**当前版本：[黑粉录屏 0.4.29 · 预览版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v0.4.29)**（预览版：功能可用，仍在实测中；每个平台只保留最新的一版）。
 
-> 0.4.28 目前提供 macOS 安装包；Windows 继续提供 [黑粉录屏 0.4.26 · 预览版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v0.4.26)，尚未发布 0.4.28 的 Windows 版；Linux 继续提供 [黑粉录屏 0.4.26 · 预览版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v0.4.26)，尚未发布 0.4.28 的 Linux 版。
+> 0.4.29 目前提供 macOS 安装包；Windows 继续提供 [黑粉录屏 0.4.26 · 预览版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v0.4.26)，尚未发布 0.4.29 的 Windows 版；Linux 继续提供 [黑粉录屏 0.4.26 · 预览版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v0.4.26)，尚未发布 0.4.29 的 Linux 版。
 
 ## 软件介绍
 
@@ -47,7 +47,7 @@
 
 | 平台 | 文件 | SHA-256 |
 |---|---|---|
-| macOS 13+（Apple 芯片 arm64） | `HyphenScreen_0.4.28_arm64.dmg` | `199d02552399f2c6dff85a6f3cb407ec10fa5d1cb6301f098046a48fbe4e7475` |
+| macOS 13+（Apple 芯片 arm64） | `HyphenScreen_0.4.29_arm64.dmg` | `24da6f5ecfafdd53c80ce4783e85d37976a5a5109f33585507f086326e392b64` |
 | Windows 10/11（x64）· 0.4.26 版 | `HyphenScreen_0.4.26_x64-setup.exe` | `2db0dfce0594c684f466c5d38ff39f4f102c5e986c5cfc5bd110e5e0e81ab2d8` |
 | Linux（x86_64）· 0.4.26 版 | `HyphenScreen_0.4.26_x86_64.AppImage` | `0cfe5e20f7dc4b572c1808822fde64b0c3a31b80ad93d8e5d6a4db5a4090e7be` |
 | Debian / Ubuntu（amd64）· 0.4.26 版 | `HyphenScreen_0.4.26_amd64.deb` | `c2a9c44668c010bec453b5c4688cfbc2eb460106c33263875c86917051a3e21f` |
@@ -55,9 +55,17 @@
 
 同一页附带各平台的 `SHA256SUMS*.txt` 与 `release-manifest.json`，可核对文件完整性与构建来源。
 
-> 下面的功能一览按 0.4.28 介绍；Windows 暂为 0.4.26，不包含之后加入的功能；Linux 暂为 0.4.26，不包含之后加入的功能，各版变化见发行页面上的发行说明。
+> 下面的功能一览按 0.4.29 介绍；Windows 暂为 0.4.26，不包含之后加入的功能；Linux 暂为 0.4.26，不包含之后加入的功能，各版变化见发行页面上的发行说明。
 
 ## 功能一览
+
+### 0.4.29 编辑更新（macOS）
+
+- 摄像头全屏跨片段，可关闭进出动画直接硬切；纯色框和环绕渐变脉冲支持粗细、颜色调整。
+- 高解析度波形在切分后保持原始时间对齐；原声可分离、刀切、拖边裁切和逐段调音量。
+- 字幕支持手动修改、搜索定位、恢复原文与六组样式；改变字号和画幅不丢修改。
+- 画布选框留在预览区域，取消常驻调整工具条，转场和导出面板优先显示。
+- 复用音频处理结果，后续均衡调整明显提速；首次人声隔离仍需要模型计算。
 
 ### 录制
 
@@ -86,10 +94,10 @@
 
 ### 画布直接编辑
 
-- 暂停预览，打开「画布调整」：录屏画面与摄像头可直接移动、等比缩放，修改当前片段；左右或上下分屏可整体移动、缩放，拖动中线调摄像头占比。
+- 暂停预览，直接点选对象：录屏画面与摄像头可移动、等比缩放，修改当前片段；左右或上下分屏可整体移动、缩放，拖动中线调摄像头占比。
 - 字幕可直接拖动全片位置；文字、图片、箭头与模糊标注可点选、移动和调整尺寸；模板可整体移动、等比缩放，聚焦框与矩形蒙版可直接调整范围。
-- 重叠对象可从下拉框选择，方向键微调，Shift 加大步幅，Alt 暂停吸附；一次拖动一次撤销，轨道锁定后不能改，播放与导出隐藏调整框。
-- 自动缩放和摄像头动画段内，基础布局调整会提示移到动画段外操作；没有空间位置的调色、音频与时长等继续用参数面板。
+- 选中对象在预览区域内置顶，方向键微调，Shift 加大步幅，Alt 暂停吸附；一次拖动一次撤销，轨道锁定后不能改，播放与导出隐藏调整框。
+- 自动缩放和摄像头动画段内保留布局保护；没有空间位置的调色、音频与时长等继续用参数面板。
 
 ### 可视化模板：集中分类，常用优先
 
