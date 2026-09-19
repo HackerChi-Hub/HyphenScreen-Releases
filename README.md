@@ -2,9 +2,9 @@
 
 黑粉科技的桌面录屏与智能剪辑软件。本仓库只存放安装包、校验和与发行说明；源码在独立的私有仓库。
 
-**当前版本：[黑粉录屏 0.4.29 · 预览版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v0.4.29)**（预览版：功能可用，仍在实测中；每个平台只保留最新的一版）。
+**当前版本：[黑粉录屏 0.4.30 · 预览版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v0.4.30)**（预览版：功能可用，仍在实测中；每个平台只保留最新的一版）。
 
-> 0.4.29 目前提供 macOS 安装包；Windows 继续提供 [黑粉录屏 0.4.26 · 预览版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v0.4.26)，尚未发布 0.4.29 的 Windows 版；Linux 继续提供 [黑粉录屏 0.4.26 · 预览版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v0.4.26)，尚未发布 0.4.29 的 Linux 版。
+> 0.4.30 目前提供 macOS 安装包；Windows 继续提供 [黑粉录屏 0.4.26 · 预览版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v0.4.26)，尚未发布 0.4.30 的 Windows 版；Linux 继续提供 [黑粉录屏 0.4.26 · 预览版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v0.4.26)，尚未发布 0.4.30 的 Linux 版。
 
 ## 软件介绍
 
@@ -47,7 +47,7 @@
 
 | 平台 | 文件 | SHA-256 |
 |---|---|---|
-| macOS 13+（Apple 芯片 arm64） | `HyphenScreen_0.4.29_arm64.dmg` | `24da6f5ecfafdd53c80ce4783e85d37976a5a5109f33585507f086326e392b64` |
+| macOS 13+（Apple 芯片 arm64） | `HyphenScreen_0.4.30_arm64.dmg` | `6f0110d65e7e2bf086fe560ce4318c09935267855a54a88f3cf0faa726567ef9` |
 | Windows 10/11（x64）· 0.4.26 版 | `HyphenScreen_0.4.26_x64-setup.exe` | `2db0dfce0594c684f466c5d38ff39f4f102c5e986c5cfc5bd110e5e0e81ab2d8` |
 | Linux（x86_64）· 0.4.26 版 | `HyphenScreen_0.4.26_x86_64.AppImage` | `0cfe5e20f7dc4b572c1808822fde64b0c3a31b80ad93d8e5d6a4db5a4090e7be` |
 | Debian / Ubuntu（amd64）· 0.4.26 版 | `HyphenScreen_0.4.26_amd64.deb` | `c2a9c44668c010bec453b5c4688cfbc2eb460106c33263875c86917051a3e21f` |
@@ -55,9 +55,17 @@
 
 同一页附带各平台的 `SHA256SUMS*.txt` 与 `release-manifest.json`，可核对文件完整性与构建来源。
 
-> 下面的功能一览按 0.4.29 介绍；Windows 暂为 0.4.26，不包含之后加入的功能；Linux 暂为 0.4.26，不包含之后加入的功能，各版变化见发行页面上的发行说明。
+> 下面的功能一览按 0.4.30 介绍；Windows 暂为 0.4.26，不包含之后加入的功能；Linux 暂为 0.4.26，不包含之后加入的功能，各版变化见发行页面上的发行说明。
 
 ## 功能一览
+
+### 0.4.30 编辑更新（macOS）
+
+- 摄像头可“开头立即全屏、结束平滑还原”，进入和退出分别设置，原有平滑与硬切都保留。
+- 摄像头边框改为高对比选项卡，清楚区分无边框、纯色框、环绕渐变脉冲。
+- 原声与独立音频支持 -60 至 +36 dB；音乐避让增加自然背景、口播均衡、口播优先三种预设，以及提前压低、停顿保持与柔和恢复。
+- 时间线右键按对象精简分组：切分、裁切、分离原声、复制、静音、删除与设置入口；空白处添加内容。
+- 标注和视觉模板允许时间区间重叠，拖动后保持多个内容共存。
 
 ### 0.4.29 编辑更新（macOS）
 
