@@ -2,7 +2,9 @@
 
 黑粉科技的桌面录屏与智能剪辑软件。本仓库只存放安装包、校验和与发行说明；源码在独立的私有仓库。
 
-**当前版本：[黑粉录屏 0.4.33 · 预览版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v0.4.33)**（预览版：功能可用，仍在实测中；只保留最新一版）。
+**当前版本：[黑粉录屏 0.4.34 · 预览版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v0.4.34)**（预览版：功能可用，仍在实测中；每个平台只保留最新的一版）。
+
+> 0.4.34 目前提供 Windows、Linux 安装包；macOS 继续提供 [黑粉录屏 0.4.33 · 预览版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v0.4.33)，尚未发布 0.4.34 的 macOS 版。
 
 ## 软件介绍
 
@@ -47,13 +49,15 @@
 
 | 平台 | 文件 | SHA-256 |
 |---|---|---|
-| macOS 13+（Apple 芯片 arm64） | `HyphenScreen_0.4.33_arm64.dmg` | `7509980ad8d298ab714b04e09d9e6c204d21ac1b86b75b07a2625fa8cc8c8c28` |
-| Windows 10/11（x64） | `HyphenScreen_0.4.33_x64-setup.exe` | `502bf4bcbdae76e0890c46fecd4de7b1bf089db8604d0182e675f7a280f57631` |
-| Linux（x86_64） | `HyphenScreen_0.4.33_x86_64.AppImage` | `13a6fc7d066f52c3092cb88a45ceaa6d0f52b0f5d0785ea93bfa0f7f78c40ad6` |
-| Debian / Ubuntu（amd64） | `HyphenScreen_0.4.33_amd64.deb` | `d62c75b61467b0a37f64a9ddb04db5e67a9e8d8b04c78afd581cd41fd73b5da1` |
-| Arch Linux（x86_64） | `HyphenScreen_0.4.33_x64.pacman` | `89cceff8fdd68ddbdc59a95b512ce7a6a33766872224d5f443622182c13fa2fe` |
+| Windows 10/11（x64） | `HyphenScreen_0.4.34_x64-setup.exe` | `999a34cbc4f669d1135453dbe5450088abf57aa3f1214f0986dc1a68d2eaf7f3` |
+| Linux（x86_64） | `HyphenScreen_0.4.34_x86_64.AppImage` | `dfbc129cf0de83972d9deab9b032db74d1c3848ccc875d580cf1190fd28ce6f4` |
+| Debian / Ubuntu（amd64） | `HyphenScreen_0.4.34_amd64.deb` | `51140deab139d5fffc050d603e3310d305255d206ae6162669366582b7be0518` |
+| Arch Linux（x86_64） | `HyphenScreen_0.4.34_x64.pacman` | `6773ebbae55ac2ac0079dfb863ec3734dc053d73e61123d846d5080a15cf74a9` |
+| macOS 13+（Apple 芯片 arm64）· 0.4.33 版 | `HyphenScreen_0.4.33_arm64.dmg` | `7509980ad8d298ab714b04e09d9e6c204d21ac1b86b75b07a2625fa8cc8c8c28` |
 
 同一页附带各平台的 `SHA256SUMS*.txt` 与 `release-manifest.json`，可核对文件完整性与构建来源。
+
+> 下面的功能一览按 0.4.34 介绍；macOS 暂为 0.4.33，不包含之后加入的功能，各版变化见发行页面上的发行说明。
 
 ## 功能一览
 
@@ -103,6 +107,7 @@
 
 - 整个屏幕、单个窗口，或框选任意区域（可锁定 16:9、9:16、1:1、4:3）；macOS 上单击窗口可直接取它的范围。框选目前支持 macOS 与 Windows。
 - 摄像头与麦克风同步录制，鼠标轨迹一起记录，供自动放大和光标效果使用。
+- 摄像头按设备支持的最高清晰度录制（0.4.34）：1080p 摄像头录 1080p，不再固定在 720p；录制前的预览与录制取同一档，所见即所录。
 - 麦克风、摄像头、录制范围和摄像头的全部外观可以存成多套录制配置，一键切换，并指定启动时默认使用的一套。
 - macOS 0.4.28 修复大疆 MIC MINI 的 24 位麦克风音频无声，以及选择内置麦克风时因设备名称后缀无法匹配、回退默认输入的问题；两种设备均已通过安装版短录制与导出验证。
 
