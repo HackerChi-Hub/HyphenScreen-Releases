@@ -2,9 +2,7 @@
 
 黑粉科技的桌面录屏与智能剪辑软件。本仓库只存放安装包、校验和与发行说明；源码在独立的私有仓库。
 
-**当前版本：[黑粉录屏 0.4.33 · 预览版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v0.4.33)**（预览版：功能可用，仍在实测中；每个平台只保留最新的一版）。
-
-> 0.4.33 目前提供 macOS 安装包；Windows 继续提供 [黑粉录屏 0.4.26 · 预览版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v0.4.26)，尚未发布 0.4.33 的 Windows 版；Linux 继续提供 [黑粉录屏 0.4.26 · 预览版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v0.4.26)，尚未发布 0.4.33 的 Linux 版。
+**当前版本：[黑粉录屏 0.4.33 · 预览版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v0.4.33)**（预览版：功能可用，仍在实测中；只保留最新一版）。
 
 ## 软件介绍
 
@@ -50,25 +48,25 @@
 | 平台 | 文件 | SHA-256 |
 |---|---|---|
 | macOS 13+（Apple 芯片 arm64） | `HyphenScreen_0.4.33_arm64.dmg` | `7509980ad8d298ab714b04e09d9e6c204d21ac1b86b75b07a2625fa8cc8c8c28` |
-| Windows 10/11（x64）· 0.4.26 版 | `HyphenScreen_0.4.26_x64-setup.exe` | `2db0dfce0594c684f466c5d38ff39f4f102c5e986c5cfc5bd110e5e0e81ab2d8` |
-| Linux（x86_64）· 0.4.26 版 | `HyphenScreen_0.4.26_x86_64.AppImage` | `0cfe5e20f7dc4b572c1808822fde64b0c3a31b80ad93d8e5d6a4db5a4090e7be` |
-| Debian / Ubuntu（amd64）· 0.4.26 版 | `HyphenScreen_0.4.26_amd64.deb` | `c2a9c44668c010bec453b5c4688cfbc2eb460106c33263875c86917051a3e21f` |
-| Arch Linux（x86_64）· 0.4.26 版 | `HyphenScreen_0.4.26_x64.pacman` | `5b399ef9b691d2c00ad598d0af6856a2a0902eecc257f3770c707ed9b4dfc279` |
+| Windows 10/11（x64） | `HyphenScreen_0.4.33_x64-setup.exe` | `502bf4bcbdae76e0890c46fecd4de7b1bf089db8604d0182e675f7a280f57631` |
+| Linux（x86_64） | `HyphenScreen_0.4.33_x86_64.AppImage` | `13a6fc7d066f52c3092cb88a45ceaa6d0f52b0f5d0785ea93bfa0f7f78c40ad6` |
+| Debian / Ubuntu（amd64） | `HyphenScreen_0.4.33_amd64.deb` | `d62c75b61467b0a37f64a9ddb04db5e67a9e8d8b04c78afd581cd41fd73b5da1` |
+| Arch Linux（x86_64） | `HyphenScreen_0.4.33_x64.pacman` | `89cceff8fdd68ddbdc59a95b512ce7a6a33766872224d5f443622182c13fa2fe` |
 
 同一页附带各平台的 `SHA256SUMS*.txt` 与 `release-manifest.json`，可核对文件完整性与构建来源。
 
-> 下面的功能一览按 0.4.33 介绍；Windows 暂为 0.4.26，不包含之后加入的功能；Linux 暂为 0.4.26，不包含之后加入的功能，各版变化见发行页面上的发行说明。
-
 ## 功能一览
 
-### 0.4.33 预览与波形（macOS）
+> 0.4.29 起的新功能（摄像头边框与硬切、高解析度波形、多轨剪辑、画布直接编辑、全屏预览与预览分辨率档位）三个平台同源。装机实测目前只在 macOS 上做过，Windows 与 Linux 版通过构建与自动检查。
+
+### 0.4.33 预览与波形
 
 - 全屏预览：按 F 或点播放条上的全屏按钮，画面占满整个窗口，顶栏、检查器、时间线全部让开；播放条悬浮在底部，停手两秒自动淡出，鼠标一动就回来，Esc 或再按 F 退出。
 - 预览分辨率档位：完整、3/4、1/2、1/3、1/4。复杂工程放低档位播放更流畅，所有效果照常渲染，只是画面小一些；导出始终用完整分辨率，这个设置只记在本机，不写进工程。
 - 时间线波形按屏幕上真正看得见的那一段、以设备像素为单位绘制：放大到 20 倍时屏上采样柱由 117 根增加到 1875 根，每根代表的时长从 256 毫秒细化到 16 毫秒，放得越大越清楚。
 - 波形采样密度从每秒 1000 个提高到 2000 个（0.5 毫秒一格），三条求峰值的管线共用同一套分辨率参数，换算缓存自动失效重算。
 
-### 0.4.32 多轨剪辑（macOS）
+### 0.4.32 多轨剪辑
 
 ![0.4.32 实机截图：三层视频、片段裁切、独立音乐和片段效果面板；使用专门制作的公开演示素材](screenshots/multitrack-0432.png)
 
@@ -83,7 +81,7 @@
 
 - 转场的“无”选项简化文案；时长采用高对比轨道、粉色滑块和独立秒数框。
 
-### 0.4.30 编辑更新（macOS）
+### 0.4.30 编辑更新
 
 - 摄像头可“开头立即全屏、结束平滑还原”，进入和退出分别设置，原有平滑与硬切都保留。
 - 摄像头边框改为高对比选项卡，清楚区分无边框、纯色框、环绕渐变脉冲。
@@ -91,7 +89,7 @@
 - 时间线右键按对象精简分组：切分、裁切、分离原声、复制、静音、删除与设置入口；空白处添加内容。
 - 标注和视觉模板允许时间区间重叠，拖动后保持多个内容共存。
 
-### 0.4.29 编辑更新（macOS）
+### 0.4.29 编辑更新
 
 - 摄像头全屏跨片段，可关闭进出动画直接硬切；纯色框和环绕渐变脉冲支持粗细、颜色调整。
 - 高解析度波形在切分后保持原始时间对齐；原声可分离、刀切、拖边裁切和逐段调音量。
