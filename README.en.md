@@ -8,7 +8,7 @@
 
 [Download installers and release notes](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases) · [Current platform versions and checksums](README.md#下载)
 
-This is a preview release. The download table is the authority for each platform's current version; older Windows/Linux packages may not include the latest macOS features. Installers are public; the product's source repository remains private. There is no in-app automatic updater.
+This is a preview release. The download table is the authority for each platform's current version; when a platform is behind, its packages do not yet include the newest features. Features added since 0.4.29 are built from the same source on all three platforms, but hands-on testing so far has been on macOS. Installers are public; the product's source repository remains private. There is no in-app automatic updater.
 
 ## What you can do
 
