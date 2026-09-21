@@ -2,9 +2,7 @@
 
 黑粉科技的桌面录屏与智能剪辑软件。本仓库只存放安装包、校验和与发行说明；源码在独立的私有仓库。
 
-**当前版本：[黑粉录屏 0.4.35 · 预览版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v0.4.35)**（预览版：功能可用，仍在实测中；每个平台只保留最新的一版）。
-
-> 0.4.35 目前提供 macOS 安装包；Windows 继续提供 [黑粉录屏 0.4.34 · 预览版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v0.4.34)，尚未发布 0.4.35 的 Windows 版；Linux 继续提供 [黑粉录屏 0.4.34 · 预览版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v0.4.34)，尚未发布 0.4.35 的 Linux 版。
+**当前版本：[黑粉录屏 0.4.35 · 预览版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v0.4.35)**（预览版：功能可用，仍在实测中；只保留最新一版）。
 
 ## 软件介绍
 
@@ -50,14 +48,12 @@
 | 平台 | 文件 | SHA-256 |
 |---|---|---|
 | macOS 13+（Apple 芯片 arm64） | `HyphenScreen_0.4.35_arm64.dmg` | `d41f322ec1ad1259a527ef8f9a93ac8f398b83328b56cca9591fcba65f1b1a8f` |
-| Windows 10/11（x64）· 0.4.34 版 | `HyphenScreen_0.4.34_x64-setup.exe` | `999a34cbc4f669d1135453dbe5450088abf57aa3f1214f0986dc1a68d2eaf7f3` |
-| Linux（x86_64）· 0.4.34 版 | `HyphenScreen_0.4.34_x86_64.AppImage` | `dfbc129cf0de83972d9deab9b032db74d1c3848ccc875d580cf1190fd28ce6f4` |
-| Debian / Ubuntu（amd64）· 0.4.34 版 | `HyphenScreen_0.4.34_amd64.deb` | `51140deab139d5fffc050d603e3310d305255d206ae6162669366582b7be0518` |
-| Arch Linux（x86_64）· 0.4.34 版 | `HyphenScreen_0.4.34_x64.pacman` | `6773ebbae55ac2ac0079dfb863ec3734dc053d73e61123d846d5080a15cf74a9` |
+| Windows 10/11（x64） | `HyphenScreen_0.4.35_x64-setup.exe` | `59ab7ea73607d810e3d572dc5ee28937924a0c95a4ff48eb08753898ba85ffa0` |
+| Linux（x86_64） | `HyphenScreen_0.4.35_x86_64.AppImage` | `bc40e40a011fcd7b714d2148bb404c2fda0aa91909ad0918678f04da4543b728` |
+| Debian / Ubuntu（amd64） | `HyphenScreen_0.4.35_amd64.deb` | `ad3135e15704f28c89107ae7ee505492f4bfc3193208479871e7d2b6a49651e7` |
+| Arch Linux（x86_64） | `HyphenScreen_0.4.35_x64.pacman` | `6e838638679bfa365377908b0b5f2feb10f98f11afe6f6e7edabce1040b0856c` |
 
 同一页附带各平台的 `SHA256SUMS*.txt` 与 `release-manifest.json`，可核对文件完整性与构建来源。
-
-> 下面的功能一览按 0.4.35 介绍；Windows 暂为 0.4.34，不包含之后加入的功能；Linux 暂为 0.4.34，不包含之后加入的功能，各版变化见发行页面上的发行说明。
 
 ## 功能一览
 
