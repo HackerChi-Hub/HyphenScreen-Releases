@@ -2,7 +2,9 @@
 
 黑粉科技的桌面录屏与智能剪辑软件。本仓库只存放安装包、校验和与发行说明；源码在独立的私有仓库。
 
-**当前版本：[黑粉录屏 0.4.34 · 预览版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v0.4.34)**（预览版：功能可用，仍在实测中；只保留最新一版）。
+**当前版本：[黑粉录屏 0.4.35 · 预览版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v0.4.35)**（预览版：功能可用，仍在实测中；每个平台只保留最新的一版）。
+
+> 0.4.35 目前提供 macOS 安装包；Windows 继续提供 [黑粉录屏 0.4.34 · 预览版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v0.4.34)，尚未发布 0.4.35 的 Windows 版；Linux 继续提供 [黑粉录屏 0.4.34 · 预览版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v0.4.34)，尚未发布 0.4.35 的 Linux 版。
 
 ## 软件介绍
 
@@ -47,15 +49,23 @@
 
 | 平台 | 文件 | SHA-256 |
 |---|---|---|
-| macOS 13+（Apple 芯片 arm64） | `HyphenScreen_0.4.34_arm64.dmg` | `bf13e51b91f7e3542b1f27938abac32cc6e2935720bacb5f4e9dd61957d98122` |
-| Windows 10/11（x64） | `HyphenScreen_0.4.34_x64-setup.exe` | `999a34cbc4f669d1135453dbe5450088abf57aa3f1214f0986dc1a68d2eaf7f3` |
-| Linux（x86_64） | `HyphenScreen_0.4.34_x86_64.AppImage` | `dfbc129cf0de83972d9deab9b032db74d1c3848ccc875d580cf1190fd28ce6f4` |
-| Debian / Ubuntu（amd64） | `HyphenScreen_0.4.34_amd64.deb` | `51140deab139d5fffc050d603e3310d305255d206ae6162669366582b7be0518` |
-| Arch Linux（x86_64） | `HyphenScreen_0.4.34_x64.pacman` | `6773ebbae55ac2ac0079dfb863ec3734dc053d73e61123d846d5080a15cf74a9` |
+| macOS 13+（Apple 芯片 arm64） | `HyphenScreen_0.4.35_arm64.dmg` | `d41f322ec1ad1259a527ef8f9a93ac8f398b83328b56cca9591fcba65f1b1a8f` |
+| Windows 10/11（x64）· 0.4.34 版 | `HyphenScreen_0.4.34_x64-setup.exe` | `999a34cbc4f669d1135453dbe5450088abf57aa3f1214f0986dc1a68d2eaf7f3` |
+| Linux（x86_64）· 0.4.34 版 | `HyphenScreen_0.4.34_x86_64.AppImage` | `dfbc129cf0de83972d9deab9b032db74d1c3848ccc875d580cf1190fd28ce6f4` |
+| Debian / Ubuntu（amd64）· 0.4.34 版 | `HyphenScreen_0.4.34_amd64.deb` | `51140deab139d5fffc050d603e3310d305255d206ae6162669366582b7be0518` |
+| Arch Linux（x86_64）· 0.4.34 版 | `HyphenScreen_0.4.34_x64.pacman` | `6773ebbae55ac2ac0079dfb863ec3734dc053d73e61123d846d5080a15cf74a9` |
 
 同一页附带各平台的 `SHA256SUMS*.txt` 与 `release-manifest.json`，可核对文件完整性与构建来源。
 
+> 下面的功能一览按 0.4.35 介绍；Windows 暂为 0.4.34，不包含之后加入的功能；Linux 暂为 0.4.34，不包含之后加入的功能，各版变化见发行页面上的发行说明。
+
 ## 功能一览
+
+### 0.4.35 修复摄像头预览被放大（macOS）
+
+- 0.4.34 为了「按设备最高清晰度采集」请求了一个比任何摄像头都大的尺寸，但浏览器是按宽、高各自打分再相加来挑模式的，竖屏模式因此可能胜出：MacBook Pro 摄像头实测选中 1080×1920 竖屏，在 16:9 的预览框里只剩中间约三分之一并被放大 1.78 倍。
+- 现在挑模式时明确要求横向画面（比例下限 1.2、优先 16:9），同一台 Mac 改为选中 1920×1080；分辨率仍不锁死，像素更多的横向模式依旧可以胜出，只有竖屏模式的摄像头也仍能打开录制。
+- 摄像头预览改为完整显示整帧（比例不一致时留黑边），不再裁掉一部分再放大；录制页预览右上角显示实际打开的模式，例如「1920×1080 · 30 fps」。
 
 > 0.4.29 起的新功能（摄像头边框与硬切、高解析度波形、多轨剪辑、画布直接编辑、全屏预览与预览分辨率档位）三个平台同源。装机实测目前只在 macOS 上做过，Windows 与 Linux 版通过构建与自动检查。
 
