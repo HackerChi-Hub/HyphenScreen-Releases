@@ -2,7 +2,9 @@
 
 黑粉科技的桌面录屏与智能剪辑软件。本仓库只存放安装包、校验和与发行说明；源码在独立的私有仓库。
 
-**当前版本：[黑粉录屏 0.4.36 · 预览版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v0.4.36)**（预览版：功能可用，仍在实测中；只保留最新一版）。
+**当前版本：[黑粉录屏 0.4.37 · 预览版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v0.4.37)**（预览版：功能可用，仍在实测中；每个平台只保留最新的一版）。
+
+> 0.4.37 目前提供 macOS 安装包；Windows 继续提供 [黑粉录屏 0.4.36 · 预览版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v0.4.36)，尚未发布 0.4.37 的 Windows 版；Linux 继续提供 [黑粉录屏 0.4.36 · 预览版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v0.4.36)，尚未发布 0.4.37 的 Linux 版。
 
 ## 软件介绍
 
@@ -47,13 +49,15 @@
 
 | 平台 | 文件 | SHA-256 |
 |---|---|---|
-| macOS 13+（Apple 芯片 arm64） | `HyphenScreen_0.4.36_arm64.dmg` | `d632448b85e319f81a61fffa7230525c446973c1addfb84f276b60d949ad552b` |
-| Windows 10/11（x64） | `HyphenScreen_0.4.36_x64-setup.exe` | `3083ebe54d5971ae3ba3dc3570b13cf2308574872b19023d628b054f1bfbcad5` |
-| Linux（x86_64） | `HyphenScreen_0.4.36_x86_64.AppImage` | `137ab42c10c7c7ef72e031bc7061d7bee7f7d21a652d45ba4c3d4652f519eb5b` |
-| Debian / Ubuntu（amd64） | `HyphenScreen_0.4.36_amd64.deb` | `7adbf36462d12ad95f6982d2869f59505de3c22093ccf9af670a3408a4940b44` |
-| Arch Linux（x86_64） | `HyphenScreen_0.4.36_x64.pacman` | `b81caf0ddcfd14b7cc9bf5bc16b89f1df65a1852e4df639e11ce57a58e13332f` |
+| macOS 13+（Apple 芯片 arm64） | `HyphenScreen_0.4.37_arm64.dmg` | `5377c00a89b03d7588499d2434a91ef5abfe43b90ca7a42e09b5e9dd5c31b3a2` |
+| Windows 10/11（x64）· 0.4.36 版 | `HyphenScreen_0.4.36_x64-setup.exe` | `3083ebe54d5971ae3ba3dc3570b13cf2308574872b19023d628b054f1bfbcad5` |
+| Linux（x86_64）· 0.4.36 版 | `HyphenScreen_0.4.36_x86_64.AppImage` | `137ab42c10c7c7ef72e031bc7061d7bee7f7d21a652d45ba4c3d4652f519eb5b` |
+| Debian / Ubuntu（amd64）· 0.4.36 版 | `HyphenScreen_0.4.36_amd64.deb` | `7adbf36462d12ad95f6982d2869f59505de3c22093ccf9af670a3408a4940b44` |
+| Arch Linux（x86_64）· 0.4.36 版 | `HyphenScreen_0.4.36_x64.pacman` | `b81caf0ddcfd14b7cc9bf5bc16b89f1df65a1852e4df639e11ce57a58e13332f` |
 
 同一页附带各平台的 `SHA256SUMS*.txt` 与 `release-manifest.json`，可核对文件完整性与构建来源。
+
+> 下面的功能一览按 0.4.37 介绍；Windows 暂为 0.4.36，不包含之后加入的功能；Linux 暂为 0.4.36，不包含之后加入的功能，各版变化见发行页面上的发行说明。
 
 ## 功能一览
 
