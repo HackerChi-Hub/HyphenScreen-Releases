@@ -1,5 +1,9 @@
 # HyphenScreen
 
+## Existing animation snapshot in 1.0.6
+
+This release retains 23 built-in presets and 326 Simplified Chinese migration previews. New migration batches are paused while existing effects are reviewed during real use. Single-line text edits adapt their width, and AI tools can change text, font size and color. Numeric bindings and native text rendering have improved; full reference parity and complex effects remain unfinished.
+
 ## Timeline improvements in 1.0.5
 
 Empty tracks are hidden automatically and return when media is added. Tracks containing muted or disabled content remain accessible. An expandable Visual group combines annotations, overlays, and animations while keeping each object independently editable. Select them together, delete in one operation, and restore with one undo. Animation clips offer duration, speed, play-once, hold, and loop controls, with continuous source time after splitting.
