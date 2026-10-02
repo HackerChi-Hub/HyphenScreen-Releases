@@ -2,9 +2,9 @@
 
 黑粉科技的桌面录屏与智能剪辑软件。本仓库只存放安装包、校验和与发行说明；源码在独立的私有仓库。
 
-**当前版本：[黑粉录屏 1.0.4 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.0.4)**（每个平台只保留最新的一版）。
+**当前版本：[黑粉录屏 1.0.5 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.0.5)**（每个平台只保留最新的一版）。
 
-> 1.0.4 目前提供 macOS 安装包；Windows 继续提供 [黑粉录屏 1.0.3 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.0.3)，尚未发布 1.0.4 的 Windows 版；Linux 继续提供 [黑粉录屏 1.0.3 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.0.3)，尚未发布 1.0.4 的 Linux 版。
+> 1.0.5 目前提供 macOS 安装包；Windows 继续提供 [黑粉录屏 1.0.3 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.0.3)，尚未发布 1.0.5 的 Windows 版；Linux 继续提供 [黑粉录屏 1.0.3 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.0.3)，尚未发布 1.0.5 的 Linux 版。
 
 ## 软件介绍
 
@@ -50,7 +50,7 @@
 
 | 平台 | 文件 | SHA-256 |
 |---|---|---|
-| macOS 13+（Apple 芯片 arm64） | `HyphenScreen_1.0.4_arm64.dmg` | `3053afe7b13a6815bd59118df7c9965764cf1fcb0392279d6e05179a0867ef7f` |
+| macOS 13+（Apple 芯片 arm64） | `HyphenScreen_1.0.5_arm64.dmg` | `d9f595d74a055cfaa7de2cba8ee44f3fdd8352029a0eadc61f3d728fa9277507` |
 | Windows 10/11（x64）· 1.0.3 版 | `HyphenScreen_1.0.3_x64-setup.exe` | `4aad5a1dd2fe4b13086651a27500adb953f89a3f9b2c259312c27bae849d382a` |
 | Linux（x86_64）· 1.0.3 版 | `HyphenScreen_1.0.3_x86_64.AppImage` | `78527230a629b11b7580e0108255ccd40ec5b2b7d27e6b9bf15e29789fb49af9` |
 | Debian / Ubuntu（amd64）· 1.0.3 版 | `HyphenScreen_1.0.3_amd64.deb` | `b23b84b843da972b49ddf7170aeb347d6c774c734b394905146811968eb394e1` |
@@ -58,11 +58,18 @@
 
 同一页附带各平台的 `SHA256SUMS*.txt` 与 `release-manifest.json`，可核对文件完整性与构建来源。
 
-> 下面的功能一览按 1.0.4 介绍；Windows 暂为 1.0.3，不包含之后加入的功能；Linux 暂为 1.0.3，不包含之后加入的功能，各版变化见发行页面上的发行说明。
+> 下面的功能一览按 1.0.5 介绍；Windows 暂为 1.0.3，不包含之后加入的功能；Linux 暂为 1.0.3，不包含之后加入的功能，各版变化见发行页面上的发行说明。
 
 ## 功能一览
 
-### 1.0.4 原生动画制作
+### 1.0.5 时间线与动画操作
+
+- 空轨道自动隐藏，添加素材后显示；有内容但被静音、停用或隐藏的轨道仍保留。
+- 标注、叠加效果、动画统一放入可展开的“视觉”分组，支持混合框选、批量删除和一次撤销恢复。
+- 动画支持时长、速度、一次播放、结束保持及循环；切分后保持连续源时间。
+- 纯动画工程保留时间尺、定位与框选入口，新增视频轨道先选素材再创建。
+
+### 原生动画制作
 
 - 时间线新增独立「动画」轨：动画自己生成画面，可以带背景，与录屏、图片、视频及 TTS 配音编排。
 - 图层、文字、形状、图表与关键帧在自己的面板中编辑。动画入口使用场记板图标，片段特效保留星光图标。
