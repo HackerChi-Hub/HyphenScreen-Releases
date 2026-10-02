@@ -6,7 +6,7 @@ Empty tracks are hidden automatically and return when media is added. Tracks con
 
 ## Native animation
 
-An independent animation track generates its own frames without a background video. Edit text, shapes, charts, layers and keyframes, or use AI scene-data tools. The library includes 23 built-in presets and 326 Simplified Chinese migration previews; social cards support Bilibili, Kuaishou, Douyin, WeChat Channels, Official Accounts, WeChat and Weibo. All 326 previews passed save/reload, native export and complete decoding. Full source-parameter and visual parity remains unfinished: these are migration previews, not 607 completed clones. This update is available for macOS Apple Silicon; Windows/Linux retain their current older builds.
+An independent animation track generates its own frames without a background video. Edit text, shapes, charts, layers and keyframes, or use AI scene-data tools. The library includes 23 built-in presets and 326 Simplified Chinese migration previews; social cards support Bilibili, Kuaishou, Douyin, WeChat Channels, Official Accounts, WeChat and Weibo. All 326 previews passed save/reload, native export and complete decoding. Full source-parameter and visual parity remains unfinished: these are migration previews, not 607 completed clones. See the download table on the release page for the currently available version of each platform.
 
 [简体中文](README.md) · [繁體中文](README.zh-TW.md) · **English** · [日本語](README.ja.md)
 
