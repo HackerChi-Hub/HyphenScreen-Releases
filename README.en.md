@@ -1,5 +1,9 @@
 # HyphenScreen
 
+## Native animation in 1.0.4
+
+An independent animation track generates its own frames without a background video. Edit text, shapes, charts, layers and keyframes, or use AI scene-data tools. The library includes 23 built-in presets and 326 Simplified Chinese migration previews; social cards support Bilibili, Kuaishou, Douyin, WeChat Channels, Official Accounts, WeChat and Weibo. All 326 previews passed save/reload, native export and complete decoding. Full source-parameter and visual parity remains unfinished: these are migration previews, not 607 completed clones. This update is available for macOS Apple Silicon; Windows/Linux retain their current older builds.
+
 [简体中文](README.md) · [繁體中文](README.zh-TW.md) · **English** · [日本語](README.ja.md)
 
 **Record your screen, edit your story, and finish in one desktop app.** HyphenScreen by HyphenTech records your screen, camera and sound in one take, then lets you edit, caption and polish in the same window and export landscape or vertical video. It is built for software tutorials, tool demos and narrated explainers — videos you edit as soon as you have recorded them and publish as soon as they are edited.
