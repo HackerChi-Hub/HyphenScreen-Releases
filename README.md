@@ -2,7 +2,9 @@
 
 黑粉科技的桌面录屏与智能剪辑软件。本仓库只存放安装包、校验和与发行说明；源码在独立的私有仓库。
 
-**当前版本：[黑粉录屏 1.0.3 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.0.3)**（只保留最新一版）。
+**当前版本：[黑粉录屏 1.0.4 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.0.4)**（每个平台只保留最新的一版）。
+
+> 1.0.4 目前提供 macOS 安装包；Windows 继续提供 [黑粉录屏 1.0.3 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.0.3)，尚未发布 1.0.4 的 Windows 版；Linux 继续提供 [黑粉录屏 1.0.3 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.0.3)，尚未发布 1.0.4 的 Linux 版。
 
 ## 软件介绍
 
@@ -48,15 +50,31 @@
 
 | 平台 | 文件 | SHA-256 |
 |---|---|---|
-| macOS 13+（Apple 芯片 arm64） | `HyphenScreen_1.0.3_arm64.dmg` | `e1367213c4ece7494cc795c9a508a83f01cd54d0c2c98ef0e3a57566958b9862` |
-| Windows 10/11（x64） | `HyphenScreen_1.0.3_x64-setup.exe` | `4aad5a1dd2fe4b13086651a27500adb953f89a3f9b2c259312c27bae849d382a` |
-| Linux（x86_64） | `HyphenScreen_1.0.3_x86_64.AppImage` | `78527230a629b11b7580e0108255ccd40ec5b2b7d27e6b9bf15e29789fb49af9` |
-| Debian / Ubuntu（amd64） | `HyphenScreen_1.0.3_amd64.deb` | `b23b84b843da972b49ddf7170aeb347d6c774c734b394905146811968eb394e1` |
-| Arch Linux（x86_64） | `HyphenScreen_1.0.3_x64.pacman` | `f1c525f2066c2e88628ecdc0ef50e9a07ff39c2a1bc3327a38f4855e70415047` |
+| macOS 13+（Apple 芯片 arm64） | `HyphenScreen_1.0.4_arm64.dmg` | `3053afe7b13a6815bd59118df7c9965764cf1fcb0392279d6e05179a0867ef7f` |
+| Windows 10/11（x64）· 1.0.3 版 | `HyphenScreen_1.0.3_x64-setup.exe` | `4aad5a1dd2fe4b13086651a27500adb953f89a3f9b2c259312c27bae849d382a` |
+| Linux（x86_64）· 1.0.3 版 | `HyphenScreen_1.0.3_x86_64.AppImage` | `78527230a629b11b7580e0108255ccd40ec5b2b7d27e6b9bf15e29789fb49af9` |
+| Debian / Ubuntu（amd64）· 1.0.3 版 | `HyphenScreen_1.0.3_amd64.deb` | `b23b84b843da972b49ddf7170aeb347d6c774c734b394905146811968eb394e1` |
+| Arch Linux（x86_64）· 1.0.3 版 | `HyphenScreen_1.0.3_x64.pacman` | `f1c525f2066c2e88628ecdc0ef50e9a07ff39c2a1bc3327a38f4855e70415047` |
 
 同一页附带各平台的 `SHA256SUMS*.txt` 与 `release-manifest.json`，可核对文件完整性与构建来源。
 
+> 下面的功能一览按 1.0.4 介绍；Windows 暂为 1.0.3，不包含之后加入的功能；Linux 暂为 1.0.3，不包含之后加入的功能，各版变化见发行页面上的发行说明。
+
 ## 功能一览
+
+### 1.0.4 原生动画制作
+
+- 时间线新增独立「动画」轨：动画自己生成画面，可以带背景，与录屏、图片、视频及 TTS 配音编排。
+- 图层、文字、形状、图表与关键帧在自己的面板中编辑。动画入口使用场记板图标，片段特效保留星光图标。
+- 23 项内置预设；社交卡支持 B站、快手、抖音、视频号、公众号、微信、微博。分类库另提供 326 项简体中文参考迁移预览，均经过保存重载、原生导出及完整解码检查。
+- AI 通过场景数据修改图层、关键帧和已绑定的数值参数。迁移预览仍有源参数、复杂滤镜及完整动态视觉待完善，不能当作 607 项完整克隆。
+- 录制中可切换指示条方向，纵向计时和停止按钮上下排列，不再撑宽。
+
+![独立动画：空视频轨道上方放置图表动画，原生预览与图层面板](screenshots/native-animation-104.png)
+
+![不同用途使用不同图标：片段特效为星光，动画与效果为场记板](screenshots/inspector-icons-104.png)
+
+![实际纵向录制：停止按钮与计时上下排列，控制条保持窄宽](screenshots/recording-vertical-104.png)
 
 下面的截图都是实机画面。演示工程用专门制作的素材：一段滚动网页的录屏、合成的旁白和背景音乐，里面的邮箱、电话和密钥都是假的；摄像头的两张用的是演示者本人的画面。
 
