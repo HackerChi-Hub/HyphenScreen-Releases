@@ -1,6 +1,10 @@
 # HyphenScreen
 
-## Native animation in 1.0.4
+## Timeline improvements in 1.0.5
+
+Empty tracks are hidden automatically and return when media is added. Tracks containing muted or disabled content remain accessible. An expandable Visual group combines annotations, overlays, and animations while keeping each object independently editable. Select them together, delete in one operation, and restore with one undo. Animation clips offer duration, speed, play-once, hold, and loop controls, with continuous source time after splitting.
+
+## Native animation
 
 An independent animation track generates its own frames without a background video. Edit text, shapes, charts, layers and keyframes, or use AI scene-data tools. The library includes 23 built-in presets and 326 Simplified Chinese migration previews; social cards support Bilibili, Kuaishou, Douyin, WeChat Channels, Official Accounts, WeChat and Weibo. All 326 previews passed save/reload, native export and complete decoding. Full source-parameter and visual parity remains unfinished: these are migration previews, not 607 completed clones. This update is available for macOS Apple Silicon; Windows/Linux retain their current older builds.
 
