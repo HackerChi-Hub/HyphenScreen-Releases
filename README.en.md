@@ -1,5 +1,9 @@
 # HyphenScreen
 
+## Self-media card and grouped animations in 1.0.7
+
+One self-media card now covers 17 platforms — 10 Chinese (Douyin, Kuaishou, Bilibili, Xiaohongshu, WeChat Channels, WeChat Official Accounts, WeChat, Weibo, Zhihu, Toutiao) and 7 international (YouTube, TikTok, Instagram, X, Facebook, LinkedIn, Twitch), each with its own mark and colors. Switch the platform inside the animation panel; your edited account name, title and body text stay. Animations of the same type that differ only in style are now one library card (23 groups) with a style switch in the panel; searching for one style finds its card, and AI tools can switch styles too. The reference library grows to 368 migration previews, and each of the 42 new ones passed a frame-by-frame comparison with its original. Names and on-screen text use mainland Chinese wording. Fixes include sampled content arriving one frame late, bold Chinese rendering thin, and rotated text drifting.
+
 ## Existing animation snapshot in 1.0.6
 
 This release retains 23 built-in presets and 326 Simplified Chinese migration previews. New migration batches are paused while existing effects are reviewed during real use. Single-line text edits adapt their width, and AI tools can change text, font size and color. Numeric bindings and native text rendering have improved; full reference parity and complex effects remain unfinished.
@@ -10,7 +14,7 @@ Empty tracks are hidden automatically and return when media is added. Tracks con
 
 ## Native animation
 
-An independent animation track generates its own frames without a background video. Edit text, shapes, charts, layers and keyframes, or use AI scene-data tools. The library includes 23 built-in presets and 326 Simplified Chinese migration previews; social cards support Bilibili, Kuaishou, Douyin, WeChat Channels, Official Accounts, WeChat and Weibo. All 326 previews passed save/reload, native export and complete decoding. Full source-parameter and visual parity remains unfinished: these are migration previews, not 607 completed clones. See the download table on the release page for the currently available version of each platform.
+An independent animation track generates its own frames without a background video. Edit text, shapes, charts, layers and keyframes, or use AI scene-data tools. The library includes 16 built-in presets, a self-media card covering 17 Chinese and international platforms, and 368 Simplified Chinese migration previews grouped into 23 families with an in-animation style switch. All 368 previews passed save/reload, native export and complete decoding. Full source-parameter and visual parity remains unfinished: these are migration previews, not 607 completed clones. See the download table on the release page for the currently available version of each platform.
 
 [简体中文](README.md) · [繁體中文](README.zh-TW.md) · **English** · [日本語](README.ja.md)
 
@@ -137,9 +141,9 @@ Preview, inspector and timeline share one window. The moment above uses a zoom-i
 
 ![AI chat: trim, caption and zoom with a sentence, plus one-click recipes](screenshots/ai-chat.jpg)
 
-- The built-in chat works with a Codex subscription (reusing the official login on this computer, no key to paste) or a local model. 69 tools cover editing, sound, captions, transitions, redaction, zoom, markers, per-clip effects, visual templates, inserted video, vertical highlights, export and the finished-video check — everything you can do by hand in the editor.
+- The built-in chat works with a Codex or Claude subscription (reusing the official login on this computer, no key to paste), a local model in LocalBrain, or another model service with your own key. 88 tools cover editing, sound, captions, transitions, redaction, zoom, markers, per-clip effects, visual templates, native animations, inserted video, vertical highlights, export and the finished-video check — everything you can do by hand in the editor.
 - 12 one-click recipes: tighten a talk, shorten pauses, remove filler words, remove repeats and retakes, make a vertical highlight, check before publishing, and more.
-- External AI can use the same tools through MCP (73 with reading, saving, undo and redo).
+- External AI can use the same tools through MCP (92 with reading, saving, undo and redo).
 
 ### Projects, history and storage
 
