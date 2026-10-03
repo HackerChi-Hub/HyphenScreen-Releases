@@ -2,7 +2,7 @@
 
 黑粉科技的桌面录屏与智能剪辑软件。本仓库只存放安装包、校验和与发行说明；源码在独立的私有仓库。
 
-**当前版本：[黑粉录屏 1.0.7 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.0.7)**（只保留最新一版）。
+**当前版本：[黑粉录屏 1.0.8 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.0.8)**（只保留最新一版）。
 
 ## 软件介绍
 
@@ -48,15 +48,19 @@
 
 | 平台 | 文件 | SHA-256 |
 |---|---|---|
-| macOS 13+（Apple 芯片 arm64） | `HyphenScreen_1.0.7_arm64.dmg` | `bd9734b19786ae7644020e6a2b3ab095d31988aee2febfe29e2dad287d0dc891` |
-| Windows 10/11（x64） | `HyphenScreen_1.0.7_x64-setup.exe` | `0ae33816a96eefa6dc1e964e3dd6dc1ce957ce07b7c05a0aa7a64676ae9b29ca` |
-| Linux（x86_64） | `HyphenScreen_1.0.7_x86_64.AppImage` | `0ce7b4c9afad9302d068be130dac3437e04520966b7361c23fa42a832f9039fc` |
-| Debian / Ubuntu（amd64） | `HyphenScreen_1.0.7_amd64.deb` | `fc686a704e888bd587a6a8441a4706f41c934c9cecb4e6f0934793a2b9b5dab0` |
-| Arch Linux（x86_64） | `HyphenScreen_1.0.7_x64.pacman` | `a3ea14aa30f5be4d3b7081920993a4af26d6391dd410639589f926955f0cd75c` |
+| macOS 13+（Apple 芯片 arm64） | `HyphenScreen_1.0.8_arm64.dmg` | `1a1e886600bd5bdc7ee86b89de7dd3cec48776d45c23ef4a854ec8af6e3bc90a` |
+| Windows 10/11（x64） | `HyphenScreen_1.0.8_x64-setup.exe` | `7aad2b812adeddc4bfb598169b41c873d23bbe9e34f9fd866dd55809be659d13` |
+| Linux（x86_64） | `HyphenScreen_1.0.8_x86_64.AppImage` | `059032e7aeb7e9fa52615d0ab716d00f94089782941088ffe7b81f8e20fdde63` |
+| Debian / Ubuntu（amd64） | `HyphenScreen_1.0.8_amd64.deb` | `f8d665c6f61270251522b1b678528e2da412c23b468f97afe1f1ac26c0f69d0d` |
+| Arch Linux（x86_64） | `HyphenScreen_1.0.8_x64.pacman` | `153fd7d523bf8defc76a984ff8906b7840e37115f809a1e5775c1dd9cafce723` |
 
 同一页附带各平台的 `SHA256SUMS*.txt` 与 `release-manifest.json`，可核对文件完整性与构建来源。
 
 ## 功能一览
+
+### 1.0.8 修复录完时间线为空
+
+- 录制结束、自动进入剪辑界面时，时间线有时没有素材，要切到「录制」再切回「编辑」才出现：新建工程的几次保存会盖掉刚放上的第一个片段。现在这些保存依次进行，片段不再丢失；录制配置的摄像头外观偶尔没有套上的问题也一并修好。
 
 ### 1.0.7 自媒体平台卡与同类动画合并
 
