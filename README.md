@@ -1,16 +1,10 @@
-<!-- repair-20261003:start -->
-> **推荐下载：黑粉录屏 1.0.9 · 10 月 3 日修复版**
->
-> 修复删除长片段后预览无法续播、AI 对话显示及发送状态；增加醒目的订阅登录恢复入口。应用版本仍为 1.0.9，已安装旧包的用户请手动下载修复包覆盖安装。
->
-> [全部平台下载与修复说明](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.0.9-fix-20261003)。Mac、Windows、Linux 下载链接均已更新为本轮修复包；旧包保留原校验值。
-<!-- repair-20261003:end -->
-
 # 黑粉录屏 HyphenScreen · 下载
 
 黑粉科技的桌面录屏与智能剪辑软件。本仓库只存放安装包、校验和与发行说明；源码在独立的私有仓库。
 
-**当前版本：[黑粉录屏 1.0.9 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.0.9-fix-20261003)**（只保留最新一版）。
+**当前版本：[黑粉录屏 1.1.0 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.1.0)**（每个平台只保留最新的一版）。
+
+> 1.1.0 目前提供 macOS、Windows 安装包；Linux 继续提供 [黑粉录屏 1.0.9-fix-20261003 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.0.9-fix-20261003)，尚未发布 1.1.0 的 Linux 版。
 
 ## 软件介绍
 
@@ -56,15 +50,23 @@
 
 | 平台 | 文件 | SHA-256 |
 |---|---|---|
-| macOS 13+（Apple 芯片 arm64） | `HyphenScreen_1.0.9_arm64.dmg` | `4e5b746979f8982a49a6f750ad50c1cab92135c6414d019c8496121066be0472` |
-| Windows 10/11（x64） | `HyphenScreen_1.0.9_x64-setup.exe` | `b598c4443628e316ad5ef0fab3c12193b19d203d8466eafb1f908679c259f5e5` |
-| Linux（x86_64） | `HyphenScreen_1.0.9_x86_64.AppImage` | `32d68581ffff4beab8ee82ba387496024581a103d000cf436788c0b353aee354` |
-| Debian / Ubuntu（amd64） | `HyphenScreen_1.0.9_amd64.deb` | `c17e20816b5f7d8914c2a58af47d570a7041184a687b59ab89dbb98f5aa54340` |
-| Arch Linux（x86_64） | `HyphenScreen_1.0.9_x64.pacman` | `9137c9b4e47b8562b731695043ca2614b1933be8b0558960cb51e5edbc596b22` |
+| macOS 13+（Apple 芯片 arm64） | `HyphenScreen_1.1.0_arm64.dmg` | `680be1857d422ac3ec8c07689b1cb2f29c722b75cced2d9b7db4a19cfe22db14` |
+| Windows 10/11（x64） | `HyphenScreen_1.1.0_x64-setup.exe` | `b38794791a9d65334080d5f94027673c06d8d461b32c0f18cce300998d5b09bd` |
+| Linux（x86_64）· 1.0.9-fix-20261003 版 | `HyphenScreen_1.0.9_x86_64.AppImage` | `b39f2f774dce561a617521fcbe1a173616fe988e31ab9acfa3ee17286c08f7c8` |
+| Debian / Ubuntu（amd64）· 1.0.9-fix-20261003 版 | `HyphenScreen_1.0.9_amd64.deb` | `92c313daae812efd1c788bddb6ac6a3395508c7e3b57d486b7cdc08bf5160912` |
+| Arch Linux（x86_64）· 1.0.9-fix-20261003 版 | `HyphenScreen_1.0.9_x64.pacman` | `5db7035545bfa2196f23df71fcb2a51d5c3aca69f2210cd8cd3fde421fb5f915` |
 
 同一页附带各平台的 `SHA256SUMS*.txt` 与 `release-manifest.json`，可核对文件完整性与构建来源。
 
+> 下面的功能一览按 1.1.0 介绍；Linux 暂为 1.0.9-fix-20261003，不包含之后加入的功能，各版变化见发行页面上的发行说明。
+
 ## 功能一览
+
+### 1.1.0 素材分类与可读性
+
+- 讲解引导从 146 张卡精简到 76 张，分为指引标注、步骤流程、对比关系、场景演示。23 个观点示例合并为「观点强调字卡」，放入文字标题；字幕、社交卡、声音可视化和数据指标归入相应分类。
+- 76 个教程示例改为简短用途标题，允许换行；参考素材说明简化为时长与图层数，完整信息可悬停查看。分类按钮文字水平／垂直居中，原名称与短标题均可搜索，原工程引用保持不变。
+- 包含 1.0.9 修复包的项目打开、AI 对话与订阅登录恢复、删除长片段后预览恢复修复。参考素材仍为 368 项，没有增加动画数量。
 
 ### 1.0.8 修复录完时间线为空
 
@@ -93,7 +95,7 @@
 
 - 时间线新增独立「动画」轨：动画自己生成画面，可以带背景，与录屏、图片、视频及 TTS 配音编排。
 - 图层、文字、形状、图表与关键帧在自己的面板中编辑。动画入口使用场记板图标，片段特效保留星光图标。
-- 16 种内置预设，加一张覆盖国内外 17 个平台的自媒体平台卡。分类库另提供 368 项简体中文参考迁移预览，同类动画合并成 23 组、在动画内切换样式，均经过保存重载、原生导出及完整解码检查。
+- 16 种内置预设，加一张覆盖国内外 17 个平台的自媒体平台卡。分类库另提供 368 项简体中文参考迁移预览，同类样式和示例共用卡片、在动画面板中选择；迁移素材经过保存重载、原生导出及完整解码检查。
 - AI 通过场景数据修改图层、关键帧和已绑定的数值参数。迁移预览仍有源参数、复杂滤镜及完整动态视觉待完善，不能当作 607 项完整克隆。
 - 录制中可切换指示条方向，纵向计时和停止按钮上下排列，不再撑宽。
 
