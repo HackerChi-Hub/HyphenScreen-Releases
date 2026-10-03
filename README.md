@@ -3,16 +3,14 @@
 >
 > 修复删除长片段后预览无法续播、AI 对话显示及发送状态；增加醒目的订阅登录恢复入口。应用版本仍为 1.0.9，已安装旧包的用户请手动下载修复包覆盖安装。
 >
-> [Mac 修复包](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.0.9-fix-20261003/HyphenScreen_1.0.9_arm64.dmg) · [修复版说明与全部附件](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.0.9-fix-20261003)
->
-> Windows、Linux 最新修复包正在构建，下方对应平台链接暂时保留原 1.0.9 安装包，完成校验后更新。
+> [全部平台下载与修复说明](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.0.9-fix-20261003)。Mac、Windows、Linux 下载链接均已更新为本轮修复包；旧包保留原校验值。
 <!-- repair-20261003:end -->
 
 # 黑粉录屏 HyphenScreen · 下载
 
 黑粉科技的桌面录屏与智能剪辑软件。本仓库只存放安装包、校验和与发行说明；源码在独立的私有仓库。
 
-**当前版本：[黑粉录屏 1.0.9 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.0.9)**（只保留最新一版）。
+**当前版本：[黑粉录屏 1.0.9 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.0.9-fix-20261003)**（只保留最新一版）。
 
 ## 软件介绍
 

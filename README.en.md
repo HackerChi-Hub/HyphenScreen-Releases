@@ -1,3 +1,11 @@
+<!-- repair-20261003:start -->
+> **Recommended download: HyphenScreen 1.0.9 — October 3 repair build**
+>
+> Fixes preview playback after deleting long clips, AI chat display and sending state, and adds clearer subscription sign-in recovery. The application version remains 1.0.9. Existing users should download and install this repair build manually.
+>
+> [Downloads for macOS, Windows and Linux](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.0.9-fix-20261003). Previous installers remain unchanged.
+<!-- repair-20261003:end -->
+
 # HyphenScreen
 
 ## Empty timeline after recording, fixed in 1.0.8

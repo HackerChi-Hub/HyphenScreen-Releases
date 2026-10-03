@@ -1,3 +1,11 @@
+<!-- repair-20261003:start -->
+> **建議下載：黑粉錄屏 1.0.9・10 月 3 日修復版**
+>
+> 修復刪除長片段後預覽無法繼續播放、AI 對話顯示與傳送狀態，並加入更明顯的訂閱登入復原入口。應用程式版本維持 1.0.9；已安裝舊包的使用者請手動下載修復包覆蓋安裝。
+>
+> [macOS、Windows 與 Linux 下載及修復說明](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.0.9-fix-20261003)。舊安裝包保留原校驗值。
+<!-- repair-20261003:end -->
+
 # 黑粉錄屏 HyphenScreen
 
 ## 1.0.8 修正錄完時間軸為空
