@@ -1,5 +1,9 @@
 # HyphenScreen
 
+## Empty timeline after recording, fixed in 1.0.8
+
+- When a recording stopped and the editor opened, the timeline sometimes showed no media until you switched to Rec and back to Edit: the saves that build the new project could overwrite the first clip just placed on it. Those saves now run one after another, so the clip stays. The recording profile's camera look, which the same problem could leave unapplied, is fixed too.
+
 ## Self-media card and grouped animations in 1.0.7
 
 One self-media card now covers 17 platforms — 10 Chinese (Douyin, Kuaishou, Bilibili, Xiaohongshu, WeChat Channels, WeChat Official Accounts, WeChat, Weibo, Zhihu, Toutiao) and 7 international (YouTube, TikTok, Instagram, X, Facebook, LinkedIn, Twitch), each with its own mark and colors. Switch the platform inside the animation panel; your edited account name, title and body text stay. Animations of the same type that differ only in style are now one library card (23 groups) with a style switch in the panel; searching for one style finds its card, and AI tools can switch styles too. The reference library grows to 368 migration previews, and each of the 42 new ones passed a frame-by-frame comparison with its original. Names and on-screen text use mainland Chinese wording. Fixes include sampled content arriving one frame late, bold Chinese rendering thin, and rotated text drifting.
