@@ -1,12 +1,8 @@
-<!-- repair-20261003:start -->
-> **Recommended download: HyphenScreen 1.0.9 — October 3 repair build**
->
-> Fixes preview playback after deleting long clips, AI chat display and sending state, and adds clearer subscription sign-in recovery. The application version remains 1.0.9. Existing users should download and install this repair build manually.
->
-> [Downloads for macOS, Windows and Linux](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.0.9-fix-20261003). Previous installers remain unchanged.
-<!-- repair-20261003:end -->
-
 # HyphenScreen
+
+## 1.1.0 — clearer library titles and guide categories
+
+The guide library is organized into pointers, steps, comparisons and demonstrations, reducing 146 cards to 76. Twenty-three statement examples share one card in Text & titles. All 76 tutorial examples have short display titles; category labels are centered and can wrap. Original titles remain searchable, existing projects keep their references, and the 368 migration previews are unchanged. This release also includes the 1.0.9 fixes for opening projects, subscription sign-in recovery, AI chat and playback after deleting long clips.
 
 ## Empty timeline after recording, fixed in 1.0.8
 
@@ -26,7 +22,7 @@ Empty tracks are hidden automatically and return when media is added. Tracks con
 
 ## Native animation
 
-An independent animation track generates its own frames without a background video. Edit text, shapes, charts, layers and keyframes, or use AI scene-data tools. The library includes 16 built-in presets, a self-media card covering 17 Chinese and international platforms, and 368 Simplified Chinese migration previews grouped into 23 families with an in-animation style switch. All 368 previews passed save/reload, native export and complete decoding. Full source-parameter and visual parity remains unfinished: these are migration previews, not 607 completed clones. See the download table on the release page for the currently available version of each platform.
+An independent animation track generates its own frames without a background video. Edit text, shapes, charts, layers and keyframes, or use AI scene-data tools. The library includes 16 built-in presets, a self-media card covering 17 Chinese and international platforms, and 368 Simplified Chinese migration previews. Related styles and examples share library cards and can be selected inside the animation panel. The previews have passed save/reload, native export and complete decoding. Full source-parameter and visual parity remains unfinished: these are migration previews, not 607 completed clones. See the download table on the release page for the currently available version of each platform.
 
 [简体中文](README.md) · [繁體中文](README.zh-TW.md) · **English** · [日本語](README.ja.md)
 
