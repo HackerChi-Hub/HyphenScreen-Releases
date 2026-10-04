@@ -2,7 +2,7 @@
 
 黑粉科技的桌面录屏与智能剪辑软件。本仓库只存放安装包、校验和与发行说明；源码在独立的私有仓库。
 
-**当前版本：[黑粉录屏 1.1.0 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.1.0)**（只保留最新一版）。
+**当前版本：[黑粉录屏 1.2.0 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.2.0)**（只保留最新一版）。
 
 ## 软件介绍
 
@@ -42,6 +42,7 @@
 ### 常见问题
 
 - **要注册黑粉录屏账号吗？** 不需要。使用云端模型时连接你自己的订阅或 API。
+- **1.2.0 打开旧工程会怎样？** 第一次打开时自动转换成新格式（动画逐帧数据改存本机，工程文件大幅变小），并在原文件旁保留 `.pre-v10.bak` 备份。新格式工程旧版本打不开。
 - **怎样更新？** 从应用菜单检查新版本，或到本页下载最新包覆盖安装。每个平台只保留最新公开版本。
 - **安装被系统拦下？** macOS 包未做苹果公证，Windows 包未做代码签名。具体安装步骤和 SHA-256 校验见下方。
 - **所有功能三平台都有吗？** 主要剪辑与动画能力跨平台；人声隔离、自动敏感文字识别和成片文字回读目前仅 macOS。Windows／Linux 包已经构建检查，桌面交互继续实机核验。
@@ -52,17 +53,21 @@
 
 | 平台 | 文件 | SHA-256 |
 |---|---|---|
-| macOS 13+（Apple 芯片 arm64） | `HyphenScreen_1.1.0_arm64.dmg` | `680be1857d422ac3ec8c07689b1cb2f29c722b75cced2d9b7db4a19cfe22db14` |
-| Windows 10/11（x64） | `HyphenScreen_1.1.0_x64-setup.exe` | `b38794791a9d65334080d5f94027673c06d8d461b32c0f18cce300998d5b09bd` |
-| Linux（x86_64） | `HyphenScreen_1.1.0_x86_64.AppImage` | `e0dc97b8fe3e207e3d38f501b7ff885c8ea04b84bf29c36782b8a7cfef741655` |
-| Debian / Ubuntu（amd64） | `HyphenScreen_1.1.0_amd64.deb` | `e8870ce087384570e07b426a36dee6919804fc2296a560fa7ae524df9fe75b17` |
-| Arch Linux（x86_64） | `HyphenScreen_1.1.0_x64.pacman` | `f3c07155c6745010b1b5e7d633c8bb488e4c8a356815f280a24b1076fa315ba1` |
+| macOS 13+（Apple 芯片 arm64） | `HyphenScreen_1.2.0_arm64.dmg` | `ac69a9bfb15c02c6870165e1f854d538619926bc1a566c12b6e3ff4768faf7e8` |
+| Windows 10/11（x64） | `HyphenScreen_1.2.0_x64-setup.exe` | `5e61870b84ef4a818361c02dc1b63f23f5ad8b69760790d62cac27df9b895cec` |
+| Linux（x86_64） | `HyphenScreen_1.2.0_x86_64.AppImage` | `aac3cf027c216b86a9bdb1b00e691d913c12f242b65f0d70482b7a04467d18af` |
+| Debian / Ubuntu（amd64） | `HyphenScreen_1.2.0_amd64.deb` | `951601bcbde30bf574e5ca90f750e3013fde9b2dc3d318e7eae9c57dab6b297a` |
+| Arch Linux（x86_64） | `HyphenScreen_1.2.0_x64.pacman` | `9391947fe4b180012534020debb11287860b45cba3515205c9db139c616fd567` |
 
 同一页附带各平台的 `SHA256SUMS*.txt` 与 `release-manifest.json`，可核对文件完整性与构建来源。
 
 ## 功能图解 · 1.1.0
 
 下面的新动画、分类、社交卡、AI 设置与导出截图拍自 1.1.0 独立演示工程；其他图片沿用已公开的录制和功能演示。全部为真实软件画面，演示中的模型数字、联系方式与密钥是演示数据。不同功能截图的主题和轨道布局可能不同，以当前版本为准。
+
+### 1.2.0：动画更快
+
+含大动画的工程打开约快 9 倍，修改立即显示，循环播放复杂动画直接复用画好的帧；导出画面与上一版逐帧一致。工程格式随之升级：旧工程第一次打开时自动迁移，并在原文件旁留一份备份。
 
 ### 原生动画：自己生成画面
 
