@@ -2,7 +2,7 @@
 
 黑粉科技的桌面录屏与智能剪辑软件。本仓库只存放安装包、校验和与发行说明；源码在独立的私有仓库。
 
-**当前版本：[黑粉录屏 1.2.0 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.2.0)**（只保留最新一版）。
+**当前版本：[黑粉录屏 1.2.1 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.2.1)**（只保留最新一版）。
 
 ## 软件介绍
 
@@ -53,17 +53,21 @@
 
 | 平台 | 文件 | SHA-256 |
 |---|---|---|
-| macOS 13+（Apple 芯片 arm64） | `HyphenScreen_1.2.0_arm64.dmg` | `ac69a9bfb15c02c6870165e1f854d538619926bc1a566c12b6e3ff4768faf7e8` |
-| Windows 10/11（x64） | `HyphenScreen_1.2.0_x64-setup.exe` | `5e61870b84ef4a818361c02dc1b63f23f5ad8b69760790d62cac27df9b895cec` |
-| Linux（x86_64） | `HyphenScreen_1.2.0_x86_64.AppImage` | `aac3cf027c216b86a9bdb1b00e691d913c12f242b65f0d70482b7a04467d18af` |
-| Debian / Ubuntu（amd64） | `HyphenScreen_1.2.0_amd64.deb` | `951601bcbde30bf574e5ca90f750e3013fde9b2dc3d318e7eae9c57dab6b297a` |
-| Arch Linux（x86_64） | `HyphenScreen_1.2.0_x64.pacman` | `9391947fe4b180012534020debb11287860b45cba3515205c9db139c616fd567` |
+| macOS 13+（Apple 芯片 arm64） | `HyphenScreen_1.2.1_arm64.dmg` | `f39a871e382d9357a1121d2db450f402121e19f488199a19d76dd54301d1d549` |
+| Windows 10/11（x64） | `HyphenScreen_1.2.1_x64-setup.exe` | `0b47c28f0e8f6716abda7ca800b08b58d935c08aa30e2bc69c4ab3ceb7f2bede` |
+| Linux（x86_64） | `HyphenScreen_1.2.1_x86_64.AppImage` | `ca5e785fd8e650cd2838d6eae3f25edf8fdccdc0b3d27a7d26278e700fecbf28` |
+| Debian / Ubuntu（amd64） | `HyphenScreen_1.2.1_amd64.deb` | `78ebe3aca36b725d559e72551dde584b5ad0fe1151e3c567a162727e8e13b70d` |
+| Arch Linux（x86_64） | `HyphenScreen_1.2.1_x64.pacman` | `146d1218f8bdba8d2569c5342fa2005bdf3f6fc7416a80c85b728a9f3d22aaf7` |
 
 同一页附带各平台的 `SHA256SUMS*.txt` 与 `release-manifest.json`，可核对文件完整性与构建来源。
 
 ## 功能图解 · 1.1.0
 
 下面的新动画、分类、社交卡、AI 设置与导出截图拍自 1.1.0 独立演示工程；其他图片沿用已公开的录制和功能演示。全部为真实软件画面，演示中的模型数字、联系方式与密钥是演示数据。不同功能截图的主题和轨道布局可能不同，以当前版本为准。
+
+### 1.2.1：大动画预览也流畅
+
+预览播放时后台提前画好播放头前方的画面，缓存装不下时也会保留一部分，体积很大的逐帧动画循环播放不再卡顿；导出画面不变。
 
 ### 1.2.0：动画更快
 
