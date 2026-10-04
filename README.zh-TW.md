@@ -4,7 +4,9 @@
 
 黑粉科技的桌面錄屏與智慧剪輯軟體，適合軟體教學、產品示範、知識分享和口播影片。在同一個視窗完成錄製、多軌剪輯、字幕、聲音處理、原生動畫和匯出，也可以用自然語言請 AI 協助修改。
 
-**目前正式版：[1.2.0](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.2.0)** · [下載與安裝](https://github.com/HackerChi-Hub/HyphenScreen-Releases) · [黑粉科技](https://hyphentech.top)
+**目前正式版：[1.2.1](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.2.1)** · [下載與安裝](https://github.com/HackerChi-Hub/HyphenScreen-Releases) · [黑粉科技](https://hyphentech.top)
+
+**1.2.1 更新：** 體積很大的逐格動畫在預覽中也能流暢播放：背景預先繪製播放頭前方的畫面，快取裝不下時仍保留一部分。匯出畫面不變。
 
 **1.2.0 更新：** 動畫的載入、預覽與修改大幅加快，含大型動畫的專案開啟約快 9 倍、修改約快 15 倍，匯出畫面不變。專案格式升級：舊專案第一次開啟時自動轉換，並在原檔旁保留 `.pre-v10.bak` 備份；1.2.0 存過的專案舊版本無法開啟。
 
