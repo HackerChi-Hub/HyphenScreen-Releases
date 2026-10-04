@@ -4,7 +4,9 @@
 
 HyphenScreen by HyphenTech is a desktop workspace for software tutorials, product demos and narrated videos. Record your screen, webcam and audio; edit multiple tracks; add captions and native motion graphics; then export a landscape or portrait video.
 
-**Current stable release: [1.2.1](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.2.1)** · [Downloads](https://github.com/HackerChi-Hub/HyphenScreen-Releases) · [HyphenTech](https://hyphentech.top)
+**Current stable release: [1.3.0](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.3.0)** · [Downloads](https://github.com/HackerChi-Hub/HyphenScreen-Releases) · [HyphenTech](https://hyphentech.top)
+
+**New in 1.3.0:** 300 new editable native animations converted from LottieFiles free animations — likes and subscribe prompts, success states, loaders, arrows and gestures, hand-drawn emphasis, confetti, chat bubbles, tech icons, charts, transitions and abstract motion. Each passed the same frame-by-frame visual check as the rest of the library.
 
 **New in 1.2.1:** very large frame-by-frame animations now play smoothly in the preview — frames ahead of the playhead are drawn in the background and the cache keeps a stable share when an animation is too big for it. Exported frames are unchanged.
 
@@ -37,9 +39,9 @@ Preview and export share Rust compositor scene logic. AI changes JSON scene data
 
 ## A library organized by purpose
 
-The unified Animation & Effects library has Common, Text & Titles, Data & Charts, Explanation, Brand & Outro, Social Platforms and Picture Effects categories. It currently presents **224 grouped entry cards**, including **76 explanation cards** filtered by pointers, steps, comparisons and demonstrations. Similar styles share one card; 23 quote/statement examples form one text-title family. Short titles wrap, with original names still searchable.
+The unified Animation & Effects library has Common, Text & Titles, Data & Charts, Explanation, Brand & Outro, Social Platforms and Picture Effects categories. It currently presents **254 grouped entry cards**, including **88 explanation cards** filtered by pointers, steps, comparisons and demonstrations. Similar styles share one card; 23 quote/statement examples form one text-title family. Short titles wrap, with original names still searchable.
 
-There are 16 common built-in animation presets plus a social-card family covering 17 platforms. Another 368 reference migration previews are grouped by style. These previews still need work on full source-parameter recalculation, complex filters and dynamic visual parity; they are not complete clones of every reference example.
+There are 16 common built-in animation presets plus a social-card family covering 17 platforms. Another 368 reference migration previews are grouped by style, plus 300 native animations converted from LottieFiles free animations (each card credits its author). These previews still need work on full source-parameter recalculation, complex filters and dynamic visual parity; they are not complete clones of every reference example.
 
 ![Purpose filters and readable short titles in the current Chinese interface](screenshots/animation-library-110.png)
 
