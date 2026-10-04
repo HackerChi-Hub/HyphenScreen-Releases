@@ -4,7 +4,9 @@
 
 HyphenTech のデスクトップ録画・編集ソフトです。ソフトウェア解説、製品デモ、ナレーション動画を、録画からマルチトラック編集、字幕、音声処理、アニメーション、書き出しまで一つのウィンドウで制作できます。AI に自然言語で編集を依頼することもできます。
 
-**現在の正式版：[1.1.0](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.1.0)** · [ダウンロード](https://github.com/HackerChi-Hub/HyphenScreen-Releases) · [HyphenTech](https://hyphentech.top)
+**現在の正式版：[1.2.0](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.2.0)** · [ダウンロード](https://github.com/HackerChi-Hub/HyphenScreen-Releases) · [HyphenTech](https://hyphentech.top)
+
+**1.2.0 の更新：** アニメーションの読み込み・プレビュー・編集が大幅に高速化しました。大きなアニメーションを含むプロジェクトは約 9 倍速く開き、編集は約 15 倍速く反映されます。書き出し結果は変わりません。プロジェクト形式が更新され、旧プロジェクトは初回に自動変換され、元ファイルの横に `.pre-v10.bak` のバックアップが残ります。1.2.0 で保存したプロジェクトは旧バージョンでは開けません。
 
 [简体中文](README.md) · [繁體中文](README.zh-TW.md) · [English](README.en.md) · 日本語
 
