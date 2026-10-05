@@ -4,7 +4,9 @@
 
 HyphenScreen by HyphenTech is a desktop workspace for software tutorials, product demos and narrated videos. Record your screen, webcam and audio; edit multiple tracks; add captions and native motion graphics; then export a landscape or portrait video.
 
-**Current stable release: [1.3.0](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.3.0)** · [Downloads](https://github.com/HackerChi-Hub/HyphenScreen-Releases) · [HyphenTech](https://hyphentech.top)
+**Current stable release: [1.4.0](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.4.0)** · [Downloads](https://github.com/HackerChi-Hub/HyphenScreen-Releases) · [HyphenTech](https://hyphentech.top)
+
+**New in 1.4.0:** 246 more library animations (914 in all, 333 entry cards): hardware devices plus six new directions — AI concepts, flows and architecture diagrams, screen-recording callouts (including a live magnifier that really enlarges the recording, in preview and export alike), benchmark charts whose bars, needles and ranks follow the numbers you type, HyphenTech brand packaging and emphasis accents. All new scenes are drawn natively with editable text and numeric parameters; terminal and code lines use the bundled JetBrains Mono. 35 hard-to-see or placeholder-logo entries were redrawn; old projects keep opening and exporting exactly as before. Animations with glow, soft shadows or outlines preview and export much faster with pixel-identical output (every new scene exports above 55 fps at 1080p; the slowest was 0.5 fps before), and an API-mode export that is interrupted no longer leaves a 0-byte file.
 
 **New in 1.3.0:** 300 new editable native animations converted from LottieFiles free animations — likes and subscribe prompts, success states, loaders, arrows and gestures, hand-drawn emphasis, confetti, chat bubbles, tech icons, charts, transitions and abstract motion. Each passed the same frame-by-frame visual check as the rest of the library.
 
@@ -39,9 +41,9 @@ Preview and export share Rust compositor scene logic. AI changes JSON scene data
 
 ## A library organized by purpose
 
-The unified Animation & Effects library has Common, Text & Titles, Data & Charts, Explanation, Brand & Outro, Social Platforms and Picture Effects categories. It currently presents **254 grouped entry cards**, including **88 explanation cards** filtered by pointers, steps, comparisons and demonstrations. Similar styles share one card; 23 quote/statement examples form one text-title family. Short titles wrap, with original names still searchable.
+The unified Animation & Effects library has Common, Text & Titles, Data & Charts, Explanation, Brand & Outro, Social Platforms, Picture Effects, Hardware, AI Concepts and Flows & Architecture categories. It currently presents **333 grouped entry cards**, including **108 explanation cards** filtered by pointers, steps, comparisons and demonstrations. Similar styles share one card; 23 quote/statement examples form one text-title family. Short titles wrap, with original names still searchable.
 
-There are 16 common built-in animation presets plus a social-card family covering 17 platforms. Another 368 reference migration previews are grouped by style, plus 300 native animations converted from LottieFiles free animations (each card credits its author). These previews still need work on full source-parameter recalculation, complex filters and dynamic visual parity; they are not complete clones of every reference example.
+There are 16 common built-in animation presets plus a social-card family covering 17 platforms. Another 368 reference migration previews are grouped by style, plus 300 native animations converted from LottieFiles free animations. These previews still need work on full source-parameter recalculation, complex filters and dynamic visual parity; they are not complete clones of every reference example.
 
 ![Purpose filters and readable short titles in the current Chinese interface](screenshots/animation-library-110.png)
 
@@ -70,6 +72,8 @@ API options include OpenAI, Claude, Gemini, Mistral, OpenRouter, MiniMax, MiniMa
 ![MP4/GIF, resolution, frame rate and codec options](screenshots/export-110.png)
 
 Export MP4 or GIF with selectable resolution, frame rate and H.264/H.265 encoding. “Upscale” indicates resizing beyond source dimensions; it does not recover missing source detail. Output checks inspect loudness, silence, black/frozen frames, duration and text boundaries. Automatic sensitive-text detection and OCR output readback currently require macOS; manual redaction is available across platforms.
+
+**Since 1.4.0:** exported videos and GIFs carry a small 黑粉科技 (HyphenTech) badge in the bottom-right corner — the brand mark plus the name, about 150×46 px in a 1080p frame, switching between light and dark lettering with the picture behind it. It marks files made with the app and cannot be turned off; the editor preview does not show it.
 
 Choose separate project, recording and cache directories, including external drives. Manage cache categories and restore named or automatic project-history checkpoints.
 
