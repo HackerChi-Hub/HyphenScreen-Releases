@@ -2,11 +2,13 @@
 
 黑粉科技的桌面录屏与智能剪辑软件。本仓库只存放安装包、校验和与发行说明；源码在独立的私有仓库。
 
-**当前版本：[黑粉录屏 1.4.5 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.4.5)**（只保留最新一版）。
+**当前版本：[黑粉录屏 1.4.6 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.4.6)**（每个平台只保留最新的一版）。
+
+> 1.4.6 目前提供 macOS 安装包；Windows 继续提供 [黑粉录屏 1.4.5 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.4.5)，尚未发布 1.4.6 的 Windows 版；Linux 继续提供 [黑粉录屏 1.4.5 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.4.5)，尚未发布 1.4.6 的 Linux 版。
 
 ## 软件介绍
 
-> 1.4.5：人脸修复改为单按钮打开设置弹窗，节约片段面板空间；保真程度的圆形滑块清楚可见，百分比同步变化，支持键盘微调。关闭窗口不会取消后台处理。沿用可选本地人脸修复、原片对照与恢复；模型环境独立准备，苹果芯片加速与 CPU 回退已实测，其他显卡仍待对应硬件验收，不包含肖像重建。
+> 1.4.6：修复摄像头 WebM 人脸修复的异常帧率读取，按真实画面时间戳探测与解码，避免可变帧率素材变速或错位。无需额外探测工具或模型。保留单按钮修复弹窗、清楚的保真滑块、原片对照和恢复；关闭窗口不取消后台处理。苹果芯片加速与 CPU 回退已实测，其他显卡仍待对应硬件验收，不包含肖像重建。
 
 > 1.4.2 新增：框选多个视频、音频、动画与视觉效果后，拖动任一选中项主体即可保持相对时间整体移动，一次撤销恢复全部。
 
@@ -64,15 +66,21 @@
 
 | 平台 | 文件 | SHA-256 |
 |---|---|---|
-| macOS 13+（Apple 芯片 arm64） | `HyphenScreen_1.4.5_arm64.dmg` | `1d7d37bfdac70e247e419902254b26ea17ec9943348240c7b756b3fe6926c591` |
-| Windows 10/11（x64） | `HyphenScreen_1.4.5_x64-setup.exe` | `7e1bff2ed633afbbe59a49af1a5f4c1e07182f46de0070ae36140455ad85bc62` |
-| Linux（x86_64） | `HyphenScreen_1.4.5_x86_64.AppImage` | `848ba1e07a8c9248d6f4b67828a14e783b7752619cd100745bde471ff92268ca` |
-| Debian / Ubuntu（amd64） | `HyphenScreen_1.4.5_amd64.deb` | `103412cd3fce78475e4903e9d0b4d5f0d9982ba36adee3cd55bebcc59a5ed217` |
-| Arch Linux（x86_64） | `HyphenScreen_1.4.5_x64.pacman` | `311d52bf617e02d5eefac18d3e96010ad1eaa96dfb79d7ac699a9501e14f193f` |
+| macOS 13+（Apple 芯片 arm64） | `HyphenScreen_1.4.6_arm64.dmg` | `6725ce4db7b25b2795a63fcf38de8c1e5b96a3f96fb22b6dd18e557997e0df8f` |
+| Windows 10/11（x64）· 1.4.5 版 | `HyphenScreen_1.4.5_x64-setup.exe` | `7e1bff2ed633afbbe59a49af1a5f4c1e07182f46de0070ae36140455ad85bc62` |
+| Linux（x86_64）· 1.4.5 版 | `HyphenScreen_1.4.5_x86_64.AppImage` | `848ba1e07a8c9248d6f4b67828a14e783b7752619cd100745bde471ff92268ca` |
+| Debian / Ubuntu（amd64）· 1.4.5 版 | `HyphenScreen_1.4.5_amd64.deb` | `103412cd3fce78475e4903e9d0b4d5f0d9982ba36adee3cd55bebcc59a5ed217` |
+| Arch Linux（x86_64）· 1.4.5 版 | `HyphenScreen_1.4.5_x64.pacman` | `311d52bf617e02d5eefac18d3e96010ad1eaa96dfb79d7ac699a9501e14f193f` |
 
 同一页附带各平台的 `SHA256SUMS*.txt` 与 `release-manifest.json`，可核对文件完整性与构建来源。
 
+> 下面的功能一览按 1.4.6 介绍；Windows 暂为 1.4.5，不包含之后加入的功能；Linux 暂为 1.4.5，不包含之后加入的功能，各版变化见发行页面上的发行说明。
+
 ## 功能图解
+
+**1.4.6 安装包验证：** Mac 正式程序从只读安装映像启动，隔离工程中的摄像头 WebM 完成 15 帧修复，普通视频完成 12 帧；应用、1080p／30 帧导出和恢复原片通过，两种素材的导出声音一致、画面变化且完整解码通过。此次未替换用户应用，也未重复桌面点击与跨平台硬件实机清单。
+
+**1.4.6：摄像头修复时间读取。** 修复 WebM 将毫秒时钟误报为 1000 帧而无法处理的问题，用现有视频引擎探测真实时间戳并按时间解码；保持源时间位置和原声，不增加模型或探测程序。摄像头原片短段与普通 24 帧带声音素材已通过源码回归，各平台发行包验证见进度记录。
 
 **1.4.5：人脸修复弹窗。** 片段特效只保留「人脸修复」按钮，点击后再显示修复目标、保真程度、试修、后台进度、原片对照和应用／恢复操作。关闭弹窗不取消任务。保真滑块采用粉色进度、灰色轨道和白边圆形拖动点，百分比同步变化，方向键每次调节 5%；范围仍为 50%～100%，默认 70%，算法保持不变。
 
