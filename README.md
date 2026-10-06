@@ -4,7 +4,7 @@
 
 **当前版本：[黑粉录屏 1.4.7 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.4.7)**（每个平台只保留最新的一版）。
 
-> 1.4.7 目前提供 macOS 安装包；Windows 继续提供 [黑粉录屏 1.4.6 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.4.6)，尚未发布 1.4.7 的 Windows 版；Linux 继续提供 [黑粉录屏 1.4.6 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.4.6)，尚未发布 1.4.7 的 Linux 版。
+> 1.4.7 目前提供 macOS、Windows 安装包；Linux 继续提供 [黑粉录屏 1.4.6 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.4.6)，尚未发布 1.4.7 的 Linux 版。
 
 ## 软件介绍
 
@@ -67,14 +67,14 @@
 | 平台 | 文件 | SHA-256 |
 |---|---|---|
 | macOS 13+（Apple 芯片 arm64） | `HyphenScreen_1.4.7_arm64.dmg` | `e9d30636fd9f0d559ed00056bb0cf7bdf7e711d39a7e7d85592b9c13f393e6d3` |
-| Windows 10/11（x64）· 1.4.6 版 | `HyphenScreen_1.4.6_x64-setup.exe` | `027ebd0f93747e0c81a972172014d991aad6ea296b9c061dbe969dd0975f0967` |
+| Windows 10/11（x64） | `HyphenScreen_1.4.7_x64-setup.exe` | `9175200be4e4d631f1e3222ed9282dc419f69c258a06d6d4fd6437131ca5c46f` |
 | Linux（x86_64）· 1.4.6 版 | `HyphenScreen_1.4.6_x86_64.AppImage` | `036d98fced5ad000f785dd00f59427c2b4a4ae5bd1c164bc0336dd555ff00aa1` |
 | Debian / Ubuntu（amd64）· 1.4.6 版 | `HyphenScreen_1.4.6_amd64.deb` | `d539c169ca4fe9ce995aea5c00a81b40532cb326e5efbbc3d86d5e595ff4cb42` |
 | Arch Linux（x86_64）· 1.4.6 版 | `HyphenScreen_1.4.6_x64.pacman` | `1be955034e08f531f8b8cf9bab703407465c583912e4a4d4547882a596306b98` |
 
 同一页附带各平台的 `SHA256SUMS*.txt` 与 `release-manifest.json`，可核对文件完整性与构建来源。
 
-> 下面的功能一览按 1.4.7 介绍；Windows 暂为 1.4.6，不包含之后加入的功能；Linux 暂为 1.4.6，不包含之后加入的功能，各版变化见发行页面上的发行说明。
+> 下面的功能一览按 1.4.7 介绍；Linux 暂为 1.4.6，不包含之后加入的功能，各版变化见发行页面上的发行说明。
 
 ## 功能图解
 
