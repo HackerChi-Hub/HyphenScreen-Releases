@@ -8,7 +8,7 @@
 
 HyphenTech のデスクトップ録画・編集ソフトです。ソフトウェア解説、製品デモ、ナレーション動画を、録画からマルチトラック編集、字幕、音声処理、アニメーション、書き出しまで一つのウィンドウで制作できます。AI に自然言語で編集を依頼することもできます。
 
-**現在の正式版：[1.4.1](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.4.1)** · [ダウンロード](https://github.com/HackerChi-Hub/HyphenScreen-Releases) · [HyphenTech](https://hyphentech.top)
+**現在の正式版：[1.4.2](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.4.2)** · [ダウンロード](https://github.com/HackerChi-Hub/HyphenScreen-Releases) · [HyphenTech](https://hyphentech.top)
 
 **1.4.0 の更新：** ライブラリに 246 個のアニメーションを追加しました（合計 914 項目、333 枚のカード）。ハードウェアに加え、AI の仕組み、フロー・構成図、画面録画の解説（下の録画を実際に拡大するリアルタイム拡大鏡。プレビューと書き出しで同じ表示）、数値を変えると棒・針・順位が変わるベンチマーク表示、黑粉科技のブランドパッケージ、感情・リズムの演出の 6 方向です。新しいシーンはすべてネイティブ描画で、文字は編集でき、数値はパラメータです。ターミナルとコードの行には同梱の JetBrains Mono を使います。暗い画面で見えにくかった、または仮ロゴだった旧素材 35 個を描き直しました。既存プロジェクトの開き方と書き出し結果は変わりません。発光・ソフトシャドウ・縁取りのあるアニメーションのプレビューと書き出しが大幅に速くなり、画素は完全に同じです（新シーンの 1080p 書き出しはすべて 55 fps 以上、改善前の最遅は 0.5 fps）。API モードの書き出しが中断されても 0 バイトのファイルが残らなくなりました。
 
