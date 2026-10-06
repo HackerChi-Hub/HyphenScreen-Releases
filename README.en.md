@@ -8,7 +8,7 @@
 
 HyphenScreen by HyphenTech is a desktop workspace for software tutorials, product demos and narrated videos. Record your screen, webcam and audio; edit multiple tracks; add captions and native motion graphics; then export a landscape or portrait video.
 
-**Current stable release: [1.4.1](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.4.1)** · [Downloads](https://github.com/HackerChi-Hub/HyphenScreen-Releases) · [HyphenTech](https://hyphentech.top)
+**Current stable release: [1.4.2](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.4.2)** · [Downloads](https://github.com/HackerChi-Hub/HyphenScreen-Releases) · [HyphenTech](https://hyphentech.top)
 
 **New in 1.4.0:** 246 more library animations (914 in all, 333 entry cards): hardware devices plus six new directions — AI concepts, flows and architecture diagrams, screen-recording callouts (including a live magnifier that really enlarges the recording, in preview and export alike), benchmark charts whose bars, needles and ranks follow the numbers you type, HyphenTech brand packaging and emphasis accents. All new scenes are drawn natively with editable text and numeric parameters; terminal and code lines use the bundled JetBrains Mono. 35 hard-to-see or placeholder-logo entries were redrawn; old projects keep opening and exporting exactly as before. Animations with glow, soft shadows or outlines preview and export much faster with pixel-identical output (every new scene exports above 55 fps at 1080p; the slowest was 0.5 fps before), and an API-mode export that is interrupted no longer leaves a 0-byte file.
 
