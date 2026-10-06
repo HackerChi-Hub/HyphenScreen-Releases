@@ -2,9 +2,13 @@
 
 黑粉科技的桌面录屏与智能剪辑软件。本仓库只存放安装包、校验和与发行说明；源码在独立的私有仓库。
 
-**当前版本：[黑粉录屏 1.4.1 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.4.1)**（只保留最新一版）。
+**当前版本：[黑粉录屏 1.4.2 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.4.2)**（每个平台只保留最新的一版）。
+
+> 1.4.2 目前提供 macOS 安装包；Windows 继续提供 [黑粉录屏 1.4.1 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.4.1)，尚未发布 1.4.2 的 Windows 版；Linux 继续提供 [黑粉录屏 1.4.1 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.4.1)，尚未发布 1.4.2 的 Linux 版。
 
 ## 软件介绍
+
+> 1.4.2 新增：框选多个视频、音频、动画与视觉效果后，拖动任一选中项主体即可保持相对时间整体移动，一次撤销恢复全部；当前版本为 1.4.2。
 
 **录好关键操作，把录屏、摄像头、图片、动画和配音做成一条完整视频。**
 
@@ -52,7 +56,7 @@
 - **导出的视频有标识吗？** 有，1.4.0 起成片和 GIF 右下角带一个小的「黑粉科技」标志，随画面明暗自动换色，不能关闭；预览时不显示。
 - **所有功能三平台都有吗？** 主要剪辑与动画能力跨平台；人声隔离、自动敏感文字识别和成片文字回读目前仅 macOS。Windows／Linux 包已经构建检查，桌面交互继续实机核验。
 
-> 1.4.1 新增与修复：macOS 录制音频实时反馈、抠像画面／遮罩同步，以及安卓 USB 摄像头检测、统一前后镜头选择和四方向旋转。手机接入需要安卓 12 及以上、USB 调试授权与本机连接工具；小米 13 的真实 1080p／30 帧预览、90° 旋转及短录制的暂停／恢复／保存已核验；长时录制、旋转后录制和跨平台实机验证仍待完成。实机验证范围见仓库进度记录，当前版本为 1.4.1。
+> 1.4.1 新增与修复：macOS 录制音频实时反馈、抠像画面／遮罩同步，以及安卓 USB 摄像头检测、统一前后镜头选择和四方向旋转。手机接入需要安卓 12 及以上、USB 调试授权与本机连接工具；小米 13 的真实 1080p／30 帧预览、90° 旋转及短录制的暂停／恢复／保存已核验；长时录制、旋转后录制和跨平台实机验证仍待完成。实机验证范围见仓库进度记录，手机功能于 1.4.1 加入。
 
 ## 下载
 
@@ -60,15 +64,19 @@
 
 | 平台 | 文件 | SHA-256 |
 |---|---|---|
-| macOS 13+（Apple 芯片 arm64） | `HyphenScreen_1.4.1_arm64.dmg` | `5927b59853d1b122c5c1088e82da46fe079db0d6a82b43ae172cda463824db49` |
-| Windows 10/11（x64） | `HyphenScreen_1.4.1_x64-setup.exe` | `1a064666290cb93c9afff163b81a018aea1905816e18706ab4a40b9e7411e422` |
-| Linux（x86_64） | `HyphenScreen_1.4.1_x86_64.AppImage` | `26c31992ec324857876bca91a4bc424c7bba1d025c4ee1d0bd599d6cadd41be0` |
-| Debian / Ubuntu（amd64） | `HyphenScreen_1.4.1_amd64.deb` | `bea22616fb6b6bc3bc18680a47a419e323d5e9a25ca15d7d3d39eff680f547bb` |
-| Arch Linux（x86_64） | `HyphenScreen_1.4.1_x64.pacman` | `248d57a193c5e4a00e1a696729e14741d9ea7cffb492ad2da32cef72b4f63959` |
+| macOS 13+（Apple 芯片 arm64） | `HyphenScreen_1.4.2_arm64.dmg` | `b6c0fa3d33676c2d33656d2562faa855c28db6703eed02177cadf34060021a31` |
+| Windows 10/11（x64）· 1.4.1 版 | `HyphenScreen_1.4.1_x64-setup.exe` | `1a064666290cb93c9afff163b81a018aea1905816e18706ab4a40b9e7411e422` |
+| Linux（x86_64）· 1.4.1 版 | `HyphenScreen_1.4.1_x86_64.AppImage` | `26c31992ec324857876bca91a4bc424c7bba1d025c4ee1d0bd599d6cadd41be0` |
+| Debian / Ubuntu（amd64）· 1.4.1 版 | `HyphenScreen_1.4.1_amd64.deb` | `bea22616fb6b6bc3bc18680a47a419e323d5e9a25ca15d7d3d39eff680f547bb` |
+| Arch Linux（x86_64）· 1.4.1 版 | `HyphenScreen_1.4.1_x64.pacman` | `248d57a193c5e4a00e1a696729e14741d9ea7cffb492ad2da32cef72b4f63959` |
 
 同一页附带各平台的 `SHA256SUMS*.txt` 与 `release-manifest.json`，可核对文件完整性与构建来源。
 
+> 下面的功能一览按 1.4.2 介绍；Windows 暂为 1.4.1，不包含之后加入的功能；Linux 暂为 1.4.1，不包含之后加入的功能，各版变化见发行页面上的发行说明。
+
 ## 功能图解
+
+**1.4.2：框选整体移动。** 多个视频、音频、动画与视觉效果可保持相对时间一起拖动，时长和轨道归属不变，并可一次撤销；拖动片段边缘仍单独裁切。整个选区统一在零点停止，避免相互错位。
 
 下面的新动画、分类、社交卡、AI 设置与导出截图拍自 1.1.0 独立演示工程；其他图片沿用已公开的录制和功能演示。全部为真实软件画面，演示中的模型数字、联系方式与密钥是演示数据。不同功能截图的主题和轨道布局可能不同，以当前版本为准。
 
