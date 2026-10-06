@@ -4,7 +4,7 @@
 
 **当前版本：[黑粉录屏 1.4.2 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.4.2)**（每个平台只保留最新的一版）。
 
-> 1.4.2 目前提供 macOS 安装包；Windows 继续提供 [黑粉录屏 1.4.1 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.4.1)，尚未发布 1.4.2 的 Windows 版；Linux 继续提供 [黑粉录屏 1.4.1 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.4.1)，尚未发布 1.4.2 的 Linux 版。
+> 1.4.2 目前提供 macOS、Windows 安装包；Linux 继续提供 [黑粉录屏 1.4.1 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.4.1)，尚未发布 1.4.2 的 Linux 版。
 
 ## 软件介绍
 
@@ -65,14 +65,14 @@
 | 平台 | 文件 | SHA-256 |
 |---|---|---|
 | macOS 13+（Apple 芯片 arm64） | `HyphenScreen_1.4.2_arm64.dmg` | `b6c0fa3d33676c2d33656d2562faa855c28db6703eed02177cadf34060021a31` |
-| Windows 10/11（x64）· 1.4.1 版 | `HyphenScreen_1.4.1_x64-setup.exe` | `1a064666290cb93c9afff163b81a018aea1905816e18706ab4a40b9e7411e422` |
+| Windows 10/11（x64） | `HyphenScreen_1.4.2_x64-setup.exe` | `67a017ebbd4f9a886f995201c78818a6fe8dcf1d1534caa977207f72439bb321` |
 | Linux（x86_64）· 1.4.1 版 | `HyphenScreen_1.4.1_x86_64.AppImage` | `26c31992ec324857876bca91a4bc424c7bba1d025c4ee1d0bd599d6cadd41be0` |
 | Debian / Ubuntu（amd64）· 1.4.1 版 | `HyphenScreen_1.4.1_amd64.deb` | `bea22616fb6b6bc3bc18680a47a419e323d5e9a25ca15d7d3d39eff680f547bb` |
 | Arch Linux（x86_64）· 1.4.1 版 | `HyphenScreen_1.4.1_x64.pacman` | `248d57a193c5e4a00e1a696729e14741d9ea7cffb492ad2da32cef72b4f63959` |
 
 同一页附带各平台的 `SHA256SUMS*.txt` 与 `release-manifest.json`，可核对文件完整性与构建来源。
 
-> 下面的功能一览按 1.4.2 介绍；Windows 暂为 1.4.1，不包含之后加入的功能；Linux 暂为 1.4.1，不包含之后加入的功能，各版变化见发行页面上的发行说明。
+> 下面的功能一览按 1.4.2 介绍；Linux 暂为 1.4.1，不包含之后加入的功能，各版变化见发行页面上的发行说明。
 
 ## 功能图解
 
@@ -236,7 +236,7 @@ MP4／GIF、720p／1080p／源分辨率、24／30／60 帧及 H.264／H.265。�
 
 ### 当前验证范围
 
-1.4.1 的 macOS 安装包已通过签名、磁盘映像与包内内容检查。安卓手机前后镜头、90° 旋转预览及暂停恢复短录制已在 Mac 独立开发构建中实测。Windows／Linux 1.4.1 已通过云端构建和包内检查，仍需对应系统桌面实机验收。本页动画界面截图来自此前的 1.1.0 演示工程，保留用于介绍既有功能；平台专属能力与参考动画边界已在对应功能中注明。
+1.4.2 的 macOS 安装包已通过签名、磁盘映像与包内内容检查，正式应用安装后恢复原有工程成功；425 个文件／符号链接与磁盘映像一致。混合选区整体移动、零点边界及撤销重做已在独立开发工程中实测。安卓手机前后镜头、90° 旋转预览及暂停恢复短录制沿用上一轮 Mac 独立开发构建的实测结果。Windows／Linux 仍需对应系统桌面实机验收，云端构建记录见发行说明。本页动画界面截图来自此前的 1.1.0 演示工程，保留用于介绍既有功能；平台专属能力与参考动画边界已在对应功能中注明。
 
 ## 安装
 
