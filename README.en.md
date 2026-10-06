@@ -12,7 +12,11 @@
 
 HyphenScreen by HyphenTech is a desktop workspace for software tutorials, product demos and narrated videos. Record your screen, webcam and audio; edit multiple tracks; add captions and native motion graphics; then export a landscape or portrait video.
 
-**Current release: [1.4.5](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.4.5)** · [Downloads](https://github.com/HackerChi-Hub/HyphenScreen-Releases) · [HyphenTech](https://hyphentech.top)
+**Current release: [1.4.6](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.4.6)** · [Downloads](https://github.com/HackerChi-Hub/HyphenScreen-Releases) · [HyphenTech](https://hyphentech.top)
+
+**1.4.6:** Fixes face restoration for webcam WebM files whose millisecond time base is misreported as 1000 fps. Invalid frame-rate metadata is resolved from decoded presentation timestamps with the existing video engine. Time-based decoding avoids speed changes and timing drift. No new models or probing tools are included. Source-level webcam and 24 fps audio regression checks passed; package and publication verification is recorded separately.
+
+The Mac 1.4.6 package passed direct API checks from its read-only disk image with isolated project data: 15 webcam frames and 12 ordinary-video frames were restored, applied, exported and reverted. Both exports retained identical decoded audio and changed picture content, and decoded completely. The running user application was not replaced. Desktop interaction and cross-platform hardware checks were not repeated for this release.
 
 **1.4.5:** Face restoration now opens in a dialog from a single Clip Effects button. Closing the dialog keeps the background task running. Fidelity has a visible round handle, pink progress, a gray track and a live percentage; arrow keys adjust it in 5% steps. The 50–100% range, 70% default and restoration algorithm are unchanged.
 
