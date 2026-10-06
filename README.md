@@ -2,7 +2,9 @@
 
 黑粉科技的桌面录屏与智能剪辑软件。本仓库只存放安装包、校验和与发行说明；源码在独立的私有仓库。
 
-**当前版本：[黑粉录屏 1.4.0 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.4.0)**（只保留最新一版）。
+**当前版本：[黑粉录屏 1.4.1 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.4.1)**（每个平台只保留最新的一版）。
+
+> 1.4.1 目前提供 macOS 安装包；Windows 继续提供 [黑粉录屏 1.4.0 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.4.0)，尚未发布 1.4.1 的 Windows 版；Linux 继续提供 [黑粉录屏 1.4.0 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.4.0)，尚未发布 1.4.1 的 Linux 版。
 
 ## 软件介绍
 
@@ -52,23 +54,33 @@
 - **导出的视频有标识吗？** 有，1.4.0 起成片和 GIF 右下角带一个小的「黑粉科技」标志，随画面明暗自动换色，不能关闭；预览时不显示。
 - **所有功能三平台都有吗？** 主要剪辑与动画能力跨平台；人声隔离、自动敏感文字识别和成片文字回读目前仅 macOS。Windows／Linux 包已经构建检查，桌面交互继续实机核验。
 
+> 1.4.1 新增与修复：macOS 录制音频实时反馈、抠像画面／遮罩同步，以及安卓 USB 摄像头检测、统一前后镜头选择和四方向旋转。手机接入需要安卓 12 及以上、USB 调试授权与本机连接工具；小米 13 的真实 1080p／30 帧预览、90° 旋转及短录制的暂停／恢复／保存已核验；长时录制、旋转后录制和跨平台实机验证仍待完成。实机验证范围见仓库进度记录，当前版本为 1.4.1。
+
 ## 下载
 
 到[发行页面](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases)按平台取包。
 
 | 平台 | 文件 | SHA-256 |
 |---|---|---|
-| macOS 13+（Apple 芯片 arm64） | `HyphenScreen_1.4.0_arm64.dmg` | `8409001302f1a50baf8241489890210338354efa9ff4c4a600d957edb9940577` |
-| Windows 10/11（x64） | `HyphenScreen_1.4.0_x64-setup.exe` | `1cccd3cc49da46539b9ac5159671b6e93ac253562f0b9d44e6da7bfe8fc1fc9c` |
-| Linux（x86_64） | `HyphenScreen_1.4.0_x86_64.AppImage` | `455338bf4994315b3f074ae40946b5608affe0dd5fec9a54ea39169f16a72629` |
-| Debian / Ubuntu（amd64） | `HyphenScreen_1.4.0_amd64.deb` | `82c64aab20b239561faf9e3f9643f639b40aa04d4aa2fce880aac7935b2f29f3` |
-| Arch Linux（x86_64） | `HyphenScreen_1.4.0_x64.pacman` | `50c5062b43846bc5dd6fa63d4bbca6bb6f685d47ca6ee35bc01bfa4594d63d0d` |
+| macOS 13+（Apple 芯片 arm64） | `HyphenScreen_1.4.1_arm64.dmg` | `5927b59853d1b122c5c1088e82da46fe079db0d6a82b43ae172cda463824db49` |
+| Windows 10/11（x64）· 1.4.0 版 | `HyphenScreen_1.4.0_x64-setup.exe` | `1cccd3cc49da46539b9ac5159671b6e93ac253562f0b9d44e6da7bfe8fc1fc9c` |
+| Linux（x86_64）· 1.4.0 版 | `HyphenScreen_1.4.0_x86_64.AppImage` | `455338bf4994315b3f074ae40946b5608affe0dd5fec9a54ea39169f16a72629` |
+| Debian / Ubuntu（amd64）· 1.4.0 版 | `HyphenScreen_1.4.0_amd64.deb` | `82c64aab20b239561faf9e3f9643f639b40aa04d4aa2fce880aac7935b2f29f3` |
+| Arch Linux（x86_64）· 1.4.0 版 | `HyphenScreen_1.4.0_x64.pacman` | `50c5062b43846bc5dd6fa63d4bbca6bb6f685d47ca6ee35bc01bfa4594d63d0d` |
 
 同一页附带各平台的 `SHA256SUMS*.txt` 与 `release-manifest.json`，可核对文件完整性与构建来源。
+
+> 下面的功能一览按 1.4.1 介绍；Windows 暂为 1.4.0，不包含之后加入的功能；Linux 暂为 1.4.0，不包含之后加入的功能，各版变化见发行页面上的发行说明。
 
 ## 功能图解 · 1.1.0
 
 下面的新动画、分类、社交卡、AI 设置与导出截图拍自 1.1.0 独立演示工程；其他图片沿用已公开的录制和功能演示。全部为真实软件画面，演示中的模型数字、联系方式与密钥是演示数据。不同功能截图的主题和轨道布局可能不同，以当前版本为准。
+
+### 1.4.1：手机摄像头、旋转与录制反馈
+
+安卓 USB 手机可进入摄像头列表，前后镜头在同一入口选择；设备设置支持 0°／90°／180°／270° 顺时针旋转、等比预览与实际分辨率／帧率显示。小米 13 已完成 1080p／30 帧预览、90° 竖向预览及约 40 秒短录制的暂停／恢复／保存实测。手机接入需要安卓 12 及以上、USB 调试授权及电脑上的 adb 与 scrcpy；连接工具未内置，当前路线面向 macOS／Linux，其他平台实机仍待验证。
+
+macOS 指示条新增麦克风和系统声音两路实时音频波形，以图标区分；抠像预览同步画面与遮罩，减少背景闪现；修复暂停恢复后过期画面时间戳造成的写入失败。人脸画质修复尚未集成。详情见[发行说明](../releases/1.4.1.md)。
 
 ### 1.4.0：硬件设备、六个新动效方向与实时放大镜
 
