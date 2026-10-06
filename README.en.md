@@ -1,6 +1,8 @@
 # HyphenScreen · Screen recording, editing and native animation
 
-> New in 1.4.1: macOS recording audio feedback, synchronized webcam frames/mattes, and Android USB camera detection with unified front/rear lens selection and 0°/90°/180°/270° rotation. Android 12+, USB debugging authorization and local connection tools are required. Xiaomi 13 live preview at 1080p/30 fps, 90° preview rotation, and a short recording with pause/resume/save have been verified. Long recordings, rotated recording files, and cross-platform device tests remain pending. The current version is 1.4.1; see the repository progress log for verification limits.
+> New in 1.4.2: marquee-selected video, audio, animation and visual effects move together when you drag a selected item's body. Relative timing, duration and track assignment stay intact; one undo restores the whole selection. Edge handles still trim individual items. The current version is 1.4.2.
+
+> New in 1.4.1: macOS recording audio feedback, synchronized webcam frames/mattes, and Android USB camera detection with unified front/rear lens selection and 0°/90°/180°/270° rotation. Android 12+, USB debugging authorization and local connection tools are required. Xiaomi 13 live preview at 1080p/30 fps, 90° preview rotation, and a short recording with pause/resume/save have been verified. Long recordings, rotated recording files, and cross-platform device tests remain pending. These camera features were introduced in 1.4.1; see the repository progress log for verification limits.
 
 **Record the essential moments. Build the rest with images, animation and narration.**
 
