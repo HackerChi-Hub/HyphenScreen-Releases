@@ -12,7 +12,9 @@
 
 HyphenTech のデスクトップ録画・編集ソフトです。ソフトウェア解説、製品デモ、ナレーション動画を、録画からマルチトラック編集、字幕、音声処理、アニメーション、書き出しまで一つのウィンドウで制作できます。AI に自然言語で編集を依頼することもできます。
 
-**現在のバージョン：[1.4.7](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.4.7)** · [ダウンロード](https://github.com/HackerChi-Hub/HyphenScreen-Releases) · [HyphenTech](https://hyphentech.top)
+**現在のバージョン：[1.4.8](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.4.8)** · [ダウンロード](https://github.com/HackerChi-Hub/HyphenScreen-Releases) · [HyphenTech](https://hyphentech.top)
+
+**1.4.8：** カメラの全画面プレビューがカットをまたぐ際、録画画面が一瞬表示される問題を修正しました。デコーダー切替後もタイムラインの再生時刻を保持し、範囲外の先読みフレーム時刻で効果を判定しません。同じ実プロジェクトのカットとネイティブ画素回帰で確認済み。編集、速度、顔修復素材、書き出しは変更しません。
 
 **1.4.7：** 顔修復のモデル読み込み、修復、エンコード、元音声を含む保存を区別して表示します。保存中は実際の進捗を表示し、残りゼロ秒のままになりません。適用と元映像への復帰に確認表示を追加し、適用済み結果の重複保存を防ぎます。保存失敗時は再試行できます。モデルと修復品質は変更していません。
 
