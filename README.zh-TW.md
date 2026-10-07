@@ -113,7 +113,7 @@ API 支援 OpenAI、Claude、Gemini、Mistral、OpenRouter、MiniMax、MiniMax T
 - **Windows：** 10／11 x64、D3D11 影片解碼；安裝程式未做程式碼簽署。
 - **Linux：** x86_64、glibc 2.35 以上、Vulkan 和桌面入口；AppImage、deb、pacman。
 
-安裝步驟與 SHA-256 請見[下載首頁](https://github.com/HackerChi-Hub/HyphenScreen-Releases)。可從選單檢查更新或下載新版覆蓋安裝。Mac 已安裝 1.4.5，427 個檔案與連結符合映像，本機簽名有效。正式桌面通過單按鈕視窗、清楚滑塊、70%→85% 調整、關閉後繼續處理、套用、播放與恢復；安裝版介面另已處理及匯出，解碼原聲完全相同。本次為局部介面驗收，未重跑完整錄製和實體攝影機清單。Windows／Linux 桌面與修復硬體仍待實機驗證。區域框選支援 macOS／Windows；動畫、設定和匯出圖例拍自 Mac 1.1.0 演示工程，使用簡體中文介面。私人修復截圖不公開。
+安裝步驟與 SHA-256 請見[下載首頁](https://github.com/HackerChi-Hub/HyphenScreen-Releases)。Mac 已安裝 1.4.9，427 個檔案與連結符合映像，本機簽名有效。正式桌面核驗動畫庫、圖層編輯與动画播放，安裝版原生攝影機切點像素回歸通過。三平台五個公開安裝包下載回讀的 SHA-256 全部一致；完整回歸 4403 項通過、2 項跳過，含 5 項不進入軟體的私有外部製作檢查。本次未重跑完整錄製、實體攝影機、人臉修復或線上模型製作請求。Windows／Linux 桌面仍待實機驗證。既有動畫、設定和匯出圖例拍自 Mac 1.1.0 簡體中文演示工程，私人測試截圖不公開。
 
 版權所有 © 2026 黑粉科技。必要第三方授權及原始聲明隨軟體附帶；本公開倉庫提供安裝包和說明，原始碼維持私有。
 <!-- evergreen:capabilities:end -->
