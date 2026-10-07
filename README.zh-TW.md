@@ -1,12 +1,16 @@
 <!-- evergreen:intro:start -->
+![HyphenScreen · HyphenTech](screenshots/readme-hero.svg)
+
 # 黑粉錄屏 HyphenScreen · 錄製、剪輯與原生動畫
 
 **錄好關鍵操作，用圖片、動畫和配音完成整條影片。**
 
 黑粉科技的桌面錄屏與智慧剪輯軟體，適合軟體教學、產品示範、知識分享和口播影片。在同一個視窗完成錄製、多軌剪輯、字幕、聲音處理、原生動畫和匯出，也可以用自然語言請 AI 協助修改。
 
-[简体中文](README.md) · 繁體中文 · [English](README.en.md) · [日本語](README.ja.md)
-[立即下載最新版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/latest) · [問題回報](https://github.com/HackerChi-Hub/HyphenScreen-Releases/issues)
+
+<p align="center"><a href="README.md">简体中文</a> | <a href="README.zh-TW.md">繁體中文</a> | <a href="README.en.md">English</a> | <a href="README.ja.md">日本語</a></p>
+
+<p align="center"><a href="https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/latest"><img alt="立即下載" src="https://img.shields.io/badge/立即下載-18181b?style=for-the-badge&amp;logo=github" /></a> <a href="https://hyphentech.top"><img alt="官網" src="https://img.shields.io/badge/官網-334155?style=for-the-badge" /></a></p>
 <!-- evergreen:intro:end -->
 
 <!-- recent-features:start -->
@@ -18,6 +22,28 @@
 - **1.4.5** · 人臉修復集中至獨立視窗，保真滑塊更清楚，關閉後任務繼續。
 - **1.4.4** · 選用本機人臉修復：先試修、對照，再套用或恢復；模型與 Python 環境另行準備。
 <!-- recent-features:end -->
+
+<!-- evergreen:demos:start -->
+## ▶ 使用示範
+
+**錄影設定、滑鼠縮放、動畫與 AI 口播精剪**
+
+| Bilibili | YouTube |
+| :---: | :---: |
+| [![B 站觀看](https://img.shields.io/badge/Bilibili-00a1d6?style=for-the-badge&logo=bilibili&logoColor=white)](https://www.bilibili.com/video/BV1zGHe6UEgg/) | [![YouTube 觀看](https://img.shields.io/badge/YouTube-ff0033?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=mJV1niXRbSs) |
+
+影片示範的是拍攝時的版本；安裝套件與目前功能以本頁正式發行資訊為準。影片以中文講解。
+<!-- evergreen:demos:end -->
+
+## 下載: 1.4.8
+
+| 平台 | 安裝套件 | SHA-256 |
+|---|---|---|
+| macOS 13+（Apple 芯片 arm64） | [下載 HyphenScreen_1.4.8_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.4.8/HyphenScreen_1.4.8_arm64.dmg) | `fc2008c1d4254b6015664a45f2138245def1bf0d4486479a5e93cf8005e63874` |
+| Windows 10/11（x64） | [下載 HyphenScreen_1.4.8_x64-setup.exe](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.4.8/HyphenScreen_1.4.8_x64-setup.exe) | `c224abb68bb121b0b82c711e3e559a16473ad843b52f7311fcfdf83b30d09837` |
+| Linux（x86_64） | [下載 HyphenScreen_1.4.8_x86_64.AppImage](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.4.8/HyphenScreen_1.4.8_x86_64.AppImage) | `614580b3444b191891233fdf2e780105c8433a37809c9e0145528249f9c60eac` |
+| Debian / Ubuntu（amd64） | [下載 HyphenScreen_1.4.8_amd64.deb](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.4.8/HyphenScreen_1.4.8_amd64.deb) | `6b84244467df0c8c72b989e8dc9e940e05231bda2867b8e5e6b20fe24496c777` |
+| Arch Linux（x86_64） | [下載 HyphenScreen_1.4.8_x64.pacman](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.4.8/HyphenScreen_1.4.8_x64.pacman) | `1f3444ac63f0c6d90fd687aec18465a8c32ae052d15d32dc32b3c7cb359ab091` |
 
 <!-- evergreen:capabilities:start -->
 ![原生動畫編輯器：可編輯圖層、視覺分組與獨立動畫片段](screenshots/animation-editor-110.png)

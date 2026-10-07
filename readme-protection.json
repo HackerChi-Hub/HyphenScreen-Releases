@@ -1,31 +1,36 @@
 {
   "files": {
-    "README.en.md": {
-      "blocks": {
-        "intro": "de9599f1592e96c1a418e6fbfb193b312827999d34089a585b94e0a7e00f025c",
-        "capabilities": "7ff4ad5581d44001f23f1ff85dc8c01ee121c3c9f339c190d5cb7ce20d7c2878",
-        "discovery": "825cf6ac9850a8b84d799504672bbb3af80b3ee1099c29d25b9601ae4c6950de"
-      }
-    },
     "README.md": {
       "blocks": {
-        "intro": "24e4e11fa0674af5457b35a467842f872239df94fb6a61e82f7fa562d832959d",
+        "intro": "050e1ab00b59ea229dc1ccd92559ea45430bf531062f211f0f5db98d8443c061",
+        "demos": "ba3156ef748704dd817b36cf638b24318d956cc4fa576c47db56bf700e619784",
         "capabilities": "1568bae99338a2fbb77aecb6b4410f1db5cb065a847ae929459e69e9356c6793",
-        "discovery": "7310d6155907cb41b64c59ff96c04a3a8c4ee2ff5c5cfcb99560db8e0f0dee2f"
-      }
-    },
-    "README.ja.md": {
-      "blocks": {
-        "intro": "b46fcd07334fe490910b211b20789930177d42bbf08921132eaef9a107b1c185",
-        "capabilities": "a7ce8c7e25b8e1346fbb0e2d92f22d99a3f5f8200bddb53df6cff9d222b02b96",
-        "discovery": "dce135422b1d946ab2b6e04361c74dc0363537e1eedce0dfb5b09814f9e47e59"
+        "discovery": "7310d6155907cb41b64c59ff96c04a3a8c4ee2ff5c5cfcb99560db8e0f0dee2f",
+        "feature-tour": "1e76e7d3b3d42585da6dabe0e2949f4b7e914cbc4e97492e38ceb38849089a70"
       }
     },
     "README.zh-TW.md": {
       "blocks": {
-        "intro": "3e8576ddc7b63a89b0dc8ffa90d41593b4718c85ad670a1564fc4caea5202b84",
+        "intro": "b241a7c9971bbdd0dc55009a2bc12dfc827bb2fc33a6729b832cd85c62d82e42",
+        "demos": "72b2695445331e29855165ecad1c130474cea3290d9c5f2fbe705d6a4519e7db",
         "capabilities": "b3c4930282058009b0b2d3d8b0812310ae8c01cd5d7ddebd77715451b14f648d",
         "discovery": "3d77a1f6c664a99589fc2f447354c78a70cda9e0c2f973f6404cf978b4e92704"
+      }
+    },
+    "README.en.md": {
+      "blocks": {
+        "intro": "ec1d9410883a85acf3f7ac3fe4f9bfc90fc7d93e0f8328a0b7977f6612aec9d9",
+        "demos": "61118f95917763b8c8e5b1732dcb75a4b0fadc56fd05bb49275793f2b37b0d89",
+        "capabilities": "7ff4ad5581d44001f23f1ff85dc8c01ee121c3c9f339c190d5cb7ce20d7c2878",
+        "discovery": "825cf6ac9850a8b84d799504672bbb3af80b3ee1099c29d25b9601ae4c6950de"
+      }
+    },
+    "README.ja.md": {
+      "blocks": {
+        "intro": "d232818ea723f8327860bca6099fc43f044ad68fb94aeb398c7827b9b91c7938",
+        "demos": "df493a850379e7cd3bdd1e88b0844bf284e883bd731d9497bc51860baaa3c6bf",
+        "capabilities": "a7ce8c7e25b8e1346fbb0e2d92f22d99a3f5f8200bddb53df6cff9d222b02b96",
+        "discovery": "dce135422b1d946ab2b6e04361c74dc0363537e1eedce0dfb5b09814f9e47e59"
       }
     }
   }

@@ -1,15 +1,18 @@
 <!-- evergreen:intro:start -->
+![HyphenScreen · HyphenTech](screenshots/readme-hero.svg)
+
 # 黑粉录屏 HyphenScreen · 屏幕录制、视频剪辑与 AI 辅助编辑
 
 **录好关键操作，把录屏、摄像头、字幕、动画和配音做成一条完整教程视频。**
 
 黑粉录屏是黑粉科技开发的桌面录屏与智能剪辑软件，适合软件教程、产品演示、课程录制和口播分享。在同一个窗口录制屏幕、摄像头与声音，完成多轨剪辑、本地字幕、原生动画和横竖屏导出；也可以连接自己的模型，用自然语言辅助编辑。支持 macOS、Windows 与 Linux，具体平台差异和已发布安装包见下方。
 
-[**立即下载黑粉录屏**](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/latest) · [黑粉科技官网](https://hyphentech.top) · [反馈问题](https://github.com/HackerChi-Hub/HyphenScreen-Releases/issues)
 
 软件可免费下载使用；导出的 MP4 与 GIF 带不可关闭的「黑粉科技」小标志，云端 AI 服务按所选订阅或 API 条件使用。
 
-[简体中文](README.md) · [繁體中文](README.zh-TW.md) · [English](README.en.md) · [日本語](README.ja.md)
+<p align="center"><a href="README.md">简体中文</a> | <a href="README.zh-TW.md">繁體中文</a> | <a href="README.en.md">English</a> | <a href="README.ja.md">日本語</a></p>
+
+<p align="center"><a href="https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/latest"><img alt="立即下载" src="https://img.shields.io/badge/立即下载-18181b?style=for-the-badge&amp;logo=github" /></a> <a href="https://hyphentech.top"><img alt="官网" src="https://img.shields.io/badge/官网-334155?style=for-the-badge" /></a></p>
 <!-- evergreen:intro:end -->
 
 <!-- recent-features:start -->
@@ -21,6 +24,18 @@
 - **1.4.5** · 人脸修复集中到独立弹窗，保真滑块更清楚，关闭窗口后任务继续。
 - **1.4.4** · 可选本地人脸修复：先试修、对照，再应用或恢复；模型与 Python 环境另行准备。
 <!-- recent-features:end -->
+
+<!-- evergreen:demos:start -->
+## ▶ 使用演示
+
+**录屏设置、鼠标缩放、动画与 AI 口播精剪**
+
+| Bilibili | YouTube |
+| :---: | :---: |
+| [![B 站观看](https://img.shields.io/badge/Bilibili-00a1d6?style=for-the-badge&logo=bilibili&logoColor=white)](https://www.bilibili.com/video/BV1zGHe6UEgg/) | [![YouTube 观看](https://img.shields.io/badge/YouTube-ff0033?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=mJV1niXRbSs) |
+
+视频演示的是拍摄时的版本；安装包与当前功能以本页正式发行信息为准。视频为中文讲解。
+<!-- evergreen:demos:end -->
 
 <!-- evergreen:capabilities:start -->
 ### 主要能力
@@ -99,19 +114,23 @@
 
 同一页附带各平台的 `SHA256SUMS*.txt` 与 `release-manifest.json`，可核对文件完整性与构建来源。
 
+<!-- evergreen:feature-tour:start -->
+<details>
+<summary><strong>展开完整功能图解、截图与平台说明</strong></summary>
+
 ## 功能图解
 
 ![人脸修复保存阶段](screenshots/face-restoration-saving.png)
 
 下面的新动画、分类、社交卡、AI 设置与导出截图拍自 1.1.0 独立演示工程；其他图片沿用已公开的录制和功能演示。全部为真实软件画面，演示中的模型数字、联系方式与密钥是演示数据。不同功能截图的主题和轨道布局可能不同，以当前版本为准。
 
-### 1.4.1：手机摄像头、旋转与录制反馈
+### 手机摄像头、旋转与录制反馈
 
 安卓 USB 手机可进入摄像头列表，前后镜头在同一入口选择；设备设置支持 0°／90°／180°／270° 顺时针旋转、等比预览与实际分辨率／帧率显示。小米 13 已完成 1080p／30 帧预览、90° 竖向预览及约 40 秒短录制的暂停／恢复／保存实测。手机接入需要安卓 12 及以上、USB 调试授权及电脑上的 adb 与 scrcpy；连接工具未内置，当前路线面向 macOS／Linux，其他平台实机仍待验证。
 
-macOS 指示条新增麦克风和系统声音两路实时音频波形，以图标区分；抠像预览同步画面与遮罩，减少背景闪现；修复暂停恢复后过期画面时间戳造成的写入失败。详情见[发行说明](../releases/1.4.1.md)。人脸修复在 1.4.4 中作为独立可选处理加入。
+macOS 指示条新增麦克风和系统声音两路实时音频波形，以图标区分；抠像预览同步画面与遮罩，减少背景闪现；修复暂停恢复后过期画面时间戳造成的写入失败。详情见[发行说明](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases)。人脸修复在 1.4.4 中作为独立可选处理加入。
 
-### 1.4.0：硬件设备、六个新动效方向与实时放大镜
+### 硬件设备、六个新动效方向与实时放大镜
 
 素材库新增 246 个动画，共 914 项、333 张入口卡；新增「硬件设备」「AI 原理」「流程架构」三个分类。新场景全部由黑粉录屏原生绘制：深色霓虹、透明背景，文案是可改的中文文字，数字是参数。
 
@@ -127,15 +146,15 @@ macOS 指示条新增麦克风和系统声音两路实时音频波形，以图�
 
 另有 5 个风格一致的 LottieFiles 免费动画改色后作为对应卡的备选样式。35 个在深色画面上看不清或用「H」占位标志的旧素材重绘成霓虹配色或真实品牌，编号不变；旧包随软件保留，旧工程打开、导出与以前相同。带发光、柔影和描边的动画预览与导出提速，画面逐像素不变：新场景 1080p 导出全部在 55 帧/秒以上（改前最慢 0.5 帧/秒）。接口模式导出被中断不再留下 0 字节文件。
 
-### 1.3.0：新增 300 个动画
+### 可编辑原生动画
 
 点赞订阅、成功提示、加载、箭头手势、手绘强调、彩带、消息气泡、科技图标、图表、转场和抽象动效等 300 个动画，由 LottieFiles 免费动画转换成可编辑的原生动画，每项与原动画逐帧比对通过才入库。
 
-### 1.2.1：大动画预览也流畅
+### 大动画预览也流畅
 
 预览播放时后台提前画好播放头前方的画面，缓存装不下时也会保留一部分，体积很大的逐帧动画循环播放不再卡顿；导出画面不变。
 
-### 1.2.0：动画更快
+### 动画更快
 
 含大动画的工程打开约快 9 倍，修改立即显示，循环播放复杂动画直接复用画好的帧；导出画面与上一版逐帧一致。工程格式随之升级：旧工程第一次打开时自动迁移，并在原文件旁留一份备份。
 
@@ -260,6 +279,9 @@ MP4／GIF、720p／1080p／源分辨率、24／30／60 帧及 H.264／H.265。�
 ### 当前验证范围
 
 Mac 已安装 1.4.5，签名、磁盘映像及 427 个文件／符号链接核对通过。正式桌面通过独立工程打开单按钮与弹窗、70%→85% 保真调节、关闭后继续处理、应用、播放与恢复；滑块的真实界面截图已查看，含私人出镜内容而未公开。安装版接口完成 1080p／24 帧短片修复及导出，前后解码音频完全一致，完整回归 4395 项通过、2 项跳过。此次没有重跑其它编辑、录制与物理摄像头的整套桌面流程；Windows／Linux 桌面与人脸修复硬件仍待实机验收。图片叠放、选区整体移动、手机摄像头及 MPS／CPU 加速沿用此前实测。本页动画截图拍自 1.1.0 演示工程；平台专属能力和参考动画边界见对应说明。
+
+</details>
+<!-- evergreen:feature-tour:end -->
 
 ## 安装
 

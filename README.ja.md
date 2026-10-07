@@ -1,12 +1,17 @@
 <!-- evergreen:intro:start -->
+![HyphenScreen · HyphenTech](screenshots/readme-hero.svg)
+
 # HyphenScreen · 画面録画、編集、ネイティブアニメーション
 
 **必要な操作だけ録画して、残りは画像、アニメーション、ナレーションで仕上げる。**
 
 HyphenTech のデスクトップ録画・編集ソフトです。ソフトウェア解説、製品デモ、ナレーション動画を、録画からマルチトラック編集、字幕、音声処理、アニメーション、書き出しまで一つのウィンドウで制作できます。AI に自然言語で編集を依頼することもできます。
 
-[简体中文](README.md) · [繁體中文](README.zh-TW.md) · [English](README.en.md) · 日本語
 [最新版をダウンロード](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/latest) · [問題を報告](https://github.com/HackerChi-Hub/HyphenScreen-Releases/issues)
+
+<p align="center"><a href="README.md">简体中文</a> | <a href="README.zh-TW.md">繁體中文</a> | <a href="README.en.md">English</a> | <a href="README.ja.md">日本語</a></p>
+
+<p align="center"><a href="https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/latest"><img alt="ダウンロード" src="https://img.shields.io/badge/ダウンロード-18181b?style=for-the-badge&amp;logo=github" /></a> <a href="https://hyphentech.top"><img alt="公式サイト" src="https://img.shields.io/badge/公式サイト-334155?style=for-the-badge" /></a></p>
 <!-- evergreen:intro:end -->
 
 <!-- recent-features:start -->
@@ -18,6 +23,28 @@ HyphenTech のデスクトップ録画・編集ソフトです。ソフトウェ
 - **1.4.5** · 顔修復を専用ダイアログにまとめ、忠実度スライダーを見やすくしました。閉じても処理は継続します。
 - **1.4.4** · 任意のローカル顔修復は短い試用、比較、適用と復帰に対応。モデルとPythonは別途必要です。
 <!-- recent-features:end -->
+
+<!-- evergreen:demos:start -->
+## ▶ 使い方の動画
+
+**録画設定、カーソルズーム、アニメーション、AI 音声編集**
+
+| Bilibili | YouTube |
+| :---: | :---: |
+| [![Bilibili で見る](https://img.shields.io/badge/Bilibili-00a1d6?style=for-the-badge&logo=bilibili&logoColor=white)](https://www.bilibili.com/video/BV1zGHe6UEgg/) | [![YouTube で見る](https://img.shields.io/badge/YouTube-ff0033?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=mJV1niXRbSs) |
+
+動画は撮影時のバージョンです。現在の機能と配布パッケージはこのページのリリース情報をご確認ください。動画の解説は中国語です。
+<!-- evergreen:demos:end -->
+
+## ダウンロード: 1.4.8
+
+| プラットフォーム | パッケージ | SHA-256 |
+|---|---|---|
+| macOS 13+（Apple 芯片 arm64） | [ダウンロード HyphenScreen_1.4.8_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.4.8/HyphenScreen_1.4.8_arm64.dmg) | `fc2008c1d4254b6015664a45f2138245def1bf0d4486479a5e93cf8005e63874` |
+| Windows 10/11（x64） | [ダウンロード HyphenScreen_1.4.8_x64-setup.exe](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.4.8/HyphenScreen_1.4.8_x64-setup.exe) | `c224abb68bb121b0b82c711e3e559a16473ad843b52f7311fcfdf83b30d09837` |
+| Linux（x86_64） | [ダウンロード HyphenScreen_1.4.8_x86_64.AppImage](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.4.8/HyphenScreen_1.4.8_x86_64.AppImage) | `614580b3444b191891233fdf2e780105c8433a37809c9e0145528249f9c60eac` |
+| Debian / Ubuntu（amd64） | [ダウンロード HyphenScreen_1.4.8_amd64.deb](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.4.8/HyphenScreen_1.4.8_amd64.deb) | `6b84244467df0c8c72b989e8dc9e940e05231bda2867b8e5e6b20fe24496c777` |
+| Arch Linux（x86_64） | [ダウンロード HyphenScreen_1.4.8_x64.pacman](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.4.8/HyphenScreen_1.4.8_x64.pacman) | `1f3444ac63f0c6d90fd687aec18465a8c32ae052d15d32dc32b3c7cb359ab091` |
 
 <!-- evergreen:capabilities:start -->
 ![独立アニメーション、編集可能なレイヤーとビジュアルグループ](screenshots/animation-editor-110.png)

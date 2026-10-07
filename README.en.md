@@ -1,12 +1,16 @@
 <!-- evergreen:intro:start -->
+![HyphenScreen · HyphenTech](screenshots/readme-hero.svg)
+
 # HyphenScreen · Screen recording, editing and native animation
 
 **Record the essential moments. Build the rest with images, animation and narration.**
 
 HyphenScreen by HyphenTech is a desktop workspace for software tutorials, product demos and narrated videos. Record your screen, webcam and audio; edit multiple tracks; add captions and native motion graphics; then export a landscape or portrait video.
 
-[简体中文](README.md) · [繁體中文](README.zh-TW.md) · English · [日本語](README.ja.md)
-[Download the latest release](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/latest) · [Report an issue](https://github.com/HackerChi-Hub/HyphenScreen-Releases/issues)
+
+<p align="center"><a href="README.md">简体中文</a> | <a href="README.zh-TW.md">繁體中文</a> | <a href="README.en.md">English</a> | <a href="README.ja.md">日本語</a></p>
+
+<p align="center"><a href="https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/latest"><img alt="Download" src="https://img.shields.io/badge/Download-18181b?style=for-the-badge&amp;logo=github" /></a> <a href="https://hyphentech.top"><img alt="Website" src="https://img.shields.io/badge/Website-334155?style=for-the-badge" /></a></p>
 <!-- evergreen:intro:end -->
 
 <!-- recent-features:start -->
@@ -18,6 +22,28 @@ HyphenScreen by HyphenTech is a desktop workspace for software tutorials, produc
 - **1.4.5** · Face restoration uses a dedicated dialog and clear fidelity slider; closing it keeps the job running.
 - **1.4.4** · Optional local face restoration supports short trials, comparison and restore; models and Python are separate.
 <!-- recent-features:end -->
+
+<!-- evergreen:demos:start -->
+## ▶ Watch a practical demo
+
+**Recording, cursor zoom, animation and AI-assisted speech editing**
+
+| Bilibili | YouTube |
+| :---: | :---: |
+| [![Watch on Bilibili](https://img.shields.io/badge/Bilibili-00a1d6?style=for-the-badge&logo=bilibili&logoColor=white)](https://www.bilibili.com/video/BV1zGHe6UEgg/) | [![Watch on YouTube](https://img.shields.io/badge/YouTube-ff0033?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=mJV1niXRbSs) |
+
+These videos show the versions available when recorded. Use the current release information on this page for downloads and capabilities. Narration is in Chinese.
+<!-- evergreen:demos:end -->
+
+## Download: 1.4.8
+
+| Platform | Package | SHA-256 |
+|---|---|---|
+| macOS 13+（Apple 芯片 arm64） | [Download HyphenScreen_1.4.8_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.4.8/HyphenScreen_1.4.8_arm64.dmg) | `fc2008c1d4254b6015664a45f2138245def1bf0d4486479a5e93cf8005e63874` |
+| Windows 10/11（x64） | [Download HyphenScreen_1.4.8_x64-setup.exe](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.4.8/HyphenScreen_1.4.8_x64-setup.exe) | `c224abb68bb121b0b82c711e3e559a16473ad843b52f7311fcfdf83b30d09837` |
+| Linux（x86_64） | [Download HyphenScreen_1.4.8_x86_64.AppImage](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.4.8/HyphenScreen_1.4.8_x86_64.AppImage) | `614580b3444b191891233fdf2e780105c8433a37809c9e0145528249f9c60eac` |
+| Debian / Ubuntu（amd64） | [Download HyphenScreen_1.4.8_amd64.deb](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.4.8/HyphenScreen_1.4.8_amd64.deb) | `6b84244467df0c8c72b989e8dc9e940e05231bda2867b8e5e6b20fe24496c777` |
+| Arch Linux（x86_64） | [Download HyphenScreen_1.4.8_x64.pacman](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.4.8/HyphenScreen_1.4.8_x64.pacman) | `1f3444ac63f0c6d90fd687aec18465a8c32ae052d15d32dc32b3c7cb359ab091` |
 
 <!-- evergreen:capabilities:start -->
 ![Native animation editor, editable layers and the Visual timeline group](screenshots/animation-editor-110.png)
