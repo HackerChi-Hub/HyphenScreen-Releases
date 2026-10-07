@@ -12,7 +12,9 @@
 
 HyphenScreen by HyphenTech is a desktop workspace for software tutorials, product demos and narrated videos. Record your screen, webcam and audio; edit multiple tracks; add captions and native motion graphics; then export a landscape or portrait video.
 
-**Current release: [1.4.7](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.4.7)** · [Downloads](https://github.com/HackerChi-Hub/HyphenScreen-Releases) · [HyphenTech](https://hyphentech.top)
+**Current release: [1.4.8](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.4.8)** · [Downloads](https://github.com/HackerChi-Hub/HyphenScreen-Releases) · [HyphenTech](https://hyphentech.top)
+
+**1.4.8:** Full-screen camera preview stays active across cuts. Decoder swaps retain the timeline clock instead of briefly using a prefetched frame timestamp outside the cut. Verified with the same cut in a real project and a native pixel regression. Editing, speed, restored camera media and export remain unchanged.
 
 **1.4.7:** Face restoration now distinguishes model loading, restoration, encoding and saving with original audio. Saving reports actual video-engine progress instead of remaining at zero seconds. Applying and reverting show clear confirmation; an applied result cannot be accidentally saved twice. Failed saves remain retryable. Models and restoration quality are unchanged.
 
