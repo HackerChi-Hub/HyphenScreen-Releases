@@ -1,39 +1,25 @@
+<!-- evergreen:intro:start -->
 # HyphenScreen · Screen recording, editing and native animation
-
-> 1.4.4 adds optional local face restoration under Clip Effects: try the first five seconds, compare, process and apply, or restore the original. CodeFormer models and Python are separate from the installer; portrait reconstruction is excluded. Automatic GPU/CPU selection falls back to CPU on accelerator errors. Apple MPS and CPU have been tested; CUDA/compatible ROCm paths still need corresponding hardware verification. Original audio, dimensions, frame rate and timing are retained. Check a short trial for natural results. Platform availability is shown on the download page; older screenshots do not depict this new panel.
-
-> 1.4.3: selected images can sit below animations as backgrounds or above them as overlays. Existing projects retain their original order. Style changes preserve complete image timing, and deliberate base-video cuts no longer become silent black gaps in projects with animation tracks. This is image/animation stacking, not arbitrary reordering of all video layers.
-
-> New in 1.4.2: marquee-selected video, audio, animation and visual effects move together when you drag a selected item's body. Relative timing, duration and track assignment stay intact; one undo restores the whole selection. Edge handles still trim individual items.
-
-> New in 1.4.1: macOS recording audio feedback, synchronized webcam frames/mattes, and Android USB camera detection with unified front/rear lens selection and 0°/90°/180°/270° rotation. Android 12+, USB debugging authorization and local connection tools are required. Xiaomi 13 live preview at 1080p/30 fps, 90° preview rotation, and a short recording with pause/resume/save have been verified. Long recordings, rotated recording files, and cross-platform device tests remain pending. These camera features were introduced in 1.4.1; see the repository progress log for verification limits.
 
 **Record the essential moments. Build the rest with images, animation and narration.**
 
 HyphenScreen by HyphenTech is a desktop workspace for software tutorials, product demos and narrated videos. Record your screen, webcam and audio; edit multiple tracks; add captions and native motion graphics; then export a landscape or portrait video.
 
-**Current release: [1.4.8](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.4.8)** · [Downloads](https://github.com/HackerChi-Hub/HyphenScreen-Releases) · [HyphenTech](https://hyphentech.top)
-
-**1.4.8:** Full-screen camera preview stays active across cuts. Decoder swaps retain the timeline clock instead of briefly using a prefetched frame timestamp outside the cut. Verified with the same cut in a real project and a native pixel regression. Editing, speed, restored camera media and export remain unchanged.
-
-**1.4.7:** Face restoration now distinguishes model loading, restoration, encoding and saving with original audio. Saving reports actual video-engine progress instead of remaining at zero seconds. Applying and reverting show clear confirmation; an applied result cannot be accidentally saved twice. Failed saves remain retryable. Models and restoration quality are unchanged.
-
-**1.4.6:** Fixes face restoration for webcam WebM files whose millisecond time base is misreported as 1000 fps. Invalid frame-rate metadata is resolved from decoded presentation timestamps with the existing video engine. Time-based decoding avoids speed changes and timing drift. No new models or probing tools are included. Source-level webcam and 24 fps audio regression checks passed; package and publication verification is recorded separately.
-
-The Mac 1.4.6 package passed direct API checks from its read-only disk image with isolated project data: 15 webcam frames and 12 ordinary-video frames were restored, applied, exported and reverted. Both exports retained identical decoded audio and changed picture content, and decoded completely. The running user application was not replaced. Desktop interaction and cross-platform hardware checks were not repeated for this release.
-
-**1.4.5:** Face restoration now opens in a dialog from a single Clip Effects button. Closing the dialog keeps the background task running. Fidelity has a visible round handle, pink progress, a gray track and a live percentage; arrow keys adjust it in 5% steps. The 50–100% range, 70% default and restoration algorithm are unchanged.
-
-**New in 1.4.0:** 246 more library animations (914 in all, 333 entry cards): hardware devices plus six new directions — AI concepts, flows and architecture diagrams, screen-recording callouts (including a live magnifier that really enlarges the recording, in preview and export alike), benchmark charts whose bars, needles and ranks follow the numbers you type, HyphenTech brand packaging and emphasis accents. All new scenes are drawn natively with editable text and numeric parameters; terminal and code lines use the bundled JetBrains Mono. 35 hard-to-see or placeholder-logo entries were redrawn; old projects keep opening and exporting exactly as before. Animations with glow, soft shadows or outlines preview and export much faster with pixel-identical output (every new scene exports above 55 fps at 1080p; the slowest was 0.5 fps before), and an API-mode export that is interrupted no longer leaves a 0-byte file.
-
-**New in 1.3.0:** 300 new editable native animations converted from LottieFiles free animations — likes and subscribe prompts, success states, loaders, arrows and gestures, hand-drawn emphasis, confetti, chat bubbles, tech icons, charts, transitions and abstract motion. Each passed the same frame-by-frame visual check as the rest of the library.
-
-**New in 1.2.1:** very large frame-by-frame animations now play smoothly in the preview — frames ahead of the playhead are drawn in the background and the cache keeps a stable share when an animation is too big for it. Exported frames are unchanged.
-
-**New in 1.2.0:** animations load, preview and edit much faster — projects with large animations open about 9× faster and edits show about 15× sooner; exported frames are unchanged. The project format is upgraded: older projects are converted on first open and a `.pre-v10.bak` backup is kept beside the original. Projects saved by 1.2.0 cannot be opened by older versions.
-
 [简体中文](README.md) · [繁體中文](README.zh-TW.md) · English · [日本語](README.ja.md)
+[Download the latest release](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/latest) · [Report an issue](https://github.com/HackerChi-Hub/HyphenScreen-Releases/issues)
+<!-- evergreen:intro:end -->
 
+<!-- recent-features:start -->
+## Recent features and improvements (5 items)
+
+- **1.4.8** · Camera full-screen preview stays active across cuts without briefly exposing the screen recording.
+- **1.4.7** · Face restoration reports loading, restoration, encoding and saving, with apply and restore feedback.
+- **1.4.6** · Camera WebM restoration uses actual timestamps when frame-rate metadata is invalid.
+- **1.4.5** · Face restoration uses a dedicated dialog and clear fidelity slider; closing it keeps the job running.
+- **1.4.4** · Optional local face restoration supports short trials, comparison and restore; models and Python are separate.
+<!-- recent-features:end -->
+
+<!-- evergreen:capabilities:start -->
 ![Native animation editor, editable layers and the Visual timeline group](screenshots/animation-editor-110.png)
 
 ## A complete workflow
@@ -106,3 +92,10 @@ The application is free to download without a HyphenScreen account. Subscription
 Download instructions and SHA-256 values are on the [main download page](https://github.com/HackerChi-Hub/HyphenScreen-Releases). Check for updates through the application menu or download the current package. Mac 1.4.5 matches all 427 files and links with a valid local signature. Real desktop checks passed the single-button dialog, visible fidelity handle, adjustment from 70% to 85%, background processing after closing, apply, playback and restore. The installed API also processed and exported a clip with identical decoded audio. This was a focused interface check, not a repeated full capture or webcam checklist. Windows/Linux desktop and face-restoration hardware checks remain pending. Region selection is available on macOS/Windows. Animation/settings/export images come from the 1.1.0 macOS demo in Chinese. Private face-restoration screenshots are not published.
 
 Copyright © 2026 HyphenTech. Required third-party licenses and original notices are included in the application. This public repository distributes packages and documentation; source remains private.
+<!-- evergreen:capabilities:end -->
+
+<!-- evergreen:discovery:start -->
+## More HyphenTech software
+
+[LocalBrain](https://github.com/HackerChi-Hub/localbrain-releases) · [HyphenScreen](https://github.com/HackerChi-Hub/HyphenScreen-Releases) · [ScreenLex](https://github.com/HackerChi-Hub/screenlex-download) · [HyphenBox](https://github.com/HackerChi-Hub/hyphenbox-release)
+<!-- evergreen:discovery:end -->

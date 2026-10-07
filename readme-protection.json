@@ -1,0 +1,32 @@
+{
+  "files": {
+    "README.en.md": {
+      "blocks": {
+        "intro": "de9599f1592e96c1a418e6fbfb193b312827999d34089a585b94e0a7e00f025c",
+        "capabilities": "7ff4ad5581d44001f23f1ff85dc8c01ee121c3c9f339c190d5cb7ce20d7c2878",
+        "discovery": "825cf6ac9850a8b84d799504672bbb3af80b3ee1099c29d25b9601ae4c6950de"
+      }
+    },
+    "README.md": {
+      "blocks": {
+        "intro": "24e4e11fa0674af5457b35a467842f872239df94fb6a61e82f7fa562d832959d",
+        "capabilities": "1568bae99338a2fbb77aecb6b4410f1db5cb065a847ae929459e69e9356c6793",
+        "discovery": "7310d6155907cb41b64c59ff96c04a3a8c4ee2ff5c5cfcb99560db8e0f0dee2f"
+      }
+    },
+    "README.ja.md": {
+      "blocks": {
+        "intro": "b46fcd07334fe490910b211b20789930177d42bbf08921132eaef9a107b1c185",
+        "capabilities": "a7ce8c7e25b8e1346fbb0e2d92f22d99a3f5f8200bddb53df6cff9d222b02b96",
+        "discovery": "dce135422b1d946ab2b6e04361c74dc0363537e1eedce0dfb5b09814f9e47e59"
+      }
+    },
+    "README.zh-TW.md": {
+      "blocks": {
+        "intro": "3e8576ddc7b63a89b0dc8ffa90d41593b4718c85ad670a1564fc4caea5202b84",
+        "capabilities": "b3c4930282058009b0b2d3d8b0812310ae8c01cd5d7ddebd77715451b14f648d",
+        "discovery": "3d77a1f6c664a99589fc2f447354c78a70cda9e0c2f973f6404cf978b4e92704"
+      }
+    }
+  }
+}
