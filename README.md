@@ -2,11 +2,13 @@
 
 黑粉科技的桌面录屏与智能剪辑软件。本仓库只存放安装包、校验和与发行说明；源码在独立的私有仓库。
 
-**当前版本：[黑粉录屏 1.4.7 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.4.7)**（只保留最新一版）。
+**当前版本：[黑粉录屏 1.4.8 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.4.8)**（每个平台只保留最新的一版）。
+
+> 1.4.8 目前提供 macOS 安装包；Windows 继续提供 [黑粉录屏 1.4.7 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.4.7)，尚未发布 1.4.8 的 Windows 版；Linux 继续提供 [黑粉录屏 1.4.7 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.4.7)，尚未发布 1.4.8 的 Linux 版。
 
 ## 软件介绍
 
-> 1.4.7：人脸修复按加载、画面修复、编码与保存原声显示进度，画面处理完后不再显示剩余零秒；应用成功和恢复原片有明确反馈，避免重复应用。保留摄像头 WebM 时间戳兼容、单按钮修复弹窗、原片对照和恢复；关闭窗口不取消后台处理。未改变修复模型或质量，不包含肖像重建。
+> 1.4.8：修复摄像头全屏跨剪切点连续预览时短暂露出录屏的问题，切换画面继续使用时间线指定的播放时间。保留 1.4.7 的人脸修复分阶段进度、应用与恢复反馈，不改变剪切、变速、修复模型或导出。
 
 > 1.4.2 新增：框选多个视频、音频、动画与视觉效果后，拖动任一选中项主体即可保持相对时间整体移动，一次撤销恢复全部。
 
@@ -64,15 +66,19 @@
 
 | 平台 | 文件 | SHA-256 |
 |---|---|---|
-| macOS 13+（Apple 芯片 arm64） | `HyphenScreen_1.4.7_arm64.dmg` | `e9d30636fd9f0d559ed00056bb0cf7bdf7e711d39a7e7d85592b9c13f393e6d3` |
-| Windows 10/11（x64） | `HyphenScreen_1.4.7_x64-setup.exe` | `9175200be4e4d631f1e3222ed9282dc419f69c258a06d6d4fd6437131ca5c46f` |
-| Linux（x86_64） | `HyphenScreen_1.4.7_x86_64.AppImage` | `99b144c5d93779cdf46df8f52997c209595dfcee67f15b35be7dbb6c31c18853` |
-| Debian / Ubuntu（amd64） | `HyphenScreen_1.4.7_amd64.deb` | `26ca5fe7f572573ee255a8c41dcc095722e0f7bc235fe3675684dd44fbf39ba4` |
-| Arch Linux（x86_64） | `HyphenScreen_1.4.7_x64.pacman` | `14ec8afd4e0289301817d368448f51984127d3eca644de6b8bb667fdbd0380ee` |
+| macOS 13+（Apple 芯片 arm64） | `HyphenScreen_1.4.8_arm64.dmg` | `fc2008c1d4254b6015664a45f2138245def1bf0d4486479a5e93cf8005e63874` |
+| Windows 10/11（x64）· 1.4.7 版 | `HyphenScreen_1.4.7_x64-setup.exe` | `9175200be4e4d631f1e3222ed9282dc419f69c258a06d6d4fd6437131ca5c46f` |
+| Linux（x86_64）· 1.4.7 版 | `HyphenScreen_1.4.7_x86_64.AppImage` | `99b144c5d93779cdf46df8f52997c209595dfcee67f15b35be7dbb6c31c18853` |
+| Debian / Ubuntu（amd64）· 1.4.7 版 | `HyphenScreen_1.4.7_amd64.deb` | `26ca5fe7f572573ee255a8c41dcc095722e0f7bc235fe3675684dd44fbf39ba4` |
+| Arch Linux（x86_64）· 1.4.7 版 | `HyphenScreen_1.4.7_x64.pacman` | `14ec8afd4e0289301817d368448f51984127d3eca644de6b8bb667fdbd0380ee` |
 
 同一页附带各平台的 `SHA256SUMS*.txt` 与 `release-manifest.json`，可核对文件完整性与构建来源。
 
+> 下面的功能一览按 1.4.8 介绍；Windows 暂为 1.4.7，不包含之后加入的功能；Linux 暂为 1.4.7，不包含之后加入的功能，各版变化见发行页面上的发行说明。
+
 ## 功能图解
+
+**1.4.8：摄像头全屏切点预览。** 连续播放跨越剪切点时，摄像头全屏继续按时间线播放时间生效，避免预加载画面时间戳导致短暂露出录屏。真实工程切点和原生像素回归验证通过，不改剪辑范围、变速、人脸修复素材或导出。
 
 **1.4.7：修复进度与应用反馈。** 区分模型加载、画面修复、编码和保存原声；保存阶段显示实际进度，完成前不会显示满格或“剩余零秒”。应用后有成功提示与已应用按钮，恢复原片也有反馈，保存失败可重试。未改变模型、修复质量或原声。
 
