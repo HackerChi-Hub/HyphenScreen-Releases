@@ -16,12 +16,30 @@ HyphenScreen by HyphenTech is a desktop workspace for software tutorials, produc
 <!-- recent-features:start -->
 ## Recent features and improvements (5 items)
 
-- **1.4.9** · Supplemental video and narration share the export clock when the main track is sped up, avoiding drift and silent tail frames.
-- **1.4.9** · Shorter animation-library and layer-editor guidance, with clearer request-sent feedback.
-- **1.4.8** · Camera full-screen preview stays active across cuts without briefly exposing the screen recording.
-- **1.4.7** · Face restoration reports loading, restoration, encoding and saving, with apply and restore feedback.
-- **1.4.6** · Camera WebM restoration uses actual timestamps when frame-rate metadata is invalid.
+- **1.5.0** · Create native animation in one AI dialog with custom content, use, 2D style, timing and continuous scenes.
+- **1.5.0** · One picture order across timeline tracks: upper layers cover lower layers; reorder, rename, hide and lock headers.
+- **1.5.0** · LocalBrain model discovery and real conversation/tool-call connection testing.
+- **1.5.0** · Chats keep separate messages and running states; new chats remain usable while old tasks run, with context estimates.
+- **1.5.0** · New and switched projects reset playback, avoiding empty animation lead-ins inherited from another project.
 <!-- recent-features:end -->
+
+<!-- development-timeline:start -->
+### 1.5.0: a clearer timeline
+
+Picture, Adjustments and Sound are separate sections. Captions, images, animation, annotations and video share one top-to-bottom picture order. Drag headers or use the context menu; rename, hide, lock and resize headers. Empty tracks are hidden across the whole project. Audio mixes independently. Switching projects resets playback; refreshing the same project retains its position.
+<!-- development-timeline:end -->
+
+<!-- development-animation-authoring:start -->
+### 1.5.0: editable animation from an explanation
+
+Open “Create animation” in the AI panel. Enter content and custom requirements, choose a use, one of nine 2D style directions, duration, placement or continuous scenes. The model designs objects and actions and writes editable layers, keyframes and clips. Standalone silent animation, transparent overlays and full-screen inserts require no placeholder video.
+
+![Actual native animation composer](screenshots/ai-animation-source-preview-20261008.png)
+
+LocalBrain discovers its loaded language model. A live Qwen3.8 27B test generated a custom scene, wrote tools, read the project back and passed native export. One eight-second paper deduplication scene took about 6 minutes 4 seconds to generate; this is a single observation, not a speed guarantee. Subscription models also generated paper routing, deduplication and a 2D continuous water-cycle scene. Nine directions do not guarantee reference-quality paper, painting or 3D for every topic. Reference-component films are visual benchmarks, not in-app generation results.
+
+“Test connection and tools” checks a real round trip using the current model and endpoint, without saving a test draft or modifying the project. A configured key does not mean authenticated. MiniMax candidates do not trigger automatic paid probes. Conversation messages and busy states are isolated; local two-chat and subscription concurrent switching were tested. Context is a conversation-text estimate, not total model usage.
+<!-- development-animation-authoring:end -->
 
 <!-- evergreen:demos:start -->
 ## ▶ Watch a practical demo
@@ -35,15 +53,15 @@ HyphenScreen by HyphenTech is a desktop workspace for software tutorials, produc
 These videos show the versions available when recorded. Use the current release information on this page for downloads and capabilities. Narration is in Chinese.
 <!-- evergreen:demos:end -->
 
-## Download: 1.4.9
+## Download: 1.5.0
 
 | Platform | Package | SHA-256 |
 |---|---|---|
-| macOS 13+（Apple 芯片 arm64） | [Download HyphenScreen_1.4.9_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.4.9/HyphenScreen_1.4.9_arm64.dmg) | `267e8a6fd48ef0b49550a70960b424af66aa97440958b91106c0ca98e2713822` |
-| Windows 10/11（x64） | [Download HyphenScreen_1.4.9_x64-setup.exe](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.4.9/HyphenScreen_1.4.9_x64-setup.exe) | `2a5360174326f302e64fc376a519d21147b5b53758a48d6726a9a23c83f12210` |
-| Linux（x86_64） | [Download HyphenScreen_1.4.9_x86_64.AppImage](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.4.9/HyphenScreen_1.4.9_x86_64.AppImage) | `70806d48b0afa4c79ee67d26a004aba44181739e62eaf996759bf55b45c6b57f` |
-| Debian / Ubuntu（amd64） | [Download HyphenScreen_1.4.9_amd64.deb](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.4.9/HyphenScreen_1.4.9_amd64.deb) | `4c53fc9acc7a7220515b78062d6c6e731970eb64119e8af259103fe3578bb1dd` |
-| Arch Linux（x86_64） | [Download HyphenScreen_1.4.9_x64.pacman](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.4.9/HyphenScreen_1.4.9_x64.pacman) | `4887634f0c4ffba890a67251a9ab7991877b4f26c9192097c1c1c51998100930` |
+| macOS 13+（Apple 芯片 arm64） | [Download HyphenScreen_1.5.0_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.5.0/HyphenScreen_1.5.0_arm64.dmg) | `a903e83ba5187d6563df1dcdd39dbb8fd53a1a86f728cec09bb2c616c196404f` |
+| Windows 10/11（x64）· 1.4.9 版 | `HyphenScreen_1.4.9_x64-setup.exe` | `2a5360174326f302e64fc376a519d21147b5b53758a48d6726a9a23c83f12210` |
+| Linux（x86_64）· 1.4.9 版 | `HyphenScreen_1.4.9_x86_64.AppImage` | `70806d48b0afa4c79ee67d26a004aba44181739e62eaf996759bf55b45c6b57f` |
+| Debian / Ubuntu（amd64）· 1.4.9 版 | `HyphenScreen_1.4.9_amd64.deb` | `4c53fc9acc7a7220515b78062d6c6e731970eb64119e8af259103fe3578bb1dd` |
+| Arch Linux（x86_64）· 1.4.9 版 | `HyphenScreen_1.4.9_x64.pacman` | `4887634f0c4ffba890a67251a9ab7991877b4f26c9192097c1c1c51998100930` |
 
 <!-- evergreen:capabilities:start -->
 ![Native animation editor, editable layers and the Visual timeline group](screenshots/animation-editor-110.png)
