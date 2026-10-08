@@ -17,12 +17,30 @@ HyphenTech のデスクトップ録画・編集ソフトです。ソフトウェ
 <!-- recent-features:start -->
 ## 最近の機能追加と改善（5件）
 
-- **1.4.9** · 主トラックの速度変更時に補助映像とナレーションの書き出し時刻を揃え、ずれと無音の末尾を防ぎます。
-- **1.4.9** · アニメーション一覧とレイヤー編集の説明を簡潔にし、制作リクエストの送信を明確に通知します。
-- **1.4.8** · カメラの全画面プレビューがカットをまたいでも録画画面を一瞬表示しなくなりました。
-- **1.4.7** · 顔修復の読み込み、修復、エンコード、保存を分けて表示し、適用と復帰の結果を通知します。
-- **1.4.6** · カメラWebMの不正なフレームレート情報を実際のタイムスタンプで補います。
+- **1.5.0** · AI の制作画面で内容、用途、二次元表現、長さと連続する場面を指定できます。
+- **1.5.0** · タイムラインの画面順序を統一し、上が下を覆います。見出しの並べ替え、名前変更、非表示、ロックに対応。
+- **1.5.0** · 方寸智匣のモデル自動検出と実際の会話・ツール呼び出しテスト。
+- **1.5.0** · 会話ごとの内容と実行状態を分離し、旧タスク中も新会話を使えます。会話量の推定を表示。
+- **1.5.0** · 工程の新規作成と切替で再生位置を先頭に戻し、冒頭の空白を防ぎます。
 <!-- recent-features:end -->
+
+<!-- development-timeline:start -->
+### 1.5.0：わかりやすいタイムライン
+
+画面、調整、音声を分け、字幕、画像、アニメーション、注釈、動画に共通の上下順序を使います。上の画面が下を覆います。見出しのドラッグや右クリックで並べ替え、名前変更、非表示、ロック、幅の調整ができます。工程全体に素材のないトラックは非表示になり、音声は独立してミックスします。工程切替は先頭に戻り、同じ工程の更新では再生位置を保持します。
+<!-- development-timeline:end -->
+
+<!-- development-animation-authoring:start -->
+### 1.5.0：解説から編集可能なアニメーションを制作
+
+AI パネルの制作画面で内容と独自の要望、用途、九つの二次元表現、長さ、配置、連続する場面を指定します。モデルが物体と動きを設計し、編集可能なレイヤー、キーフレームとクリップを書き込みます。無音の独立作品、透明な重ね合わせ、全画面挿入に下敷きの動画は不要です。
+
+![実際のネイティブ制作画面](screenshots/ai-animation-source-preview-20261008.png)
+
+方寸智匣は読み込み済みの言語モデルを自動検出します。Qwen3.8 27B の実測で自由場面の生成、ツール書き込み、工程の再読込とネイティブ書き出しを確認しました。八秒の紙表現による重複整理は生成に約六分四秒かかりました。単一の実測で、速度保証ではありません。サブスクリプションモデルでも荷物仕分け、重複整理、二次元の連続水循環を生成し書き出しました。九つの方向は全題材で参考品質の紙、絵画、三次元を保証しません。参考部品の動画は比較基準であり、ソフト内の生成結果ではありません。
+
+接続とツール呼び出しのテストは、現在のモデルと接続先で実際の往復を調べ、工程やテスト設定を保存しません。キー設定済みは認証成功ではありません。MiniMax 候補の自動課金テストはありません。会話の内容と実行状態を分離し、ローカル二会話とサブスクリプションの並行切替を確認しました。コンテキスト表示は会話文字の推定で、モデル全体の使用量ではありません。
+<!-- development-animation-authoring:end -->
 
 <!-- evergreen:demos:start -->
 ## ▶ 使い方の動画
@@ -36,15 +54,15 @@ HyphenTech のデスクトップ録画・編集ソフトです。ソフトウェ
 動画は撮影時のバージョンです。現在の機能と配布パッケージはこのページのリリース情報をご確認ください。動画の解説は中国語です。
 <!-- evergreen:demos:end -->
 
-## ダウンロード: 1.4.9
+## ダウンロード: 1.5.0
 
 | プラットフォーム | パッケージ | SHA-256 |
 |---|---|---|
-| macOS 13+（Apple 芯片 arm64） | [ダウンロード HyphenScreen_1.4.9_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.4.9/HyphenScreen_1.4.9_arm64.dmg) | `267e8a6fd48ef0b49550a70960b424af66aa97440958b91106c0ca98e2713822` |
-| Windows 10/11（x64） | [ダウンロード HyphenScreen_1.4.9_x64-setup.exe](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.4.9/HyphenScreen_1.4.9_x64-setup.exe) | `2a5360174326f302e64fc376a519d21147b5b53758a48d6726a9a23c83f12210` |
-| Linux（x86_64） | [ダウンロード HyphenScreen_1.4.9_x86_64.AppImage](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.4.9/HyphenScreen_1.4.9_x86_64.AppImage) | `70806d48b0afa4c79ee67d26a004aba44181739e62eaf996759bf55b45c6b57f` |
-| Debian / Ubuntu（amd64） | [ダウンロード HyphenScreen_1.4.9_amd64.deb](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.4.9/HyphenScreen_1.4.9_amd64.deb) | `4c53fc9acc7a7220515b78062d6c6e731970eb64119e8af259103fe3578bb1dd` |
-| Arch Linux（x86_64） | [ダウンロード HyphenScreen_1.4.9_x64.pacman](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.4.9/HyphenScreen_1.4.9_x64.pacman) | `4887634f0c4ffba890a67251a9ab7991877b4f26c9192097c1c1c51998100930` |
+| macOS 13+（Apple 芯片 arm64） | [ダウンロード HyphenScreen_1.5.0_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.5.0/HyphenScreen_1.5.0_arm64.dmg) | `a903e83ba5187d6563df1dcdd39dbb8fd53a1a86f728cec09bb2c616c196404f` |
+| Windows 10/11（x64）· 1.4.9 版 | `HyphenScreen_1.4.9_x64-setup.exe` | `2a5360174326f302e64fc376a519d21147b5b53758a48d6726a9a23c83f12210` |
+| Linux（x86_64）· 1.4.9 版 | `HyphenScreen_1.4.9_x86_64.AppImage` | `70806d48b0afa4c79ee67d26a004aba44181739e62eaf996759bf55b45c6b57f` |
+| Debian / Ubuntu（amd64）· 1.4.9 版 | `HyphenScreen_1.4.9_amd64.deb` | `4c53fc9acc7a7220515b78062d6c6e731970eb64119e8af259103fe3578bb1dd` |
+| Arch Linux（x86_64）· 1.4.9 版 | `HyphenScreen_1.4.9_x64.pacman` | `4887634f0c4ffba890a67251a9ab7991877b4f26c9192097c1c1c51998100930` |
 
 <!-- evergreen:capabilities:start -->
 ![独立アニメーション、編集可能なレイヤーとビジュアルグループ](screenshots/animation-editor-110.png)
