@@ -16,12 +16,30 @@
 <!-- recent-features:start -->
 ## 近期新增與改進（最近 5 項）
 
-- **1.4.9** · 主軌變速時，輔助影片與口播使用一致的匯出時鐘，避免圖聲錯位及無聲尾幀。
-- **1.4.9** · 精簡動畫庫與圖層編輯說明，並明確回饋製作請求已送出。
-- **1.4.8** · 攝影機全螢幕跨剪切點預覽保持連續，修復切換時短暫露出錄屏。
-- **1.4.7** · 人臉修復區分載入、修復、編碼與儲存階段，提供套用及恢復回饋。
-- **1.4.6** · 攝影機 WebM 的異常幀率改用真實時間戳進行人臉修復。
+- **1.5.0** · AI 面板集中製作原生動畫，可自訂解說、用途、二維風格、長度與連續畫面。
+- **1.5.0** · 時間軸統一畫面層級：上方覆蓋下方，表頭可排列、改名、隱藏及鎖定。
+- **1.5.0** · 方寸智匣自動發現模型；設定提供實際對話及工具呼叫測試。
+- **1.5.0** · 各對話分別保存訊息與執行狀態，新對話不再被旧任務鎖定；顯示對話上下文估算。
+- **1.5.0** · 切換或新增工程時播放頭歸零，避免繼承舊時間造成動畫開頭空白。
 <!-- recent-features:end -->
+
+<!-- development-timeline:start -->
+### 1.5.0：更清楚的時間軸
+
+軌道按「畫面／調節／聲音」分區。字幕、圖片、動畫、標註及影片共用上方覆蓋下方的順序，可拖動表頭或右鍵調整；支援改名、隱藏、鎖定與表頭寬度調節，整個工程沒有素材的軌道自動隱藏。聲音獨立混音；切換工程從零秒開始，同工程重新整理保留位置。
+<!-- development-timeline:end -->
+
+<!-- development-animation-authoring:start -->
+### 1.5.0：依解說製作可編輯動畫
+
+開啟 AI 面板的「製作動畫」，輸入解說與自訂要求，選擇用途、九種二維風格方向、長度、插入位置或連續畫面。模型重新設計物件與動作，寫入可編輯圖層、關鍵影格及動畫片段。支援獨立無聲動畫、透明疊加與全螢幕插入，不需要墊影片。
+
+![實際原生動畫製作視窗](screenshots/ai-animation-source-preview-20261008.png)
+
+方寸智匣自動發現已載入的語言模型；本機 Qwen3.8 27B 已完成實際自由場景生成、工具寫入、工程讀回及原生匯出。此次八秒紙藝去重生成約六分四秒，為單次實測，不是速度保證。訂閱模型也已生成及匯出紙藝分流、去重與二維水循環長卷；九種方向不代表所有題材達到參考級紙藝、繪畫或三維品質。獨立參考元件影片僅作視覺基準，不冒充軟體內生成。
+
+設定提供「測試連線與工具呼叫」，核實目前模型及介面的實際往返，不儲存測試草稿、不修改工程。「已設定金鑰」不等於認證通過，MiniMax 候選目錄不自動付費探測。對話訊息與忙碌狀態分別保存，本地雙對話與訂閱並行切換已實測；上下文只顯示對話估算，不代表完整模型占用。
+<!-- development-animation-authoring:end -->
 
 <!-- evergreen:demos:start -->
 ## ▶ 使用示範
@@ -35,15 +53,15 @@
 影片示範的是拍攝時的版本；安裝套件與目前功能以本頁正式發行資訊為準。影片以中文講解。
 <!-- evergreen:demos:end -->
 
-## 下載: 1.4.9
+## 下載: 1.5.0
 
 | 平台 | 安裝套件 | SHA-256 |
 |---|---|---|
-| macOS 13+（Apple 芯片 arm64） | [下載 HyphenScreen_1.4.9_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.4.9/HyphenScreen_1.4.9_arm64.dmg) | `267e8a6fd48ef0b49550a70960b424af66aa97440958b91106c0ca98e2713822` |
-| Windows 10/11（x64） | [下載 HyphenScreen_1.4.9_x64-setup.exe](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.4.9/HyphenScreen_1.4.9_x64-setup.exe) | `2a5360174326f302e64fc376a519d21147b5b53758a48d6726a9a23c83f12210` |
-| Linux（x86_64） | [下載 HyphenScreen_1.4.9_x86_64.AppImage](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.4.9/HyphenScreen_1.4.9_x86_64.AppImage) | `70806d48b0afa4c79ee67d26a004aba44181739e62eaf996759bf55b45c6b57f` |
-| Debian / Ubuntu（amd64） | [下載 HyphenScreen_1.4.9_amd64.deb](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.4.9/HyphenScreen_1.4.9_amd64.deb) | `4c53fc9acc7a7220515b78062d6c6e731970eb64119e8af259103fe3578bb1dd` |
-| Arch Linux（x86_64） | [下載 HyphenScreen_1.4.9_x64.pacman](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.4.9/HyphenScreen_1.4.9_x64.pacman) | `4887634f0c4ffba890a67251a9ab7991877b4f26c9192097c1c1c51998100930` |
+| macOS 13+（Apple 芯片 arm64） | [下載 HyphenScreen_1.5.0_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.5.0/HyphenScreen_1.5.0_arm64.dmg) | `a903e83ba5187d6563df1dcdd39dbb8fd53a1a86f728cec09bb2c616c196404f` |
+| Windows 10/11（x64）· 1.4.9 版 | `HyphenScreen_1.4.9_x64-setup.exe` | `2a5360174326f302e64fc376a519d21147b5b53758a48d6726a9a23c83f12210` |
+| Linux（x86_64）· 1.4.9 版 | `HyphenScreen_1.4.9_x86_64.AppImage` | `70806d48b0afa4c79ee67d26a004aba44181739e62eaf996759bf55b45c6b57f` |
+| Debian / Ubuntu（amd64）· 1.4.9 版 | `HyphenScreen_1.4.9_amd64.deb` | `4c53fc9acc7a7220515b78062d6c6e731970eb64119e8af259103fe3578bb1dd` |
+| Arch Linux（x86_64）· 1.4.9 版 | `HyphenScreen_1.4.9_x64.pacman` | `4887634f0c4ffba890a67251a9ab7991877b4f26c9192097c1c1c51998100930` |
 
 <!-- evergreen:capabilities:start -->
 ![原生動畫編輯器：可編輯圖層、視覺分組與獨立動畫片段](screenshots/animation-editor-110.png)
