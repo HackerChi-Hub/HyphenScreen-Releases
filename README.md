@@ -18,12 +18,30 @@
 <!-- recent-features:start -->
 ## 近期新增与改进（最近 5 项）
 
-- **1.4.9** · 主轨变速时，辅助视频与口播使用一致的导出时钟，避免图声错位和无声尾帧。
-- **1.4.9** · 精简动画库和图层编辑说明，并明确反馈制作请求已发送。
-- **1.4.8** · 摄像头全屏跨剪切点预览保持连续，修复切换时短暂露出录屏。
-- **1.4.7** · 人脸修复区分加载、修复、编码和保存阶段，并提供应用与恢复反馈。
-- **1.4.6** · 兼容摄像头 WebM 的异常帧率标记，按真实时间戳进行人脸修复。
+- **1.5.0** · AI 面板集中制作原生动画，可自定义讲解、用途、二维风格、时长与连续画面。
+- **1.5.0** · 时间线统一画面层级：上方覆盖下方，表头可排列、改名、隐藏及锁定。
+- **1.5.0** · 方寸智匣自动发现模型；设置提供真实对话与工具调用测试。
+- **1.5.0** · 各会话分别保存消息和运行状态，新建对话不再被旧任务锁定；显示对话上下文估算。
+- **1.5.0** · 切换或新建工程时播放头归零，避免继承旧时间导致动画开头空白。
 <!-- recent-features:end -->
+
+<!-- development-timeline:start -->
+### 1.5.0：更清楚的时间线
+
+轨道按「画面／调节／声音」分区。字幕、图片、动画、标注与视频共用上方覆盖下方的顺序，拖动表头或右键调整；支持改名、隐藏、锁定和表头宽度调节，整个工程没有素材的轨道自动隐藏。声音独立混音；切换工程从零秒开始，同工程刷新保留位置。
+<!-- development-timeline:end -->
+
+<!-- development-animation-authoring:start -->
+### 1.5.0：用讲解制作可编辑动画
+
+打开 AI 面板的「制作动画」，输入讲解和自定义要求，选择用途、九种二维风格方向、时长、插入位置或连续画面。模型重新设计对象与动作，写入可编辑图层、关键帧和动画片段。支持独立无声动画、透明叠加与全屏插入，不需要垫视频。
+
+![实际原生动画制作窗口](screenshots/ai-animation-source-preview-20261008.png)
+
+方寸智匣自动发现已加载的语言模型；本机 Qwen3.8 27B 已完成真实自由场景生成、工具写入、工程读回和原生导出。此次 8 秒纸艺去重生成约 6 分 4 秒，属于单次实测，不是速度保证。订阅模型纸艺分流、去重和二维水循环长卷也已生成并导出；九种方向不代表所有题材达到参考级纸艺、绘画或三维质量。独立参考组件视频仅作视觉基准，不冒充软件内生成。
+
+设置提供「测试连接与工具调用」，核实当前模型和接口的真实往返，不保存测试草稿、不修改工程。「已配置密钥」不等于认证通过。MiniMax 候选目录不自动付费探测。会话消息和忙碌状态分别保存，本地双会话及订阅并发切换已实测；上下文只显示对话估算，不声称完整模型占用。
+<!-- development-animation-authoring:end -->
 
 <!-- evergreen:demos:start -->
 ## ▶ 使用演示
@@ -98,7 +116,9 @@
 关注[哔哩哔哩「黑粉科技」](https://space.bilibili.com/1846717524)、[YouTube 黑粉科技频道](https://www.youtube.com/@hyphentech_top)；公众号和视频号搜索「黑粉科技」，查看实际演示与使用教程。
 <!-- evergreen:discovery:end -->
 
-**当前版本：[黑粉录屏 1.4.9 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.4.9)**（只保留最新一版）。
+**当前版本：[黑粉录屏 1.5.0 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.5.0)**（每个平台只保留最新的一版）。
+
+> 1.5.0 目前提供 macOS 安装包；Windows 继续提供 [黑粉录屏 1.4.9 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.4.9)，尚未发布 1.5.0 的 Windows 版；Linux 继续提供 [黑粉录屏 1.4.9 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.4.9)，尚未发布 1.5.0 的 Linux 版。
 
 ## 下载
 
@@ -106,13 +126,15 @@
 
 | 平台 | 文件 | SHA-256 |
 |---|---|---|
-| macOS 13+（Apple 芯片 arm64） | [下载 HyphenScreen_1.4.9_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.4.9/HyphenScreen_1.4.9_arm64.dmg) | `267e8a6fd48ef0b49550a70960b424af66aa97440958b91106c0ca98e2713822` |
-| Windows 10/11（x64） | [下载 HyphenScreen_1.4.9_x64-setup.exe](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.4.9/HyphenScreen_1.4.9_x64-setup.exe) | `2a5360174326f302e64fc376a519d21147b5b53758a48d6726a9a23c83f12210` |
-| Linux（x86_64） | [下载 HyphenScreen_1.4.9_x86_64.AppImage](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.4.9/HyphenScreen_1.4.9_x86_64.AppImage) | `70806d48b0afa4c79ee67d26a004aba44181739e62eaf996759bf55b45c6b57f` |
-| Debian / Ubuntu（amd64） | [下载 HyphenScreen_1.4.9_amd64.deb](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.4.9/HyphenScreen_1.4.9_amd64.deb) | `4c53fc9acc7a7220515b78062d6c6e731970eb64119e8af259103fe3578bb1dd` |
-| Arch Linux（x86_64） | [下载 HyphenScreen_1.4.9_x64.pacman](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.4.9/HyphenScreen_1.4.9_x64.pacman) | `4887634f0c4ffba890a67251a9ab7991877b4f26c9192097c1c1c51998100930` |
+| macOS 13+（Apple 芯片 arm64） | [下载 HyphenScreen_1.5.0_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.5.0/HyphenScreen_1.5.0_arm64.dmg) | `a903e83ba5187d6563df1dcdd39dbb8fd53a1a86f728cec09bb2c616c196404f` |
+| Windows 10/11（x64）· 1.4.9 版 | `HyphenScreen_1.4.9_x64-setup.exe` | `2a5360174326f302e64fc376a519d21147b5b53758a48d6726a9a23c83f12210` |
+| Linux（x86_64）· 1.4.9 版 | `HyphenScreen_1.4.9_x86_64.AppImage` | `70806d48b0afa4c79ee67d26a004aba44181739e62eaf996759bf55b45c6b57f` |
+| Debian / Ubuntu（amd64）· 1.4.9 版 | `HyphenScreen_1.4.9_amd64.deb` | `4c53fc9acc7a7220515b78062d6c6e731970eb64119e8af259103fe3578bb1dd` |
+| Arch Linux（x86_64）· 1.4.9 版 | `HyphenScreen_1.4.9_x64.pacman` | `4887634f0c4ffba890a67251a9ab7991877b4f26c9192097c1c1c51998100930` |
 
 同一页附带各平台的 `SHA256SUMS*.txt` 与 `release-manifest.json`，可核对文件完整性与构建来源。
+
+> 下面的功能一览按 1.5.0 介绍；Windows 暂为 1.4.9，不包含之后加入的功能；Linux 暂为 1.4.9，不包含之后加入的功能，各版变化见发行页面上的发行说明。
 
 <!-- evergreen:feature-tour:start -->
 <details>
