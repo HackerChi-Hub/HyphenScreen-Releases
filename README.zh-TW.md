@@ -16,11 +16,11 @@
 <!-- recent-features:start -->
 ## 近期新增與改進（最近 5 項）
 
+- **1.5.2** · 攝影機切換去背、模糊及自訂背景可正常顯示；暫停時較晚完成的結果自動更新，失敗保留原畫。
 - **1.5.1** · 製作動畫提供19種風格方法，三組分類、短名稱置中，跨分類保留選擇。
 - **1.5.1** · 依解說設計物件、動作及鏡頭，按需讀取一種方法；自訂要求與精製指引加入同一請求。
 - **1.5.0** · 方寸智匣自動發現模型；設定提供實際對話及工具呼叫測試。
 - **1.5.0** · 各對話分別保存訊息與執行狀態，新對話不再被舊任務鎖定；顯示對話上下文估算。
-- **1.5.0** · 切換或新增工程時播放頭歸零，避免繼承舊時間造成動畫開頭空白。
 <!-- recent-features:end -->
 
 <!-- development-timeline:start -->
@@ -55,11 +55,11 @@
 影片示範的是拍攝時的版本；安裝套件與目前功能以本頁正式發行資訊為準。影片以中文講解。
 <!-- evergreen:demos:end -->
 
-## 下載: 1.5.1
+## 下載: 1.5.2
 
 | 平台 | 安裝套件 | SHA-256 |
 |---|---|---|
-| macOS 13+（Apple 芯片 arm64） | [下載 HyphenScreen_1.5.1_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.5.1/HyphenScreen_1.5.1_arm64.dmg) | `588e1573551fc80f47b4648a872f46c5176cf068122faa7568c9b1b6498198bc` |
+| macOS 13+（Apple 芯片 arm64） | [下載 HyphenScreen_1.5.2_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.5.2/HyphenScreen_1.5.2_arm64.dmg) | `8d87059c578f4f9b793c92bf8072370dbbdfd8694cf2558ebc41de5805b2c2d9` |
 | Windows 10/11（x64）· 1.5.0 版 | `HyphenScreen_1.5.0_x64-setup.exe` | `d2c18f25c686e1e315832e851ca5dfca08a5712f00d29233390e4a967147ea07` |
 | Linux（x86_64）· 1.5.0 版 | `HyphenScreen_1.5.0_x86_64.AppImage` | `47d0eb091c25ad9d0852e387a89cd089154f11c1886dc0f1dfec45b6e6ea8254` |
 | Debian / Ubuntu（amd64）· 1.5.0 版 | `HyphenScreen_1.5.0_amd64.deb` | `d5f0660e64eee598927db1a2c7ec8db15d339725cd27d366a9e85adfac79d153` |
