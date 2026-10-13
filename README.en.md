@@ -16,8 +16,8 @@ HyphenScreen by HyphenTech is a desktop workspace for software tutorials, produc
 <!-- recent-features:start -->
 ## Recent features and improvements (5 items)
 
-- **1.5.0** · Create native animation in one AI dialog with custom content, use, 2D style, timing and continuous scenes.
-- **1.5.0** · One picture order across timeline tracks: upper layers cover lower layers; reorder, rename, hide and lock headers.
+- **1.5.1** · Choose 19 animation style methods in three groups with short centered labels and persistent selection.
+- **1.5.1** · Design objects, actions and shots from the explanation; load one method on demand with custom requirements and refined guidance.
 - **1.5.0** · LocalBrain model discovery and real conversation/tool-call connection testing.
 - **1.5.0** · Chats keep separate messages and running states; new chats remain usable while old tasks run, with context estimates.
 - **1.5.0** · New and switched projects reset playback, avoiding empty animation lead-ins inherited from another project.
@@ -30,13 +30,15 @@ Picture, Adjustments and Sound are separate sections. Captions, images, animatio
 <!-- development-timeline:end -->
 
 <!-- development-animation-authoring:start -->
-### 1.5.0: editable animation from an explanation
+### 1.5.1: 19 methods for animation from an explanation
 
-Open “Create animation” in the AI panel. Enter content and custom requirements, choose a use, one of nine 2D style directions, duration, placement or continuous scenes. The model designs objects and actions and writes editable layers, keyframes and clips. Standalone silent animation, transparent overlays and full-screen inserts require no placeholder video.
+Open “Create animation” in the AI panel. Enter content and custom requirements, then choose from 19 methods grouped by clear explanations, playful illustration and spatial materials. Selection persists across groups. Set duration, placement or continuous scenes; the model reads one method on demand and designs objects, actions and shots as editable layers, keyframes and clips. Refined guidance calls for spatial depth, functional motion, secondary response and reading pauses. Standalone silent animation, transparent overlays and full-screen inserts require no placeholder video.
 
-![Actual native animation composer](screenshots/ai-animation-source-preview-20261008.png)
+![1.5.1 composer component: 19 methods and custom requirements](screenshots/ai-animation-methods-151-component.png)
 
-LocalBrain discovers its loaded language model. A live Qwen3.8 27B test generated a custom scene, wrote tools, read the project back and passed native export. One eight-second paper deduplication scene took about 6 minutes 4 seconds to generate; this is a single observation, not a speed guarantee. Subscription models also generated paper routing, deduplication and a 2D continuous water-cycle scene. Nine directions do not guarantee reference-quality paper, painting or 3D for every topic. Reference-component films are visual benchmarks, not in-app generation results.
+This screenshot shows the application's real composer component in a browser QA page. It demonstrates the interface, not a model-generation run or complete desktop acceptance.
+
+LocalBrain discovers its loaded language model. A live Qwen3.8 27B test generated a custom scene, wrote tools, read the project back and passed native export. One eight-second paper deduplication scene took about 6 minutes 4 seconds to generate; this is a single observation, not a speed guarantee. Subscription models also generated paper routing, deduplication and a 2D continuous water-cycle scene. The 19 methods have not each passed model-generation quality review. True 3D, refraction and fluids require external production; reference films and privately authored showcases are not presented as in-app generation results.
 
 “Test connection and tools” checks a real round trip using the current model and endpoint, without saving a test draft or modifying the project. A configured key does not mean authenticated. MiniMax candidates do not trigger automatic paid probes. Conversation messages and busy states are isolated; local two-chat and subscription concurrent switching were tested. Context is a conversation-text estimate, not total model usage.
 <!-- development-animation-authoring:end -->
@@ -53,15 +55,15 @@ LocalBrain discovers its loaded language model. A live Qwen3.8 27B test generate
 These videos show the versions available when recorded. Use the current release information on this page for downloads and capabilities. Narration is in Chinese.
 <!-- evergreen:demos:end -->
 
-## Download: 1.5.0
+## Download: 1.5.1
 
 | Platform | Package | SHA-256 |
 |---|---|---|
-| macOS 13+（Apple 芯片 arm64） | [Download HyphenScreen_1.5.0_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.5.0/HyphenScreen_1.5.0_arm64.dmg) | `a903e83ba5187d6563df1dcdd39dbb8fd53a1a86f728cec09bb2c616c196404f` |
-| Windows 10/11（x64） | [Download HyphenScreen_1.5.0_x64-setup.exe](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.5.0/HyphenScreen_1.5.0_x64-setup.exe) | `d2c18f25c686e1e315832e851ca5dfca08a5712f00d29233390e4a967147ea07` |
-| Linux（x86_64） | [Download HyphenScreen_1.5.0_x86_64.AppImage](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.5.0/HyphenScreen_1.5.0_x86_64.AppImage) | `47d0eb091c25ad9d0852e387a89cd089154f11c1886dc0f1dfec45b6e6ea8254` |
-| Debian / Ubuntu（amd64） | [Download HyphenScreen_1.5.0_amd64.deb](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.5.0/HyphenScreen_1.5.0_amd64.deb) | `d5f0660e64eee598927db1a2c7ec8db15d339725cd27d366a9e85adfac79d153` |
-| Arch Linux（x86_64） | [Download HyphenScreen_1.5.0_x64.pacman](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.5.0/HyphenScreen_1.5.0_x64.pacman) | `1c7f5a138af994c676f6e39078793bb1bfa7c8a18b79a234185d152435a64348` |
+| macOS 13+（Apple 芯片 arm64） | [Download HyphenScreen_1.5.1_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.5.1/HyphenScreen_1.5.1_arm64.dmg) | `588e1573551fc80f47b4648a872f46c5176cf068122faa7568c9b1b6498198bc` |
+| Windows 10/11（x64）· 1.5.0 版 | `HyphenScreen_1.5.0_x64-setup.exe` | `d2c18f25c686e1e315832e851ca5dfca08a5712f00d29233390e4a967147ea07` |
+| Linux（x86_64）· 1.5.0 版 | `HyphenScreen_1.5.0_x86_64.AppImage` | `47d0eb091c25ad9d0852e387a89cd089154f11c1886dc0f1dfec45b6e6ea8254` |
+| Debian / Ubuntu（amd64）· 1.5.0 版 | `HyphenScreen_1.5.0_amd64.deb` | `d5f0660e64eee598927db1a2c7ec8db15d339725cd27d366a9e85adfac79d153` |
+| Arch Linux（x86_64）· 1.5.0 版 | `HyphenScreen_1.5.0_x64.pacman` | `1c7f5a138af994c676f6e39078793bb1bfa7c8a18b79a234185d152435a64348` |
 
 <!-- evergreen:capabilities:start -->
 ![Native animation editor, editable layers and the Visual timeline group](screenshots/animation-editor-110.png)
