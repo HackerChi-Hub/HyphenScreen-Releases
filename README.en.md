@@ -16,11 +16,11 @@ HyphenScreen by HyphenTech is a desktop workspace for software tutorials, produc
 <!-- recent-features:start -->
 ## Recent features and improvements (5 items)
 
+- **1.5.2** · Webcam cutout, blur and custom backgrounds stay visible; late results refresh paused previews, with original-camera fallback on failure.
 - **1.5.1** · Choose 19 animation style methods in three groups with short centered labels and persistent selection.
 - **1.5.1** · Design objects, actions and shots from the explanation; load one method on demand with custom requirements and refined guidance.
 - **1.5.0** · LocalBrain model discovery and real conversation/tool-call connection testing.
 - **1.5.0** · Chats keep separate messages and running states; new chats remain usable while old tasks run, with context estimates.
-- **1.5.0** · New and switched projects reset playback, avoiding empty animation lead-ins inherited from another project.
 <!-- recent-features:end -->
 
 <!-- development-timeline:start -->
@@ -55,11 +55,11 @@ LocalBrain discovers its loaded language model. A live Qwen3.8 27B test generate
 These videos show the versions available when recorded. Use the current release information on this page for downloads and capabilities. Narration is in Chinese.
 <!-- evergreen:demos:end -->
 
-## Download: 1.5.1
+## Download: 1.5.2
 
 | Platform | Package | SHA-256 |
 |---|---|---|
-| macOS 13+（Apple 芯片 arm64） | [Download HyphenScreen_1.5.1_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.5.1/HyphenScreen_1.5.1_arm64.dmg) | `588e1573551fc80f47b4648a872f46c5176cf068122faa7568c9b1b6498198bc` |
+| macOS 13+（Apple 芯片 arm64） | [Download HyphenScreen_1.5.2_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.5.2/HyphenScreen_1.5.2_arm64.dmg) | `8d87059c578f4f9b793c92bf8072370dbbdfd8694cf2558ebc41de5805b2c2d9` |
 | Windows 10/11（x64）· 1.5.0 版 | `HyphenScreen_1.5.0_x64-setup.exe` | `d2c18f25c686e1e315832e851ca5dfca08a5712f00d29233390e4a967147ea07` |
 | Linux（x86_64）· 1.5.0 版 | `HyphenScreen_1.5.0_x86_64.AppImage` | `47d0eb091c25ad9d0852e387a89cd089154f11c1886dc0f1dfec45b6e6ea8254` |
 | Debian / Ubuntu（amd64）· 1.5.0 版 | `HyphenScreen_1.5.0_amd64.deb` | `d5f0660e64eee598927db1a2c7ec8db15d339725cd27d366a9e85adfac79d153` |
