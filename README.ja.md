@@ -17,11 +17,11 @@ HyphenTech のデスクトップ録画・編集ソフトです。ソフトウェ
 <!-- recent-features:start -->
 ## 最近の機能追加と改善（5件）
 
+- **1.5.2** · カメラの背景除去・ぼかし・独自背景を正常に表示。停止中でも遅れて届いた結果を反映し、失敗時は元の映像を保ちます。
 - **1.5.1** · 19種類の方法を三分類で選択。短い中央配置の名称と分類をまたぐ選択保持。
 - **1.5.1** · 解説から物体、動き、ショットを設計。一つの方法を必要時に読み、独自要望と精密化の指針を同じ依頼に含めます。
 - **1.5.0** · 方寸智匣のモデル自動検出と実際の会話・ツール呼び出しテスト。
 - **1.5.0** · 会話ごとの内容と実行状態を分離し、旧タスク中も新会話を使えます。会話量の推定を表示。
-- **1.5.0** · 工程の新規作成と切替で再生位置を先頭に戻し、冒頭の空白を防ぎます。
 <!-- recent-features:end -->
 
 <!-- development-timeline:start -->
@@ -56,11 +56,11 @@ AI パネルの制作画面で内容と独自の要望を入力し、説明、�
 動画は撮影時のバージョンです。現在の機能と配布パッケージはこのページのリリース情報をご確認ください。動画の解説は中国語です。
 <!-- evergreen:demos:end -->
 
-## ダウンロード: 1.5.1
+## ダウンロード: 1.5.2
 
 | プラットフォーム | パッケージ | SHA-256 |
 |---|---|---|
-| macOS 13+（Apple 芯片 arm64） | [ダウンロード HyphenScreen_1.5.1_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.5.1/HyphenScreen_1.5.1_arm64.dmg) | `588e1573551fc80f47b4648a872f46c5176cf068122faa7568c9b1b6498198bc` |
+| macOS 13+（Apple 芯片 arm64） | [ダウンロード HyphenScreen_1.5.2_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.5.2/HyphenScreen_1.5.2_arm64.dmg) | `8d87059c578f4f9b793c92bf8072370dbbdfd8694cf2558ebc41de5805b2c2d9` |
 | Windows 10/11（x64）· 1.5.0 版 | `HyphenScreen_1.5.0_x64-setup.exe` | `d2c18f25c686e1e315832e851ca5dfca08a5712f00d29233390e4a967147ea07` |
 | Linux（x86_64）· 1.5.0 版 | `HyphenScreen_1.5.0_x86_64.AppImage` | `47d0eb091c25ad9d0852e387a89cd089154f11c1886dc0f1dfec45b6e6ea8254` |
 | Debian / Ubuntu（amd64）· 1.5.0 版 | `HyphenScreen_1.5.0_amd64.deb` | `d5f0660e64eee598927db1a2c7ec8db15d339725cd27d366a9e85adfac79d153` |
