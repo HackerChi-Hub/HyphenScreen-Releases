@@ -17,8 +17,8 @@ HyphenTech のデスクトップ録画・編集ソフトです。ソフトウェ
 <!-- recent-features:start -->
 ## 最近の機能追加と改善（5件）
 
-- **1.5.0** · AI の制作画面で内容、用途、二次元表現、長さと連続する場面を指定できます。
-- **1.5.0** · タイムラインの画面順序を統一し、上が下を覆います。見出しの並べ替え、名前変更、非表示、ロックに対応。
+- **1.5.1** · 19種類の方法を三分類で選択。短い中央配置の名称と分類をまたぐ選択保持。
+- **1.5.1** · 解説から物体、動き、ショットを設計。一つの方法を必要時に読み、独自要望と精密化の指針を同じ依頼に含めます。
 - **1.5.0** · 方寸智匣のモデル自動検出と実際の会話・ツール呼び出しテスト。
 - **1.5.0** · 会話ごとの内容と実行状態を分離し、旧タスク中も新会話を使えます。会話量の推定を表示。
 - **1.5.0** · 工程の新規作成と切替で再生位置を先頭に戻し、冒頭の空白を防ぎます。
@@ -31,13 +31,15 @@ HyphenTech のデスクトップ録画・編集ソフトです。ソフトウェ
 <!-- development-timeline:end -->
 
 <!-- development-animation-authoring:start -->
-### 1.5.0：解説から編集可能なアニメーションを制作
+### 1.5.1：19種類の方法で解説をアニメーションに
 
-AI パネルの制作画面で内容と独自の要望、用途、九つの二次元表現、長さ、配置、連続する場面を指定します。モデルが物体と動きを設計し、編集可能なレイヤー、キーフレームとクリップを書き込みます。無音の独立作品、透明な重ね合わせ、全画面挿入に下敷きの動画は不要です。
+AI パネルの制作画面で内容と独自の要望を入力し、説明、楽しいイラスト、空間と質感の三分類から19種類の方法を選べます。分類を切り替えても選択は保持されます。長さ、配置、連続場面を指定すると、モデルは必要な一つの方法を読み、物体、動き、ショットを編集可能なレイヤー、キーフレームとクリップとして設計します。精密化の指針は奥行き、機能を示す動き、二次反応、読むための停止を含みます。無音の独立作品や透明な重ね合わせに下敷きの動画は不要です。
 
-![実際のネイティブ制作画面](screenshots/ai-animation-source-preview-20261008.png)
+![1.5.1の実際の制作コンポーネント：19種類の方法と独自要望](screenshots/ai-animation-methods-151-component.png)
 
-方寸智匣は読み込み済みの言語モデルを自動検出します。Qwen3.8 27B の実測で自由場面の生成、ツール書き込み、工程の再読込とネイティブ書き出しを確認しました。八秒の紙表現による重複整理は生成に約六分四秒かかりました。単一の実測で、速度保証ではありません。サブスクリプションモデルでも荷物仕分け、重複整理、二次元の連続水循環を生成し書き出しました。九つの方向は全題材で参考品質の紙、絵画、三次元を保証しません。参考部品の動画は比較基準であり、ソフト内の生成結果ではありません。
+実際の制作コンポーネントをブラウザの検証ページで撮影した画面です。モデル生成や完全なデスクトップ検証の証拠ではありません。
+
+方寸智匣は読み込み済みの言語モデルを自動検出します。Qwen3.8 27B の実測で自由場面の生成、ツール書き込み、工程の再読込とネイティブ書き出しを確認しました。八秒の重複整理の生成は約六分四秒で、単一の実測です。サブスクリプションモデルでも仕分け、重複整理、二次元の連続水循環を生成し書き出しました。19種類の方法すべての生成品質は個別確認していません。真の三次元、屈折、流体は外部制作が必要です。参考動画や私的に制作した見本をソフト内生成とみなしません。
 
 接続とツール呼び出しのテストは、現在のモデルと接続先で実際の往復を調べ、工程やテスト設定を保存しません。キー設定済みは認証成功ではありません。MiniMax 候補の自動課金テストはありません。会話の内容と実行状態を分離し、ローカル二会話とサブスクリプションの並行切替を確認しました。コンテキスト表示は会話文字の推定で、モデル全体の使用量ではありません。
 <!-- development-animation-authoring:end -->
@@ -54,15 +56,15 @@ AI パネルの制作画面で内容と独自の要望、用途、九つの二�
 動画は撮影時のバージョンです。現在の機能と配布パッケージはこのページのリリース情報をご確認ください。動画の解説は中国語です。
 <!-- evergreen:demos:end -->
 
-## ダウンロード: 1.5.0
+## ダウンロード: 1.5.1
 
 | プラットフォーム | パッケージ | SHA-256 |
 |---|---|---|
-| macOS 13+（Apple 芯片 arm64） | [ダウンロード HyphenScreen_1.5.0_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.5.0/HyphenScreen_1.5.0_arm64.dmg) | `a903e83ba5187d6563df1dcdd39dbb8fd53a1a86f728cec09bb2c616c196404f` |
-| Windows 10/11（x64） | [ダウンロード HyphenScreen_1.5.0_x64-setup.exe](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.5.0/HyphenScreen_1.5.0_x64-setup.exe) | `d2c18f25c686e1e315832e851ca5dfca08a5712f00d29233390e4a967147ea07` |
-| Linux（x86_64） | [ダウンロード HyphenScreen_1.5.0_x86_64.AppImage](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.5.0/HyphenScreen_1.5.0_x86_64.AppImage) | `47d0eb091c25ad9d0852e387a89cd089154f11c1886dc0f1dfec45b6e6ea8254` |
-| Debian / Ubuntu（amd64） | [ダウンロード HyphenScreen_1.5.0_amd64.deb](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.5.0/HyphenScreen_1.5.0_amd64.deb) | `d5f0660e64eee598927db1a2c7ec8db15d339725cd27d366a9e85adfac79d153` |
-| Arch Linux（x86_64） | [ダウンロード HyphenScreen_1.5.0_x64.pacman](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.5.0/HyphenScreen_1.5.0_x64.pacman) | `1c7f5a138af994c676f6e39078793bb1bfa7c8a18b79a234185d152435a64348` |
+| macOS 13+（Apple 芯片 arm64） | [ダウンロード HyphenScreen_1.5.1_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.5.1/HyphenScreen_1.5.1_arm64.dmg) | `588e1573551fc80f47b4648a872f46c5176cf068122faa7568c9b1b6498198bc` |
+| Windows 10/11（x64）· 1.5.0 版 | `HyphenScreen_1.5.0_x64-setup.exe` | `d2c18f25c686e1e315832e851ca5dfca08a5712f00d29233390e4a967147ea07` |
+| Linux（x86_64）· 1.5.0 版 | `HyphenScreen_1.5.0_x86_64.AppImage` | `47d0eb091c25ad9d0852e387a89cd089154f11c1886dc0f1dfec45b6e6ea8254` |
+| Debian / Ubuntu（amd64）· 1.5.0 版 | `HyphenScreen_1.5.0_amd64.deb` | `d5f0660e64eee598927db1a2c7ec8db15d339725cd27d366a9e85adfac79d153` |
+| Arch Linux（x86_64）· 1.5.0 版 | `HyphenScreen_1.5.0_x64.pacman` | `1c7f5a138af994c676f6e39078793bb1bfa7c8a18b79a234185d152435a64348` |
 
 <!-- evergreen:capabilities:start -->
 ![独立アニメーション、編集可能なレイヤーとビジュアルグループ](screenshots/animation-editor-110.png)
