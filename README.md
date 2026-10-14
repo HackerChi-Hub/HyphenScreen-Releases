@@ -18,17 +18,19 @@
 <!-- recent-features:start -->
 ## 近期新增与改进（最近 5 项）
 
-- **1.5.2** · 摄像头切换抠图、模糊和自定义背景正常显示；暂停时迟到的处理结果自动刷新，失败保留原画。
-- **1.5.1** · 制作动画提供19种风格方法，三组分类、短名称居中，跨分类保持选中。
-- **1.5.1** · 按讲解设计对象、动作和镜头，按需读取一种方法；自定义要求与精制指引进入同一请求。
-- **1.5.0** · 方寸智匣自动发现模型；设置提供真实对话与工具调用测试。
-- **1.5.0** · 各会话分别保存消息和运行状态，新建对话不再被旧任务锁定；显示对话上下文估算。
+- **1.5.3** · 修复Kimi动画工具参数400错误；实际生成、写入、读回及原生导出通过。
+- **1.5.3** · 同类且时间不重叠的标注、图片、效果与动画可合轨，原轨移空后自动隐藏。
+- **1.5.3** · 拖动素材主体调整画面层级，新增标注复用既有轨道，重叠内容在同轨分行。
+- **1.5.3** · 恢复自动字幕预览与导出；长段删除或裁切后可直接续播，无需切换页面。
+- **1.5.3** · 分组仅由左侧表头收起和展开，时间线中部不再误触折叠。
 <!-- recent-features:end -->
 
 <!-- development-timeline:start -->
-### 1.5.0：更清楚的时间线
+### 1.5.3：轨道更紧凑，剪完直接播放
 
-轨道按「画面／调节／声音」分区。字幕、图片、动画、标注与视频共用上方覆盖下方的顺序，拖动表头或右键调整；支持改名、隐藏、锁定和表头宽度调节，整个工程没有素材的轨道自动隐藏。声音独立混音；切换工程从零秒开始，同工程刷新保留位置。
+同类且时间不重叠的标注、图片、叠加效果和动画，可拖到目标轨道中部合轨，也可右键「移入同类轨道」；原轨移空后自动隐藏。拖到轨道上下边缘调整画面层级，横向仍调整时间。新标注复用可见、未锁定的标注轨，重叠内容在同轨分行。锁定、隐藏或时间冲突的目标不会强行接收素材。
+
+字幕、图片、动画、标注与视频仍按上方覆盖下方合成，声音独立混音。分组仅左侧表头收起和展开；自动字幕预览与导出恢复，大段删除或裁切后无需切页即可续播。macOS已进行真实桌面与原生媒体验收，各平台可用版本以下载表为准。
 <!-- development-timeline:end -->
 
 <!-- development-animation-authoring:start -->
@@ -118,9 +120,9 @@
 关注[哔哩哔哩「黑粉科技」](https://space.bilibili.com/1846717524)、[YouTube 黑粉科技频道](https://www.youtube.com/@hyphentech_top)；公众号和视频号搜索「黑粉科技」，查看实际演示与使用教程。
 <!-- evergreen:discovery:end -->
 
-**当前版本：[黑粉录屏 1.5.2 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.5.2)**（每个平台只保留最新的一版）。
+**当前版本：[黑粉录屏 1.5.3 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.5.3)**（每个平台只保留最新的一版）。
 
-> 1.5.2 目前提供 macOS 安装包；Windows 继续提供 [黑粉录屏 1.5.0 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.5.0)，尚未发布 1.5.2 的 Windows 版；Linux 继续提供 [黑粉录屏 1.5.0 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.5.0)，尚未发布 1.5.2 的 Linux 版。
+> 1.5.3 目前提供 macOS 安装包；Windows 继续提供 [黑粉录屏 1.5.0 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.5.0)，尚未发布 1.5.3 的 Windows 版；Linux 继续提供 [黑粉录屏 1.5.0 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.5.0)，尚未发布 1.5.3 的 Linux 版。
 
 ## 下载
 
@@ -128,7 +130,7 @@
 
 | 平台 | 文件 | SHA-256 |
 |---|---|---|
-| macOS 13+（Apple 芯片 arm64） | [下载 HyphenScreen_1.5.2_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.5.2/HyphenScreen_1.5.2_arm64.dmg) | `8d87059c578f4f9b793c92bf8072370dbbdfd8694cf2558ebc41de5805b2c2d9` |
+| macOS 13+（Apple 芯片 arm64） | [下载 HyphenScreen_1.5.3_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.5.3/HyphenScreen_1.5.3_arm64.dmg) | `5d71818ae8632380b22f58092d5cef21f230e4c87c3e27f6fd9e80e7b2d15f3a` |
 | Windows 10/11（x64）· 1.5.0 版 | `HyphenScreen_1.5.0_x64-setup.exe` | `d2c18f25c686e1e315832e851ca5dfca08a5712f00d29233390e4a967147ea07` |
 | Linux（x86_64）· 1.5.0 版 | `HyphenScreen_1.5.0_x86_64.AppImage` | `47d0eb091c25ad9d0852e387a89cd089154f11c1886dc0f1dfec45b6e6ea8254` |
 | Debian / Ubuntu（amd64）· 1.5.0 版 | `HyphenScreen_1.5.0_amd64.deb` | `d5f0660e64eee598927db1a2c7ec8db15d339725cd27d366a9e85adfac79d153` |
@@ -136,7 +138,7 @@
 
 同一页附带各平台的 `SHA256SUMS*.txt` 与 `release-manifest.json`，可核对文件完整性与构建来源。
 
-> 下面的功能一览按 1.5.2 介绍；Windows 暂为 1.5.0，不包含之后加入的功能；Linux 暂为 1.5.0，不包含之后加入的功能，各版变化见发行页面上的发行说明。
+> 下面的功能一览按 1.5.3 介绍；Windows 暂为 1.5.0，不包含之后加入的功能；Linux 暂为 1.5.0，不包含之后加入的功能，各版变化见发行页面上的发行说明。
 
 <!-- evergreen:feature-tour:start -->
 <details>
@@ -261,6 +263,12 @@ A／B 选择和刀片，J／K／L 播放，I／O 入出点，M 标记，方向�
 音频可独立裁切、分离原声、逐段调整音量（-60 至 +36 dB），并使用低切、均衡、压缩、限幅和响度处理。人声隔离在本机处理，目前仅 macOS。音乐躲避有三种预设，可调压低幅度、提前量、停顿保持和恢复时长，让口播与背景音乐更平稳衔接。
 
 ### AI：订阅、本地模型与自选 API
+
+Kimi 可通过兼容接口接入，填写自己的接口地址、模型与密钥，在设置中测试工具往返，再使用「制作动画」。1.5.3修复了动画曲线参数导致的400拒绝；`k3-256k` 已真实生成8秒、14图层的原生动画，包含两处自定义贝塞尔缓动，写入工程、读回和原生导出通过。
+
+![Kimi 实测生成并导出的原生动画：明细补齐，金额不变](screenshots/kimi-native-153.png)
+
+上图是本次实际模型生成场景的导出帧。仍需按自己的讲解检查内容、可读性与动作；单次接口验收不代表所有模型或风格均已验证。
 
 ![AI 设置：订阅自动识别、本地服务发现与多服务配置](screenshots/ai-settings-110.png)
 
