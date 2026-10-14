@@ -16,23 +16,29 @@ HyphenScreen by HyphenTech is a desktop workspace for software tutorials, produc
 <!-- recent-features:start -->
 ## Recent features and improvements (5 items)
 
-- **1.5.2** · Webcam cutout, blur and custom backgrounds stay visible; late results refresh paused previews, with original-camera fallback on failure.
-- **1.5.1** · Choose 19 animation style methods in three groups with short centered labels and persistent selection.
-- **1.5.1** · Design objects, actions and shots from the explanation; load one method on demand with custom requirements and refined guidance.
-- **1.5.0** · LocalBrain model discovery and real conversation/tool-call connection testing.
-- **1.5.0** · Chats keep separate messages and running states; new chats remain usable while old tasks run, with context estimates.
+- **1.5.3** · Fix Kimi animation tool schema HTTP 400 errors; actual generation, insertion, readback and native export verified.
+- **1.5.3** · Merge non-overlapping annotations, images, effects and animations into compatible tracks; emptied source tracks hide automatically.
+- **1.5.3** · Drag clip bodies vertically to change picture order; new annotations reuse editable tracks, with overlaps displayed in rows.
+- **1.5.3** · Restore automatic captions in preview and export; resume directly after long cuts or deletions without changing pages.
+- **1.5.3** · Collapse and expand groups only from the left header to avoid accidental timeline folding.
 <!-- recent-features:end -->
 
 <!-- development-timeline:start -->
-### 1.5.0: a clearer timeline
+### 1.5.3: Fewer tracks, direct playback after edits
 
-Picture, Adjustments and Sound are separate sections. Captions, images, animation, annotations and video share one top-to-bottom picture order. Drag headers or use the context menu; rename, hide, lock and resize headers. Empty tracks are hidden across the whole project. Audio mixes independently. Switching projects resets playback; refreshing the same project retains its position.
+Move non-overlapping annotations, images, effects or animations into the center of a compatible track, or choose a destination from the context menu. Empty source tracks hide automatically. Drop at a track edge to change picture order; horizontal dragging still changes timing. New annotations reuse a visible, unlocked annotation track, with overlaps shown in rows. Locked, hidden or conflicting destinations reject the move.
+
+Upper picture tracks still cover lower ones, while audio mixes independently. Only left headers collapse groups. Automatic captions render again in preview and export, and playback resumes after long cuts without changing pages. Real macOS desktop interactions and native media were checked; see the download table for each platform's available version.
 <!-- development-timeline:end -->
 
 <!-- development-animation-authoring:start -->
 ### 1.5.1: 19 methods for animation from an explanation
 
 Open “Create animation” in the AI panel. Enter content and custom requirements, then choose from 19 methods grouped by clear explanations, playful illustration and spatial materials. Selection persists across groups. Set duration, placement or continuous scenes; the model reads one method on demand and designs objects, actions and shots as editable layers, keyframes and clips. Refined guidance calls for spatial depth, functional motion, secondary response and reading pauses. Standalone silent animation, transparent overlays and full-screen inserts require no placeholder video.
+
+**Kimi verified in 1.5.3:** compatible endpoints no longer reject animation curve tool parameters with HTTP 400. The configured `k3-256k` actually generated an eight-second, fourteen-layer native scene with two custom Bézier keyframes; project insertion, readback and native export passed. Bring your own endpoint, model and key, test the tool round trip, then use Create animation. This is one verified run, not a claim that every model or style has passed.
+
+![Exported frame from the actual Kimi-generated native scene: restore a record without changing the total](screenshots/kimi-native-153.png)
 
 ![1.5.1 composer component: 19 methods and custom requirements](screenshots/ai-animation-methods-151-component.png)
 
@@ -55,11 +61,11 @@ LocalBrain discovers its loaded language model. A live Qwen3.8 27B test generate
 These videos show the versions available when recorded. Use the current release information on this page for downloads and capabilities. Narration is in Chinese.
 <!-- evergreen:demos:end -->
 
-## Download: 1.5.2
+## Download: 1.5.3
 
 | Platform | Package | SHA-256 |
 |---|---|---|
-| macOS 13+（Apple 芯片 arm64） | [Download HyphenScreen_1.5.2_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.5.2/HyphenScreen_1.5.2_arm64.dmg) | `8d87059c578f4f9b793c92bf8072370dbbdfd8694cf2558ebc41de5805b2c2d9` |
+| macOS 13+（Apple 芯片 arm64） | [Download HyphenScreen_1.5.3_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.5.3/HyphenScreen_1.5.3_arm64.dmg) | `5d71818ae8632380b22f58092d5cef21f230e4c87c3e27f6fd9e80e7b2d15f3a` |
 | Windows 10/11（x64）· 1.5.0 版 | `HyphenScreen_1.5.0_x64-setup.exe` | `d2c18f25c686e1e315832e851ca5dfca08a5712f00d29233390e4a967147ea07` |
 | Linux（x86_64）· 1.5.0 版 | `HyphenScreen_1.5.0_x86_64.AppImage` | `47d0eb091c25ad9d0852e387a89cd089154f11c1886dc0f1dfec45b6e6ea8254` |
 | Debian / Ubuntu（amd64）· 1.5.0 版 | `HyphenScreen_1.5.0_amd64.deb` | `d5f0660e64eee598927db1a2c7ec8db15d339725cd27d366a9e85adfac79d153` |
