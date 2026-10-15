@@ -16,14 +16,26 @@ HyphenScreen by HyphenTech is a desktop workspace for software tutorials, produc
 <!-- recent-features:start -->
 ## Recent features and improvements (5 items)
 
+- **1.5.6** · All 19 animation styles have a unified title sample, hover previews, selection and a larger example with play/pause.
+- **1.5.6** · macOS preview automatically retries a failed hardware decoder in software for the current source, preserving playback position.
 - **1.5.5** · Fix animation generation via the Kimi subscription provider being rejected (HTTP 400); k3-256k works again.
 - **1.5.5** · Animation creation is now progressive: scenes land one by one and partial results are kept; local-model budget raised to 45 minutes.
-- **1.5.4** · New Kimi subscription provider: endpoint and default model pre-filled — just paste a Kimi Code API key.
 - **1.5.4** · Each AI provider now keeps its own model and endpoint settings; switching providers no longer wipes saved configurations.
-- **1.5.3** · Fix Kimi animation tool schema HTTP 400 errors; actual generation, insertion, readback and native export verified.
 <!-- recent-features:end -->
 
 <!-- development-timeline:start -->
+<!-- style-preview-156:start -->
+### Preview a style before creating an animation
+
+All 19 styles now include a typical vector sample using the same Chinese title, “黑粉录屏”. Hover or focus with the keyboard to preview motion, click to select, then play or pause the larger example. Wide windows place content on the left and styles on the right; narrow windows use two columns. Selection and input persist across groups.
+
+![Actual composer component with unified style samples](screenshots/animation-style-previews-dialog.png)
+
+[View all 19 samples](screenshots/animation-style-previews-gallery.png). Captured from the real component in browser QA. These built-in samples explain visual styles; they are not model-generated results. Actual objects and actions still follow the user's explanation.
+
+On macOS, a runtime hardware decode failure now tries software decoding for that source while restoring the playback position. Working hardware paths remain unchanged; no source transcoding or project edits are involved. Six-source native preview and failure recovery were checked; complete installed-desktop acceptance is not claimed.
+<!-- style-preview-156:end -->
+
 ### 1.5.3: Fewer tracks, direct playback after edits
 
 Move non-overlapping annotations, images, effects or animations into the center of a compatible track, or choose a destination from the context menu. Empty source tracks hide automatically. Drop at a track edge to change picture order; horizontal dragging still changes timing. New annotations reuse a visible, unlocked annotation track, with overlaps shown in rows. Locked, hidden or conflicting destinations reject the move.
@@ -61,11 +73,11 @@ LocalBrain discovers its loaded language model. A live Qwen3.8 27B test generate
 These videos show the versions available when recorded. Use the current release information on this page for downloads and capabilities. Narration is in Chinese.
 <!-- evergreen:demos:end -->
 
-## Download: 1.5.5
+## Download: 1.5.6
 
 | Platform | Package | SHA-256 |
 |---|---|---|
-| macOS 13+（Apple 芯片 arm64） | [Download HyphenScreen_1.5.5_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.5.5/HyphenScreen_1.5.5_arm64.dmg) | `f85ee6b3e9cdda7383e7a6a1771d125f23e46fbf3cb84378af0eabc2000beb12` |
+| macOS 13+（Apple 芯片 arm64） | [Download HyphenScreen_1.5.6_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.5.6/HyphenScreen_1.5.6_arm64.dmg) | `e0d037dfc86039716336265dc60c72255def26a1d35408d43052e3a19109e2e7` |
 | Windows 10/11（x64）· 1.5.0 版 | `HyphenScreen_1.5.0_x64-setup.exe` | `d2c18f25c686e1e315832e851ca5dfca08a5712f00d29233390e4a967147ea07` |
 | Linux（x86_64）· 1.5.0 版 | `HyphenScreen_1.5.0_x86_64.AppImage` | `47d0eb091c25ad9d0852e387a89cd089154f11c1886dc0f1dfec45b6e6ea8254` |
 | Debian / Ubuntu（amd64）· 1.5.0 版 | `HyphenScreen_1.5.0_amd64.deb` | `d5f0660e64eee598927db1a2c7ec8db15d339725cd27d366a9e85adfac79d153` |
