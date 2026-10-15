@@ -18,11 +18,11 @@
 <!-- recent-features:start -->
 ## 近期新增与改进（最近 5 项）
 
+- **1.5.4** · 新增「Kimi 订阅」接入：预填接口地址与默认模型，粘贴 Kimi Code 密钥即可使用。
+- **1.5.4** · 各 AI 提供商的模型与接口地址分别保存，切换账号不再丢失已填配置。
 - **1.5.3** · 修复Kimi动画工具参数400错误；实际生成、写入、读回及原生导出通过。
 - **1.5.3** · 同类且时间不重叠的标注、图片、效果与动画可合轨，原轨移空后自动隐藏。
 - **1.5.3** · 拖动素材主体调整画面层级，新增标注复用既有轨道，重叠内容在同轨分行。
-- **1.5.3** · 恢复自动字幕预览与导出；长段删除或裁切后可直接续播，无需切换页面。
-- **1.5.3** · 分组仅由左侧表头收起和展开，时间线中部不再误触折叠。
 <!-- recent-features:end -->
 
 <!-- development-timeline:start -->
@@ -120,9 +120,9 @@
 关注[哔哩哔哩「黑粉科技」](https://space.bilibili.com/1846717524)、[YouTube 黑粉科技频道](https://www.youtube.com/@hyphentech_top)；公众号和视频号搜索「黑粉科技」，查看实际演示与使用教程。
 <!-- evergreen:discovery:end -->
 
-**当前版本：[黑粉录屏 1.5.3 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.5.3)**（每个平台只保留最新的一版）。
+**当前版本：[黑粉录屏 1.5.4 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.5.4)**（每个平台只保留最新的一版）。
 
-> 1.5.3 目前提供 macOS 安装包；Windows 继续提供 [黑粉录屏 1.5.0 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.5.0)，尚未发布 1.5.3 的 Windows 版；Linux 继续提供 [黑粉录屏 1.5.0 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.5.0)，尚未发布 1.5.3 的 Linux 版。
+> 1.5.4 目前提供 macOS 安装包；Windows 继续提供 [黑粉录屏 1.5.0 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.5.0)，尚未发布 1.5.4 的 Windows 版；Linux 继续提供 [黑粉录屏 1.5.0 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.5.0)，尚未发布 1.5.4 的 Linux 版。
 
 ## 下载
 
@@ -130,7 +130,7 @@
 
 | 平台 | 文件 | SHA-256 |
 |---|---|---|
-| macOS 13+（Apple 芯片 arm64） | [下载 HyphenScreen_1.5.3_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.5.3/HyphenScreen_1.5.3_arm64.dmg) | `5d71818ae8632380b22f58092d5cef21f230e4c87c3e27f6fd9e80e7b2d15f3a` |
+| macOS 13+（Apple 芯片 arm64） | [下载 HyphenScreen_1.5.4_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.5.4/HyphenScreen_1.5.4_arm64.dmg) | `3b2cbd0e358660d936b2c45a56340e5bae4b3e1004cc1784a4370730a7486574` |
 | Windows 10/11（x64）· 1.5.0 版 | `HyphenScreen_1.5.0_x64-setup.exe` | `d2c18f25c686e1e315832e851ca5dfca08a5712f00d29233390e4a967147ea07` |
 | Linux（x86_64）· 1.5.0 版 | `HyphenScreen_1.5.0_x86_64.AppImage` | `47d0eb091c25ad9d0852e387a89cd089154f11c1886dc0f1dfec45b6e6ea8254` |
 | Debian / Ubuntu（amd64）· 1.5.0 版 | `HyphenScreen_1.5.0_amd64.deb` | `d5f0660e64eee598927db1a2c7ec8db15d339725cd27d366a9e85adfac79d153` |
@@ -138,7 +138,7 @@
 
 同一页附带各平台的 `SHA256SUMS*.txt` 与 `release-manifest.json`，可核对文件完整性与构建来源。
 
-> 下面的功能一览按 1.5.3 介绍；Windows 暂为 1.5.0，不包含之后加入的功能；Linux 暂为 1.5.0，不包含之后加入的功能，各版变化见发行页面上的发行说明。
+> 下面的功能一览按 1.5.4 介绍；Windows 暂为 1.5.0，不包含之后加入的功能；Linux 暂为 1.5.0，不包含之后加入的功能，各版变化见发行页面上的发行说明。
 
 <!-- evergreen:feature-tour:start -->
 <details>
@@ -277,7 +277,10 @@ Kimi 可通过兼容接口接入，填写自己的接口地址、模型与密钥
 | Codex 订阅 | 检测官方客户端与本机登录，失败时明显提示登录，提供登录兜底入口 |
 | Claude 订阅 | 使用本机 Claude Code 登录；认证失效时提示重新登录 |
 | LocalBrain 本地模型 | 发现方寸智匣，选择首选语言模型并按需连接，显示实际运行状态 |
+| Kimi 订阅 | 预填 Kimi Code 接口地址与默认模型，粘贴控制台密钥即可；可改用 k3-256k |
 | 模型 API | OpenAI、Claude、Gemini、Mistral、OpenRouter、MiniMax 和 OpenAI 兼容接口 |
+
+各提供商的模型、接口地址与档位分别保存，切换账号后切回不丢配置。
 | MiniMax Token Plan | 国内／国际地址分别配置，使用对应平台的密钥 |
 
 快速处理模板覆盖口播精剪、停顿压缩、口头禅、重复与重录、人声处理、音乐躲避、自动缩放、打码、横转竖、转场和成片体检。当前 MCP 暴露 **92 个工具**，内置对话与外部代理可调用已实现的编辑能力；AI 可以生成／修改动画场景、图层、关键帧和已绑定参数。
