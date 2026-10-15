@@ -17,11 +17,11 @@ HyphenTech のデスクトップ録画・編集ソフトです。ソフトウェ
 <!-- recent-features:start -->
 ## 最近の機能追加と改善（5件）
 
+- **1.5.5** · 「Kimi サブスクリプション」経由のアニメーション生成が 400 で拒否される問題を修正し、k3-256k が再び利用可能になりました。
+- **1.5.5** · アニメーション作成が段階式になりました：シーンごとに書き込み、途中までの成果を保持。ローカルモデルの制限時間を45分に拡大。
 - **1.5.4** · 「Kimi サブスクリプション」接続を追加：エンドポイントと既定モデルをプリセット、Kimi Code の API キーを貼るだけで使えます。
 - **1.5.4** · AI プロバイダーごとにモデルとエンドポイントを個別保存し、切り替えても設定が消えなくなりました。
 - **1.5.3** · Kimiのアニメーション引数による400エラーを修正。実際の生成、挿入、読み戻し、書き出しを確認。
-- **1.5.3** · 時間が重ならない同種の注釈・画像・効果・アニメーションを同じトラックにまとめ、空になった元のトラックを隠します。
-- **1.5.3** · 素材本体の上下ドラッグで画面の重なり順を変更。新規注釈は既存トラックを使い、重なりは行に分けます。
 <!-- recent-features:end -->
 
 <!-- development-timeline:start -->
@@ -62,11 +62,11 @@ AI パネルの制作画面で内容と独自の要望を入力し、説明、�
 動画は撮影時のバージョンです。現在の機能と配布パッケージはこのページのリリース情報をご確認ください。動画の解説は中国語です。
 <!-- evergreen:demos:end -->
 
-## ダウンロード: 1.5.4
+## ダウンロード: 1.5.5
 
 | プラットフォーム | パッケージ | SHA-256 |
 |---|---|---|
-| macOS 13+（Apple 芯片 arm64） | [ダウンロード HyphenScreen_1.5.4_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.5.4/HyphenScreen_1.5.4_arm64.dmg) | `3b2cbd0e358660d936b2c45a56340e5bae4b3e1004cc1784a4370730a7486574` |
+| macOS 13+（Apple 芯片 arm64） | [ダウンロード HyphenScreen_1.5.5_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.5.5/HyphenScreen_1.5.5_arm64.dmg) | `f85ee6b3e9cdda7383e7a6a1771d125f23e46fbf3cb84378af0eabc2000beb12` |
 | Windows 10/11（x64）· 1.5.0 版 | `HyphenScreen_1.5.0_x64-setup.exe` | `d2c18f25c686e1e315832e851ca5dfca08a5712f00d29233390e4a967147ea07` |
 | Linux（x86_64）· 1.5.0 版 | `HyphenScreen_1.5.0_x86_64.AppImage` | `47d0eb091c25ad9d0852e387a89cd089154f11c1886dc0f1dfec45b6e6ea8254` |
 | Debian / Ubuntu（amd64）· 1.5.0 版 | `HyphenScreen_1.5.0_amd64.deb` | `d5f0660e64eee598927db1a2c7ec8db15d339725cd27d366a9e85adfac79d153` |
