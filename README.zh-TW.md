@@ -16,11 +16,11 @@
 <!-- recent-features:start -->
 ## 近期新增與改進（最近 5 項）
 
+- **1.5.4** · 新增「Kimi 訂閱」接入：預填接口位址與預設模型，貼上 Kimi Code 金鑰即可使用。
+- **1.5.4** · 各 AI 提供商的模型與接口位址分別保存，切換帳號不再遺失已填配置。
 - **1.5.3** · 修復Kimi動畫工具參數400錯誤；實際生成、寫入、讀回及原生匯出通過。
 - **1.5.3** · 同類且時間不重疊的標註、圖片、效果與動畫可合軌，原軌移空後自動隱藏。
 - **1.5.3** · 拖動素材主體調整畫面層級，新增標註沿用既有軌道，重疊內容在同軌分行。
-- **1.5.3** · 恢復自動字幕預覽與匯出；長段刪除或裁切後可直接續播，無須切換頁面。
-- **1.5.3** · 分組僅由左側表頭收合與展開，時間軸中部不再誤觸收合。
 <!-- recent-features:end -->
 
 <!-- development-timeline:start -->
@@ -61,11 +61,11 @@
 影片示範的是拍攝時的版本；安裝套件與目前功能以本頁正式發行資訊為準。影片以中文講解。
 <!-- evergreen:demos:end -->
 
-## 下載: 1.5.3
+## 下載: 1.5.4
 
 | 平台 | 安裝套件 | SHA-256 |
 |---|---|---|
-| macOS 13+（Apple 芯片 arm64） | [下載 HyphenScreen_1.5.3_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.5.3/HyphenScreen_1.5.3_arm64.dmg) | `5d71818ae8632380b22f58092d5cef21f230e4c87c3e27f6fd9e80e7b2d15f3a` |
+| macOS 13+（Apple 芯片 arm64） | [下載 HyphenScreen_1.5.4_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.5.4/HyphenScreen_1.5.4_arm64.dmg) | `3b2cbd0e358660d936b2c45a56340e5bae4b3e1004cc1784a4370730a7486574` |
 | Windows 10/11（x64）· 1.5.0 版 | `HyphenScreen_1.5.0_x64-setup.exe` | `d2c18f25c686e1e315832e851ca5dfca08a5712f00d29233390e4a967147ea07` |
 | Linux（x86_64）· 1.5.0 版 | `HyphenScreen_1.5.0_x86_64.AppImage` | `47d0eb091c25ad9d0852e387a89cd089154f11c1886dc0f1dfec45b6e6ea8254` |
 | Debian / Ubuntu（amd64）· 1.5.0 版 | `HyphenScreen_1.5.0_amd64.deb` | `d5f0660e64eee598927db1a2c7ec8db15d339725cd27d366a9e85adfac79d153` |
@@ -121,7 +121,7 @@ Rust 合成器逐影格計算，預覽和匯出共用場景邏輯；AI 修改 JS
 
 Codex／Claude 訂閱偵測本機官方客戶端與登入狀態，失敗時顯示明確的登入／重新登入指引，Codex 有登入備援入口。LocalBrain 可發現方寸智匣並按需連接首選語言模型；可用性依實際服務狀態與模型回覆判定，並非所有模型均已逐一驗證。
 
-API 支援 OpenAI、Claude、Gemini、Mistral、OpenRouter、MiniMax、MiniMax Token Plan 及相容接口；MiniMax 國內／國際位址分開配置。快速範本涵蓋口播精剪、停頓、口頭禪、重複重錄、人聲處理、音樂閃避、縮放、打碼、橫轉直與成片檢查。目前 MCP 提供 **92 個工具**，涵蓋已實作的工程、時間軸、字幕、音訊、動畫與匯出操作。AI 修改請在預覽中複核。
+API 支援 Kimi 訂閱（預填接口與模型）、OpenAI、Claude、Gemini、Mistral、OpenRouter、MiniMax、MiniMax Token Plan 及相容接口；各提供商的模型與位址分別保存，切換不遺失；MiniMax 國內／國際位址分開配置。快速範本涵蓋口播精剪、停頓、口頭禪、重複重錄、人聲處理、音樂閃避、縮放、打碼、橫轉直與成片檢查。目前 MCP 提供 **92 個工具**，涵蓋已實作的工程、時間軸、字幕、音訊、動畫與匯出操作。AI 修改請在預覽中複核。
 
 ## 匯出、保護與工程管理
 
