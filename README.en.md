@@ -16,11 +16,11 @@ HyphenScreen by HyphenTech is a desktop workspace for software tutorials, produc
 <!-- recent-features:start -->
 ## Recent features and improvements (5 items)
 
+- **1.5.4** · New Kimi subscription provider: endpoint and default model pre-filled — just paste a Kimi Code API key.
+- **1.5.4** · Each AI provider now keeps its own model and endpoint settings; switching providers no longer wipes saved configurations.
 - **1.5.3** · Fix Kimi animation tool schema HTTP 400 errors; actual generation, insertion, readback and native export verified.
 - **1.5.3** · Merge non-overlapping annotations, images, effects and animations into compatible tracks; emptied source tracks hide automatically.
 - **1.5.3** · Drag clip bodies vertically to change picture order; new annotations reuse editable tracks, with overlaps displayed in rows.
-- **1.5.3** · Restore automatic captions in preview and export; resume directly after long cuts or deletions without changing pages.
-- **1.5.3** · Collapse and expand groups only from the left header to avoid accidental timeline folding.
 <!-- recent-features:end -->
 
 <!-- development-timeline:start -->
@@ -61,11 +61,11 @@ LocalBrain discovers its loaded language model. A live Qwen3.8 27B test generate
 These videos show the versions available when recorded. Use the current release information on this page for downloads and capabilities. Narration is in Chinese.
 <!-- evergreen:demos:end -->
 
-## Download: 1.5.3
+## Download: 1.5.4
 
 | Platform | Package | SHA-256 |
 |---|---|---|
-| macOS 13+（Apple 芯片 arm64） | [Download HyphenScreen_1.5.3_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.5.3/HyphenScreen_1.5.3_arm64.dmg) | `5d71818ae8632380b22f58092d5cef21f230e4c87c3e27f6fd9e80e7b2d15f3a` |
+| macOS 13+（Apple 芯片 arm64） | [Download HyphenScreen_1.5.4_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.5.4/HyphenScreen_1.5.4_arm64.dmg) | `3b2cbd0e358660d936b2c45a56340e5bae4b3e1004cc1784a4370730a7486574` |
 | Windows 10/11（x64）· 1.5.0 版 | `HyphenScreen_1.5.0_x64-setup.exe` | `d2c18f25c686e1e315832e851ca5dfca08a5712f00d29233390e4a967147ea07` |
 | Linux（x86_64）· 1.5.0 版 | `HyphenScreen_1.5.0_x86_64.AppImage` | `47d0eb091c25ad9d0852e387a89cd089154f11c1886dc0f1dfec45b6e6ea8254` |
 | Debian / Ubuntu（amd64）· 1.5.0 版 | `HyphenScreen_1.5.0_amd64.deb` | `d5f0660e64eee598927db1a2c7ec8db15d339725cd27d366a9e85adfac79d153` |
@@ -121,7 +121,7 @@ Audio tracks mix narration and music. Trim independently, detach source audio an
 
 Codex and Claude subscription modes detect official local clients and sign-in state, with visible sign-in/re-authentication guidance; Codex has a login fallback. LocalBrain discovers the local service and connects to a preferred language model on demand. Availability follows actual service status and model responses, not a guarantee that every local model has been tested.
 
-API options include OpenAI, Claude, Gemini, Mistral, OpenRouter, MiniMax, MiniMax Token Plan and OpenAI-compatible endpoints. MiniMax domestic and international endpoints are configured separately. Recipes cover narration cleanup, pauses, filler words, repeats, voice processing, music ducking, zoom, redaction, portrait highlights and output checks. The current MCP interface exposes **92 tools** for implemented project, timeline, caption, audio, animation and export operations. Review AI edits in the preview.
+API options include Kimi subscription (endpoint and model pre-filled), OpenAI, Claude, Gemini, Mistral, OpenRouter, MiniMax, MiniMax Token Plan and OpenAI-compatible endpoints. Each provider keeps its own model and endpoint settings across switches. MiniMax domestic and international endpoints are configured separately. Recipes cover narration cleanup, pauses, filler words, repeats, voice processing, music ducking, zoom, redaction, portrait highlights and output checks. The current MCP interface exposes **92 tools** for implemented project, timeline, caption, audio, animation and export operations. Review AI edits in the preview.
 
 ## Export and project management
 
