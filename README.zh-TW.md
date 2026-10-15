@@ -16,14 +16,26 @@
 <!-- recent-features:start -->
 ## 近期新增與改進（最近 5 項）
 
+- **1.5.6** · 19種動畫風格新增統一標題範例，支援懸停預覽、點選及較大範例播放／暫停。
+- **1.5.6** · macOS影片預覽遇到硬體解碼失敗時，為目前素材自動嘗試軟體解碼並保留播放位置。
 - **1.5.5** · 修復「Kimi 訂閱」入口製作動畫被接口 400 拒絕的問題，k3-256k 恢復正常。
 - **1.5.5** · 動畫製作改為漸進式：逐場景寫入並保留部分成果；本地模型時限放寬到 45 分鐘。
-- **1.5.4** · 新增「Kimi 訂閱」接入：預填接口位址與預設模型，貼上 Kimi Code 金鑰即可使用。
 - **1.5.4** · 各 AI 提供商的模型與接口位址分別保存，切換帳號不再遺失已填配置。
-- **1.5.3** · 修復Kimi動畫工具參數400錯誤；實際生成、寫入、讀回及原生匯出通過。
 <!-- recent-features:end -->
 
 <!-- development-timeline:start -->
+<!-- style-preview-156:start -->
+### 先看樣式，再製作動畫
+
+19種風格均以簡體“黑粉录屏”統一展示典型矢量範例。懸停或鍵盤聚焦可預覽動作，點選後可播放／暫停較大範例；寬視窗左側填寫解說、右側選風格，窄視窗兩欄排列，跨分類保留選擇與輸入。
+
+![實際製作元件：統一風格範例與清晰分欄](screenshots/animation-style-previews-dialog.png)
+
+[查看19種風格總覽](screenshots/animation-style-previews-gallery.png)。截圖來自實際元件的瀏覽器驗收頁；內建範例用於解釋風格，並非模型生成結果，物件與動作仍依本次解說設計。
+
+macOS匯入影片遇到硬體解碼失敗時，會為目前素材嘗試軟體解碼並保留播放位置；正常硬體路徑不變，不轉碼或修改工程。六段素材原生預覽及失敗恢復已驗證，完整安裝桌面驗收未計通過。
+<!-- style-preview-156:end -->
+
 ### 1.5.3：軌道更緊湊，剪完直接播放
 
 同類且時間不重疊的標註、圖片、疊加效果及動畫，可拖到目標軌道中部合軌，也可右鍵選擇目標；原軌移空後自動隱藏。拖到軌道上下邊緣調整畫面層級，橫向仍調整時間。新標註沿用可見、未鎖定的標註軌，重疊內容在同軌分行。鎖定、隱藏或時間衝突的目標不會強行接收素材。
@@ -61,11 +73,11 @@
 影片示範的是拍攝時的版本；安裝套件與目前功能以本頁正式發行資訊為準。影片以中文講解。
 <!-- evergreen:demos:end -->
 
-## 下載: 1.5.5
+## 下載: 1.5.6
 
 | 平台 | 安裝套件 | SHA-256 |
 |---|---|---|
-| macOS 13+（Apple 芯片 arm64） | [下載 HyphenScreen_1.5.5_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.5.5/HyphenScreen_1.5.5_arm64.dmg) | `f85ee6b3e9cdda7383e7a6a1771d125f23e46fbf3cb84378af0eabc2000beb12` |
+| macOS 13+（Apple 芯片 arm64） | [下載 HyphenScreen_1.5.6_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.5.6/HyphenScreen_1.5.6_arm64.dmg) | `e0d037dfc86039716336265dc60c72255def26a1d35408d43052e3a19109e2e7` |
 | Windows 10/11（x64）· 1.5.0 版 | `HyphenScreen_1.5.0_x64-setup.exe` | `d2c18f25c686e1e315832e851ca5dfca08a5712f00d29233390e4a967147ea07` |
 | Linux（x86_64）· 1.5.0 版 | `HyphenScreen_1.5.0_x86_64.AppImage` | `47d0eb091c25ad9d0852e387a89cd089154f11c1886dc0f1dfec45b6e6ea8254` |
 | Debian / Ubuntu（amd64）· 1.5.0 版 | `HyphenScreen_1.5.0_amd64.deb` | `d5f0660e64eee598927db1a2c7ec8db15d339725cd27d366a9e85adfac79d153` |
