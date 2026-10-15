@@ -16,11 +16,11 @@
 <!-- recent-features:start -->
 ## 近期新增與改進（最近 5 項）
 
+- **1.5.5** · 修復「Kimi 訂閱」入口製作動畫被接口 400 拒絕的問題，k3-256k 恢復正常。
+- **1.5.5** · 動畫製作改為漸進式：逐場景寫入並保留部分成果；本地模型時限放寬到 45 分鐘。
 - **1.5.4** · 新增「Kimi 訂閱」接入：預填接口位址與預設模型，貼上 Kimi Code 金鑰即可使用。
 - **1.5.4** · 各 AI 提供商的模型與接口位址分別保存，切換帳號不再遺失已填配置。
 - **1.5.3** · 修復Kimi動畫工具參數400錯誤；實際生成、寫入、讀回及原生匯出通過。
-- **1.5.3** · 同類且時間不重疊的標註、圖片、效果與動畫可合軌，原軌移空後自動隱藏。
-- **1.5.3** · 拖動素材主體調整畫面層級，新增標註沿用既有軌道，重疊內容在同軌分行。
 <!-- recent-features:end -->
 
 <!-- development-timeline:start -->
@@ -61,11 +61,11 @@
 影片示範的是拍攝時的版本；安裝套件與目前功能以本頁正式發行資訊為準。影片以中文講解。
 <!-- evergreen:demos:end -->
 
-## 下載: 1.5.4
+## 下載: 1.5.5
 
 | 平台 | 安裝套件 | SHA-256 |
 |---|---|---|
-| macOS 13+（Apple 芯片 arm64） | [下載 HyphenScreen_1.5.4_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.5.4/HyphenScreen_1.5.4_arm64.dmg) | `3b2cbd0e358660d936b2c45a56340e5bae4b3e1004cc1784a4370730a7486574` |
+| macOS 13+（Apple 芯片 arm64） | [下載 HyphenScreen_1.5.5_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.5.5/HyphenScreen_1.5.5_arm64.dmg) | `f85ee6b3e9cdda7383e7a6a1771d125f23e46fbf3cb84378af0eabc2000beb12` |
 | Windows 10/11（x64）· 1.5.0 版 | `HyphenScreen_1.5.0_x64-setup.exe` | `d2c18f25c686e1e315832e851ca5dfca08a5712f00d29233390e4a967147ea07` |
 | Linux（x86_64）· 1.5.0 版 | `HyphenScreen_1.5.0_x86_64.AppImage` | `47d0eb091c25ad9d0852e387a89cd089154f11c1886dc0f1dfec45b6e6ea8254` |
 | Debian / Ubuntu（amd64）· 1.5.0 版 | `HyphenScreen_1.5.0_amd64.deb` | `d5f0660e64eee598927db1a2c7ec8db15d339725cd27d366a9e85adfac79d153` |
