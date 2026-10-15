@@ -18,11 +18,11 @@
 <!-- recent-features:start -->
 ## 近期新增与改进（最近 5 项）
 
+- **1.5.5** · 修复「Kimi 订阅」入口制作动画被接口 400 拒绝的问题，k3-256k 恢复正常。
+- **1.5.5** · 动画制作改为渐进式：逐场景写入并保留部分成果；本地模型时限放宽到 45 分钟。
 - **1.5.4** · 新增「Kimi 订阅」接入：预填接口地址与默认模型，粘贴 Kimi Code 密钥即可使用。
 - **1.5.4** · 各 AI 提供商的模型与接口地址分别保存，切换账号不再丢失已填配置。
 - **1.5.3** · 修复Kimi动画工具参数400错误；实际生成、写入、读回及原生导出通过。
-- **1.5.3** · 同类且时间不重叠的标注、图片、效果与动画可合轨，原轨移空后自动隐藏。
-- **1.5.3** · 拖动素材主体调整画面层级，新增标注复用既有轨道，重叠内容在同轨分行。
 <!-- recent-features:end -->
 
 <!-- development-timeline:start -->
@@ -120,9 +120,9 @@
 关注[哔哩哔哩「黑粉科技」](https://space.bilibili.com/1846717524)、[YouTube 黑粉科技频道](https://www.youtube.com/@hyphentech_top)；公众号和视频号搜索「黑粉科技」，查看实际演示与使用教程。
 <!-- evergreen:discovery:end -->
 
-**当前版本：[黑粉录屏 1.5.4 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.5.4)**（每个平台只保留最新的一版）。
+**当前版本：[黑粉录屏 1.5.5 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.5.5)**（每个平台只保留最新的一版）。
 
-> 1.5.4 目前提供 macOS 安装包；Windows 继续提供 [黑粉录屏 1.5.0 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.5.0)，尚未发布 1.5.4 的 Windows 版；Linux 继续提供 [黑粉录屏 1.5.0 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.5.0)，尚未发布 1.5.4 的 Linux 版。
+> 1.5.5 目前提供 macOS 安装包；Windows 继续提供 [黑粉录屏 1.5.0 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.5.0)，尚未发布 1.5.5 的 Windows 版；Linux 继续提供 [黑粉录屏 1.5.0 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.5.0)，尚未发布 1.5.5 的 Linux 版。
 
 ## 下载
 
@@ -130,7 +130,7 @@
 
 | 平台 | 文件 | SHA-256 |
 |---|---|---|
-| macOS 13+（Apple 芯片 arm64） | [下载 HyphenScreen_1.5.4_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.5.4/HyphenScreen_1.5.4_arm64.dmg) | `3b2cbd0e358660d936b2c45a56340e5bae4b3e1004cc1784a4370730a7486574` |
+| macOS 13+（Apple 芯片 arm64） | [下载 HyphenScreen_1.5.5_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.5.5/HyphenScreen_1.5.5_arm64.dmg) | `f85ee6b3e9cdda7383e7a6a1771d125f23e46fbf3cb84378af0eabc2000beb12` |
 | Windows 10/11（x64）· 1.5.0 版 | `HyphenScreen_1.5.0_x64-setup.exe` | `d2c18f25c686e1e315832e851ca5dfca08a5712f00d29233390e4a967147ea07` |
 | Linux（x86_64）· 1.5.0 版 | `HyphenScreen_1.5.0_x86_64.AppImage` | `47d0eb091c25ad9d0852e387a89cd089154f11c1886dc0f1dfec45b6e6ea8254` |
 | Debian / Ubuntu（amd64）· 1.5.0 版 | `HyphenScreen_1.5.0_amd64.deb` | `d5f0660e64eee598927db1a2c7ec8db15d339725cd27d366a9e85adfac79d153` |
@@ -138,7 +138,7 @@
 
 同一页附带各平台的 `SHA256SUMS*.txt` 与 `release-manifest.json`，可核对文件完整性与构建来源。
 
-> 下面的功能一览按 1.5.4 介绍；Windows 暂为 1.5.0，不包含之后加入的功能；Linux 暂为 1.5.0，不包含之后加入的功能，各版变化见发行页面上的发行说明。
+> 下面的功能一览按 1.5.5 介绍；Windows 暂为 1.5.0，不包含之后加入的功能；Linux 暂为 1.5.0，不包含之后加入的功能，各版变化见发行页面上的发行说明。
 
 <!-- evergreen:feature-tour:start -->
 <details>
