@@ -16,11 +16,11 @@ HyphenScreen by HyphenTech is a desktop workspace for software tutorials, produc
 <!-- recent-features:start -->
 ## Recent features and improvements (5 items)
 
+- **1.5.5** · Fix animation generation via the Kimi subscription provider being rejected (HTTP 400); k3-256k works again.
+- **1.5.5** · Animation creation is now progressive: scenes land one by one and partial results are kept; local-model budget raised to 45 minutes.
 - **1.5.4** · New Kimi subscription provider: endpoint and default model pre-filled — just paste a Kimi Code API key.
 - **1.5.4** · Each AI provider now keeps its own model and endpoint settings; switching providers no longer wipes saved configurations.
 - **1.5.3** · Fix Kimi animation tool schema HTTP 400 errors; actual generation, insertion, readback and native export verified.
-- **1.5.3** · Merge non-overlapping annotations, images, effects and animations into compatible tracks; emptied source tracks hide automatically.
-- **1.5.3** · Drag clip bodies vertically to change picture order; new annotations reuse editable tracks, with overlaps displayed in rows.
 <!-- recent-features:end -->
 
 <!-- development-timeline:start -->
@@ -61,11 +61,11 @@ LocalBrain discovers its loaded language model. A live Qwen3.8 27B test generate
 These videos show the versions available when recorded. Use the current release information on this page for downloads and capabilities. Narration is in Chinese.
 <!-- evergreen:demos:end -->
 
-## Download: 1.5.4
+## Download: 1.5.5
 
 | Platform | Package | SHA-256 |
 |---|---|---|
-| macOS 13+（Apple 芯片 arm64） | [Download HyphenScreen_1.5.4_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.5.4/HyphenScreen_1.5.4_arm64.dmg) | `3b2cbd0e358660d936b2c45a56340e5bae4b3e1004cc1784a4370730a7486574` |
+| macOS 13+（Apple 芯片 arm64） | [Download HyphenScreen_1.5.5_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.5.5/HyphenScreen_1.5.5_arm64.dmg) | `f85ee6b3e9cdda7383e7a6a1771d125f23e46fbf3cb84378af0eabc2000beb12` |
 | Windows 10/11（x64）· 1.5.0 版 | `HyphenScreen_1.5.0_x64-setup.exe` | `d2c18f25c686e1e315832e851ca5dfca08a5712f00d29233390e4a967147ea07` |
 | Linux（x86_64）· 1.5.0 版 | `HyphenScreen_1.5.0_x86_64.AppImage` | `47d0eb091c25ad9d0852e387a89cd089154f11c1886dc0f1dfec45b6e6ea8254` |
 | Debian / Ubuntu（amd64）· 1.5.0 版 | `HyphenScreen_1.5.0_amd64.deb` | `d5f0660e64eee598927db1a2c7ec8db15d339725cd27d366a9e85adfac79d153` |
