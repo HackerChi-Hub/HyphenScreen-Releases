@@ -18,12 +18,14 @@
 <!-- recent-features:start -->
 ## 近期新增与改进（最近 5 项）
 
+- **1.5.8** · 纯动画搭配旁白和音乐的工程直接使用动画画布预览，修复误把音频当作视频导致无法显示的问题。
+- **1.5.8** · 外部动画制作接口兼容场景输入结构，保留执行校验，支持逐场景写入与回读。
 - **1.5.7** · 制作动画可分别设置最长等待和无输出等待（1–360分钟），提供快捷选项并按引擎记住。
 - **1.5.7** · 动画制作即时显示解释与分镜、实际场景结构进度；写入后自动回读图层数和时长，结束后可展开过程。
 - **1.5.6** · 19种动画风格加入统一“黑粉录屏”示例，支持悬停预览、点击选择及大示例播放／暂停。
-- **1.5.6** · macOS视频预览遇到硬件解码失败时，自动为当前素材尝试软件解码并保持播放位置。
-- **1.5.5** · 修复「Kimi 订阅」入口制作动画被接口 400 拒绝的问题，k3-256k 恢复正常。
 <!-- recent-features:end -->
+
+**1.5.8：动画工程直接预览。** 只有原生动画、旁白和音乐的工程使用动画画布预览，不再把音频误当视频。预览来源跟随实际画面时间线，避免未使用的旧素材干扰。macOS独立编辑器已实测前后跳转与整片连续播放；外部编辑接口同时修复动画场景写入的结构兼容问题。具体平台与安装版验收范围见发行说明。
 
 <!-- style-preview-156:start -->
 
@@ -134,9 +136,9 @@ macOS导入视频遇到硬件解码失败时，会为当前素材自动尝试软
 关注[哔哩哔哩「黑粉科技」](https://space.bilibili.com/1846717524)、[YouTube 黑粉科技频道](https://www.youtube.com/@hyphentech_top)；公众号和视频号搜索「黑粉科技」，查看实际演示与使用教程。
 <!-- evergreen:discovery:end -->
 
-**当前版本：[黑粉录屏 1.5.7 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.5.7)**（每个平台只保留最新的一版）。
+**当前版本：[黑粉录屏 1.5.8 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.5.8)**（每个平台只保留最新的一版）。
 
-> 1.5.7 目前提供 macOS 安装包；Windows 继续提供 [黑粉录屏 1.5.0 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.5.0)，尚未发布 1.5.7 的 Windows 版；Linux 继续提供 [黑粉录屏 1.5.0 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.5.0)，尚未发布 1.5.7 的 Linux 版。
+> 1.5.8 目前提供 macOS 安装包；Windows 继续提供 [黑粉录屏 1.5.0 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.5.0)，尚未发布 1.5.8 的 Windows 版；Linux 继续提供 [黑粉录屏 1.5.0 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.5.0)，尚未发布 1.5.8 的 Linux 版。
 
 ## 下载
 
@@ -144,7 +146,7 @@ macOS导入视频遇到硬件解码失败时，会为当前素材自动尝试软
 
 | 平台 | 文件 | SHA-256 |
 |---|---|---|
-| macOS 13+（Apple 芯片 arm64） | [下载 HyphenScreen_1.5.7_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.5.7/HyphenScreen_1.5.7_arm64.dmg) | `ef0b8a8725e04eee465c361893bd5d603e0d4294227c9cbebd225e3109cb96f2` |
+| macOS 13+（Apple 芯片 arm64） | [下载 HyphenScreen_1.5.8_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.5.8/HyphenScreen_1.5.8_arm64.dmg) | `5d1d287f65b41d84bd6a163b0c768856dc3f7e74e345f3167a05a6714fa65187` |
 | Windows 10/11（x64）· 1.5.0 版 | `HyphenScreen_1.5.0_x64-setup.exe` | `d2c18f25c686e1e315832e851ca5dfca08a5712f00d29233390e4a967147ea07` |
 | Linux（x86_64）· 1.5.0 版 | `HyphenScreen_1.5.0_x86_64.AppImage` | `47d0eb091c25ad9d0852e387a89cd089154f11c1886dc0f1dfec45b6e6ea8254` |
 | Debian / Ubuntu（amd64）· 1.5.0 版 | `HyphenScreen_1.5.0_amd64.deb` | `d5f0660e64eee598927db1a2c7ec8db15d339725cd27d366a9e85adfac79d153` |
@@ -152,7 +154,7 @@ macOS导入视频遇到硬件解码失败时，会为当前素材自动尝试软
 
 同一页附带各平台的 `SHA256SUMS*.txt` 与 `release-manifest.json`，可核对文件完整性与构建来源。
 
-> 下面的功能一览按 1.5.7 介绍；Windows 暂为 1.5.0，不包含之后加入的功能；Linux 暂为 1.5.0，不包含之后加入的功能，各版变化见发行页面上的发行说明。
+> 下面的功能一览按 1.5.8 介绍；Windows 暂为 1.5.0，不包含之后加入的功能；Linux 暂为 1.5.0，不包含之后加入的功能，各版变化见发行页面上的发行说明。
 
 <!-- evergreen:feature-tour:start -->
 <details>
