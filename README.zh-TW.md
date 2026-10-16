@@ -16,15 +16,17 @@
 <!-- recent-features:start -->
 ## 近期新增與改進（最近 5 項）
 
+- **1.5.7** · 製作動畫可分別設定最長等待及無輸出等待（1–360分鐘），提供快捷選項並依引擎記住。
+- **1.5.7** · 動畫製作即時顯示解釋與分鏡、實際場景結構進度；寫入後自動讀回圖層數和時長，結束後可展開過程。
 - **1.5.6** · 19種動畫風格新增統一標題範例，支援懸停預覽、點選及較大範例播放／暫停。
 - **1.5.6** · macOS影片預覽遇到硬體解碼失敗時，為目前素材自動嘗試軟體解碼並保留播放位置。
 - **1.5.5** · 修復「Kimi 訂閱」入口製作動畫被接口 400 拒絕的問題，k3-256k 恢復正常。
-- **1.5.5** · 動畫製作改為漸進式：逐場景寫入並保留部分成果；本地模型時限放寬到 45 分鐘。
-- **1.5.4** · 各 AI 提供商的模型與接口位址分別保存，切換帳號不再遺失已填配置。
 <!-- recent-features:end -->
 
 <!-- development-timeline:start -->
 <!-- style-preview-156:start -->
+
+**1.5.7：動畫等待與即時回饋。**「製作動畫」的粉色時鐘按鈕可分別設定最長等待及無輸出等待（1–360分鐘），依引擎記住。解釋和分鏡隨模型文字顯示；支援參數增量時回報場景結構進度，每次寫入後自動讀回圖層數與時長。結束後可展開過程。部分訂閱不提供參數流，僅顯示真實階段。macOS 1.5.7包含此改進；完整故事的生成品質仍需由使用者預覽核對。
 ### 先看樣式，再製作動畫
 
 19種風格均以簡體“黑粉录屏”統一展示典型矢量範例。懸停或鍵盤聚焦可預覽動作，點選後可播放／暫停較大範例；寬視窗左側填寫解說、右側選風格，窄視窗兩欄排列，跨分類保留選擇與輸入。
@@ -73,11 +75,11 @@ macOS匯入影片遇到硬體解碼失敗時，會為目前素材嘗試軟體解
 影片示範的是拍攝時的版本；安裝套件與目前功能以本頁正式發行資訊為準。影片以中文講解。
 <!-- evergreen:demos:end -->
 
-## 下載: 1.5.6
+## 下載: 1.5.7
 
 | 平台 | 安裝套件 | SHA-256 |
 |---|---|---|
-| macOS 13+（Apple 芯片 arm64） | [下載 HyphenScreen_1.5.6_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.5.6/HyphenScreen_1.5.6_arm64.dmg) | `e0d037dfc86039716336265dc60c72255def26a1d35408d43052e3a19109e2e7` |
+| macOS 13+（Apple 芯片 arm64） | [下載 HyphenScreen_1.5.7_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.5.7/HyphenScreen_1.5.7_arm64.dmg) | `ef0b8a8725e04eee465c361893bd5d603e0d4294227c9cbebd225e3109cb96f2` |
 | Windows 10/11（x64）· 1.5.0 版 | `HyphenScreen_1.5.0_x64-setup.exe` | `d2c18f25c686e1e315832e851ca5dfca08a5712f00d29233390e4a967147ea07` |
 | Linux（x86_64）· 1.5.0 版 | `HyphenScreen_1.5.0_x86_64.AppImage` | `47d0eb091c25ad9d0852e387a89cd089154f11c1886dc0f1dfec45b6e6ea8254` |
 | Debian / Ubuntu（amd64）· 1.5.0 版 | `HyphenScreen_1.5.0_amd64.deb` | `d5f0660e64eee598927db1a2c7ec8db15d339725cd27d366a9e85adfac79d153` |
