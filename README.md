@@ -18,12 +18,14 @@
 <!-- recent-features:start -->
 ## 近期新增与改进（最近 5 项）
 
+- **1.5.9** · 添加跳剪默认覆盖选中主录屏整段，可通过双端范围条调节、重置和恢复。
+- **1.5.9** · 删除主录屏片段后，后续独立标注、动画、辅助视频、音频及标记一起前移。
+- **1.5.9** · 片尾跳剪后重新播放回到保留区间，素材变化按身份保持播放源，并释放移除的播放器。
+- **1.5.9** · 外部编辑接口支持时间不重叠的兼容画面共轨，拒绝锁定、不兼容或时间冲突目标。
 - **1.5.8** · 纯动画搭配旁白和音乐的工程直接使用动画画布预览，修复误把音频当作视频导致无法显示的问题。
-- **1.5.8** · 外部动画制作接口兼容场景输入结构，保留执行校验，支持逐场景写入与回读。
-- **1.5.7** · 制作动画可分别设置最长等待和无输出等待（1–360分钟），提供快捷选项并按引擎记住。
-- **1.5.7** · 动画制作即时显示解释与分镜、实际场景结构进度；写入后自动回读图层数和时长，结束后可展开过程。
-- **1.5.6** · 19种动画风格加入统一“黑粉录屏”示例，支持悬停预览、点击选择及大示例播放／暂停。
 <!-- recent-features:end -->
+
+**1.5.9：跳剪与续播改进。**“添加跳剪”默认覆盖当前整段视频，双端范围条调整起止；删除主录屏片段会让后续独立素材一起前移。修复片尾跳剪后的重新播放，并按素材身份保持预览源。实际发行与验收范围见源码进度记录。
 
 **1.5.8：动画工程直接预览。** 只有原生动画、旁白和音乐的工程使用动画画布预览，不再把音频误当视频。预览来源跟随实际画面时间线，避免未使用的旧素材干扰。macOS独立编辑器已实测前后跳转与整片连续播放；外部编辑接口同时修复动画场景写入的结构兼容问题。具体平台与安装版验收范围见发行说明。
 
@@ -42,6 +44,8 @@ macOS导入视频遇到硬件解码失败时，会为当前素材自动尝试软
 <!-- style-preview-156:end -->
 
 <!-- development-timeline:start -->
+
+**1.5.9：跳剪、删除联动与兼容内容共轨。** 整段跳剪可调起止范围；删除主录屏后，后续独立画面和声音联动前移。外部编辑接口支持将时间不重叠的同类画面放入同轨，拒绝锁定、不兼容和冲突目标。本期51条动画轨整理为3条，内容与重叠覆盖顺序保留。播放器释放和续播已有针对性修复；长期编辑中的同一错误尚未稳定重现，不承诺所有播放器故障都已消失。
 ### 1.5.3：轨道更紧凑，剪完直接播放
 
 同类且时间不重叠的标注、图片、叠加效果和动画，可拖到目标轨道中部合轨，也可右键「移入同类轨道」；原轨移空后自动隐藏。拖到轨道上下边缘调整画面层级，横向仍调整时间。新标注复用可见、未锁定的标注轨，重叠内容在同轨分行。锁定、隐藏或时间冲突的目标不会强行接收素材。
@@ -136,9 +140,9 @@ macOS导入视频遇到硬件解码失败时，会为当前素材自动尝试软
 关注[哔哩哔哩「黑粉科技」](https://space.bilibili.com/1846717524)、[YouTube 黑粉科技频道](https://www.youtube.com/@hyphentech_top)；公众号和视频号搜索「黑粉科技」，查看实际演示与使用教程。
 <!-- evergreen:discovery:end -->
 
-**当前版本：[黑粉录屏 1.5.8 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.5.8)**（每个平台只保留最新的一版）。
+**当前版本：[黑粉录屏 1.5.9 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.5.9)**（每个平台只保留最新的一版）。
 
-> 1.5.8 目前提供 macOS 安装包；Windows 继续提供 [黑粉录屏 1.5.0 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.5.0)，尚未发布 1.5.8 的 Windows 版；Linux 继续提供 [黑粉录屏 1.5.0 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.5.0)，尚未发布 1.5.8 的 Linux 版。
+> 1.5.9 目前提供 macOS 安装包；Windows 继续提供 [黑粉录屏 1.5.0 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.5.0)，尚未发布 1.5.9 的 Windows 版；Linux 继续提供 [黑粉录屏 1.5.0 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.5.0)，尚未发布 1.5.9 的 Linux 版。
 
 ## 下载
 
@@ -146,7 +150,7 @@ macOS导入视频遇到硬件解码失败时，会为当前素材自动尝试软
 
 | 平台 | 文件 | SHA-256 |
 |---|---|---|
-| macOS 13+（Apple 芯片 arm64） | [下载 HyphenScreen_1.5.8_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.5.8/HyphenScreen_1.5.8_arm64.dmg) | `5d1d287f65b41d84bd6a163b0c768856dc3f7e74e345f3167a05a6714fa65187` |
+| macOS 13+（Apple 芯片 arm64） | [下载 HyphenScreen_1.5.9_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.5.9/HyphenScreen_1.5.9_arm64.dmg) | `dd04d587d9012390825eb54e63edc736107226981f94780f6f7d032782cccaa2` |
 | Windows 10/11（x64）· 1.5.0 版 | `HyphenScreen_1.5.0_x64-setup.exe` | `d2c18f25c686e1e315832e851ca5dfca08a5712f00d29233390e4a967147ea07` |
 | Linux（x86_64）· 1.5.0 版 | `HyphenScreen_1.5.0_x86_64.AppImage` | `47d0eb091c25ad9d0852e387a89cd089154f11c1886dc0f1dfec45b6e6ea8254` |
 | Debian / Ubuntu（amd64）· 1.5.0 版 | `HyphenScreen_1.5.0_amd64.deb` | `d5f0660e64eee598927db1a2c7ec8db15d339725cd27d366a9e85adfac79d153` |
@@ -154,7 +158,7 @@ macOS导入视频遇到硬件解码失败时，会为当前素材自动尝试软
 
 同一页附带各平台的 `SHA256SUMS*.txt` 与 `release-manifest.json`，可核对文件完整性与构建来源。
 
-> 下面的功能一览按 1.5.8 介绍；Windows 暂为 1.5.0，不包含之后加入的功能；Linux 暂为 1.5.0，不包含之后加入的功能，各版变化见发行页面上的发行说明。
+> 下面的功能一览按 1.5.9 介绍；Windows 暂为 1.5.0，不包含之后加入的功能；Linux 暂为 1.5.0，不包含之后加入的功能，各版变化见发行页面上的发行说明。
 
 <!-- evergreen:feature-tour:start -->
 <details>
