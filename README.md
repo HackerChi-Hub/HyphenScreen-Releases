@@ -18,12 +18,18 @@
 <!-- recent-features:start -->
 ## 近期新增与改进（最近 5 项）
 
+- **1.6.1** · 调整时间线后切换预混音与实时音乐时停止旧声音，防止背景音乐叠播。
+- **1.6.0** · 主录屏片段分层后可横向调整时间，其他片段不被重排到轨道开头。
+- **1.6.0** · 修复前置跳剪后动画入场、离场与来源标签延迟闪入主录屏，预览与导出按时间线实际位置合成。
 - **1.5.9** · 添加跳剪默认覆盖选中主录屏整段，可通过双端范围条调节、重置和恢复。
 - **1.5.9** · 删除主录屏片段后，后续独立标注、动画、辅助视频、音频及标记一起前移。
-- **1.5.9** · 片尾跳剪后重新播放回到保留区间，素材变化按身份保持播放源，并释放移除的播放器。
-- **1.5.9** · 外部编辑接口支持时间不重叠的兼容画面共轨，拒绝锁定、不兼容或时间冲突目标。
-- **1.5.8** · 纯动画搭配旁白和音乐的工程直接使用动画画布预览，修复误把音频当作视频导致无法显示的问题。
 <!-- recent-features:end -->
+
+**1.6.1：修复调整时间线后的背景音乐叠播。** 预览退回实时混音时先停止旧预混音，延迟起播也核对当前播放模式。包含1.6.0的动画定位及分层横移修复；1.6.0仅生成本地测试包。各平台以实际下载表为准。
+
+**1.6.0：修复跳剪后动画闪入错误位置。** 素材的入场、离场及来源标签按编辑时间线实际位置合成，避免前面跳剪后延迟叠到主录屏上；预览与导出同时修正。Mac提供本次修复，其他平台以实际下载表为准。
+
+主录屏抬到独立画面轨道后，可继续横向调整时间，其他片段保持原位置；修复误用整条主序列排序而跳到开头的问题。
 
 **1.5.9：跳剪与续播改进。**“添加跳剪”默认覆盖当前整段视频，双端范围条调整起止；删除主录屏片段会让后续独立素材一起前移。修复片尾跳剪后的重新播放，并按素材身份保持预览源。实际发行与验收范围见源码进度记录。
 
@@ -140,7 +146,9 @@ macOS导入视频遇到硬件解码失败时，会为当前素材自动尝试软
 关注[哔哩哔哩「黑粉科技」](https://space.bilibili.com/1846717524)、[YouTube 黑粉科技频道](https://www.youtube.com/@hyphentech_top)；公众号和视频号搜索「黑粉科技」，查看实际演示与使用教程。
 <!-- evergreen:discovery:end -->
 
-**当前版本：[黑粉录屏 1.5.9 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.5.9)**（只保留最新一版）。
+**当前版本：[黑粉录屏 1.6.1 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.6.1)**（每个平台只保留最新的一版）。
+
+> 1.6.1 目前提供 macOS 安装包；Windows 继续提供 [黑粉录屏 1.5.9 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.5.9)，尚未发布 1.6.1 的 Windows 版；Linux 继续提供 [黑粉录屏 1.5.9 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.5.9)，尚未发布 1.6.1 的 Linux 版。
 
 ## 下载
 
@@ -148,13 +156,15 @@ macOS导入视频遇到硬件解码失败时，会为当前素材自动尝试软
 
 | 平台 | 文件 | SHA-256 |
 |---|---|---|
-| macOS 13+（Apple 芯片 arm64） | [下载 HyphenScreen_1.5.9_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.5.9/HyphenScreen_1.5.9_arm64.dmg) | `dd04d587d9012390825eb54e63edc736107226981f94780f6f7d032782cccaa2` |
-| Windows 10/11（x64） | [下载 HyphenScreen_1.5.9_x64-setup.exe](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.5.9/HyphenScreen_1.5.9_x64-setup.exe) | `24cb77f24df4e76c14bf5e53098bae599980619128c2937ec28c8b9ef0b05d57` |
-| Linux（x86_64） | [下载 HyphenScreen_1.5.9_x86_64.AppImage](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.5.9/HyphenScreen_1.5.9_x86_64.AppImage) | `923e06008b24bcfefbe706a5ffb314940acae8b0462c5d2bea54afb6e8d0fdf1` |
-| Debian / Ubuntu（amd64） | [下载 HyphenScreen_1.5.9_amd64.deb](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.5.9/HyphenScreen_1.5.9_amd64.deb) | `f905d8895597824862f51e6bd5a9636449bddf613aaf49fec6738113a0d89282` |
-| Arch Linux（x86_64） | [下载 HyphenScreen_1.5.9_x64.pacman](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.5.9/HyphenScreen_1.5.9_x64.pacman) | `14eb6269141fd4b46bc031b758ef23b2fc343f9488e20a132d71ac7bd299ae19` |
+| macOS 13+（Apple 芯片 arm64） | [下载 HyphenScreen_1.6.1_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.6.1/HyphenScreen_1.6.1_arm64.dmg) | `026c7c43a85ceac1876e9663b9e709cd5dc0921224f3e107a98e6a5291d09fcb` |
+| Windows 10/11（x64）· 1.5.9 版 | `HyphenScreen_1.5.9_x64-setup.exe` | `24cb77f24df4e76c14bf5e53098bae599980619128c2937ec28c8b9ef0b05d57` |
+| Linux（x86_64）· 1.5.9 版 | `HyphenScreen_1.5.9_x86_64.AppImage` | `923e06008b24bcfefbe706a5ffb314940acae8b0462c5d2bea54afb6e8d0fdf1` |
+| Debian / Ubuntu（amd64）· 1.5.9 版 | `HyphenScreen_1.5.9_amd64.deb` | `f905d8895597824862f51e6bd5a9636449bddf613aaf49fec6738113a0d89282` |
+| Arch Linux（x86_64）· 1.5.9 版 | `HyphenScreen_1.5.9_x64.pacman` | `14eb6269141fd4b46bc031b758ef23b2fc343f9488e20a132d71ac7bd299ae19` |
 
 同一页附带各平台的 `SHA256SUMS*.txt` 与 `release-manifest.json`，可核对文件完整性与构建来源。
+
+> 下面的功能一览按 1.6.1 介绍；Windows 暂为 1.5.9，不包含之后加入的功能；Linux 暂为 1.5.9，不包含之后加入的功能，各版变化见发行页面上的发行说明。
 
 <!-- evergreen:feature-tour:start -->
 <details>
