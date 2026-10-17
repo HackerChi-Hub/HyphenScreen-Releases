@@ -16,14 +16,20 @@ HyphenScreen by HyphenTech is a desktop workspace for software tutorials, produc
 <!-- recent-features:start -->
 ## Recent features and improvements (5 items)
 
+- **1.6.1** · Stops stale programme audio when editing hands preview back to live mixing, preventing doubled background music.
+- **1.6.0** · Recordings lifted into separate picture rows move horizontally without repacking the main sequence or shifting other clips.
+- **1.6.0** · Animation entrances, exits and source labels stay at their authored timeline positions after jump cuts in both preview and export.
 - **1.5.9** · Jump cuts start with the selected main clip’s full range, with adjustable endpoints, reset and restore.
 - **1.5.9** · Deleting a main recording shifts later independent annotations, animations, overlays, audio and markers.
-- **1.5.9** · Replay after a tail jump cut returns to retained footage; source identity stays stable as assets change and removed players are released.
-- **1.5.9** · The editing API consolidates non-overlapping compatible visuals onto one track, rejecting locked, incompatible or conflicting targets.
-- **1.5.8** · Animation projects with voiceover and music preview on the native canvas instead of incorrectly decoding audio as video.
 <!-- recent-features:end -->
 
 <!-- development-timeline:start -->
+
+**1.6.1: prevent doubled background music after timeline edits.** Preview stops stale programme audio before returning to live mixing; delayed playback requests recheck the current mode. Includes the animation-placement and lifted-recording fixes from the local-only 1.6.0 build. Platform versions are listed in the download table.
+
+**1.6.0: keep animations at their timeline positions after jump cuts.** Entrance, exit and source-label overlays now map from the editor ruler to the actual source footage, preventing delayed flashes over later recordings in both preview and export. This fix is available on Mac; other platform versions are listed in the download table.
+
+Recordings lifted into separate picture rows can move horizontally in absolute time without packing the main sequence back to the start or shifting other clips. Single-row main-track reordering is preserved.
 
 **1.5.9: jump cuts, ripple deletion and compatible shared tracks.** Adjust a whole-clip jump-cut range; deleting a main recording shifts later independent visuals and audio. The editing API moves non-overlapping compatible objects into one track, rejecting locked, incompatible or conflicting targets. A private episode reduced 51 animation tracks to 3 while preserving content and overlap order. Playback recovery and player cleanup were improved; the reported long-session player failure was not reliably reproduced, so full resolution is not claimed.
 
@@ -81,15 +87,15 @@ LocalBrain discovers its loaded language model. A live Qwen3.8 27B test generate
 These videos show the versions available when recorded. Use the current release information on this page for downloads and capabilities. Narration is in Chinese.
 <!-- evergreen:demos:end -->
 
-## Download: 1.5.9
+## Download: 1.6.1
 
 | Platform | Package | SHA-256 |
 |---|---|---|
-| macOS 13+（Apple 芯片 arm64） | [Download HyphenScreen_1.5.9_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.5.9/HyphenScreen_1.5.9_arm64.dmg) | `dd04d587d9012390825eb54e63edc736107226981f94780f6f7d032782cccaa2` |
-| Windows 10/11（x64） | [Download HyphenScreen_1.5.9_x64-setup.exe](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.5.9/HyphenScreen_1.5.9_x64-setup.exe) | `24cb77f24df4e76c14bf5e53098bae599980619128c2937ec28c8b9ef0b05d57` |
-| Linux（x86_64） | [Download HyphenScreen_1.5.9_x86_64.AppImage](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.5.9/HyphenScreen_1.5.9_x86_64.AppImage) | `923e06008b24bcfefbe706a5ffb314940acae8b0462c5d2bea54afb6e8d0fdf1` |
-| Debian / Ubuntu（amd64） | [Download HyphenScreen_1.5.9_amd64.deb](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.5.9/HyphenScreen_1.5.9_amd64.deb) | `f905d8895597824862f51e6bd5a9636449bddf613aaf49fec6738113a0d89282` |
-| Arch Linux（x86_64） | [Download HyphenScreen_1.5.9_x64.pacman](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.5.9/HyphenScreen_1.5.9_x64.pacman) | `14eb6269141fd4b46bc031b758ef23b2fc343f9488e20a132d71ac7bd299ae19` |
+| macOS 13+（Apple 芯片 arm64） | [Download HyphenScreen_1.6.1_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.6.1/HyphenScreen_1.6.1_arm64.dmg) | `026c7c43a85ceac1876e9663b9e709cd5dc0921224f3e107a98e6a5291d09fcb` |
+| Windows 10/11（x64）· 1.5.9 版 | `HyphenScreen_1.5.9_x64-setup.exe` | `24cb77f24df4e76c14bf5e53098bae599980619128c2937ec28c8b9ef0b05d57` |
+| Linux（x86_64）· 1.5.9 版 | `HyphenScreen_1.5.9_x86_64.AppImage` | `923e06008b24bcfefbe706a5ffb314940acae8b0462c5d2bea54afb6e8d0fdf1` |
+| Debian / Ubuntu（amd64）· 1.5.9 版 | `HyphenScreen_1.5.9_amd64.deb` | `f905d8895597824862f51e6bd5a9636449bddf613aaf49fec6738113a0d89282` |
+| Arch Linux（x86_64）· 1.5.9 版 | `HyphenScreen_1.5.9_x64.pacman` | `14eb6269141fd4b46bc031b758ef23b2fc343f9488e20a132d71ac7bd299ae19` |
 
 <!-- evergreen:capabilities:start -->
 ![Native animation editor, editable layers and the Visual timeline group](screenshots/animation-editor-110.png)
