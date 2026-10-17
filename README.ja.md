@@ -17,16 +17,22 @@ HyphenTech のデスクトップ録画・編集ソフトです。ソフトウェ
 <!-- recent-features:start -->
 ## 最近の機能追加と改善（5件）
 
+- **1.6.1** · 編集後にプレビューがリアルタイムミックスへ戻る際、古い音声を停止してBGMの二重再生を防ぎます。
+- **1.6.0** · 別の映像行へ移した主録画を、ほかのクリップを詰め直さずに左右へ移動できます。
+- **1.6.0** · ジャンプカット後の入退場アニメーションと出典ラベルの遅延表示を修正。プレビューと書き出しを編集タイムラインに一致させます。
 - **1.5.9** · ジャンプカットは選択したメイン録画の全範囲から開始し、両端の調整・リセット・復元に対応。
 - **1.5.9** · メイン録画の削除後、後続の独立した注釈・アニメーション・補助映像・音声・マーカーが連動して前へ移動。
-- **1.5.9** · 末尾カット後の再生は保持範囲へ戻り、素材変更後も識別子で再生元を維持。削除したプレーヤーを解放。
-- **1.5.9** · 編集APIで時間が重ならない互換オブジェクトを同一トラックへ整理。ロック・非互換・時間衝突を拒否。
-- **1.5.8** · ナレーションと音楽を含むアニメーションをネイティブキャンバスでプレビュー。音声を映像として開く問題を修正。
 <!-- recent-features:end -->
 
 **1.5.9：ジャンプカットと再生復帰。**「ジャンプカットを追加」は現在のクリップ全体を初期範囲とし、両端のハンドルで調整できます。主録画クリップの削除時は後続の独立素材も前へ移動します。末尾のジャンプカット後の再生再開と、素材一覧変更時のプレビュー元の保持も修正します。検証・配布状況はソースの進捗記録をご確認ください。
 
 <!-- development-timeline:start -->
+
+**1.6.1：編集後のBGM二重再生を修正。** リアルタイムミックスへ戻る前に古い音声を停止し、遅延した再生開始時も現在のモードを確認します。ローカルテストのみの1.6.0に含まれるアニメーション位置と録画移動の修正も含みます。各プラットフォームの実際のバージョンはダウンロード表をご確認ください。
+
+**1.6.0：ジャンプカット後のアニメーションの誤表示を修正。** 入退場と出典ラベルを編集タイムライン上の位置から素材時刻へ変換し、後続の録画に遅れて重なる現象をプレビューと書き出しの両方で修正します。今回の修正はMac向けです。他のプラットフォームはダウンロード表の実際のバージョンをご確認ください。
+
+別の映像行へ移した主録画クリップは、ほかのクリップを詰め直さずに時間位置を左右へ調整できます。単一行のメイントラックでは従来の並べ替えを維持します。
 
 **1.5.9：ジャンプカット、削除後の連動移動、互換オブジェクトの同一トラック配置。** クリップ全体のカット範囲を調整でき、メイン録画を削除すると後続の独立した映像と音声も前へ移動します。編集APIは時間が重ならない同種のオブジェクトを同じトラックへ移し、ロック・非互換・衝突を拒否します。検証用エピソードでは51本のアニメーショントラックを3本へ整理し、内容と描画順を保持しました。再生復帰とプレーヤー解放も改善しましたが、長時間編集時の同一エラーは安定再現しておらず、完全解決とはしていません。
 <!-- style-preview-156:start -->
@@ -82,15 +88,15 @@ AI パネルの制作画面で内容と独自の要望を入力し、説明、�
 動画は撮影時のバージョンです。現在の機能と配布パッケージはこのページのリリース情報をご確認ください。動画の解説は中国語です。
 <!-- evergreen:demos:end -->
 
-## ダウンロード: 1.5.9
+## ダウンロード: 1.6.1
 
 | プラットフォーム | パッケージ | SHA-256 |
 |---|---|---|
-| macOS 13+（Apple 芯片 arm64） | [ダウンロード HyphenScreen_1.5.9_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.5.9/HyphenScreen_1.5.9_arm64.dmg) | `dd04d587d9012390825eb54e63edc736107226981f94780f6f7d032782cccaa2` |
-| Windows 10/11（x64） | [ダウンロード HyphenScreen_1.5.9_x64-setup.exe](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.5.9/HyphenScreen_1.5.9_x64-setup.exe) | `24cb77f24df4e76c14bf5e53098bae599980619128c2937ec28c8b9ef0b05d57` |
-| Linux（x86_64） | [ダウンロード HyphenScreen_1.5.9_x86_64.AppImage](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.5.9/HyphenScreen_1.5.9_x86_64.AppImage) | `923e06008b24bcfefbe706a5ffb314940acae8b0462c5d2bea54afb6e8d0fdf1` |
-| Debian / Ubuntu（amd64） | [ダウンロード HyphenScreen_1.5.9_amd64.deb](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.5.9/HyphenScreen_1.5.9_amd64.deb) | `f905d8895597824862f51e6bd5a9636449bddf613aaf49fec6738113a0d89282` |
-| Arch Linux（x86_64） | [ダウンロード HyphenScreen_1.5.9_x64.pacman](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.5.9/HyphenScreen_1.5.9_x64.pacman) | `14eb6269141fd4b46bc031b758ef23b2fc343f9488e20a132d71ac7bd299ae19` |
+| macOS 13+（Apple 芯片 arm64） | [ダウンロード HyphenScreen_1.6.1_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.6.1/HyphenScreen_1.6.1_arm64.dmg) | `026c7c43a85ceac1876e9663b9e709cd5dc0921224f3e107a98e6a5291d09fcb` |
+| Windows 10/11（x64）· 1.5.9 版 | `HyphenScreen_1.5.9_x64-setup.exe` | `24cb77f24df4e76c14bf5e53098bae599980619128c2937ec28c8b9ef0b05d57` |
+| Linux（x86_64）· 1.5.9 版 | `HyphenScreen_1.5.9_x86_64.AppImage` | `923e06008b24bcfefbe706a5ffb314940acae8b0462c5d2bea54afb6e8d0fdf1` |
+| Debian / Ubuntu（amd64）· 1.5.9 版 | `HyphenScreen_1.5.9_amd64.deb` | `f905d8895597824862f51e6bd5a9636449bddf613aaf49fec6738113a0d89282` |
+| Arch Linux（x86_64）· 1.5.9 版 | `HyphenScreen_1.5.9_x64.pacman` | `14eb6269141fd4b46bc031b758ef23b2fc343f9488e20a132d71ac7bd299ae19` |
 
 <!-- evergreen:capabilities:start -->
 ![独立アニメーション、編集可能なレイヤーとビジュアルグループ](screenshots/animation-editor-110.png)
