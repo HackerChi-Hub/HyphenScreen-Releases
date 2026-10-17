@@ -16,14 +16,18 @@ HyphenScreen by HyphenTech is a desktop workspace for software tutorials, produc
 <!-- recent-features:start -->
 ## Recent features and improvements (5 items)
 
+- **1.5.9** · Jump cuts start with the selected main clip’s full range, with adjustable endpoints, reset and restore.
+- **1.5.9** · Deleting a main recording shifts later independent annotations, animations, overlays, audio and markers.
+- **1.5.9** · Replay after a tail jump cut returns to retained footage; source identity stays stable as assets change and removed players are released.
+- **1.5.9** · The editing API consolidates non-overlapping compatible visuals onto one track, rejecting locked, incompatible or conflicting targets.
 - **1.5.8** · Animation projects with voiceover and music preview on the native canvas instead of incorrectly decoding audio as video.
-- **1.5.8** · External animation tools accept scene input schemas while retaining execution validation, enabling scene-by-scene writes and readback.
-- **1.5.7** · Animation creation has separate total and no-output wait limits (1–360 minutes), with presets and settings remembered per engine.
-- **1.5.7** · Animation creation streams explanation and storyboard text, reports actual scene structure progress, then reads back layer counts and duration after writes; steps remain expandable.
-- **1.5.6** · All 19 animation styles have a unified title sample, hover previews, selection and a larger example with play/pause.
 <!-- recent-features:end -->
 
 <!-- development-timeline:start -->
+
+**1.5.9: jump cuts, ripple deletion and compatible shared tracks.** Adjust a whole-clip jump-cut range; deleting a main recording shifts later independent visuals and audio. The editing API moves non-overlapping compatible objects into one track, rejecting locked, incompatible or conflicting targets. A private episode reduced 51 animation tracks to 3 while preserving content and overlap order. Playback recovery and player cleanup were improved; the reported long-session player failure was not reliably reproduced, so full resolution is not claimed.
+
+**1.5.9: jump cuts and playback recovery.** Add Jump Cut selects the complete current clip and offers two range handles. Removing a main recording clip moves later independent items together. Playback can restart after a tail cut, and source-list changes preserve the active media by identity. See the source progress log for validation and release status.
 <!-- style-preview-156:start -->
 
 **1.5.8: preview animation projects directly.** Projects with native animation, voiceover and music now use the animation canvas rather than decoding an audio asset as video. Preview sources come from the actual picture timeline. The external editing interface also fixes scene input-schema compatibility. macOS development-editor seek and complete-playback checks passed; see release notes for installation and platform status.
@@ -77,11 +81,11 @@ LocalBrain discovers its loaded language model. A live Qwen3.8 27B test generate
 These videos show the versions available when recorded. Use the current release information on this page for downloads and capabilities. Narration is in Chinese.
 <!-- evergreen:demos:end -->
 
-## Download: 1.5.8
+## Download: 1.5.9
 
 | Platform | Package | SHA-256 |
 |---|---|---|
-| macOS 13+（Apple 芯片 arm64） | [Download HyphenScreen_1.5.8_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.5.8/HyphenScreen_1.5.8_arm64.dmg) | `5d1d287f65b41d84bd6a163b0c768856dc3f7e74e345f3167a05a6714fa65187` |
+| macOS 13+（Apple 芯片 arm64） | [Download HyphenScreen_1.5.9_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.5.9/HyphenScreen_1.5.9_arm64.dmg) | `dd04d587d9012390825eb54e63edc736107226981f94780f6f7d032782cccaa2` |
 | Windows 10/11（x64）· 1.5.0 版 | `HyphenScreen_1.5.0_x64-setup.exe` | `d2c18f25c686e1e315832e851ca5dfca08a5712f00d29233390e4a967147ea07` |
 | Linux（x86_64）· 1.5.0 版 | `HyphenScreen_1.5.0_x86_64.AppImage` | `47d0eb091c25ad9d0852e387a89cd089154f11c1886dc0f1dfec45b6e6ea8254` |
 | Debian / Ubuntu（amd64）· 1.5.0 版 | `HyphenScreen_1.5.0_amd64.deb` | `d5f0660e64eee598927db1a2c7ec8db15d339725cd27d366a9e85adfac79d153` |
