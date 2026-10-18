@@ -23,7 +23,7 @@ HyphenScreen by HyphenTech is a desktop workspace for software tutorials, produc
 - **1.6.1** · Stops stale programme audio when editing hands preview back to live mixing, preventing doubled background music.
 <!-- recent-features:end -->
 
-**1.6.3: find animation by purpose.** The library now has 230 entries across nine categories. Chapter titles, charts, terminals and other styles share purpose-based entries while existing assets and projects remain compatible. Chinese examples include statistical rings, terminal simulation, code typing and chat. Model tools also discover reference variants inside mixed-source families. This update ships on Mac first; use the download table for other platforms.
+**1.6.3: find animation by purpose.** The library now has 230 entries across nine categories. Chapter titles, charts, terminals and other styles share purpose-based entries while existing assets and projects remain compatible. Chinese examples include statistical rings, terminal simulation, code typing and chat. Model tools also discover reference variants inside mixed-source families. Version 1.6.3 is available for Mac, Windows and Linux; see the download table for each package.
 
 ![HyphenScreen 1.6.3](screenshots/material-library-163.png)
 
