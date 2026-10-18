@@ -16,12 +16,16 @@ HyphenScreen by HyphenTech is a desktop workspace for software tutorials, produc
 <!-- recent-features:start -->
 ## Recent features and improvements (5 items)
 
+- **1.6.3** · Animation and effects are grouped into 230 purpose-based entries across nine categories, preserving styles and existing projects.
+- **1.6.3** · Cross-source chapter, chart and terminal styles share entries with shorter names and visible style counts.
+- **1.6.3** · Adds rings, terminal simulation, code typing, chat and data examples with Chinese HyphenTech sample content.
+- **1.6.3** · Fixes missing variants when model tools filter mixed-source families by material kind; source IDs remain searchable.
 - **1.6.1** · Stops stale programme audio when editing hands preview back to live mixing, preventing doubled background music.
-- **1.6.0** · Recordings lifted into separate picture rows move horizontally without repacking the main sequence or shifting other clips.
-- **1.6.0** · Animation entrances, exits and source labels stay at their authored timeline positions after jump cuts in both preview and export.
-- **1.5.9** · Jump cuts start with the selected main clip’s full range, with adjustable endpoints, reset and restore.
-- **1.5.9** · Deleting a main recording shifts later independent annotations, animations, overlays, audio and markers.
 <!-- recent-features:end -->
+
+**1.6.3: find animation by purpose.** The library now has 230 entries across nine categories. Chapter titles, charts, terminals and other styles share purpose-based entries while existing assets and projects remain compatible. Chinese examples include statistical rings, terminal simulation, code typing and chat. Model tools also discover reference variants inside mixed-source families. This update ships on Mac first; use the download table for other platforms.
+
+![HyphenScreen 1.6.3](screenshots/material-library-163.png)
 
 <!-- development-timeline:start -->
 
@@ -87,11 +91,11 @@ LocalBrain discovers its loaded language model. A live Qwen3.8 27B test generate
 These videos show the versions available when recorded. Use the current release information on this page for downloads and capabilities. Narration is in Chinese.
 <!-- evergreen:demos:end -->
 
-## Download: 1.6.1
+## Download: 1.6.3
 
 | Platform | Package | SHA-256 |
 |---|---|---|
-| macOS 13+（Apple 芯片 arm64） | [Download HyphenScreen_1.6.1_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.6.1/HyphenScreen_1.6.1_arm64.dmg) | `026c7c43a85ceac1876e9663b9e709cd5dc0921224f3e107a98e6a5291d09fcb` |
+| macOS 13+（Apple 芯片 arm64） | [Download HyphenScreen_1.6.3_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.6.3/HyphenScreen_1.6.3_arm64.dmg) | `38c3f5dc587ac3fa2f9f71833c3fe047e91a599cba315aed18998fcb34cc3204` |
 | Windows 10/11（x64）· 1.5.9 版 | `HyphenScreen_1.5.9_x64-setup.exe` | `24cb77f24df4e76c14bf5e53098bae599980619128c2937ec28c8b9ef0b05d57` |
 | Linux（x86_64）· 1.5.9 版 | `HyphenScreen_1.5.9_x86_64.AppImage` | `923e06008b24bcfefbe706a5ffb314940acae8b0462c5d2bea54afb6e8d0fdf1` |
 | Debian / Ubuntu（amd64）· 1.5.9 版 | `HyphenScreen_1.5.9_amd64.deb` | `f905d8895597824862f51e6bd5a9636449bddf613aaf49fec6738113a0d89282` |
@@ -123,11 +127,13 @@ Preview and export share Rust compositor scene logic. AI changes JSON scene data
 
 ## A library organized by purpose
 
-The unified Animation & Effects library has Common, Text & Titles, Data & Charts, Explanation, Brand & Outro, Social Platforms, Picture Effects, Hardware, AI Concepts and Flows & Architecture categories. It currently presents **333 grouped entry cards**, including **108 explanation cards** filtered by pointers, steps, comparisons and demonstrations. Similar styles share one card; 23 quote/statement examples form one text-title family. Short titles wrap, with original names still searchable.
+The unified Animation & Effects library has Common, Text & Titles, Data & Charts, Explanation, Brand & Outro, Social Platforms, Picture Effects, Hardware, AI Concepts and Flows & Architecture categories. It currently presents **230 grouped entry cards**, including **71 explanation cards** filtered by pointers, steps, comparisons and demonstrations. Similar styles share one card; 23 quote/statement examples form one text-title family. Short titles wrap, with original names still searchable.
 
-There are 16 common built-in animation presets plus a social-card family covering 17 platforms. Another 368 reference migration previews are grouped by style, plus 300 native animations converted from LottieFiles free animations. These previews still need work on full source-parameter recalculation, complex filters and dynamic visual parity; they are not complete clones of every reference example.
+There are 16 common built-in animation presets plus a social-card family covering 17 platforms. Another 380 reference migration previews are grouped by style, plus 300 native animations converted from LottieFiles free animations. These previews still need work on full source-parameter recalculation, complex filters and dynamic visual parity; they are not complete clones of every reference example.
 
-![Purpose filters and readable short titles in the current Chinese interface](screenshots/animation-library-110.png)
+Cross-source families include 13 chapter styles, 22 title styles, 10 people profiles, six quote cards, four progress rings and six terminal styles. Decorative icons remain separate from numeric charts. Sample text and URLs use Chinese HyphenTech examples; third-party licenses and provenance remain included.
+
+![HyphenScreen 1.6.3](screenshots/material-text-163.png)
 
 Social cards include Douyin, Kuaishou, Bilibili, Xiaohongshu, WeChat Channels, WeChat Official Accounts, WeChat, Weibo, Zhihu and Toutiao, plus YouTube, TikTok, Instagram, X, Facebook, LinkedIn and Twitch. Switching platform retains edited account text, titles and body content.
 
@@ -155,7 +161,7 @@ API options include Kimi subscription (endpoint and model pre-filled), OpenAI, C
 
 Export MP4 or GIF with selectable resolution, frame rate and H.264/H.265 encoding. “Upscale” indicates resizing beyond source dimensions; it does not recover missing source detail. Output checks inspect loudness, silence, black/frozen frames, duration and text boundaries. Automatic sensitive-text detection and OCR output readback currently require macOS; manual redaction is available across platforms.
 
-**Since 1.4.0:** exported videos and GIFs carry a small 黑粉科技 (HyphenTech) badge in the bottom-right corner — the brand mark plus the name, about 150×46 px in a 1080p frame, switching between light and dark lettering with the picture behind it. It marks files made with the app and cannot be turned off; the editor preview does not show it.
+**Since 1.4.0:** exported videos and GIFs carry a small 黑粉科技 (HyphenTech) badge in the bottom-right corner — the brand mark plus the name, about 150×46 px in a 710p frame, switching between light and dark lettering with the picture behind it. It marks files made with the app and cannot be turned off; the editor preview does not show it.
 
 Choose separate project, recording and cache directories, including external drives. Manage cache categories and restore named or automatic project-history checkpoints.
 
@@ -167,7 +173,7 @@ The application is free to download without a HyphenScreen account. Subscription
 - **Windows:** Windows 10/11 x64 with D3D11 video decoding; unsigned installer.
 - **Linux:** x86_64, glibc 2.35+, Vulkan and desktop portals; AppImage, deb and pacman packages.
 
-Download instructions and SHA-256 values are on the [main download page](https://github.com/HackerChi-Hub/HyphenScreen-Releases). Mac 1.4.9 matches all 427 files and links in the disk image and has a valid local signature. Installed desktop checks covered the animation library, layer editor and animation playback; the native camera-cut pixel regression passed. All five public packages were downloaded and their SHA-256 values matched. The complete suite passed 4403 tests with 2 skipped, including 5 private external-production checks that are not shipped. Full recording, physical-camera, face-restoration and online-generation checks were not repeated. Windows/Linux desktop verification remains pending. Existing animation/settings/export screenshots are from the 1.1.0 macOS demo in Chinese. Private test screenshots are not published.
+The 1.6.3 development editor passed purpose browsing, search, insertion and animation playback. Three cross-source style switches passed real API save and fresh-profile reopen checks. Individual source parameters retain their documented editing limits. Installation, package checks and public download verification are recorded in the release evidence; full recording, physical-camera and online-generation checks were not repeated. Windows/Linux desktop verification remains pending.
 
 Copyright © 2026 HyphenTech. Required third-party licenses and original notices are included in the application. This public repository distributes packages and documentation; source remains private.
 <!-- evergreen:capabilities:end -->
