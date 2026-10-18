@@ -96,10 +96,10 @@ These videos show the versions available when recorded. Use the current release 
 | Platform | Package | SHA-256 |
 |---|---|---|
 | macOS 13+（Apple 芯片 arm64） | [Download HyphenScreen_1.6.3_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.6.3/HyphenScreen_1.6.3_arm64.dmg) | `38c3f5dc587ac3fa2f9f71833c3fe047e91a599cba315aed18998fcb34cc3204` |
-| Windows 10/11（x64）· 1.5.9 版 | `HyphenScreen_1.5.9_x64-setup.exe` | `24cb77f24df4e76c14bf5e53098bae599980619128c2937ec28c8b9ef0b05d57` |
-| Linux（x86_64）· 1.5.9 版 | `HyphenScreen_1.5.9_x86_64.AppImage` | `923e06008b24bcfefbe706a5ffb314940acae8b0462c5d2bea54afb6e8d0fdf1` |
-| Debian / Ubuntu（amd64）· 1.5.9 版 | `HyphenScreen_1.5.9_amd64.deb` | `f905d8895597824862f51e6bd5a9636449bddf613aaf49fec6738113a0d89282` |
-| Arch Linux（x86_64）· 1.5.9 版 | `HyphenScreen_1.5.9_x64.pacman` | `14eb6269141fd4b46bc031b758ef23b2fc343f9488e20a132d71ac7bd299ae19` |
+| Windows 10/11（x64） | [Download HyphenScreen_1.6.3_x64-setup.exe](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.6.3/HyphenScreen_1.6.3_x64-setup.exe) | `67491489d137c1c715b152543a43006f3862f1294cfb462532735a5aa4e3536c` |
+| Linux（x86_64） | [Download HyphenScreen_1.6.3_x86_64.AppImage](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.6.3/HyphenScreen_1.6.3_x86_64.AppImage) | `0121c34dcab43ed944525bacb5ac08c95929caaa2c260c985f0b06dacb9001de` |
+| Debian / Ubuntu（amd64） | [Download HyphenScreen_1.6.3_amd64.deb](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.6.3/HyphenScreen_1.6.3_amd64.deb) | `f1f9799bd694b5d82c8ae00444baccd09a93bfecb9160188c3798ed2a3eefb56` |
+| Arch Linux（x86_64） | [Download HyphenScreen_1.6.3_x64.pacman](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.6.3/HyphenScreen_1.6.3_x64.pacman) | `c4edaf6094a3c39740e98f373cc4120aa1e1b50b7a845c7f33c3941a80de64c1` |
 
 <!-- evergreen:capabilities:start -->
 ![Native animation editor, editable layers and the Visual timeline group](screenshots/animation-editor-110.png)
