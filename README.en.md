@@ -33,7 +33,7 @@ HyphenScreen by HyphenTech is a desktop workspace for software tutorials, produc
 
 ![Camera follow settings](screenshots/camera-follow-164.png)
 
-**1.6.3: find animation by purpose.** The library now has 230 entries across nine categories. Chapter titles, charts, terminals and other styles share purpose-based entries while existing assets and projects remain compatible. Chinese examples include statistical rings, terminal simulation, code typing and chat. Model tools also discover reference variants inside mixed-source families. These capabilities remain available in 1.6.4 for Mac, Windows and Linux; see the download table for each package.
+**1.6.3: find animation by purpose.** The library now has 230 entries across nine categories. Chapter titles, charts, terminals and other styles share purpose-based entries while existing assets and projects remain compatible. Chinese examples include statistical rings, terminal simulation, code typing and chat. Model tools also discover reference variants inside mixed-source families. These capabilities remain available in Mac 1.6.5 and Windows/Linux 1.6.6; see the download table for each package.
 
 ![HyphenScreen 1.6.3](screenshots/material-library-163.png)
 
