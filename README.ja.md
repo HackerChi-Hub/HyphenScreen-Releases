@@ -17,12 +17,14 @@ HyphenTech のデスクトップ録画・編集ソフトです。ソフトウェ
 <!-- recent-features:start -->
 ## 最近の機能追加と改善（5件）
 
+- **1.6.6** · Windows・Linuxの映像パッケージ生成を同梱OpenH264に対応。追加のエンコーダーをインストールせずにローカル生成できます。
 - **1.6.5** · 10組の映像パッケージ、計40レイアウトを追加。複数の区間で書体・配色・動き・音を統一し、モデルなしでローカル生成します。
 - **1.6.5** · 共通の編集画面に実際のサムネイルと動画例を表示。明暗テーマで読みやすく、生成ボタンと進捗を下部に固定します。
 - **1.6.5** · 保存した設定から再生成して元のグループを置換し、音声の二重追加を防ぎます。手動移動・トリミング・ロック済みのグループは保護します。
 - **1.6.4** · ズーム領域に安定した解説向けと素早い実演向けのカメラ動作を追加。安全領域を越えると滑らかに追従します。
-- **1.6.4** · 連続クリックを時間と位置でまとめ、一つの操作中の不要なズームの繰り返しを減らします。
 <!-- recent-features:end -->
+
+**1.6.6：Windows・Linuxの映像パッケージ生成を修正。** 利用できないlibx264の代わりに同梱OpenH264を使用し、追加インストールは不要です。Macは公開済み1.6.5を維持します。バージョンと検証範囲はダウンロード表とリリースノートをご確認ください。
 
 **1.6.5：10組の映像パッケージで全編のデザインを統一。** プロジェクトのAIパネルから「整片包装」を開きます。各セットにオープニング・リスト・フォーカス・数値の4レイアウトがあり、実際の見本を確認して内容を入力できます。1〜12区間をローカル生成し、ナレーションを残してまとめて追加します。効果音は標準で有効、音楽は無効です。設定から再生成して元の組を置換でき、手動編集した素材を保護します。区間は編集できますが内部レイヤーの個別編集には未対応です。AppleシリコンMacで10組の標準配色と実録画4区間の生成・シーク・再生・保存後の再読込を検証しました。他の環境は実際のダウンロード表をご確認ください。
 
@@ -100,15 +102,15 @@ AI パネルの制作画面で内容と独自の要望を入力し、説明、�
 動画は撮影時のバージョンです。現在の機能と配布パッケージはこのページのリリース情報をご確認ください。動画の解説は中国語です。
 <!-- evergreen:demos:end -->
 
-## ダウンロード: 1.6.5
+## ダウンロード: 1.6.6
 
 | プラットフォーム | パッケージ | SHA-256 |
 |---|---|---|
-| macOS 13+（Apple 芯片 arm64） | [ダウンロード HyphenScreen_1.6.5_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.6.5/HyphenScreen_1.6.5_arm64.dmg) | `08d9e24702d6df4595020e6ae1c1c8b6b5cab6598febc1a48878d540afd00444` |
-| Windows 10/11（x64）· 1.6.4 版 | `HyphenScreen_1.6.4_x64-setup.exe` | `9b1e1af1a364018414afed245e971e5ba596d00dc9bc3d1e5f792a6bd49ca870` |
-| Linux（x86_64）· 1.6.4 版 | `HyphenScreen_1.6.4_x86_64.AppImage` | `ce2281d83e4997ef6359e0d648b59766c246b7c881bc47844a3e74c007a41ee9` |
-| Debian / Ubuntu（amd64）· 1.6.4 版 | `HyphenScreen_1.6.4_amd64.deb` | `10d7a77234b51b055d738f013f783cf1829278137d9dc2514aad00285f0a6f41` |
-| Arch Linux（x86_64）· 1.6.4 版 | `HyphenScreen_1.6.4_x64.pacman` | `e48cf22db0424cf63edcc275c4acc5a0f91349f442abe5fbd93cb981e80cf61e` |
+| Windows 10/11（x64） | [ダウンロード HyphenScreen_1.6.6_x64-setup.exe](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.6.6/HyphenScreen_1.6.6_x64-setup.exe) | `8cb544f34e17253e92192368278bdaaa0918ba899cc10c90605884731d7fd185` |
+| Linux（x86_64） | [ダウンロード HyphenScreen_1.6.6_x86_64.AppImage](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.6.6/HyphenScreen_1.6.6_x86_64.AppImage) | `7cb71e48cc310ac915de37d3c9105e992d09093ea0ae329f3dda7a9d510b4009` |
+| Debian / Ubuntu（amd64） | [ダウンロード HyphenScreen_1.6.6_amd64.deb](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.6.6/HyphenScreen_1.6.6_amd64.deb) | `a66d0b2066e33af37e1c50020257913f533024359714521418cd662497101c3f` |
+| Arch Linux（x86_64） | [ダウンロード HyphenScreen_1.6.6_x64.pacman](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.6.6/HyphenScreen_1.6.6_x64.pacman) | `27dab06253ef42b48790013c8dbe09f166330f93048451ebdb9bf50e9f44aea2` |
+| macOS 13+（Apple 芯片 arm64）· 1.6.5 版 | `HyphenScreen_1.6.5_arm64.dmg` | `08d9e24702d6df4595020e6ae1c1c8b6b5cab6598febc1a48878d540afd00444` |
 
 <!-- evergreen:capabilities:start -->
 ![独立アニメーション、編集可能なレイヤーとビジュアルグループ](screenshots/animation-editor-110.png)
