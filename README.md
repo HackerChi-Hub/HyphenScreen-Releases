@@ -18,12 +18,16 @@
 <!-- recent-features:start -->
 ## 近期新增与改进（最近 5 项）
 
+- **1.6.4** · 缩放区域新增稳重讲解、灵敏演示运镜，小范围操作保持构图，越界后平滑跟随。
+- **1.6.4** · 连续点击按时间和位置组成操作段，减少反复拉近、拉远。
+- **1.6.4** · 新运镜缩小退出时保持最后焦点；鼠标图标平滑独立控制，旧工程保留原有跟随。
+- **1.6.4** · 修复预览初始化空白画布的资源路径，避免工程打开后报找不到输入文件。
 - **1.6.3** · 动画与效果库归并为230个用途入口、九类分类，保留同类样式与旧工程。
-- **1.6.3** · 章节、图表、终端等跨来源样式集中选择，短名称与样式数量更清晰。
-- **1.6.3** · 新增统计环、终端模拟、代码输入、对话与数据图样例，默认内容统一为黑粉科技中文示例。
-- **1.6.3** · 修复模型按素材类型筛选混合样式族时漏项，原素材仍可按标识查找。
-- **1.6.1** · 调整时间线后切换预混音与实时音乐时停止旧声音，防止背景音乐叠播。
 <!-- recent-features:end -->
+
+**1.6.4：鼠标跟随与缩放更稳。** 选中缩放片段，在右侧对焦模式选择「稳重讲解」或「灵敏演示」。小范围操作保持构图，越界后平滑跟随；连续点击按时间与位置组成操作段，缩小退出时保持焦点。新自动缩放默认稳重讲解，旧工程保留原有跟随。需要录屏的鼠标轨迹；外部视频可使用手动焦点。Apple芯片Mac已完成真实录屏顺播、跳转与导出专项，其他平台以实际下载表为准。
+
+![缩放运镜的实际设置界面](screenshots/camera-follow-164.png)
 
 **1.6.3：素材按用途归并，常用内容更好找。** 动画与效果库整理为230个入口、九类用途；章节、图表、终端等跨来源样式合并，保留原素材和旧工程。新增统计环、终端模拟、代码输入和对话演示等中文样例。模型按素材类型筛选时也能找到混合样式族中的素材。Mac、Windows与Linux现均提供1.6.3，安装包以实际下载表为准。
 
@@ -150,7 +154,9 @@ macOS导入视频遇到硬件解码失败时，会为当前素材自动尝试软
 关注[哔哩哔哩「黑粉科技」](https://space.bilibili.com/1846717524)、[YouTube 黑粉科技频道](https://www.youtube.com/@hyphentech_top)；公众号和视频号搜索「黑粉科技」，查看实际演示与使用教程。
 <!-- evergreen:discovery:end -->
 
-**当前版本：[黑粉录屏 1.6.3 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.6.3)**（只保留最新一版）。
+**当前版本：[黑粉录屏 1.6.4 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.6.4)**（每个平台只保留最新的一版）。
+
+> 1.6.4 目前提供 macOS 安装包；Windows 继续提供 [黑粉录屏 1.6.3 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.6.3)，尚未发布 1.6.4 的 Windows 版；Linux 继续提供 [黑粉录屏 1.6.3 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.6.3)，尚未发布 1.6.4 的 Linux 版。
 
 ## 下载
 
@@ -158,13 +164,15 @@ macOS导入视频遇到硬件解码失败时，会为当前素材自动尝试软
 
 | 平台 | 文件 | SHA-256 |
 |---|---|---|
-| macOS 13+（Apple 芯片 arm64） | [下载 HyphenScreen_1.6.3_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.6.3/HyphenScreen_1.6.3_arm64.dmg) | `38c3f5dc587ac3fa2f9f71833c3fe047e91a599cba315aed18998fcb34cc3204` |
-| Windows 10/11（x64） | [下载 HyphenScreen_1.6.3_x64-setup.exe](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.6.3/HyphenScreen_1.6.3_x64-setup.exe) | `67491489d137c1c715b152543a43006f3862f1294cfb462532735a5aa4e3536c` |
-| Linux（x86_64） | [下载 HyphenScreen_1.6.3_x86_64.AppImage](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.6.3/HyphenScreen_1.6.3_x86_64.AppImage) | `0121c34dcab43ed944525bacb5ac08c95929caaa2c260c985f0b06dacb9001de` |
-| Debian / Ubuntu（amd64） | [下载 HyphenScreen_1.6.3_amd64.deb](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.6.3/HyphenScreen_1.6.3_amd64.deb) | `f1f9799bd694b5d82c8ae00444baccd09a93bfecb9160188c3798ed2a3eefb56` |
-| Arch Linux（x86_64） | [下载 HyphenScreen_1.6.3_x64.pacman](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.6.3/HyphenScreen_1.6.3_x64.pacman) | `c4edaf6094a3c39740e98f373cc4120aa1e1b50b7a845c7f33c3941a80de64c1` |
+| macOS 13+（Apple 芯片 arm64） | [下载 HyphenScreen_1.6.4_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.6.4/HyphenScreen_1.6.4_arm64.dmg) | `92eb1893f1f14ebe3b2e6285e6987a33be10a6d85274ba95b465575a458002ff` |
+| Windows 10/11（x64）· 1.6.3 版 | `HyphenScreen_1.6.3_x64-setup.exe` | `67491489d137c1c715b152543a43006f3862f1294cfb462532735a5aa4e3536c` |
+| Linux（x86_64）· 1.6.3 版 | `HyphenScreen_1.6.3_x86_64.AppImage` | `0121c34dcab43ed944525bacb5ac08c95929caaa2c260c985f0b06dacb9001de` |
+| Debian / Ubuntu（amd64）· 1.6.3 版 | `HyphenScreen_1.6.3_amd64.deb` | `f1f9799bd694b5d82c8ae00444baccd09a93bfecb9160188c3798ed2a3eefb56` |
+| Arch Linux（x86_64）· 1.6.3 版 | `HyphenScreen_1.6.3_x64.pacman` | `c4edaf6094a3c39740e98f373cc4120aa1e1b50b7a845c7f33c3941a80de64c1` |
 
 同一页附带各平台的 `SHA256SUMS*.txt` 与 `release-manifest.json`，可核对文件完整性与构建来源。
+
+> 下面的功能一览按 1.6.4 介绍；Windows 暂为 1.6.3，不包含之后加入的功能；Linux 暂为 1.6.3，不包含之后加入的功能，各版变化见发行页面上的发行说明。
 
 <!-- evergreen:feature-tour:start -->
 <details>
