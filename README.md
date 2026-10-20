@@ -18,12 +18,16 @@
 <!-- recent-features:start -->
 ## 近期新增与改进（最近 5 项）
 
+- **1.6.5** · 十套整片包装、四十种布局，多个段落共用排版、配色、动效与声音，在本机批量生成，无需模型。
+- **1.6.5** · 整片包装共用编辑窗口，提供真实缩略图和动态范例，浅深色清晰显示，生成与进度固定在底栏。
+- **1.6.5** · 保存配置后可重生成并替换原组，避免重复加入叠音；人工移动、裁切或锁定过的组受到保护。
 - **1.6.4** · 缩放区域新增稳重讲解、灵敏演示运镜，小范围操作保持构图，越界后平滑跟随。
 - **1.6.4** · 连续点击按时间和位置组成操作段，减少反复拉近、拉远。
-- **1.6.4** · 新运镜缩小退出时保持最后焦点；鼠标图标平滑独立控制，旧工程保留原有跟随。
-- **1.6.4** · 修复预览初始化空白画布的资源路径，避免工程打开后报找不到输入文件。
-- **1.6.3** · 动画与效果库归并为230个用途入口、九类分类，保留同类样式与旧工程。
 <!-- recent-features:end -->
+
+**1.6.5：十套整片包装，一期共用设计。** 打开工程，在AI面板选择「整片包装」。每套含开场、清单、聚焦、数字四种布局，先看真实范例再填内容；每组1至12段，在本地生成并整组加入，保留原口播。主题声效默认开、配乐默认关，修改已保存配置可替换原组；人工调整过的片段受到保护。片段可剪辑，内部图层暂不可逐层编辑。Apple芯片Mac已完成十套默认配色导出，以及真实录屏四段的生成、跳转、续播和保存重开专项；其他平台以实际下载表为准。
+
+![整片包裝實際介面](screenshots/packaging-165.png)
 
 **1.6.4：鼠标跟随与缩放更稳。** 选中缩放片段，在右侧对焦模式选择「稳重讲解」或「灵敏演示」。小范围操作保持构图，越界后平滑跟随；连续点击按时间与位置组成操作段，缩小退出时保持焦点。新自动缩放默认稳重讲解，旧工程保留原有跟随。需要录屏的鼠标轨迹；外部视频可使用手动焦点。Mac、Windows与Linux均提供1.6.4。Mac完成真实录屏专项，Windows完成合成样例原生导出，Linux完成包体与安装校验；桌面交互范围见发行说明。
 
@@ -154,7 +158,9 @@ macOS导入视频遇到硬件解码失败时，会为当前素材自动尝试软
 关注[哔哩哔哩「黑粉科技」](https://space.bilibili.com/1846717524)、[YouTube 黑粉科技频道](https://www.youtube.com/@hyphentech_top)；公众号和视频号搜索「黑粉科技」，查看实际演示与使用教程。
 <!-- evergreen:discovery:end -->
 
-**当前版本：[黑粉录屏 1.6.4 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.6.4)**（只保留最新一版）。
+**当前版本：[黑粉录屏 1.6.5 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.6.5)**（每个平台只保留最新的一版）。
+
+> 1.6.5 目前提供 macOS 安装包；Windows 继续提供 [黑粉录屏 1.6.4 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.6.4)，尚未发布 1.6.5 的 Windows 版；Linux 继续提供 [黑粉录屏 1.6.4 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.6.4)，尚未发布 1.6.5 的 Linux 版。
 
 ## 下载
 
@@ -162,13 +168,15 @@ macOS导入视频遇到硬件解码失败时，会为当前素材自动尝试软
 
 | 平台 | 文件 | SHA-256 |
 |---|---|---|
-| macOS 13+（Apple 芯片 arm64） | [下载 HyphenScreen_1.6.4_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.6.4/HyphenScreen_1.6.4_arm64.dmg) | `92eb1893f1f14ebe3b2e6285e6987a33be10a6d85274ba95b465575a458002ff` |
-| Windows 10/11（x64） | [下载 HyphenScreen_1.6.4_x64-setup.exe](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.6.4/HyphenScreen_1.6.4_x64-setup.exe) | `9b1e1af1a364018414afed245e971e5ba596d00dc9bc3d1e5f792a6bd49ca870` |
-| Linux（x86_64） | [下载 HyphenScreen_1.6.4_x86_64.AppImage](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.6.4/HyphenScreen_1.6.4_x86_64.AppImage) | `ce2281d83e4997ef6359e0d648b59766c246b7c881bc47844a3e74c007a41ee9` |
-| Debian / Ubuntu（amd64） | [下载 HyphenScreen_1.6.4_amd64.deb](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.6.4/HyphenScreen_1.6.4_amd64.deb) | `10d7a77234b51b055d738f013f783cf1829278137d9dc2514aad00285f0a6f41` |
-| Arch Linux（x86_64） | [下载 HyphenScreen_1.6.4_x64.pacman](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.6.4/HyphenScreen_1.6.4_x64.pacman) | `e48cf22db0424cf63edcc275c4acc5a0f91349f442abe5fbd93cb981e80cf61e` |
+| macOS 13+（Apple 芯片 arm64） | [下载 HyphenScreen_1.6.5_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.6.5/HyphenScreen_1.6.5_arm64.dmg) | `08d9e24702d6df4595020e6ae1c1c8b6b5cab6598febc1a48878d540afd00444` |
+| Windows 10/11（x64）· 1.6.4 版 | `HyphenScreen_1.6.4_x64-setup.exe` | `9b1e1af1a364018414afed245e971e5ba596d00dc9bc3d1e5f792a6bd49ca870` |
+| Linux（x86_64）· 1.6.4 版 | `HyphenScreen_1.6.4_x86_64.AppImage` | `ce2281d83e4997ef6359e0d648b59766c246b7c881bc47844a3e74c007a41ee9` |
+| Debian / Ubuntu（amd64）· 1.6.4 版 | `HyphenScreen_1.6.4_amd64.deb` | `10d7a77234b51b055d738f013f783cf1829278137d9dc2514aad00285f0a6f41` |
+| Arch Linux（x86_64）· 1.6.4 版 | `HyphenScreen_1.6.4_x64.pacman` | `e48cf22db0424cf63edcc275c4acc5a0f91349f442abe5fbd93cb981e80cf61e` |
 
 同一页附带各平台的 `SHA256SUMS*.txt` 与 `release-manifest.json`，可核对文件完整性与构建来源。
+
+> 下面的功能一览按 1.6.5 介绍；Windows 暂为 1.6.4，不包含之后加入的功能；Linux 暂为 1.6.4，不包含之后加入的功能，各版变化见发行页面上的发行说明。
 
 <!-- evergreen:feature-tour:start -->
 <details>
