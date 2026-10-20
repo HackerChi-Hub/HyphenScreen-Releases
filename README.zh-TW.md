@@ -16,12 +16,16 @@
 <!-- recent-features:start -->
 ## 近期新增與改進（最近 5 項）
 
+- **1.6.4** · 縮放區域新增穩重講解、靈敏示範運鏡，小範圍操作保持構圖，越界後平滑跟隨。
+- **1.6.4** · 連續點擊依時間與位置組成操作段，減少反覆拉近、拉遠。
+- **1.6.4** · 新運鏡縮小退出時保持最後焦點；游標圖示平滑獨立控制，舊專案保留原有跟隨。
+- **1.6.4** · 修復預覽初始化空白畫布的資源路徑，避免專案開啟後找不到輸入檔案。
 - **1.6.3** · 動畫與效果庫合併為230個用途入口、九類分類，保留同類樣式與舊專案。
-- **1.6.3** · 章節、圖表、終端等跨來源樣式集中選擇，短名稱與樣式數量更清楚。
-- **1.6.3** · 新增統計環、終端模擬、程式碼輸入、對話及資料圖範例，預設內容統一為黑粉科技中文示例。
-- **1.6.3** · 修復模型依素材類型篩選混合系列時漏項，原素材仍可依標識查找。
-- **1.6.1** · 調整時間軸後切換預混音與即時音樂時停止舊聲音，防止背景音樂重疊播放。
 <!-- recent-features:end -->
+
+**1.6.4：游標跟隨與縮放更穩。** 選取縮放片段，在右側對焦模式選擇「穩重講解」或「靈敏示範」。小範圍操作保持構圖，越界後平滑跟隨；連續點擊依時間與位置組成操作段，縮小退出時保持焦點。需要錄屏的游標軌跡，外部影片可使用手動焦點。舊專案保留原有跟隨。Apple晶片Mac已完成真實錄屏播放、跳轉與匯出專項，其他平台依實際下載表為準。
+
+![Camera follow settings](screenshots/camera-follow-164.png)
 
 **1.6.3：素材依用途合併，常用內容更好找。** 動畫與效果庫整理為230個入口、九類用途；章節、圖表、終端等跨來源樣式合併，保留原素材和舊專案。新增統計環、終端模擬、程式碼輸入及對話示範等中文範例。模型依素材類型篩選時，也能找到混合樣式系列中的素材。Mac、Windows與Linux均已提供1.6.3，安裝包依下方下載表為準。
 
@@ -91,15 +95,15 @@ macOS匯入影片遇到硬體解碼失敗時，會為目前素材嘗試軟體解
 影片示範的是拍攝時的版本；安裝套件與目前功能以本頁正式發行資訊為準。影片以中文講解。
 <!-- evergreen:demos:end -->
 
-## 下載: 1.6.3
+## 下載: 1.6.4
 
 | 平台 | 安裝套件 | SHA-256 |
 |---|---|---|
-| macOS 13+（Apple 芯片 arm64） | [下載 HyphenScreen_1.6.3_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.6.3/HyphenScreen_1.6.3_arm64.dmg) | `38c3f5dc587ac3fa2f9f71833c3fe047e91a599cba315aed18998fcb34cc3204` |
-| Windows 10/11（x64） | [下載 HyphenScreen_1.6.3_x64-setup.exe](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.6.3/HyphenScreen_1.6.3_x64-setup.exe) | `67491489d137c1c715b152543a43006f3862f1294cfb462532735a5aa4e3536c` |
-| Linux（x86_64） | [下載 HyphenScreen_1.6.3_x86_64.AppImage](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.6.3/HyphenScreen_1.6.3_x86_64.AppImage) | `0121c34dcab43ed944525bacb5ac08c95929caaa2c260c985f0b06dacb9001de` |
-| Debian / Ubuntu（amd64） | [下載 HyphenScreen_1.6.3_amd64.deb](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.6.3/HyphenScreen_1.6.3_amd64.deb) | `f1f9799bd694b5d82c8ae00444baccd09a93bfecb9160188c3798ed2a3eefb56` |
-| Arch Linux（x86_64） | [下載 HyphenScreen_1.6.3_x64.pacman](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.6.3/HyphenScreen_1.6.3_x64.pacman) | `c4edaf6094a3c39740e98f373cc4120aa1e1b50b7a845c7f33c3941a80de64c1` |
+| macOS 13+（Apple 芯片 arm64） | [下載 HyphenScreen_1.6.4_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.6.4/HyphenScreen_1.6.4_arm64.dmg) | `92eb1893f1f14ebe3b2e6285e6987a33be10a6d85274ba95b465575a458002ff` |
+| Windows 10/11（x64）· 1.6.3 版 | `HyphenScreen_1.6.3_x64-setup.exe` | `67491489d137c1c715b152543a43006f3862f1294cfb462532735a5aa4e3536c` |
+| Linux（x86_64）· 1.6.3 版 | `HyphenScreen_1.6.3_x86_64.AppImage` | `0121c34dcab43ed944525bacb5ac08c95929caaa2c260c985f0b06dacb9001de` |
+| Debian / Ubuntu（amd64）· 1.6.3 版 | `HyphenScreen_1.6.3_amd64.deb` | `f1f9799bd694b5d82c8ae00444baccd09a93bfecb9160188c3798ed2a3eefb56` |
+| Arch Linux（x86_64）· 1.6.3 版 | `HyphenScreen_1.6.3_x64.pacman` | `c4edaf6094a3c39740e98f373cc4120aa1e1b50b7a845c7f33c3941a80de64c1` |
 
 <!-- evergreen:capabilities:start -->
 ![原生動畫編輯器：可編輯圖層、視覺分組與獨立動畫片段](screenshots/animation-editor-110.png)
