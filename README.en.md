@@ -23,11 +23,11 @@ HyphenScreen by HyphenTech is a desktop workspace for software tutorials, produc
 - **1.6.3** · Animation and effects are grouped into 230 purpose-based entries across nine categories, preserving styles and existing projects.
 <!-- recent-features:end -->
 
-**1.6.4: steadier cursor-follow zooms.** Select a zoom region and choose the steady or responsive focus mode. Small movements hold the composition; crossing the safe area starts a smooth pan. Consecutive clicks form one operation, and zoom-out holds the last focus. Recording cursor telemetry is required; external videos can use manual focus. Existing projects retain legacy follow. Real-recording playback, seeking and export were checked on Apple-silicon Mac; other platforms follow the download table.
+**1.6.4: steadier cursor-follow zooms.** Select a zoom region and choose the steady or responsive focus mode. Small movements hold the composition; crossing the safe area starts a smooth pan. Consecutive clicks form one operation, and zoom-out holds the last focus. Recording cursor telemetry is required; external videos can use manual focus. Existing projects retain legacy follow. Version 1.6.4 is available on Mac, Windows and Linux. Checks covered real-recording playback and export on Apple Silicon Mac, a synthetic native export on Windows, and package installation on Ubuntu; desktop verification remains platform-specific.
 
 ![Camera follow settings](screenshots/camera-follow-164.png)
 
-**1.6.3: find animation by purpose.** The library now has 230 entries across nine categories. Chapter titles, charts, terminals and other styles share purpose-based entries while existing assets and projects remain compatible. Chinese examples include statistical rings, terminal simulation, code typing and chat. Model tools also discover reference variants inside mixed-source families. Version 1.6.3 is available for Mac, Windows and Linux; see the download table for each package.
+**1.6.3: find animation by purpose.** The library now has 230 entries across nine categories. Chapter titles, charts, terminals and other styles share purpose-based entries while existing assets and projects remain compatible. Chinese examples include statistical rings, terminal simulation, code typing and chat. Model tools also discover reference variants inside mixed-source families. These capabilities remain available in 1.6.4 for Mac, Windows and Linux; see the download table for each package.
 
 ![HyphenScreen 1.6.3](screenshots/material-library-163.png)
 
