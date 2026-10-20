@@ -101,10 +101,10 @@ AI パネルの制作画面で内容と独自の要望を入力し、説明、�
 | プラットフォーム | パッケージ | SHA-256 |
 |---|---|---|
 | macOS 13+（Apple 芯片 arm64） | [ダウンロード HyphenScreen_1.6.4_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.6.4/HyphenScreen_1.6.4_arm64.dmg) | `92eb1893f1f14ebe3b2e6285e6987a33be10a6d85274ba95b465575a458002ff` |
-| Windows 10/11（x64）· 1.6.3 版 | `HyphenScreen_1.6.3_x64-setup.exe` | `67491489d137c1c715b152543a43006f3862f1294cfb462532735a5aa4e3536c` |
-| Linux（x86_64）· 1.6.3 版 | `HyphenScreen_1.6.3_x86_64.AppImage` | `0121c34dcab43ed944525bacb5ac08c95929caaa2c260c985f0b06dacb9001de` |
-| Debian / Ubuntu（amd64）· 1.6.3 版 | `HyphenScreen_1.6.3_amd64.deb` | `f1f9799bd694b5d82c8ae00444baccd09a93bfecb9160188c3798ed2a3eefb56` |
-| Arch Linux（x86_64）· 1.6.3 版 | `HyphenScreen_1.6.3_x64.pacman` | `c4edaf6094a3c39740e98f373cc4120aa1e1b50b7a845c7f33c3941a80de64c1` |
+| Windows 10/11（x64） | [ダウンロード HyphenScreen_1.6.4_x64-setup.exe](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.6.4/HyphenScreen_1.6.4_x64-setup.exe) | `9b1e1af1a364018414afed245e971e5ba596d00dc9bc3d1e5f792a6bd49ca870` |
+| Linux（x86_64） | [ダウンロード HyphenScreen_1.6.4_x86_64.AppImage](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.6.4/HyphenScreen_1.6.4_x86_64.AppImage) | `ce2281d83e4997ef6359e0d648b59766c246b7c881bc47844a3e74c007a41ee9` |
+| Debian / Ubuntu（amd64） | [ダウンロード HyphenScreen_1.6.4_amd64.deb](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.6.4/HyphenScreen_1.6.4_amd64.deb) | `10d7a77234b51b055d738f013f783cf1829278137d9dc2514aad00285f0a6f41` |
+| Arch Linux（x86_64） | [ダウンロード HyphenScreen_1.6.4_x64.pacman](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.6.4/HyphenScreen_1.6.4_x64.pacman) | `e48cf22db0424cf63edcc275c4acc5a0f91349f442abe5fbd93cb981e80cf61e` |
 
 <!-- evergreen:capabilities:start -->
 ![独立アニメーション、編集可能なレイヤーとビジュアルグループ](screenshots/animation-editor-110.png)
