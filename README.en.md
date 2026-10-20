@@ -16,12 +16,16 @@ HyphenScreen by HyphenTech is a desktop workspace for software tutorials, produc
 <!-- recent-features:start -->
 ## Recent features and improvements (5 items)
 
+- **1.6.4** · Adds steady and responsive camera styles: small pointer movements hold the composition, with smooth panning beyond a safe area.
+- **1.6.4** · Groups consecutive clicks by time and position to avoid repeated zooming during one operation.
+- **1.6.4** · New camera styles hold the last focus during zoom-out; pointer-art smoothing is independent, and existing projects retain legacy follow.
+- **1.6.4** · Resolves the initial blank-canvas resource path so project preview can open without a missing-input error.
 - **1.6.3** · Animation and effects are grouped into 230 purpose-based entries across nine categories, preserving styles and existing projects.
-- **1.6.3** · Cross-source chapter, chart and terminal styles share entries with shorter names and visible style counts.
-- **1.6.3** · Adds rings, terminal simulation, code typing, chat and data examples with Chinese HyphenTech sample content.
-- **1.6.3** · Fixes missing variants when model tools filter mixed-source families by material kind; source IDs remain searchable.
-- **1.6.1** · Stops stale programme audio when editing hands preview back to live mixing, preventing doubled background music.
 <!-- recent-features:end -->
+
+**1.6.4: steadier cursor-follow zooms.** Select a zoom region and choose the steady or responsive focus mode. Small movements hold the composition; crossing the safe area starts a smooth pan. Consecutive clicks form one operation, and zoom-out holds the last focus. Recording cursor telemetry is required; external videos can use manual focus. Existing projects retain legacy follow. Real-recording playback, seeking and export were checked on Apple-silicon Mac; other platforms follow the download table.
+
+![Camera follow settings](screenshots/camera-follow-164.png)
 
 **1.6.3: find animation by purpose.** The library now has 230 entries across nine categories. Chapter titles, charts, terminals and other styles share purpose-based entries while existing assets and projects remain compatible. Chinese examples include statistical rings, terminal simulation, code typing and chat. Model tools also discover reference variants inside mixed-source families. Version 1.6.3 is available for Mac, Windows and Linux; see the download table for each package.
 
@@ -91,15 +95,15 @@ LocalBrain discovers its loaded language model. A live Qwen3.8 27B test generate
 These videos show the versions available when recorded. Use the current release information on this page for downloads and capabilities. Narration is in Chinese.
 <!-- evergreen:demos:end -->
 
-## Download: 1.6.3
+## Download: 1.6.4
 
 | Platform | Package | SHA-256 |
 |---|---|---|
-| macOS 13+（Apple 芯片 arm64） | [Download HyphenScreen_1.6.3_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.6.3/HyphenScreen_1.6.3_arm64.dmg) | `38c3f5dc587ac3fa2f9f71833c3fe047e91a599cba315aed18998fcb34cc3204` |
-| Windows 10/11（x64） | [Download HyphenScreen_1.6.3_x64-setup.exe](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.6.3/HyphenScreen_1.6.3_x64-setup.exe) | `67491489d137c1c715b152543a43006f3862f1294cfb462532735a5aa4e3536c` |
-| Linux（x86_64） | [Download HyphenScreen_1.6.3_x86_64.AppImage](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.6.3/HyphenScreen_1.6.3_x86_64.AppImage) | `0121c34dcab43ed944525bacb5ac08c95929caaa2c260c985f0b06dacb9001de` |
-| Debian / Ubuntu（amd64） | [Download HyphenScreen_1.6.3_amd64.deb](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.6.3/HyphenScreen_1.6.3_amd64.deb) | `f1f9799bd694b5d82c8ae00444baccd09a93bfecb9160188c3798ed2a3eefb56` |
-| Arch Linux（x86_64） | [Download HyphenScreen_1.6.3_x64.pacman](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.6.3/HyphenScreen_1.6.3_x64.pacman) | `c4edaf6094a3c39740e98f373cc4120aa1e1b50b7a845c7f33c3941a80de64c1` |
+| macOS 13+（Apple 芯片 arm64） | [Download HyphenScreen_1.6.4_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.6.4/HyphenScreen_1.6.4_arm64.dmg) | `92eb1893f1f14ebe3b2e6285e6987a33be10a6d85274ba95b465575a458002ff` |
+| Windows 10/11（x64）· 1.6.3 版 | `HyphenScreen_1.6.3_x64-setup.exe` | `67491489d137c1c715b152543a43006f3862f1294cfb462532735a5aa4e3536c` |
+| Linux（x86_64）· 1.6.3 版 | `HyphenScreen_1.6.3_x86_64.AppImage` | `0121c34dcab43ed944525bacb5ac08c95929caaa2c260c985f0b06dacb9001de` |
+| Debian / Ubuntu（amd64）· 1.6.3 版 | `HyphenScreen_1.6.3_amd64.deb` | `f1f9799bd694b5d82c8ae00444baccd09a93bfecb9160188c3798ed2a3eefb56` |
+| Arch Linux（x86_64）· 1.6.3 版 | `HyphenScreen_1.6.3_x64.pacman` | `c4edaf6094a3c39740e98f373cc4120aa1e1b50b7a845c7f33c3941a80de64c1` |
 
 <!-- evergreen:capabilities:start -->
 ![Native animation editor, editable layers and the Visual timeline group](screenshots/animation-editor-110.png)
