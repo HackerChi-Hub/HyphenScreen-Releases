@@ -175,10 +175,10 @@ macOS导入视频遇到硬件解码失败时，会为当前素材自动尝试软
 | 平台 | 文件 | SHA-256 |
 |---|---|---|
 | macOS 13+（Apple 芯片 arm64） | [下载 HyphenScreen_1.6.7_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.6.7/HyphenScreen_1.6.7_arm64.dmg) | `e062c91893532f45272f8e85adfabe5050ea1337b21f1ea9208dedbdf26e998e` |
-| Windows 10/11（x64）· 1.6.6 版 | `HyphenScreen_1.6.6_x64-setup.exe` | `8cb544f34e17253e92192368278bdaaa0918ba899cc10c90605884731d7fd185` |
-| Linux（x86_64）· 1.6.6 版 | `HyphenScreen_1.6.6_x86_64.AppImage` | `7cb71e48cc310ac915de37d3c9105e992d09093ea0ae329f3dda7a9d510b4009` |
-| Debian / Ubuntu（amd64）· 1.6.6 版 | `HyphenScreen_1.6.6_amd64.deb` | `a66d0b2066e33af37e1c50020257913f533024359714521418cd662497101c3f` |
-| Arch Linux（x86_64）· 1.6.6 版 | `HyphenScreen_1.6.6_x64.pacman` | `27dab06253ef42b48790013c8dbe09f166330f93048451ebdb9bf50e9f44aea2` |
+| Windows 10/11（x64）· 1.6.6 版 | [下载 HyphenScreen_1.6.6_x64-setup.exe](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.6.6/HyphenScreen_1.6.6_x64-setup.exe) | `8cb544f34e17253e92192368278bdaaa0918ba899cc10c90605884731d7fd185` |
+| Linux（x86_64）· 1.6.6 版 | [下载 HyphenScreen_1.6.6_x86_64.AppImage](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.6.6/HyphenScreen_1.6.6_x86_64.AppImage) | `7cb71e48cc310ac915de37d3c9105e992d09093ea0ae329f3dda7a9d510b4009` |
+| Debian / Ubuntu（amd64）· 1.6.6 版 | [下载 HyphenScreen_1.6.6_amd64.deb](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.6.6/HyphenScreen_1.6.6_amd64.deb) | `a66d0b2066e33af37e1c50020257913f533024359714521418cd662497101c3f` |
+| Arch Linux（x86_64）· 1.6.6 版 | [下载 HyphenScreen_1.6.6_x64.pacman](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.6.6/HyphenScreen_1.6.6_x64.pacman) | `27dab06253ef42b48790013c8dbe09f166330f93048451ebdb9bf50e9f44aea2` |
 
 同一页附带各平台的 `SHA256SUMS*.txt` 与 `release-manifest.json`，可核对文件完整性与构建来源。
 
