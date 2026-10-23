@@ -16,18 +16,24 @@
 <!-- recent-features:start -->
 ## 近期新增與改進（最近 5 項）
 
+- **1.6.8** · Mac新增本機編排：來源證據、原理過程及角色講解，填寫內容與節拍即可產生原生動畫，無需模型。
+- **1.6.8** · 動畫內容頁可直接修改文字與本機圖片，編排動畫可改來源、步驟、配色和事件時間；保留圖層與關鍵影格入口。
+- **1.6.8** · 動畫可固定在專案時間尺或跟隨一個主錄影片段，移動、分割、裁短及刪除時保持對應關係。
+- **1.6.8** · 動作與既有音效共用講解事件；連續且相容、不重疊的編排優先共用一條動畫軌。
 - **1.6.7** · Mac整片包裝合為單一片段清單，縮圖、版式與時間集中顯示，一般四段設定一屏可見。
-- **1.6.7** · 十套顯示名稱統一四字，新增紅色海報名稱；舊設定、樣式與聲音保持相容。
-- **1.6.6** · 修復Windows與Linux整片包裝編碼器相容性，使用隨包提供的OpenH264，本機產生無需額外安裝編碼器。
-- **1.6.5** · 十套整片包裝、四十種版面，多個段落共用排版、配色、動效與聲音，在本機批次產生，無需模型。
-- **1.6.5** · 整片包裝共用編輯視窗，提供真實縮圖和動態範例，淺深色清晰顯示，產生按鈕與進度固定在底欄。
 <!-- recent-features:end -->
+
+**1.6.8：內容與動作共用一份節拍。** Mac在「製作動畫」中加入「本機編排」，來源證據、原理過程和角色講解無需模型即可產生原生圖層。動畫的「內容」頁可改文字、圖片、步驟及事件時間；動作與既有音效共用節拍。可固定在專案時間尺或跟隨一個主錄影片段，連續相容編排優先共軌。重新編排會重算受控圖層，保留人工新增圖層；這是三類固定任務框架，不是通用骨架或任意故事產生器。Windows／Linux維持1.6.6，未包含本輪功能。
+
+![本機編排實際製作視窗](screenshots/local-explanation-168.png)
+
+![內容編輯、節拍與時間關聯實際介面](screenshots/content-editing-168.png)
 
 **1.6.7：整片包裝更緊湊。** Mac編輯視窗將片段選擇合為一組，縮圖、標題、版式與時間集中顯示，再用「本段版式」修改目前片段。十套名稱統一四字，「昭和海報」改為「紅色海報」；舊專案、配色與聲音保持相容。一般四段設定在1280×720視窗可完整顯示，較小視窗與更多片段按需捲動。Windows／Linux維持1.6.6，未包含本輪介面更新。
 
 ![整片包裝緊湊編輯實際介面](screenshots/packaging-167.jpg)
 
-**1.6.6：Windows／Linux整片包裝編碼修復。** 使用隨包提供的OpenH264，修復產生時找不到libx264的問題，無需另外安裝編碼器。Mac現提供1.6.7，平台版本及驗證範圍見下載表與發行說明。
+**1.6.6：Windows／Linux整片包裝編碼修復。** 使用隨包提供的OpenH264，修復產生時找不到libx264的問題，無需另外安裝編碼器。Mac現提供1.6.8，平台版本及驗證範圍見下載表與發行說明。
 
 **1.6.5：十套整片包裝，一期共用設計。** 開啟專案，在AI面板選擇「整片包裝」。每套含開場、清單、聚焦、數字四種版面，先看真實範例再填內容；每組1至12段，在本機產生並整組加入，保留原口播。主題音效預設開啟、配樂預設關閉；修改已儲存設定可替換原組，人工調整過的片段受到保護。片段可剪輯，內部圖層暫不可逐層編輯。Apple晶片Mac已完成十套預設配色匯出及真實錄屏四段的產生、跳轉、續播、儲存重開專項；其他平台依實際下載表為準。
 
@@ -105,11 +111,11 @@ macOS匯入影片遇到硬體解碼失敗時，會為目前素材嘗試軟體解
 影片示範的是拍攝時的版本；安裝套件與目前功能以本頁正式發行資訊為準。影片以中文講解。
 <!-- evergreen:demos:end -->
 
-## 下載: 1.6.7
+## 下載: 1.6.8
 
 | 平台 | 安裝套件 | SHA-256 |
 |---|---|---|
-| macOS 13+（Apple 芯片 arm64） | [下載 HyphenScreen_1.6.7_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.6.7/HyphenScreen_1.6.7_arm64.dmg) | `e062c91893532f45272f8e85adfabe5050ea1337b21f1ea9208dedbdf26e998e` |
+| macOS 13+（Apple 芯片 arm64） | [下載 HyphenScreen_1.6.8_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.6.8/HyphenScreen_1.6.8_arm64.dmg) | `afacc7b4ac426b1820e31e47c69f28a497816c6cf8f74b3eb7c23479e28b1808` |
 | Windows 10/11（x64）· 1.6.6 版 | [下載 HyphenScreen_1.6.6_x64-setup.exe](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.6.6/HyphenScreen_1.6.6_x64-setup.exe) | `8cb544f34e17253e92192368278bdaaa0918ba899cc10c90605884731d7fd185` |
 | Linux（x86_64）· 1.6.6 版 | [下載 HyphenScreen_1.6.6_x86_64.AppImage](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.6.6/HyphenScreen_1.6.6_x86_64.AppImage) | `7cb71e48cc310ac915de37d3c9105e992d09093ea0ae329f3dda7a9d510b4009` |
 | Debian / Ubuntu（amd64）· 1.6.6 版 | [下載 HyphenScreen_1.6.6_amd64.deb](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.6.6/HyphenScreen_1.6.6_amd64.deb) | `a66d0b2066e33af37e1c50020257913f533024359714521418cd662497101c3f` |
