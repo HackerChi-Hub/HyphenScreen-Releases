@@ -16,18 +16,24 @@ HyphenScreen by HyphenTech is a desktop workspace for software tutorials, produc
 <!-- recent-features:start -->
 ## Recent features and improvements (5 items)
 
+- **1.6.8** · Mac adds local composition for source evidence, processes and presenter actions. Enter content and event timing to create native animation without a model.
+- **1.6.8** · Edit ordinary text and local images in the Content tab; composed scenes expose sources, steps, colors and event timing alongside layers and keyframes.
+- **1.6.8** · Keep animation on the project ruler or link it to one main recording clip through moves, splits, trims and deletion.
+- **1.6.8** · Actions and existing sounds share narration events. Consecutive compatible compositions reuse one animation track when they do not overlap.
 - **1.6.7** · Mac packaging uses one segment list for thumbnails, layouts and timing; typical four-segment settings fit on one screen.
-- **1.6.7** · Ten Chinese display names use four characters, including Red Poster, while retaining existing configurations, visuals and sound.
-- **1.6.6** · Fixes whole-video packaging encoding on Windows and Linux using bundled OpenH264, without an extra encoder installation.
-- **1.6.5** · Ten coordinated video packages provide forty layouts, sharing typography, colors, motion and sound across segments. Generate locally without a model.
-- **1.6.5** · One editor offers real thumbnails and animated examples, readable light/dark controls, and fixed generation actions and progress.
 <!-- recent-features:end -->
+
+**1.6.8: content, actions and sounds share event timing.** On Mac, Create animation now offers Local composition for source evidence, processes and presenter actions without a model. The Content tab edits text, local images, steps and timing; actions and existing sounds use the same events. Animation can stay on the project ruler or follow one main recording clip, and consecutive compatible compositions reuse a track. Recomposition rebuilds controlled layers while retaining manually added layers. These are three fixed task frameworks, not a general skeleton or arbitrary-story generator. Windows and Linux remain at 1.6.6 without these features.
+
+![Actual local composition editor](screenshots/local-explanation-168.png)
+
+![Actual content editing and timing controls](screenshots/content-editing-168.png)
 
 **1.6.7: compact whole-video packaging on Mac.** One segment list combines thumbnails, titles, layouts and timing; the current layout is edited in a dropdown. The ten Chinese display names now have four characters, including Red Poster. Existing project IDs, visual styles and sounds remain compatible. A typical four-segment configuration fits at 1280×720; smaller windows and longer lists can scroll. Windows and Linux remain at 1.6.6 without this interface update.
 
 ![Compact whole-video packaging editor](screenshots/packaging-167.jpg)
 
-**1.6.6: whole-video packaging encoder fix for Windows and Linux.** Uses bundled OpenH264 instead of unavailable libx264, with no extra encoder installation. Mac now provides 1.6.7. See the download table and release notes for versions and verification scope.
+**1.6.6: whole-video packaging encoder fix for Windows and Linux.** Uses bundled OpenH264 instead of unavailable libx264, with no extra encoder installation. Mac now provides 1.6.8. See the download table and release notes for versions and verification scope.
 
 **1.6.5: ten coordinated video packages.** Open a project and choose Whole-video packaging in the AI panel. Each package provides an opener, list, focus and metric layout, with real examples before editing. Generate 1–12 segments locally and add them together while retaining narration. Effects default on and music defaults off. Saved settings can regenerate and replace their original group, protecting manually edited clips. Generated clips are editable on the timeline; internal layers are not individually editable. Apple-silicon Mac testing covered all ten default palettes and real four-segment generation, seeking, playback and reopening. Other platforms follow the actual download table.
 
@@ -105,11 +111,11 @@ LocalBrain discovers its loaded language model. A live Qwen3.8 27B test generate
 These videos show the versions available when recorded. Use the current release information on this page for downloads and capabilities. Narration is in Chinese.
 <!-- evergreen:demos:end -->
 
-## Download: 1.6.7
+## Download: 1.6.8
 
 | Platform | Package | SHA-256 |
 |---|---|---|
-| macOS 13+（Apple 芯片 arm64） | [Download HyphenScreen_1.6.7_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.6.7/HyphenScreen_1.6.7_arm64.dmg) | `e062c91893532f45272f8e85adfabe5050ea1337b21f1ea9208dedbdf26e998e` |
+| macOS 13+（Apple 芯片 arm64） | [Download HyphenScreen_1.6.8_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.6.8/HyphenScreen_1.6.8_arm64.dmg) | `afacc7b4ac426b1820e31e47c69f28a497816c6cf8f74b3eb7c23479e28b1808` |
 | Windows 10/11（x64）· 1.6.6 版 | [Download HyphenScreen_1.6.6_x64-setup.exe](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.6.6/HyphenScreen_1.6.6_x64-setup.exe) | `8cb544f34e17253e92192368278bdaaa0918ba899cc10c90605884731d7fd185` |
 | Linux（x86_64）· 1.6.6 版 | [Download HyphenScreen_1.6.6_x86_64.AppImage](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.6.6/HyphenScreen_1.6.6_x86_64.AppImage) | `7cb71e48cc310ac915de37d3c9105e992d09093ea0ae329f3dda7a9d510b4009` |
 | Debian / Ubuntu（amd64）· 1.6.6 版 | [Download HyphenScreen_1.6.6_amd64.deb](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.6.6/HyphenScreen_1.6.6_amd64.deb) | `a66d0b2066e33af37e1c50020257913f533024359714521418cd662497101c3f` |
