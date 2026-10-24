@@ -18,12 +18,18 @@
 <!-- recent-features:start -->
 ## 近期新增与改进（最近 5 项）
 
-- **1.6.8** · Mac新增本地编排：来源证据、原理过程和角色讲解，填写内容与节拍即可生成原生动画，无需模型。
-- **1.6.8** · 动画内容页可直接改文字与本机图片，编排动画可改来源、步骤、配色和事件时间；保留图层与关键帧入口。
-- **1.6.8** · 动画可固定在工程时间尺或跟随一个主录屏片段，移动、切分、裁短和删除时保持对应关系。
-- **1.6.8** · 动作与已有音效共用讲解事件；连续且兼容、不重叠的编排优先共用一条动画轨。
-- **1.6.7** · Mac整片包装合并为单一片段列表，缩略图、版式与时间集中显示，常规四段配置一屏可见。
+- **1.6.9** · 本地编排扩为八类：证据、过程、人物、前后对比、数据、清单、时间与结构，固定任务无需模型。
+- **1.6.9** · 八类共用两套配色，16个12秒真实范例视频，先播放看效果，再修改自己的内容。
+- **1.6.9** · 同一人物六张完整插画姿态，统一讲解图与各阶段配图分开设置，图片按原比例显示。
+- **1.6.9** · 窄检查器按两列显示阶段卡，图片按钮与应用区不再挤压或遮挡；原生输出补齐WebP解码。
+- **1.6.8** · 动画内容页可改文字、图片和节拍，保留图层与关键帧；可固定工程位置或跟随主录屏片段。
 <!-- recent-features:end -->
+
+**1.6.9：八类本地编排，先看成片再填内容。** Mac的本地编排提供来源证据、原理过程、角色讲解、前后对比、数据对比、重点清单、时间脉络、结构拆解。两套配色共16个12秒真实范例，选择类型后可直接播放，再修改文字、数据和节拍，生成原生可编辑图层，无需模型。角色讲解使用同一人物的六张完整姿态插画，支持统一图与各阶段配图；窄侧栏按两列排列，图片按钮不挤成竖排，应用区不遮挡内容。原生输出补齐WebP解码。Windows／Linux保留1.6.6，本轮新包由作者另行构建；六姿态和固定任务框架不代表自由骨骼或任意故事生成能力。
+
+![八类本地编排的实际输出](screenshots/local-explanation-eight-169.jpg)
+
+![阶段配图与保存反馈的实际工作室](screenshots/presenter-content-169.jpg)
 
 **1.6.8：内容与动作共用一份节拍。** Mac在「制作动画」中加入「本地编排」，来源证据、原理过程和角色讲解无需模型即可生成原生图层。动画的「内容」页可改文字、图片、步骤和事件时间；动作与已有音效共用节拍。可固定在工程时间尺或跟随一个主录屏片段，连续兼容编排优先共轨。重新编排会重算受控图层，保留人工新增图层；这是三类固定任务框架，不是通用骨骼或任意故事生成器。Windows／Linux继续提供1.6.6，未包含本轮功能。
 
@@ -35,7 +41,7 @@
 
 ![整片包装紧凑编辑实际界面](screenshots/packaging-167.jpg)
 
-**1.6.6：Windows／Linux整片包装编码修复。** 使用随包提供的OpenH264，修复生成时找不到libx264的问题，无需另外安装编码器。Mac现提供1.6.8，平台版本与验证范围见下载表和发行说明。
+**1.6.6：Windows／Linux整片包装编码修复。** 使用随包提供的OpenH264，修复生成时找不到libx264的问题，无需另外安装编码器。Mac现提供1.6.9，平台版本与验证范围见下载表和发行说明。
 
 **1.6.5：十套整片包装，一期共用设计。** 打开工程，在AI面板选择「整片包装」。每套含开场、清单、聚焦、数字四种布局，先看真实范例再填内容；每组1至12段，在本地生成并整组加入，保留原口播。主题声效默认开、配乐默认关，修改已保存配置可替换原组；人工调整过的片段受到保护。片段可剪辑，内部图层暂不可逐层编辑。Apple芯片Mac已完成十套默认配色导出，以及真实录屏四段的生成、跳转、续播和保存重开专项；其他平台以实际下载表为准。
 
@@ -170,9 +176,9 @@ macOS导入视频遇到硬件解码失败时，会为当前素材自动尝试软
 关注[哔哩哔哩「黑粉科技」](https://space.bilibili.com/1846717524)、[YouTube 黑粉科技频道](https://www.youtube.com/@hyphentech_top)；公众号和视频号搜索「黑粉科技」，查看实际演示与使用教程。
 <!-- evergreen:discovery:end -->
 
-**当前版本：[黑粉录屏 1.6.8 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.6.8)**（每个平台只保留最新的一版）。
+**当前版本：[黑粉录屏 1.6.9 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.6.9)**（每个平台只保留最新的一版）。
 
-> 1.6.8 目前提供 macOS 安装包；Windows 继续提供 [黑粉录屏 1.6.6 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.6.6)，尚未发布 1.6.8 的 Windows 版；Linux 继续提供 [黑粉录屏 1.6.6 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.6.6)，尚未发布 1.6.8 的 Linux 版。
+> 1.6.9 目前提供 macOS 安装包；Windows 继续提供 [黑粉录屏 1.6.6 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.6.6)，尚未发布 1.6.9 的 Windows 版；Linux 继续提供 [黑粉录屏 1.6.6 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.6.6)，尚未发布 1.6.9 的 Linux 版。
 
 ## 下载
 
@@ -180,7 +186,7 @@ macOS导入视频遇到硬件解码失败时，会为当前素材自动尝试软
 
 | 平台 | 文件 | SHA-256 |
 |---|---|---|
-| macOS 13+（Apple 芯片 arm64） | [下载 HyphenScreen_1.6.8_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.6.8/HyphenScreen_1.6.8_arm64.dmg) | `afacc7b4ac426b1820e31e47c69f28a497816c6cf8f74b3eb7c23479e28b1808` |
+| macOS 13+（Apple 芯片 arm64） | [下载 HyphenScreen_1.6.9_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.6.9/HyphenScreen_1.6.9_arm64.dmg) | `d8a60cc3138a248596d29917eff929acde82822f0daa26877b0374e00fd2697e` |
 | Windows 10/11（x64）· 1.6.6 版 | [下载 HyphenScreen_1.6.6_x64-setup.exe](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.6.6/HyphenScreen_1.6.6_x64-setup.exe) | `8cb544f34e17253e92192368278bdaaa0918ba899cc10c90605884731d7fd185` |
 | Linux（x86_64）· 1.6.6 版 | [下载 HyphenScreen_1.6.6_x86_64.AppImage](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.6.6/HyphenScreen_1.6.6_x86_64.AppImage) | `7cb71e48cc310ac915de37d3c9105e992d09093ea0ae329f3dda7a9d510b4009` |
 | Debian / Ubuntu（amd64）· 1.6.6 版 | [下载 HyphenScreen_1.6.6_amd64.deb](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.6.6/HyphenScreen_1.6.6_amd64.deb) | `a66d0b2066e33af37e1c50020257913f533024359714521418cd662497101c3f` |
@@ -188,7 +194,7 @@ macOS导入视频遇到硬件解码失败时，会为当前素材自动尝试软
 
 同一页附带各平台的 `SHA256SUMS*.txt` 与 `release-manifest.json`，可核对文件完整性与构建来源。
 
-> 下面的功能一览按 1.6.8 介绍；Windows 暂为 1.6.6，不包含之后加入的功能；Linux 暂为 1.6.6，不包含之后加入的功能，各版变化见发行页面上的发行说明。
+> 下面的功能一览按 1.6.9 介绍；Windows 暂为 1.6.6，不包含之后加入的功能；Linux 暂为 1.6.6，不包含之后加入的功能，各版变化见发行页面上的发行说明。
 
 <!-- evergreen:feature-tour:start -->
 <details>
