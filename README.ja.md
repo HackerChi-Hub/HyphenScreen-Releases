@@ -24,25 +24,25 @@ HyphenTech のデスクトップ録画・編集ソフトです。ソフトウェ
 - **1.6.9** · 同じ人物の6枚の全身イラストを使用。共通の解説画像と段階別画像を設定し、縦横比を保って表示します。
 <!-- recent-features:end -->
 
-**1.7.0：出力ウォーターマークを選択。** Macは「黑粉录屏」を初期表示し、オフ、独自テキスト、ローカルPNG／JPEG／WebP画像、その組み合わせに対応します。編集できる4例、5つの位置、サイズと不透明度を用意し、文字は背景の明暗に対応。実際の出力時に設定を保存し、MP4とGIFで同じネイティブ合成処理を使います。本版に有料制限はありません。Windows／Linux 1.6.6は従来のマークを維持します。ネイティブとアプリのコマンドライン出力は検証済みですが、デスクトップ操作での出力はmacOSの画面取得エラーにより未検証です。
+**1.7.0：出力ウォーターマークを選択。** Macは「黑粉录屏」を初期表示し、オフ、独自テキスト、ローカルPNG／JPEG／WebP画像、その組み合わせに対応します。編集できる4例、5つの位置、サイズと不透明度を用意し、文字は背景の明暗に対応。実際の出力時に設定を保存し、MP4とGIFで同じネイティブ合成処理を使います。本版に有料制限はありません。Windows／Linux 1.7.0にも上記の設定が含まれます。ネイティブとアプリのコマンドライン出力は検証済みですが、デスクトップ操作での出力はmacOSの画面取得エラーにより未検証です。
 
 ![標準・オフ・独自テキスト・画像の実際の出力比較](screenshots/export-watermark-170.jpg)
 
 ![独立ブラウザー検証での実際の出力設定コンポーネント](screenshots/export-watermark-controls-170.png)
 
-**1.6.9：8種類のローカル構成を実際の動画で確認。** Macでは出典提示、プロセス、解説キャラクター、前後比較、数値比較、チェックリスト、時系列、構造分解を選べます。2配色・計16本の12秒見本を再生し、内容と動作時刻を編集して、モデルなしでネイティブレイヤーを作成します。同じキャラクターの6枚の全身イラストと、共通画像・段階別画像を使用。狭い編集パネルは2列表示で、適用ボタンが設定を隠しません。PNG/JPEGに加えてWebPのネイティブ画像処理も対応。Windows・Linuxは実際の1.6.6を維持し、新規ビルドは別途準備します。固定構成と6姿勢は、自由なキャラクター演技や任意の物語生成を意味しません。
+**1.6.9：8種類のローカル構成を実際の動画で確認。** Macでは出典提示、プロセス、解説キャラクター、前後比較、数値比較、チェックリスト、時系列、構造分解を選べます。2配色・計16本の12秒見本を再生し、内容と動作時刻を編集して、モデルなしでネイティブレイヤーを作成します。同じキャラクターの6枚の全身イラストと、共通画像・段階別画像を使用。狭い編集パネルは2列表示で、適用ボタンが設定を隠しません。PNG/JPEGに加えてWebPのネイティブ画像処理も対応。Windows・Linux 1.7.0もローカルでビルドされ、上記の機能を含みます。固定構成と6姿勢は、自由なキャラクター演技や任意の物語生成を意味しません。
 
 ![8種類のローカル構成の実際の出力](screenshots/local-explanation-eight-169.jpg)
 
 ![段階別画像の編集と保存結果](screenshots/presenter-content-169.jpg)
 
-**1.6.8：内容・動作・音を共通のイベントで構成。** Macのアニメーション作成画面にローカル構成を追加。出典提示・プロセス・解説キャラクターをモデルなしでネイティブレイヤーにします。内容タブで文字・ローカル画像・手順・動作時刻を編集し、既存の効果音を同じイベントに合わせます。プロジェクト時間軸への固定と、一つのメイン録画クリップへの関連付けを選択でき、連続する互換構成は同じトラックにまとめます。再構成時は管理レイヤーを再計算し、手動追加レイヤーを保持します。三つの固定タスク用で、汎用スケルトンや任意の物語生成機能ではありません。Windows・Linuxは1.6.6のままです。
+**1.6.8：内容・動作・音を共通のイベントで構成。** Macのアニメーション作成画面にローカル構成を追加。出典提示・プロセス・解説キャラクターをモデルなしでネイティブレイヤーにします。内容タブで文字・ローカル画像・手順・動作時刻を編集し、既存の効果音を同じイベントに合わせます。プロジェクト時間軸への固定と、一つのメイン録画クリップへの関連付けを選択でき、連続する互換構成は同じトラックにまとめます。再構成時は管理レイヤーを再計算し、手動追加レイヤーを保持します。三つの固定タスク用で、汎用スケルトンや任意の物語生成機能ではありません。Windows・Linux 1.7.0にも上記の機能が含まれます。
 
 ![ローカル構成の実際の作成画面](screenshots/local-explanation-168.png)
 
 ![内容編集と動作時刻の実際の画面](screenshots/content-editing-168.png)
 
-**1.6.7：Macの映像パッケージ編集をコンパクトに。** サムネイル・タイトル・レイアウト・時刻を一つの区間一覧にまとめ、選択中のレイアウトはドロップダウンで変更します。中国語の10名称を4文字に統一し、Red Posterを含め既存のID・配色・音は維持します。通常の4区間設定は1280×720に収まり、小さい画面や長い一覧はスクロールできます。Windows・Linuxは1.6.6のままで、この画面変更は含みません。
+**1.6.7：Macの映像パッケージ編集をコンパクトに。** サムネイル・タイトル・レイアウト・時刻を一つの区間一覧にまとめ、選択中のレイアウトはドロップダウンで変更します。中国語の10名称を4文字に統一し、Red Posterを含め既存のID・配色・音は維持します。通常の4区間設定は1280×720に収まり、小さい画面や長い一覧はスクロールできます。Windows・Linux 1.7.0にもこの画面変更が含まれます。
 
 ![映像パッケージのコンパクトな編集画面](screenshots/packaging-167.jpg)
 
@@ -129,10 +129,10 @@ AI パネルの制作画面で内容と独自の要望を入力し、説明、�
 | プラットフォーム | パッケージ | SHA-256 |
 |---|---|---|
 | macOS 13+（Apple 芯片 arm64） | [ダウンロード HyphenScreen_1.7.0_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.0/HyphenScreen_1.7.0_arm64.dmg) | `e1a87c6e76da1cfb301f26add3e31af4a2964a4defeaaf037800bc181a323963` |
-| Windows 10/11（x64）· 1.6.6 版 | [ダウンロード HyphenScreen_1.6.6_x64-setup.exe](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.6.6/HyphenScreen_1.6.6_x64-setup.exe) | `8cb544f34e17253e92192368278bdaaa0918ba899cc10c90605884731d7fd185` |
-| Linux（x86_64）· 1.6.6 版 | [ダウンロード HyphenScreen_1.6.6_x86_64.AppImage](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.6.6/HyphenScreen_1.6.6_x86_64.AppImage) | `7cb71e48cc310ac915de37d3c9105e992d09093ea0ae329f3dda7a9d510b4009` |
-| Debian / Ubuntu（amd64）· 1.6.6 版 | [ダウンロード HyphenScreen_1.6.6_amd64.deb](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.6.6/HyphenScreen_1.6.6_amd64.deb) | `a66d0b2066e33af37e1c50020257913f533024359714521418cd662497101c3f` |
-| Arch Linux（x86_64）· 1.6.6 版 | [ダウンロード HyphenScreen_1.6.6_x64.pacman](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.6.6/HyphenScreen_1.6.6_x64.pacman) | `27dab06253ef42b48790013c8dbe09f166330f93048451ebdb9bf50e9f44aea2` |
+| Windows 10/11（x64） | [ダウンロード HyphenScreen_1.7.0_x64-setup.exe](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.0/HyphenScreen_1.7.0_x64-setup.exe) | `097c26bcfd919c306216d291f214b23761f98dd5d837a21870141eda035b79f6` |
+| Linux（x86_64） | [ダウンロード HyphenScreen_1.7.0_x86_64.AppImage](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.0/HyphenScreen_1.7.0_x86_64.AppImage) | `c878a554f06cfa531d06822fe4dea6dc0f3e3510768abc6635e17379e7c8cfae` |
+| Debian / Ubuntu（amd64） | [ダウンロード HyphenScreen_1.7.0_amd64.deb](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.0/HyphenScreen_1.7.0_amd64.deb) | `7e75be0fe1a2484f5fc5ac372b43c04ebde1d5004dbd0021e560fca544b095c4` |
+| Arch Linux（x86_64） | [ダウンロード HyphenScreen_1.7.0_x64.pacman](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.0/HyphenScreen_1.7.0_x64.pacman) | `87d98daba51dc893d621028aa61acf35612a8c5e1c87a82f8d9ae9f15f8bb52f` |
 
 <!-- evergreen:capabilities:start -->
 ![独立アニメーション、編集可能なレイヤーとビジュアルグループ](screenshots/animation-editor-110.png)
