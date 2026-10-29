@@ -8,7 +8,7 @@
 黑粉录屏是黑粉科技开发的桌面录屏与智能剪辑软件，适合软件教程、产品演示、课程录制和口播分享。在同一个窗口录制屏幕、摄像头与声音，完成多轨剪辑、本地字幕、原生动画和横竖屏导出；也可以连接自己的模型，用自然语言辅助编辑。支持 macOS、Windows 与 Linux，具体平台差异和已发布安装包见下方。
 
 
-软件可免费下载使用。Mac1.7.0的导出水印默认显示“黑粉录屏”，支持关闭和自定义；Windows／Linux1.6.6仍沿用原有导出标志。云端AI服务按所选订阅或API条件使用。
+软件可免费下载使用。Mac、Windows与Linux1.7.0的导出水印默认显示“黑粉录屏”，支持关闭和自定义。云端AI服务按所选订阅或API条件使用。
 
 <p align="center"><a href="README.md">简体中文</a> | <a href="README.zh-TW.md">繁體中文</a> | <a href="README.en.md">English</a> | <a href="README.ja.md">日本語</a></p>
 
@@ -25,25 +25,25 @@
 - **1.6.9** · 同一人物六张完整插画姿态，统一讲解图与各阶段配图分开设置，图片按原比例显示。
 <!-- recent-features:end -->
 
-**1.7.0：导出水印由你决定。** Mac的「导出 → 导出水印」默认显示“黑粉录屏”，可以关闭，也可以设置自己的文字、本机PNG／JPEG／WebP图片或两者组合。四个范例可直接套用，支持五种位置、大小和不透明度；文字随画面明暗适配。设置会在真正导出时记住，MP4与GIF使用同一原生叠加路径。本版没有收费限制；Windows／Linux1.6.6保留原有水印行为。实际原生及应用命令行输出已核验，桌面鼠标导出流程因系统取屏故障未记通过。
+**1.7.0：导出水印由你决定。** Mac的「导出 → 导出水印」默认显示“黑粉录屏”，可以关闭，也可以设置自己的文字、本机PNG／JPEG／WebP图片或两者组合。四个范例可直接套用，支持五种位置、大小和不透明度；文字随画面明暗适配。设置会在真正导出时记住，MP4与GIF使用同一原生叠加路径。本版没有收费限制；Windows／Linux1.7.0已同步上述水印设置。实际原生及应用命令行输出已核验，桌面鼠标导出流程因系统取屏故障未记通过。
 
 ![默认、关闭、自定义文字和图片水印的实际输出](screenshots/export-watermark-170.jpg)
 
 ![实际导出水印设置组件，独立浏览器验收界面](screenshots/export-watermark-controls-170.png)
 
-**1.6.9：八类本地编排，先看成片再填内容。** Mac的本地编排提供来源证据、原理过程、角色讲解、前后对比、数据对比、重点清单、时间脉络、结构拆解。两套配色共16个12秒真实范例，选择类型后可直接播放，再修改文字、数据和节拍，生成原生可编辑图层，无需模型。角色讲解使用同一人物的六张完整姿态插画，支持统一图与各阶段配图；窄侧栏按两列排列，图片按钮不挤成竖排，应用区不遮挡内容。原生输出补齐WebP解码。Windows／Linux保留1.6.6，本轮新包由作者另行构建；六姿态和固定任务框架不代表自由骨骼或任意故事生成能力。
+**1.6.9：八类本地编排，先看成片再填内容。** Mac的本地编排提供来源证据、原理过程、角色讲解、前后对比、数据对比、重点清单、时间脉络、结构拆解。两套配色共16个12秒真实范例，选择类型后可直接播放，再修改文字、数据和节拍，生成原生可编辑图层，无需模型。角色讲解使用同一人物的六张完整姿态插画，支持统一图与各阶段配图；窄侧栏按两列排列，图片按钮不挤成竖排，应用区不遮挡内容。原生输出补齐WebP解码。Windows／Linux1.7.0已通过本地构建补齐上述功能；六姿态和固定任务框架不代表自由骨骼或任意故事生成能力。
 
 ![八类本地编排的实际输出](screenshots/local-explanation-eight-169.jpg)
 
 ![阶段配图与保存反馈的实际工作室](screenshots/presenter-content-169.jpg)
 
-**1.6.8：内容与动作共用一份节拍。** Mac在「制作动画」中加入「本地编排」，来源证据、原理过程和角色讲解无需模型即可生成原生图层。动画的「内容」页可改文字、图片、步骤和事件时间；动作与已有音效共用节拍。可固定在工程时间尺或跟随一个主录屏片段，连续兼容编排优先共轨。重新编排会重算受控图层，保留人工新增图层；这是三类固定任务框架，不是通用骨骼或任意故事生成器。Windows／Linux继续提供1.6.6，未包含本轮功能。
+**1.6.8：内容与动作共用一份节拍。** Mac在「制作动画」中加入「本地编排」，来源证据、原理过程和角色讲解无需模型即可生成原生图层。动画的「内容」页可改文字、图片、步骤和事件时间；动作与已有音效共用节拍。可固定在工程时间尺或跟随一个主录屏片段，连续兼容编排优先共轨。重新编排会重算受控图层，保留人工新增图层；这是三类固定任务框架，不是通用骨骼或任意故事生成器。Windows／Linux1.7.0已包含上述功能。
 
 ![本地编排实际制作窗口](screenshots/local-explanation-168.png)
 
 ![内容编辑、节拍与时间关联实际界面](screenshots/content-editing-168.png)
 
-**1.6.7：整片包装更紧凑。** Mac编辑窗口将片段选择合为一组，缩略图、标题、版式和时间集中显示，再用「本段版式」修改当前片段。十套显示名统一四字，「昭和海报」改为「红色海报」；旧工程和配色、声音保持兼容。常规四段配置在1280×720窗口可完整显示，较小窗口与更多片段按需滚动。Windows／Linux继续提供1.6.6，不包含本轮界面更新。
+**1.6.7：整片包装更紧凑。** Mac编辑窗口将片段选择合为一组，缩略图、标题、版式和时间集中显示，再用「本段版式」修改当前片段。十套显示名统一四字，「昭和海报」改为「红色海报」；旧工程和配色、声音保持兼容。常规四段配置在1280×720窗口可完整显示，较小窗口与更多片段按需滚动。Windows／Linux1.7.0已包含上述界面更新。
 
 ![整片包装紧凑编辑实际界面](screenshots/packaging-167.jpg)
 
@@ -182,9 +182,7 @@ macOS导入视频遇到硬件解码失败时，会为当前素材自动尝试软
 关注[哔哩哔哩「黑粉科技」](https://space.bilibili.com/1846717524)、[YouTube 黑粉科技频道](https://www.youtube.com/@hyphentech_top)；公众号和视频号搜索「黑粉科技」，查看实际演示与使用教程。
 <!-- evergreen:discovery:end -->
 
-**当前版本：[黑粉录屏 1.7.0 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.7.0)**（每个平台只保留最新的一版）。
-
-> 1.7.0 目前提供 macOS 安装包；Windows 继续提供 [黑粉录屏 1.6.6 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.6.6)，尚未发布 1.7.0 的 Windows 版；Linux 继续提供 [黑粉录屏 1.6.6 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.6.6)，尚未发布 1.7.0 的 Linux 版。
+**当前版本：[黑粉录屏 1.7.0 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.7.0)**（只保留最新一版）。
 
 ## 下载
 
@@ -193,14 +191,12 @@ macOS导入视频遇到硬件解码失败时，会为当前素材自动尝试软
 | 平台 | 文件 | SHA-256 |
 |---|---|---|
 | macOS 13+（Apple 芯片 arm64） | [下载 HyphenScreen_1.7.0_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.0/HyphenScreen_1.7.0_arm64.dmg) | `e1a87c6e76da1cfb301f26add3e31af4a2964a4defeaaf037800bc181a323963` |
-| Windows 10/11（x64）· 1.6.6 版 | [下载 HyphenScreen_1.6.6_x64-setup.exe](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.6.6/HyphenScreen_1.6.6_x64-setup.exe) | `8cb544f34e17253e92192368278bdaaa0918ba899cc10c90605884731d7fd185` |
-| Linux（x86_64）· 1.6.6 版 | [下载 HyphenScreen_1.6.6_x86_64.AppImage](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.6.6/HyphenScreen_1.6.6_x86_64.AppImage) | `7cb71e48cc310ac915de37d3c9105e992d09093ea0ae329f3dda7a9d510b4009` |
-| Debian / Ubuntu（amd64）· 1.6.6 版 | [下载 HyphenScreen_1.6.6_amd64.deb](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.6.6/HyphenScreen_1.6.6_amd64.deb) | `a66d0b2066e33af37e1c50020257913f533024359714521418cd662497101c3f` |
-| Arch Linux（x86_64）· 1.6.6 版 | [下载 HyphenScreen_1.6.6_x64.pacman](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.6.6/HyphenScreen_1.6.6_x64.pacman) | `27dab06253ef42b48790013c8dbe09f166330f93048451ebdb9bf50e9f44aea2` |
+| Windows 10/11（x64） | [下载 HyphenScreen_1.7.0_x64-setup.exe](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.0/HyphenScreen_1.7.0_x64-setup.exe) | `097c26bcfd919c306216d291f214b23761f98dd5d837a21870141eda035b79f6` |
+| Linux（x86_64） | [下载 HyphenScreen_1.7.0_x86_64.AppImage](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.0/HyphenScreen_1.7.0_x86_64.AppImage) | `c878a554f06cfa531d06822fe4dea6dc0f3e3510768abc6635e17379e7c8cfae` |
+| Debian / Ubuntu（amd64） | [下载 HyphenScreen_1.7.0_amd64.deb](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.0/HyphenScreen_1.7.0_amd64.deb) | `7e75be0fe1a2484f5fc5ac372b43c04ebde1d5004dbd0021e560fca544b095c4` |
+| Arch Linux（x86_64） | [下载 HyphenScreen_1.7.0_x64.pacman](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.0/HyphenScreen_1.7.0_x64.pacman) | `87d98daba51dc893d621028aa61acf35612a8c5e1c87a82f8d9ae9f15f8bb52f` |
 
 同一页附带各平台的 `SHA256SUMS*.txt` 与 `release-manifest.json`，可核对文件完整性与构建来源。
-
-> 下面的功能一览按 1.7.0 介绍；Windows 暂为 1.6.6，不包含之后加入的功能；Linux 暂为 1.6.6，不包含之后加入的功能，各版变化见发行页面上的发行说明。
 
 <!-- evergreen:feature-tour:start -->
 <details>
