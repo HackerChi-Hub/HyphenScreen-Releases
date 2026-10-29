@@ -23,25 +23,25 @@ HyphenScreen by HyphenTech is a desktop workspace for software tutorials, produc
 - **1.6.9** · Six complete illustrations retain the same presenter. Set a shared explanation image or per-stage images at their original aspect ratio.
 <!-- recent-features:end -->
 
-**1.7.0: choose your export watermark.** Mac defaults to 黑粉录屏, with an off switch, custom text, local PNG/JPEG/WebP images or both. Four editable examples, five positions, size and opacity controls cover common uses; text adapts to the picture brightness. Settings are remembered on actual export, with one native overlay path for MP4 and GIF. No paid entitlement is active in this release. Windows/Linux 1.6.6 retain the earlier watermark. Native and application CLI outputs were verified; desktop mouse-driven export remains unverified because macOS screen capture failed.
+**1.7.0: choose your export watermark.** Mac defaults to 黑粉录屏, with an off switch, custom text, local PNG/JPEG/WebP images or both. Four editable examples, five positions, size and opacity controls cover common uses; text adapts to the picture brightness. Settings are remembered on actual export, with one native overlay path for MP4 and GIF. No paid entitlement is active in this release. Windows/Linux 1.7.0 now include these watermark settings. Native and application CLI outputs were verified; desktop mouse-driven export remains unverified because macOS screen capture failed.
 
 ![Actual default, disabled, custom text and image watermark outputs](screenshots/export-watermark-170.jpg)
 
 ![Actual export-watermark component in an isolated browser test](screenshots/export-watermark-controls-170.png)
 
-**1.6.9: eight local composition types with real video examples.** On Mac, choose source evidence, process, presenter, before/after comparison, metrics, checklist, timeline or structure. Two palettes provide 16 actual 12-second examples before editing content and timing, without a model. Presenter scenes use six complete illustrations of the same character, a shared explanation image and optional per-stage images. The narrow inspector uses two columns and a non-overlapping Apply area. Native image layers now decode WebP as well as PNG/JPEG. Windows and Linux retain their actual 1.6.6 packages; new builds are prepared separately. Fixed frameworks and six poses do not provide arbitrary character acting or story generation.
+**1.6.9: eight local composition types with real video examples.** On Mac, choose source evidence, process, presenter, before/after comparison, metrics, checklist, timeline or structure. Two palettes provide 16 actual 12-second examples before editing content and timing, without a model. Presenter scenes use six complete illustrations of the same character, a shared explanation image and optional per-stage images. The narrow inspector uses two columns and a non-overlapping Apply area. Native image layers now decode WebP as well as PNG/JPEG. Windows and Linux 1.7.0 have now been built locally with these features. Fixed frameworks and six poses do not provide arbitrary character acting or story generation.
 
 ![Actual output from the eight local composition types](screenshots/local-explanation-eight-169.jpg)
 
 ![Actual stage image editing and save feedback](screenshots/presenter-content-169.jpg)
 
-**1.6.8: content, actions and sounds share event timing.** On Mac, Create animation now offers Local composition for source evidence, processes and presenter actions without a model. The Content tab edits text, local images, steps and timing; actions and existing sounds use the same events. Animation can stay on the project ruler or follow one main recording clip, and consecutive compatible compositions reuse a track. Recomposition rebuilds controlled layers while retaining manually added layers. These are three fixed task frameworks, not a general skeleton or arbitrary-story generator. Windows and Linux remain at 1.6.6 without these features.
+**1.6.8: content, actions and sounds share event timing.** On Mac, Create animation now offers Local composition for source evidence, processes and presenter actions without a model. The Content tab edits text, local images, steps and timing; actions and existing sounds use the same events. Animation can stay on the project ruler or follow one main recording clip, and consecutive compatible compositions reuse a track. Recomposition rebuilds controlled layers while retaining manually added layers. These are three fixed task frameworks, not a general skeleton or arbitrary-story generator. Windows and Linux 1.7.0 include these features.
 
 ![Actual local composition editor](screenshots/local-explanation-168.png)
 
 ![Actual content editing and timing controls](screenshots/content-editing-168.png)
 
-**1.6.7: compact whole-video packaging on Mac.** One segment list combines thumbnails, titles, layouts and timing; the current layout is edited in a dropdown. The ten Chinese display names now have four characters, including Red Poster. Existing project IDs, visual styles and sounds remain compatible. A typical four-segment configuration fits at 1280×720; smaller windows and longer lists can scroll. Windows and Linux remain at 1.6.6 without this interface update.
+**1.6.7: compact whole-video packaging on Mac.** One segment list combines thumbnails, titles, layouts and timing; the current layout is edited in a dropdown. The ten Chinese display names now have four characters, including Red Poster. Existing project IDs, visual styles and sounds remain compatible. A typical four-segment configuration fits at 1280×720; smaller windows and longer lists can scroll. Windows and Linux 1.7.0 include this interface update.
 
 ![Compact whole-video packaging editor](screenshots/packaging-167.jpg)
 
@@ -128,10 +128,10 @@ These videos show the versions available when recorded. Use the current release 
 | Platform | Package | SHA-256 |
 |---|---|---|
 | macOS 13+（Apple 芯片 arm64） | [Download HyphenScreen_1.7.0_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.0/HyphenScreen_1.7.0_arm64.dmg) | `e1a87c6e76da1cfb301f26add3e31af4a2964a4defeaaf037800bc181a323963` |
-| Windows 10/11（x64）· 1.6.6 版 | [Download HyphenScreen_1.6.6_x64-setup.exe](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.6.6/HyphenScreen_1.6.6_x64-setup.exe) | `8cb544f34e17253e92192368278bdaaa0918ba899cc10c90605884731d7fd185` |
-| Linux（x86_64）· 1.6.6 版 | [Download HyphenScreen_1.6.6_x86_64.AppImage](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.6.6/HyphenScreen_1.6.6_x86_64.AppImage) | `7cb71e48cc310ac915de37d3c9105e992d09093ea0ae329f3dda7a9d510b4009` |
-| Debian / Ubuntu（amd64）· 1.6.6 版 | [Download HyphenScreen_1.6.6_amd64.deb](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.6.6/HyphenScreen_1.6.6_amd64.deb) | `a66d0b2066e33af37e1c50020257913f533024359714521418cd662497101c3f` |
-| Arch Linux（x86_64）· 1.6.6 版 | [Download HyphenScreen_1.6.6_x64.pacman](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.6.6/HyphenScreen_1.6.6_x64.pacman) | `27dab06253ef42b48790013c8dbe09f166330f93048451ebdb9bf50e9f44aea2` |
+| Windows 10/11（x64） | [Download HyphenScreen_1.7.0_x64-setup.exe](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.0/HyphenScreen_1.7.0_x64-setup.exe) | `097c26bcfd919c306216d291f214b23761f98dd5d837a21870141eda035b79f6` |
+| Linux（x86_64） | [Download HyphenScreen_1.7.0_x86_64.AppImage](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.0/HyphenScreen_1.7.0_x86_64.AppImage) | `c878a554f06cfa531d06822fe4dea6dc0f3e3510768abc6635e17379e7c8cfae` |
+| Debian / Ubuntu（amd64） | [Download HyphenScreen_1.7.0_amd64.deb](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.0/HyphenScreen_1.7.0_amd64.deb) | `7e75be0fe1a2484f5fc5ac372b43c04ebde1d5004dbd0021e560fca544b095c4` |
+| Arch Linux（x86_64） | [Download HyphenScreen_1.7.0_x64.pacman](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.0/HyphenScreen_1.7.0_x64.pacman) | `87d98daba51dc893d621028aa61acf35612a8c5e1c87a82f8d9ae9f15f8bb52f` |
 
 <!-- evergreen:capabilities:start -->
 ![Native animation editor, editable layers and the Visual timeline group](screenshots/animation-editor-110.png)
@@ -193,7 +193,7 @@ API options include Kimi subscription (endpoint and model pre-filled), OpenAI, C
 
 Export MP4 or GIF with selectable resolution, frame rate and H.264/H.265 encoding. “Upscale” indicates resizing beyond source dimensions; it does not recover missing source detail. Output checks inspect loudness, silence, black/frozen frames, duration and text boundaries. Automatic sensitive-text detection and OCR output readback currently require macOS; manual redaction is available across platforms.
 
-**Export watermark:** Mac 1.7.0 defaults to 黑粉录屏 and offers off, custom text and local images. This applies to MP4 and GIF exports; normal editor previews remain unchanged. Windows/Linux 1.6.6 retain the previous always-on badge.
+**Export watermark:** Mac 1.7.0 defaults to 黑粉录屏 and offers off, custom text and local images. This applies to MP4 and GIF exports; normal editor previews remain unchanged. Windows/Linux 1.7.0 offer the same optional, customizable watermark settings.
 
 Choose separate project, recording and cache directories, including external drives. Manage cache categories and restore named or automatic project-history checkpoints.
 
