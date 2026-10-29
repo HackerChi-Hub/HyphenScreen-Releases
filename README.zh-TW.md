@@ -23,25 +23,25 @@
 - **1.6.9** · 同一人物六張完整姿態插畫，統一講解圖與各階段配圖分開設定，圖片按原比例顯示。
 <!-- recent-features:end -->
 
-**1.7.0：匯出浮水印由你決定。** Mac的匯出設定預設顯示「黑粉录屏」，可關閉，也可設定自己的文字、本機PNG／JPEG／WebP圖片或兩者組合。四個範例可直接套用，支援五種位置、大小與不透明度；文字隨畫面明暗調整。實際匯出時儲存設定，MP4與GIF共用原生疊加路徑。本版尚無收費限制；Windows／Linux1.6.6維持原有浮水印。已核驗原生及應用程式命令列輸出，桌面滑鼠匯出流程因系統擷取畫面故障未記為通過。
+**1.7.0：匯出浮水印由你決定。** Mac的匯出設定預設顯示「黑粉录屏」，可關閉，也可設定自己的文字、本機PNG／JPEG／WebP圖片或兩者組合。四個範例可直接套用，支援五種位置、大小與不透明度；文字隨畫面明暗調整。實際匯出時儲存設定，MP4與GIF共用原生疊加路徑。本版尚無收費限制；Windows／Linux1.7.0已同步上述浮水印設定。已核驗原生及應用程式命令列輸出，桌面滑鼠匯出流程因系統擷取畫面故障未記為通過。
 
 ![預設、關閉、自訂文字與圖片浮水印的實際輸出](screenshots/export-watermark-170.jpg)
 
 ![實際匯出浮水印元件，獨立瀏覽器驗收介面](screenshots/export-watermark-controls-170.png)
 
-**1.6.9：八類本機編排，先看成片再填內容。** Mac提供來源證據、原理過程、角色講解、前後對比、數據對比、重點清單、時間脈絡、結構拆解。兩套配色共16個12秒真實範例，先播放，再修改文字、數據與節拍，無需模型即可產生原生可編輯圖層。角色使用同一人物的六張完整姿態插畫，支援統一講解圖與各階段配圖。窄檢查器採兩列卡片，套用區不遮擋內容，原生圖片補齊WebP解碼。Windows／Linux保留實際1.6.6，新包另行建置；固定框架及六姿態不代表自由骨架或任意故事產生能力。
+**1.6.9：八類本機編排，先看成片再填內容。** Mac提供來源證據、原理過程、角色講解、前後對比、數據對比、重點清單、時間脈絡、結構拆解。兩套配色共16個12秒真實範例，先播放，再修改文字、數據與節拍，無需模型即可產生原生可編輯圖層。角色使用同一人物的六張完整姿態插畫，支援統一講解圖與各階段配圖。窄檢查器採兩列卡片，套用區不遮擋內容，原生圖片補齊WebP解碼。Windows／Linux1.7.0已在本機建置並包含上述功能；固定框架及六姿態不代表自由骨架或任意故事產生能力。
 
 ![八類本機編排實際輸出](screenshots/local-explanation-eight-169.jpg)
 
 ![階段配圖與儲存回饋的實際工作室](screenshots/presenter-content-169.jpg)
 
-**1.6.8：內容與動作共用一份節拍。** Mac在「製作動畫」中加入「本機編排」，來源證據、原理過程和角色講解無需模型即可產生原生圖層。動畫的「內容」頁可改文字、圖片、步驟及事件時間；動作與既有音效共用節拍。可固定在專案時間尺或跟隨一個主錄影片段，連續相容編排優先共軌。重新編排會重算受控圖層，保留人工新增圖層；這是三類固定任務框架，不是通用骨架或任意故事產生器。Windows／Linux維持1.6.6，未包含本輪功能。
+**1.6.8：內容與動作共用一份節拍。** Mac在「製作動畫」中加入「本機編排」，來源證據、原理過程和角色講解無需模型即可產生原生圖層。動畫的「內容」頁可改文字、圖片、步驟及事件時間；動作與既有音效共用節拍。可固定在專案時間尺或跟隨一個主錄影片段，連續相容編排優先共軌。重新編排會重算受控圖層，保留人工新增圖層；這是三類固定任務框架，不是通用骨架或任意故事產生器。Windows／Linux1.7.0已包含上述功能。
 
 ![本機編排實際製作視窗](screenshots/local-explanation-168.png)
 
 ![內容編輯、節拍與時間關聯實際介面](screenshots/content-editing-168.png)
 
-**1.6.7：整片包裝更緊湊。** Mac編輯視窗將片段選擇合為一組，縮圖、標題、版式與時間集中顯示，再用「本段版式」修改目前片段。十套名稱統一四字，「昭和海報」改為「紅色海報」；舊專案、配色與聲音保持相容。一般四段設定在1280×720視窗可完整顯示，較小視窗與更多片段按需捲動。Windows／Linux維持1.6.6，未包含本輪介面更新。
+**1.6.7：整片包裝更緊湊。** Mac編輯視窗將片段選擇合為一組，縮圖、標題、版式與時間集中顯示，再用「本段版式」修改目前片段。十套名稱統一四字，「昭和海報」改為「紅色海報」；舊專案、配色與聲音保持相容。一般四段設定在1280×720視窗可完整顯示，較小視窗與更多片段按需捲動。Windows／Linux1.7.0已包含上述介面更新。
 
 ![整片包裝緊湊編輯實際介面](screenshots/packaging-167.jpg)
 
@@ -128,10 +128,10 @@ macOS匯入影片遇到硬體解碼失敗時，會為目前素材嘗試軟體解
 | 平台 | 安裝套件 | SHA-256 |
 |---|---|---|
 | macOS 13+（Apple 芯片 arm64） | [下載 HyphenScreen_1.7.0_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.0/HyphenScreen_1.7.0_arm64.dmg) | `e1a87c6e76da1cfb301f26add3e31af4a2964a4defeaaf037800bc181a323963` |
-| Windows 10/11（x64）· 1.6.6 版 | [下載 HyphenScreen_1.6.6_x64-setup.exe](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.6.6/HyphenScreen_1.6.6_x64-setup.exe) | `8cb544f34e17253e92192368278bdaaa0918ba899cc10c90605884731d7fd185` |
-| Linux（x86_64）· 1.6.6 版 | [下載 HyphenScreen_1.6.6_x86_64.AppImage](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.6.6/HyphenScreen_1.6.6_x86_64.AppImage) | `7cb71e48cc310ac915de37d3c9105e992d09093ea0ae329f3dda7a9d510b4009` |
-| Debian / Ubuntu（amd64）· 1.6.6 版 | [下載 HyphenScreen_1.6.6_amd64.deb](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.6.6/HyphenScreen_1.6.6_amd64.deb) | `a66d0b2066e33af37e1c50020257913f533024359714521418cd662497101c3f` |
-| Arch Linux（x86_64）· 1.6.6 版 | [下載 HyphenScreen_1.6.6_x64.pacman](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.6.6/HyphenScreen_1.6.6_x64.pacman) | `27dab06253ef42b48790013c8dbe09f166330f93048451ebdb9bf50e9f44aea2` |
+| Windows 10/11（x64） | [下載 HyphenScreen_1.7.0_x64-setup.exe](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.0/HyphenScreen_1.7.0_x64-setup.exe) | `097c26bcfd919c306216d291f214b23761f98dd5d837a21870141eda035b79f6` |
+| Linux（x86_64） | [下載 HyphenScreen_1.7.0_x86_64.AppImage](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.0/HyphenScreen_1.7.0_x86_64.AppImage) | `c878a554f06cfa531d06822fe4dea6dc0f3e3510768abc6635e17379e7c8cfae` |
+| Debian / Ubuntu（amd64） | [下載 HyphenScreen_1.7.0_amd64.deb](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.0/HyphenScreen_1.7.0_amd64.deb) | `7e75be0fe1a2484f5fc5ac372b43c04ebde1d5004dbd0021e560fca544b095c4` |
+| Arch Linux（x86_64） | [下載 HyphenScreen_1.7.0_x64.pacman](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.0/HyphenScreen_1.7.0_x64.pacman) | `87d98daba51dc893d621028aa61acf35612a8c5e1c87a82f8d9ae9f15f8bb52f` |
 
 <!-- evergreen:capabilities:start -->
 ![原生動畫編輯器：可編輯圖層、視覺分組與獨立動畫片段](screenshots/animation-editor-110.png)
