@@ -16,12 +16,14 @@ HyphenScreen by HyphenTech is a desktop workspace for software tutorials, produc
 <!-- recent-features:start -->
 ## Recent features and improvements (5 items)
 
+- **1.7.1** · Fixes the camera disappearing when cutout, blur or custom backgrounds process software-decoded recordings on Mac; existing media and edits are preserved.
 - **1.7.0** · Export watermarks default to 黑粉录屏, can be disabled, and apply consistently to MP4 and GIF.
 - **1.7.0** · Custom text, images or both, four editable examples, five positions, size and opacity controls, remembered on actual export.
 - **1.6.9** · Eight local composition types cover evidence, processes, presenters, comparisons, metrics, checklists, timelines and structures without a model.
 - **1.6.9** · Two palettes provide 16 actual 12-second example videos. Watch a type before editing your own content.
-- **1.6.9** · Six complete illustrations retain the same presenter. Set a shared explanation image or per-stage images at their original aspect ratio.
 <!-- recent-features:end -->
+
+**1.7.1：摄像头背景切换修复。** Mac上部分实际摄像头录制使用软件解码，切到抠图、模糊或自定义背景后人物可能消失。本版修复分割遮罩与视频帧的关联，保留现有素材、剪辑和分割模型；无需重录。Windows与Linux保留已公开的1.7.0，验证范围见本版发行说明。
 
 **1.7.0: choose your export watermark.** Mac defaults to 黑粉录屏, with an off switch, custom text, local PNG/JPEG/WebP images or both. Four editable examples, five positions, size and opacity controls cover common uses; text adapts to the picture brightness. Settings are remembered on actual export, with one native overlay path for MP4 and GIF. No paid entitlement is active in this release. Windows/Linux 1.7.0 now include these watermark settings. Native and application CLI outputs were verified; desktop mouse-driven export remains unverified because macOS screen capture failed.
 
@@ -123,15 +125,15 @@ LocalBrain discovers its loaded language model. A live Qwen3.8 27B test generate
 These videos show the versions available when recorded. Use the current release information on this page for downloads and capabilities. Narration is in Chinese.
 <!-- evergreen:demos:end -->
 
-## Download: 1.7.0
+## Download: 1.7.1
 
 | Platform | Package | SHA-256 |
 |---|---|---|
-| macOS 13+（Apple 芯片 arm64） | [Download HyphenScreen_1.7.0_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.0/HyphenScreen_1.7.0_arm64.dmg) | `e1a87c6e76da1cfb301f26add3e31af4a2964a4defeaaf037800bc181a323963` |
-| Windows 10/11（x64） | [Download HyphenScreen_1.7.0_x64-setup.exe](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.0/HyphenScreen_1.7.0_x64-setup.exe) | `097c26bcfd919c306216d291f214b23761f98dd5d837a21870141eda035b79f6` |
-| Linux（x86_64） | [Download HyphenScreen_1.7.0_x86_64.AppImage](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.0/HyphenScreen_1.7.0_x86_64.AppImage) | `c878a554f06cfa531d06822fe4dea6dc0f3e3510768abc6635e17379e7c8cfae` |
-| Debian / Ubuntu（amd64） | [Download HyphenScreen_1.7.0_amd64.deb](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.0/HyphenScreen_1.7.0_amd64.deb) | `7e75be0fe1a2484f5fc5ac372b43c04ebde1d5004dbd0021e560fca544b095c4` |
-| Arch Linux（x86_64） | [Download HyphenScreen_1.7.0_x64.pacman](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.0/HyphenScreen_1.7.0_x64.pacman) | `87d98daba51dc893d621028aa61acf35612a8c5e1c87a82f8d9ae9f15f8bb52f` |
+| macOS 13+（Apple 芯片 arm64） | [Download HyphenScreen_1.7.1_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.1/HyphenScreen_1.7.1_arm64.dmg) | `6b6a1e592e5ffa7cd48170b653abd5c4df8c43f5154a856861fda3ff279fd18f` |
+| Windows 10/11（x64）· 1.7.0 版 | [Download HyphenScreen_1.7.0_x64-setup.exe](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.0/HyphenScreen_1.7.0_x64-setup.exe) | `097c26bcfd919c306216d291f214b23761f98dd5d837a21870141eda035b79f6` |
+| Linux（x86_64）· 1.7.0 版 | [Download HyphenScreen_1.7.0_x86_64.AppImage](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.0/HyphenScreen_1.7.0_x86_64.AppImage) | `c878a554f06cfa531d06822fe4dea6dc0f3e3510768abc6635e17379e7c8cfae` |
+| Debian / Ubuntu（amd64）· 1.7.0 版 | [Download HyphenScreen_1.7.0_amd64.deb](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.0/HyphenScreen_1.7.0_amd64.deb) | `7e75be0fe1a2484f5fc5ac372b43c04ebde1d5004dbd0021e560fca544b095c4` |
+| Arch Linux（x86_64）· 1.7.0 版 | [Download HyphenScreen_1.7.0_x64.pacman](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.0/HyphenScreen_1.7.0_x64.pacman) | `87d98daba51dc893d621028aa61acf35612a8c5e1c87a82f8d9ae9f15f8bb52f` |
 
 <!-- evergreen:capabilities:start -->
 ![Native animation editor, editable layers and the Visual timeline group](screenshots/animation-editor-110.png)
