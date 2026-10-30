@@ -133,7 +133,7 @@ AI パネルの制作画面で内容と独自の要望を入力し、説明、�
 | プラットフォーム | パッケージ | SHA-256 |
 |---|---|---|
 | macOS 13+（Apple 芯片 arm64） | [ダウンロード HyphenScreen_1.7.2_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.2/HyphenScreen_1.7.2_arm64.dmg) | `fa1a488c6ebfab8b21403ab986e841be5ff574beededa6205f298fe8408adb3d` |
-| Windows 10/11（x64）· 1.7.1 版 | [ダウンロード HyphenScreen_1.7.1_x64-setup.exe](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.1/HyphenScreen_1.7.1_x64-setup.exe) | `747985ce8d46188c730ef9b5f7057693e1adc676e6b01b641f7852a086b8715f` |
+| Windows 10/11（x64） | [ダウンロード HyphenScreen_1.7.2_x64-setup.exe](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.2/HyphenScreen_1.7.2_x64-setup.exe) | `84ae067376c105ac25645dd8bd3e7c76d161da069a2d34124acd09577199919f` |
 | Linux（x86_64）· 1.7.1 版 | [ダウンロード HyphenScreen_1.7.1_x86_64.AppImage](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.1/HyphenScreen_1.7.1_x86_64.AppImage) | `38ff038029fbe8af9a7ebbdec7bbed673fb6bb0ad6efb522f1c0def5e467d43f` |
 | Debian / Ubuntu（amd64）· 1.7.1 版 | [ダウンロード HyphenScreen_1.7.1_amd64.deb](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.1/HyphenScreen_1.7.1_amd64.deb) | `263ebe788026f7cea733f1fa05f5f2ed407f992179b40583a7387aa26c6b87c4` |
 | Arch Linux（x86_64）· 1.7.1 版 | [ダウンロード HyphenScreen_1.7.1_x64.pacman](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.1/HyphenScreen_1.7.1_x64.pacman) | `f6c811f0ff52f2e6d5e8926de53e6e0dc6863d7d34402062a41a2df0c8423ec8` |
