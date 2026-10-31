@@ -25,15 +25,17 @@ HyphenScreen by HyphenTech is a desktop workspace for software tutorials, produc
 
 
 
+**Windows/Linux 1.7.4: local composition and chat stopping are now included.** Locally built installers include the unified creation entry, eight explanation types, ten video packages and safe turn stopping. Packaged resources and native exports were checked separately on Windows and WSL; Mac desktop and API checks do not establish desktop verification on other systems.
+
 **Mac 1.7.4: one local composition entry.** In Create animation → Local composition · No model, choose eight explanation types or ten coordinated video packages, preview an example, enter content and add it to the timeline without configuring a model. Explanations are grouped by sources, comparisons and structure. Packages retain their coordinated layouts, colors, motion and sound; internal layers are not individually editable. Connected models and external MCP clients use the same catalog and local tools. Mac development checks covered manual generation without a model and 20-second continuous playback. Tools launched from the installed Mac app again generated and saved an eight-second package and a twelve-second explanation with 38 layers; the 20-second 1080p30 export passed full video and audio decoding. Final installed desktop generation is pending system keychain authentication. Individual online models were not quality-tested; see the release notes.
 
 ![Local composition in the actual workspace](screenshots/local-composition-174.png)
 
-**Mac 1.7.3: stop waiting and continue the conversation.** While a model is running, the send control becomes a stop button. Applied edits and newly typed instructions are retained; sending resumes after the previous request exits safely. Local model responses are capped at 16,384 tokens, and truncated output stops explicitly instead of executing incomplete scenes. Configurable total and idle timeouts remain available. Windows/Linux remain at the publicly released 1.7.2; see the release notes for verification scope.
+**Mac 1.7.3: stop waiting and continue the conversation.** While a model is running, the send control becomes a stop button. Applied edits and newly typed instructions are retained; sending resumes after the previous request exits safely. Local model responses are capped at 16,384 tokens, and truncated output stops explicitly instead of executing incomplete scenes. Configurable total and idle timeouts remain available. Windows/Linux now provide 1.7.4; see the release notes for verification scope.
 
 **1.7.2** · Fix projects reappearing after deletion by resolving actual files, serializing saves and deletion, and blocking late saves. Locally built for Windows/Linux; See the download table for the current Mac build. Mac development checks and automated tests do not establish desktop verification on other systems.
 
-**1.7.1：摄像头背景切换修复。** Mac上部分实际摄像头录制使用软件解码，切到抠图、模糊或自定义背景后人物可能消失。本版修复分割遮罩与视频帧的关联，保留现有素材、剪辑和分割模型；无需重录。Windows与Linux现已本地构建至1.7.1；摄像头背景修复仅适用于Mac，不扩大为其他平台的修复或实测。
+**1.7.1: webcam background fix on Mac.** Fixes disappearing people when software-decoded webcam recordings use cutout, blur or custom backgrounds. Existing media and edits are preserved. This is a Mac-specific fix; other platform versions and verification scope are listed in the downloads and release notes.
 
 **1.7.0: choose your export watermark.** Mac defaults to 黑粉录屏, with an off switch, custom text, local PNG/JPEG/WebP images or both. Four editable examples, five positions, size and opacity controls cover common uses; text adapts to the picture brightness. Settings are remembered on actual export, with one native overlay path for MP4 and GIF. No paid entitlement is active in this release. Windows/Linux 1.7.0 now include these watermark settings. Native and application CLI outputs were verified; desktop mouse-driven export remains unverified because macOS screen capture failed.
 
@@ -140,10 +142,10 @@ These videos show the versions available when recorded. Use the current release 
 | Platform | Package | SHA-256 |
 |---|---|---|
 | macOS 13+（Apple 芯片 arm64） | [Download HyphenScreen_1.7.4_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.4/HyphenScreen_1.7.4_arm64.dmg) | `8a88a46ba44b9e1f2a7e209876b91a471c581dcb37074ad13384f85a5a9e9518` |
-| Windows 10/11（x64）· 1.7.2 版 | [Download HyphenScreen_1.7.2_x64-setup.exe](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.2/HyphenScreen_1.7.2_x64-setup.exe) | `84ae067376c105ac25645dd8bd3e7c76d161da069a2d34124acd09577199919f` |
-| Linux（x86_64）· 1.7.2 版 | [Download HyphenScreen_1.7.2_x86_64.AppImage](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.2/HyphenScreen_1.7.2_x86_64.AppImage) | `384603d76d2220014d9bf099db1dbafa922cb7837977ff89e55471d6970417a4` |
-| Debian / Ubuntu（amd64）· 1.7.2 版 | [Download HyphenScreen_1.7.2_amd64.deb](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.2/HyphenScreen_1.7.2_amd64.deb) | `97d155b5f50a0530fe244269e6194870bf3ac55b624f9ba6811323513edf50ea` |
-| Arch Linux（x86_64）· 1.7.2 版 | [Download HyphenScreen_1.7.2_x64.pacman](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.2/HyphenScreen_1.7.2_x64.pacman) | `440f2f5cd809c07d6002cb854efcf95c8ca15e223213524ddd78fab5409efdb2` |
+| Windows 10/11（x64） | [Download HyphenScreen_1.7.4_x64-setup.exe](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.4/HyphenScreen_1.7.4_x64-setup.exe) | `8eb8dd4800010dff65cb129c9c6afb911b632ca21ea7f9d235930e5c53b6b79d` |
+| Linux（x86_64） | [Download HyphenScreen_1.7.4_x86_64.AppImage](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.4/HyphenScreen_1.7.4_x86_64.AppImage) | `a11d7cd04cf2640a1946e02ba64772933a2c57833d6375b1c3ec96b9df61d590` |
+| Debian / Ubuntu（amd64） | [Download HyphenScreen_1.7.4_amd64.deb](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.4/HyphenScreen_1.7.4_amd64.deb) | `1703670d0fb0d9907674360ee82370a8f015e6c007bfc334990e728f25e837bb` |
+| Arch Linux（x86_64） | [Download HyphenScreen_1.7.4_x64.pacman](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.4/HyphenScreen_1.7.4_x64.pacman) | `2d3350edb61fef5b203a203e97e558a0962aa3b4735f4c602e05ad49ad2a84ba` |
 
 <!-- evergreen:capabilities:start -->
 ![Native animation editor, editable layers and the Visual timeline group](screenshots/animation-editor-110.png)
