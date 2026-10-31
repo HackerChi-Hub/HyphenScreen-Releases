@@ -16,12 +16,20 @@ HyphenScreen by HyphenTech is a desktop workspace for software tutorials, produc
 <!-- recent-features:start -->
 ## Recent features and improvements (5 items)
 
+- **1.7.4** · Create animation now combines eight explanation types and ten whole-video packages. Compose manually without a model, or use the same catalog and composition tools through connected models and MCP.
+- **1.7.3** · Stop a running turn while keeping completed edits, then continue in the same conversation. Local responses are bounded and truncated output stops safely.
 - **1.7.2** · Deletes title-named projects at their actual files and prevents late saves from recreating them; recordings are preserved.
 - **1.7.1** · Fixes the camera disappearing when cutout, blur or custom backgrounds process software-decoded recordings on Mac; existing media and edits are preserved.
 - **1.7.0** · Export watermarks default to 黑粉录屏, can be disabled, and apply consistently to MP4 and GIF.
-- **1.7.0** · Custom text, images or both, four editable examples, five positions, size and opacity controls, remembered on actual export.
-- **1.6.9** · Eight local composition types cover evidence, processes, presenters, comparisons, metrics, checklists, timelines and structures without a model.
 <!-- recent-features:end -->
+
+
+
+**Mac 1.7.4: one local composition entry.** In Create animation → Local composition · No model, choose eight explanation types or ten coordinated video packages, preview an example, enter content and add it to the timeline without configuring a model. Explanations are grouped by sources, comparisons and structure. Packages retain their coordinated layouts, colors, motion and sound; internal layers are not individually editable. Connected models and external MCP clients use the same catalog and local tools. Mac development checks covered manual generation without a model and 20-second continuous playback. Tools launched from the installed Mac app again generated and saved an eight-second package and a twelve-second explanation with 38 layers; the 20-second 1080p30 export passed full video and audio decoding. Final installed desktop generation is pending system keychain authentication. Individual online models were not quality-tested; see the release notes.
+
+![Local composition in the actual workspace](screenshots/local-composition-174.png)
+
+**Mac 1.7.3: stop waiting and continue the conversation.** While a model is running, the send control becomes a stop button. Applied edits and newly typed instructions are retained; sending resumes after the previous request exits safely. Local model responses are capped at 16,384 tokens, and truncated output stops explicitly instead of executing incomplete scenes. Configurable total and idle timeouts remain available. Windows/Linux remain at the publicly released 1.7.2; see the release notes for verification scope.
 
 **1.7.2** · Fix projects reappearing after deletion by resolving actual files, serializing saves and deletion, and blocking late saves. Locally built for Windows/Linux; See the download table for the current Mac build. Mac development checks and automated tests do not establish desktop verification on other systems.
 
@@ -127,15 +135,15 @@ LocalBrain discovers its loaded language model. A live Qwen3.8 27B test generate
 These videos show the versions available when recorded. Use the current release information on this page for downloads and capabilities. Narration is in Chinese.
 <!-- evergreen:demos:end -->
 
-## Download: 1.7.2
+## Download: 1.7.4
 
 | Platform | Package | SHA-256 |
 |---|---|---|
-| macOS 13+（Apple 芯片 arm64） | [Download HyphenScreen_1.7.2_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.2/HyphenScreen_1.7.2_arm64.dmg) | `fa1a488c6ebfab8b21403ab986e841be5ff574beededa6205f298fe8408adb3d` |
-| Windows 10/11（x64） | [Download HyphenScreen_1.7.2_x64-setup.exe](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.2/HyphenScreen_1.7.2_x64-setup.exe) | `84ae067376c105ac25645dd8bd3e7c76d161da069a2d34124acd09577199919f` |
-| Linux（x86_64） | [Download HyphenScreen_1.7.2_x86_64.AppImage](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.2/HyphenScreen_1.7.2_x86_64.AppImage) | `384603d76d2220014d9bf099db1dbafa922cb7837977ff89e55471d6970417a4` |
-| Debian / Ubuntu（amd64） | [Download HyphenScreen_1.7.2_amd64.deb](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.2/HyphenScreen_1.7.2_amd64.deb) | `97d155b5f50a0530fe244269e6194870bf3ac55b624f9ba6811323513edf50ea` |
-| Arch Linux（x86_64） | [Download HyphenScreen_1.7.2_x64.pacman](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.2/HyphenScreen_1.7.2_x64.pacman) | `440f2f5cd809c07d6002cb854efcf95c8ca15e223213524ddd78fab5409efdb2` |
+| macOS 13+（Apple 芯片 arm64） | [Download HyphenScreen_1.7.4_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.4/HyphenScreen_1.7.4_arm64.dmg) | `8a88a46ba44b9e1f2a7e209876b91a471c581dcb37074ad13384f85a5a9e9518` |
+| Windows 10/11（x64）· 1.7.2 版 | [Download HyphenScreen_1.7.2_x64-setup.exe](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.2/HyphenScreen_1.7.2_x64-setup.exe) | `84ae067376c105ac25645dd8bd3e7c76d161da069a2d34124acd09577199919f` |
+| Linux（x86_64）· 1.7.2 版 | [Download HyphenScreen_1.7.2_x86_64.AppImage](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.2/HyphenScreen_1.7.2_x86_64.AppImage) | `384603d76d2220014d9bf099db1dbafa922cb7837977ff89e55471d6970417a4` |
+| Debian / Ubuntu（amd64）· 1.7.2 版 | [Download HyphenScreen_1.7.2_amd64.deb](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.2/HyphenScreen_1.7.2_amd64.deb) | `97d155b5f50a0530fe244269e6194870bf3ac55b624f9ba6811323513edf50ea` |
+| Arch Linux（x86_64）· 1.7.2 版 | [Download HyphenScreen_1.7.2_x64.pacman](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.2/HyphenScreen_1.7.2_x64.pacman) | `440f2f5cd809c07d6002cb854efcf95c8ca15e223213524ddd78fab5409efdb2` |
 
 <!-- evergreen:capabilities:start -->
 ![Native animation editor, editable layers and the Visual timeline group](screenshots/animation-editor-110.png)
