@@ -18,12 +18,18 @@
 <!-- recent-features:start -->
 ## 近期新增与改进（最近 5 项）
 
-- **1.7.8** · 新增Poe平台，自动读取官方模型目录并筛选文字工具调用型号，连接测试核实当前账号。
-- **1.7.8** · 制作工作台分层展示当前阶段、带时间戳的工具记录、动画结构及返回结果，支持复制预览。
-- **1.7.8** · 本地超时或输出上限后的下一次请求自动整理早期对话，无需先手动压缩，保留聊天与已生成动画。
-- **1.7.8** · 连接状态不再计作模型思考，兼容本地思考字段；明确字符速度、对话估算与服务上报词元的区别。
-- **1.7.8** · 动画聊天续作沿用动画等待设置；MiniMax读取官方实时目录，服务异常明确提示并保留已写入内容。
+- **1.7.9** · 动画有效修改逐次显示并保存，模型后续核对继续进行，无需等待结束或点击停止。
+- **1.7.9** · 动画目录和成功写入使用简洁索引与回执，完整图层、关键帧和原始记录保留并可按需精确读取。
+- **1.7.9** · 顶部区分完整请求估算与最近实际输入，底部显示本轮累计用量，旧对话不倒算未记录的数值。
+- **1.7.9** · 自动探测的上下文窗口在新请求前刷新，明确手填的设置保留。
+- **1.7.9** · 停止后不重复应用相同结果，保留手工编辑和工程切换保护，场景与片段按实际ID计数。
 <!-- recent-features:end -->
+
+**Mac 1.7.9：动画写入即保存，减少重复上下文，分清实际用量。** 验证通过的场景逐次交给编辑器应用和保存，后续模型核对继续进行，无需等结束或点停止。动画列表只传场景索引，成功写入返回简洁回执；完整图层、关键帧和原始记录保留，可按需精确读取。顶部区分完整请求估算与最近实际输入，底部显示本轮累计；自动探测窗口会在新请求刷新，手填设置保留。停止后不重复应用同一快照，手工编辑和切换工程保留冲突保护。
+
+本轮Mac安装版由用户完成界面验收并确认无问题；4751项全量回归通过，最终补修后161项定向回归通过。真实Sushi同题只读核对的末次输入从72593降到26294词元，约减少63.8%；两轮缓存和工具次数不同，不作为动画生成速度基准。同一3秒、45图层场景在新旧版本导出的90帧逐帧一致。Windows／Linux保持1.7.8，未验证的新平台能力不提前标记。
+
+![1.7.9安装版原生动画实际输出](screenshots/paper-animation-179.png)
 
 **Windows／Linux 1.7.8：已本地构建，包含制作工作台、Poe动态模型目录、本地续作自动整理及等待修复。平台验证范围见发行回执。**
 
@@ -208,7 +214,9 @@ macOS导入视频遇到硬件解码失败时，会为当前素材自动尝试软
 
 Windows／Linux补包沿用相同工程删除修复，Mac开发版专项不扩大为其他系统桌面实测。本轮不自动安装或删除用户工程。
 
-**当前版本：[黑粉录屏 1.7.8 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.7.8)**（只保留最新一版）。
+**当前版本：[黑粉录屏 1.7.9 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.7.9)**（每个平台只保留最新的一版）。
+
+> 1.7.9 目前提供 macOS 安装包；Windows 继续提供 [黑粉录屏 1.7.8 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.7.8)，尚未发布 1.7.9 的 Windows 版；Linux 继续提供 [黑粉录屏 1.7.8 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.7.8)，尚未发布 1.7.9 的 Linux 版。
 
 ## 下载
 
@@ -216,13 +224,15 @@ Windows／Linux补包沿用相同工程删除修复，Mac开发版专项不扩�
 
 | 平台 | 文件 | SHA-256 |
 |---|---|---|
-| macOS 13+（Apple 芯片 arm64） | [下载 HyphenScreen_1.7.8_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.8/HyphenScreen_1.7.8_arm64.dmg) | `9ffb8491bd20842abcbda6728cc2cab4568c4d37439369f17b4733aa643f01e8` |
-| Windows 10/11（x64） | [下载 HyphenScreen_1.7.8_x64-setup.exe](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.8/HyphenScreen_1.7.8_x64-setup.exe) | `8cceb6469b967c74f80956849bf5dc9cfc5f22899b99b29ece535cd3b0d930b9` |
-| Linux（x86_64） | [下载 HyphenScreen_1.7.8_x86_64.AppImage](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.8/HyphenScreen_1.7.8_x86_64.AppImage) | `46356f2bad943fffbd702ea32a0175aa5d3864cdf3352d00164acb6f5648e192` |
-| Debian / Ubuntu（amd64） | [下载 HyphenScreen_1.7.8_amd64.deb](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.8/HyphenScreen_1.7.8_amd64.deb) | `eb033aea0a3fa358fac6e80c87b32b73ba3523725880147ce77c74a19aa5e226` |
-| Arch Linux（x86_64） | [下载 HyphenScreen_1.7.8_x64.pacman](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.8/HyphenScreen_1.7.8_x64.pacman) | `cedcdafe0c70824ba41308859d6056f08934ccc3b9751abb38116c8060e393c5` |
+| macOS 13+（Apple 芯片 arm64） | [下载 HyphenScreen_1.7.9_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.9/HyphenScreen_1.7.9_arm64.dmg) | `3d61c809c0c7744b087445461444df981cebad07b525937dedb2bd42aee9cb51` |
+| Windows 10/11（x64）· 1.7.8 版 | [下载 HyphenScreen_1.7.8_x64-setup.exe](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.8/HyphenScreen_1.7.8_x64-setup.exe) | `8cceb6469b967c74f80956849bf5dc9cfc5f22899b99b29ece535cd3b0d930b9` |
+| Linux（x86_64）· 1.7.8 版 | [下载 HyphenScreen_1.7.8_x86_64.AppImage](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.8/HyphenScreen_1.7.8_x86_64.AppImage) | `46356f2bad943fffbd702ea32a0175aa5d3864cdf3352d00164acb6f5648e192` |
+| Debian / Ubuntu（amd64）· 1.7.8 版 | [下载 HyphenScreen_1.7.8_amd64.deb](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.8/HyphenScreen_1.7.8_amd64.deb) | `eb033aea0a3fa358fac6e80c87b32b73ba3523725880147ce77c74a19aa5e226` |
+| Arch Linux（x86_64）· 1.7.8 版 | [下载 HyphenScreen_1.7.8_x64.pacman](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.8/HyphenScreen_1.7.8_x64.pacman) | `cedcdafe0c70824ba41308859d6056f08934ccc3b9751abb38116c8060e393c5` |
 
 同一页附带各平台的 `SHA256SUMS*.txt` 与 `release-manifest.json`，可核对文件完整性与构建来源。
+
+> 下面的功能一览按 1.7.9 介绍；Windows 暂为 1.7.8，不包含之后加入的功能；Linux 暂为 1.7.8，不包含之后加入的功能，各版变化见发行页面上的发行说明。
 
 <!-- evergreen:feature-tour:start -->
 <details>
