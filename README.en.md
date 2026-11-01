@@ -27,7 +27,9 @@ HyphenScreen by HyphenTech is a desktop workspace for software tutorials, produc
 
 **Mac 1.8.0: consistent model statistics and verified animation writes.** Online APIs, local models and subscriptions share live and saved turn statistics. ChatGPT subscriptions now report actual usage, cache hits and reasoning tokens. Client reception speed excludes tool execution and each call's initial wait; unavailable data is labeled. Animation creation checks scenes, clips and explicit time ranges, attempts missing work and reports unfinished results while preserving edits. MiniMax Flash receives the selected reasoning effort and retains original thinking and tool messages. Rewriting the same scene at the same position no longer creates duplicate clips.
 
-ChatGPT and Poe completed both live generation rounds; MiniMax completed after a reported interruption and continuation. The local Sushi long task reached two scenes, with the third unfinished. Three complete projects exported native 16-second 1080p30 videos and fully decoded. Reception speed reflects transport buffering, not hardware inference throughput. Installed-build and publication results are recorded in the release notes. Windows and Linux remain at the actual 1.7.8 release.
+ChatGPT and Poe completed both live generation rounds; MiniMax completed after a reported interruption and continuation. The local Sushi long task reached two scenes, with the third unfinished. The installed Mac build re-exported all three complete 16-second 1080p30 projects with full decoding. Two actual read-only chat turns, automatic completion, subsequent input, retained statistics, continuous playback and a mid-sequence seek passed in the installed workspace. Reception speed reflects transport buffering, not hardware inference throughput. Windows and Linux have also published 1.8.0 through their separate build workflow; platform verification is recorded separately.
+
+![Actual model statistics and native animation in the installed 1.8.0 workspace](screenshots/model-metrics-180.png)
 
 **Mac 1.7.9: save animation edits progressively, reduce repeated context and distinguish actual usage.** Validated edits reach the editor before the model finishes checking. Scene catalogs and acknowledged writes use compact summaries; original records, layers and keyframes remain available through exact reads. The header separates complete-request estimates from the latest actual input, while turn totals stay separate. Automatically detected windows refresh before a new request; explicit settings are retained. Final snapshots are not applied twice, with manual-edit and project-switch protections preserved.
 
@@ -163,11 +165,11 @@ These videos show the versions available when recorded. Use the current release 
 
 | Platform | Package | SHA-256 |
 |---|---|---|
+| macOS 13+（Apple 芯片 arm64） | [Download HyphenScreen_1.8.0_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.8.0/HyphenScreen_1.8.0_arm64.dmg) | `22057996b182ca89d00c927fdda95870b513eda5dd2c06a400ede0a03c0e3d83` |
 | Windows 10/11（x64） | [Download HyphenScreen_1.8.0_x64-setup.exe](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.8.0/HyphenScreen_1.8.0_x64-setup.exe) | `792892e1c1e68bb47ea63cf0f7f990c3454eb17b8c2caf48a576b78c1c4ec450` |
 | Linux（x86_64） | [Download HyphenScreen_1.8.0_x86_64.AppImage](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.8.0/HyphenScreen_1.8.0_x86_64.AppImage) | `ec13b065229d7f84b2a53399b6b15605637671cd3ec960842dbde7e06fffad93` |
 | Debian / Ubuntu（amd64） | [Download HyphenScreen_1.8.0_amd64.deb](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.8.0/HyphenScreen_1.8.0_amd64.deb) | `f04d8f2f33236b8906cab9adf8cc23b0821bff6bd7d7ca4b229fed84df27917b` |
 | Arch Linux（x86_64） | [Download HyphenScreen_1.8.0_x64.pacman](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.8.0/HyphenScreen_1.8.0_x64.pacman) | `9a34c96b7379a9466464b6e97e14b1910c527aad5ee2cf7fedd6dadb90244f71` |
-| macOS 13+（Apple 芯片 arm64）· 1.7.9 版 | [Download HyphenScreen_1.7.9_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.9/HyphenScreen_1.7.9_arm64.dmg) | `3d61c809c0c7744b087445461444df981cebad07b525937dedb2bd42aee9cb51` |
 
 <!-- evergreen:capabilities:start -->
 ![Native animation editor, editable layers and the Visual timeline group](screenshots/animation-editor-110.png)
