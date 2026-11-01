@@ -27,7 +27,9 @@
 
 **Mac 1.8.0：統一模型統計，核對動畫實際寫入。** 線上API、本機模型與訂閱共用執行中和完成後統計；ChatGPT訂閱補齊用量、快取與思考詞元。接收均速排除工具執行和各次首段等待，未知資料明確標示。建立動畫會核對場景、片段與明確時間區間，缺段自動補做，失敗保留成果並說明原因。MiniMax Flash傳遞實際思考檔位並保留完整原始訊息；同場景同位置修改不再重複疊片。
 
-真實ChatGPT及Poe完成兩輪生成，MiniMax中斷後續作完成；本機Sushi長任務完成兩場，第三場仍未完成。三份完整專案原生匯出16秒1080p30並完整解碼。接收均速受服務緩衝影響，不當作硬體推理效能比較。安裝與發行結果見本版說明，Windows／Linux維持實際1.7.8。
+真實ChatGPT及Poe完成兩輪生成，MiniMax中斷後續作完成；本機Sushi長任務完成兩場，第三場仍未完成。正式安裝版重新匯出三份16秒1080p30完整專案並完整解碼；實際工作室兩輪唯讀對話、自動結束、後續輸入、統計保留、連續播放與中段跳轉通過。接收均速受服務緩衝影響，不當作硬體推理效能比較。Windows／Linux也已透過獨立建置流程公開1.8.0，驗證範圍分別記錄。
+
+![1.8.0正式安裝版模型統計與原生動畫預覽](screenshots/model-metrics-180.png)
 
 **Mac 1.7.9：動畫寫入即儲存，減少重複上下文，分清實際用量。** 通過驗證的場景逐次交給編輯器套用與儲存，模型後續檢查繼續進行，無需等結束或按停止。動畫目錄與成功寫入使用精簡回執，完整圖層、關鍵影格和原始紀錄保留，可按需精確讀取。頂部區分完整請求估算與最近實際輸入，底部顯示本輪累計；自動偵測視窗在新請求刷新，手動設定保留。相同終態不重複套用，手動編輯和切換專案仍有衝突保護。
 
@@ -163,11 +165,11 @@ macOS匯入影片遇到硬體解碼失敗時，會為目前素材嘗試軟體解
 
 | 平台 | 安裝套件 | SHA-256 |
 |---|---|---|
+| macOS 13+（Apple 芯片 arm64） | [下載 HyphenScreen_1.8.0_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.8.0/HyphenScreen_1.8.0_arm64.dmg) | `22057996b182ca89d00c927fdda95870b513eda5dd2c06a400ede0a03c0e3d83` |
 | Windows 10/11（x64） | [下載 HyphenScreen_1.8.0_x64-setup.exe](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.8.0/HyphenScreen_1.8.0_x64-setup.exe) | `792892e1c1e68bb47ea63cf0f7f990c3454eb17b8c2caf48a576b78c1c4ec450` |
 | Linux（x86_64） | [下載 HyphenScreen_1.8.0_x86_64.AppImage](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.8.0/HyphenScreen_1.8.0_x86_64.AppImage) | `ec13b065229d7f84b2a53399b6b15605637671cd3ec960842dbde7e06fffad93` |
 | Debian / Ubuntu（amd64） | [下載 HyphenScreen_1.8.0_amd64.deb](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.8.0/HyphenScreen_1.8.0_amd64.deb) | `f04d8f2f33236b8906cab9adf8cc23b0821bff6bd7d7ca4b229fed84df27917b` |
 | Arch Linux（x86_64） | [下載 HyphenScreen_1.8.0_x64.pacman](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.8.0/HyphenScreen_1.8.0_x64.pacman) | `9a34c96b7379a9466464b6e97e14b1910c527aad5ee2cf7fedd6dadb90244f71` |
-| macOS 13+（Apple 芯片 arm64）· 1.7.9 版 | [下載 HyphenScreen_1.7.9_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.9/HyphenScreen_1.7.9_arm64.dmg) | `3d61c809c0c7744b087445461444df981cebad07b525937dedb2bd42aee9cb51` |
 
 <!-- evergreen:capabilities:start -->
 ![原生動畫編輯器：可編輯圖層、視覺分組與獨立動畫片段](screenshots/animation-editor-110.png)
