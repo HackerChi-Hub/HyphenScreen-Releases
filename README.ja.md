@@ -26,6 +26,8 @@ HyphenTech のデスクトップ録画・編集ソフトです。ソフトウェ
 
 
 
+**Windows／Linux 1.7.7にも実時間統計、コンテキスト検出、会話保存と出力上限・切断処理を追加。ローカル構築と検証範囲はリリース記録をご確認ください。**
+
 **Mac 1.7.7：ターンデータの集計方法を修正。** 出力文字数は本文のみを数え、思考は「思考 N 文字」として別に表示します。速度は本文と思考の合計で計算し、先に考えてツールを呼ぶターンでもゼロ近くにはなりません。提供元が出力トークンだけを報告した場合は「トークン 出力 N」と表示し、不明を「0 入」と書きません。Anthropic系とローカルモデルのAnthropic系は20,000、ローカルは32,768トークンに広げ（環境変数で変更可）、打ち切り時は思考とツール結果を保持して明示的に停止し、「Empty response from model」だけを返さないようにしました。その他は1.7.6と同じです。Windows／Linuxは公開中の1.7.4のままです。
 
 **Mac 1.7.6：ターンのライブデータ、続行できる未完了ターン、実際のコンテキストウィンドウ。** モデル実行中、チャット上部に状態・経過時間・初字遅延・出力文字数と速度・ツール回数・コンテキストを常時表示し、提供元が用量を報告した場合は実際のトークン数を示します。制作ログは時刻付きの段階とツール呼び出しの記録になり、思考過程とともにメッセージへ保存され、会話の切り替え・圧縮・再起動後も確認できます。未完了のターンは「未完了」メッセージとして残り、続きを実行できます。履歴は引き戻されず、メディア／録画タブへ切り替えても進捗を失いません。コンテキストはモデルの実際のウィンドウを使い、方寸智匣・llama.cpp・vLLM・LM Studio が報告する値を自動で読み取り、取得できない場合は AI 設定で手動入力します。上限に近づくと古い会話を自動圧縮し、会話そのものは削除しません。制作アニメーションのダイアログは待機設定を整理し、閉じるボタンを拡大し、連続スクロールと詳細の制御を説明します。Macはローカル証明書で署名し公証は未実施、Windows／Linuxは公開中の1.7.4のままです。
@@ -147,10 +149,10 @@ AI パネルの制作画面で内容と独自の要望を入力し、説明、�
 | プラットフォーム | パッケージ | SHA-256 |
 |---|---|---|
 | macOS 13+（Apple 芯片 arm64） | [ダウンロード HyphenScreen_1.7.7_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.7/HyphenScreen_1.7.7_arm64.dmg) | `8e8469c87985a3d1146750cb5b160b9a5ec5234f00413ea3dbf073b919a8c080` |
-| Windows 10/11（x64）· 1.7.4 版 | [ダウンロード HyphenScreen_1.7.4_x64-setup.exe](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.4/HyphenScreen_1.7.4_x64-setup.exe) | `8eb8dd4800010dff65cb129c9c6afb911b632ca21ea7f9d235930e5c53b6b79d` |
-| Linux（x86_64）· 1.7.4 版 | [ダウンロード HyphenScreen_1.7.4_x86_64.AppImage](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.4/HyphenScreen_1.7.4_x86_64.AppImage) | `a11d7cd04cf2640a1946e02ba64772933a2c57833d6375b1c3ec96b9df61d590` |
-| Debian / Ubuntu（amd64）· 1.7.4 版 | [ダウンロード HyphenScreen_1.7.4_amd64.deb](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.4/HyphenScreen_1.7.4_amd64.deb) | `1703670d0fb0d9907674360ee82370a8f015e6c007bfc334990e728f25e837bb` |
-| Arch Linux（x86_64）· 1.7.4 版 | [ダウンロード HyphenScreen_1.7.4_x64.pacman](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.4/HyphenScreen_1.7.4_x64.pacman) | `2d3350edb61fef5b203a203e97e558a0962aa3b4735f4c602e05ad49ad2a84ba` |
+| Windows 10/11（x64） | [ダウンロード HyphenScreen_1.7.7_x64-setup.exe](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.7/HyphenScreen_1.7.7_x64-setup.exe) | `c0dfa0c37c2dc12c73e3885d41b89e2b80ea6b89d37ba0194a238cc1247d27f6` |
+| Linux（x86_64） | [ダウンロード HyphenScreen_1.7.7_x86_64.AppImage](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.7/HyphenScreen_1.7.7_x86_64.AppImage) | `ae9e2030d6cad72ffb26710a6133ebf043e5c0b402c7e8b6b1d5264f1867b5a5` |
+| Debian / Ubuntu（amd64） | [ダウンロード HyphenScreen_1.7.7_amd64.deb](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.7/HyphenScreen_1.7.7_amd64.deb) | `2960087f6092b52a1e94d1751963e41cdeea0f920f2738e7473afe2cf25a76ed` |
+| Arch Linux（x86_64） | [ダウンロード HyphenScreen_1.7.7_x64.pacman](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.7/HyphenScreen_1.7.7_x64.pacman) | `0c90413f7db7557d9b22c3c672fc474e46629a9a99867ce4a861d77201049350` |
 
 <!-- evergreen:capabilities:start -->
 ![独立アニメーション、編集可能なレイヤーとビジュアルグループ](screenshots/animation-editor-110.png)
