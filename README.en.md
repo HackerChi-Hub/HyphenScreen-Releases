@@ -16,12 +16,18 @@ HyphenScreen by HyphenTech is a desktop workspace for software tutorials, produc
 <!-- recent-features:start -->
 ## Recent features and improvements (5 items)
 
-- **1.7.8** · Poe is available as a provider with an official live catalog filtered for text tool calling; test the selected model to verify account access.
-- **1.7.8** · The production workbench separates the current stage, timestamped tool records, animation structures and results, with copyable previews.
-- **1.7.8** · Local requests automatically compact earlier history before recovery from a timeout or output limit, preserving the transcript and generated scenes.
-- **1.7.8** · Connection status is no longer counted as reasoning. Local reasoning fields, character speed, conversation estimates and reported token usage are distinguished.
-- **1.7.8** · Animation follow-ups retain animation wait settings. MiniMax uses its official live catalog and service failures preserve completed edits.
+- **1.7.9** · Validated animation edits appear and save progressively while the model continues checking; no need to wait for completion or stop.
+- **1.7.9** · Scene catalogs and successful writes use compact receipts; complete layers, keyframes and original records remain available through exact reads.
+- **1.7.9** · Complete-request estimates, latest actual input and cumulative turn usage are labeled separately; missing historical counts are not invented.
+- **1.7.9** · Automatically detected context windows refresh before new requests while explicit settings are retained.
+- **1.7.9** · Final results are not applied twice; manual edits and project switches stay protected, with scene and clip counts based on actual IDs.
 <!-- recent-features:end -->
+
+**Mac 1.7.9: save animation edits progressively, reduce repeated context and distinguish actual usage.** Validated edits reach the editor before the model finishes checking. Scene catalogs and acknowledged writes use compact summaries; original records, layers and keyframes remain available through exact reads. The header separates complete-request estimates from the latest actual input, while turn totals stay separate. Automatically detected windows refresh before a new request; explicit settings are retained. Final snapshots are not applied twice, with manual-edit and project-switch protections preserved.
+
+The installed Mac build was accepted by the user after UI verification. The full suite passed 4,751 tests, followed by 161 targeted checks after the last catalog change. A real Sushi read-only task reduced its last request from 72,593 to 26,294 input tokens (63.8%); cache state and tool counts differed, so this is not an animation-generation speed benchmark. The same three-second, 45-layer scene produced 90 identical decoded frames in the old and new builds. Windows and Linux remain at 1.7.8.
+
+![Actual native animation output from the installed 1.7.9 build](screenshots/paper-animation-179.png)
 
 **Windows/Linux 1.7.8: locally built with the production workbench, dynamic Poe catalog, local continuation compaction and waiting fixes. See release verification for platform scope.**
 
@@ -147,15 +153,15 @@ LocalBrain discovers its loaded language model. A live Qwen3.8 27B test generate
 These videos show the versions available when recorded. Use the current release information on this page for downloads and capabilities. Narration is in Chinese.
 <!-- evergreen:demos:end -->
 
-## Download: 1.7.8
+## Download: 1.7.9
 
 | Platform | Package | SHA-256 |
 |---|---|---|
-| macOS 13+（Apple 芯片 arm64） | [Download HyphenScreen_1.7.8_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.8/HyphenScreen_1.7.8_arm64.dmg) | `9ffb8491bd20842abcbda6728cc2cab4568c4d37439369f17b4733aa643f01e8` |
-| Windows 10/11（x64） | [Download HyphenScreen_1.7.8_x64-setup.exe](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.8/HyphenScreen_1.7.8_x64-setup.exe) | `8cceb6469b967c74f80956849bf5dc9cfc5f22899b99b29ece535cd3b0d930b9` |
-| Linux（x86_64） | [Download HyphenScreen_1.7.8_x86_64.AppImage](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.8/HyphenScreen_1.7.8_x86_64.AppImage) | `46356f2bad943fffbd702ea32a0175aa5d3864cdf3352d00164acb6f5648e192` |
-| Debian / Ubuntu（amd64） | [Download HyphenScreen_1.7.8_amd64.deb](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.8/HyphenScreen_1.7.8_amd64.deb) | `eb033aea0a3fa358fac6e80c87b32b73ba3523725880147ce77c74a19aa5e226` |
-| Arch Linux（x86_64） | [Download HyphenScreen_1.7.8_x64.pacman](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.8/HyphenScreen_1.7.8_x64.pacman) | `cedcdafe0c70824ba41308859d6056f08934ccc3b9751abb38116c8060e393c5` |
+| macOS 13+（Apple 芯片 arm64） | [Download HyphenScreen_1.7.9_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.9/HyphenScreen_1.7.9_arm64.dmg) | `3d61c809c0c7744b087445461444df981cebad07b525937dedb2bd42aee9cb51` |
+| Windows 10/11（x64）· 1.7.8 版 | [Download HyphenScreen_1.7.8_x64-setup.exe](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.8/HyphenScreen_1.7.8_x64-setup.exe) | `8cceb6469b967c74f80956849bf5dc9cfc5f22899b99b29ece535cd3b0d930b9` |
+| Linux（x86_64）· 1.7.8 版 | [Download HyphenScreen_1.7.8_x86_64.AppImage](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.8/HyphenScreen_1.7.8_x86_64.AppImage) | `46356f2bad943fffbd702ea32a0175aa5d3864cdf3352d00164acb6f5648e192` |
+| Debian / Ubuntu（amd64）· 1.7.8 版 | [Download HyphenScreen_1.7.8_amd64.deb](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.8/HyphenScreen_1.7.8_amd64.deb) | `eb033aea0a3fa358fac6e80c87b32b73ba3523725880147ce77c74a19aa5e226` |
+| Arch Linux（x86_64）· 1.7.8 版 | [Download HyphenScreen_1.7.8_x64.pacman](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.8/HyphenScreen_1.7.8_x64.pacman) | `cedcdafe0c70824ba41308859d6056f08934ccc3b9751abb38116c8060e393c5` |
 
 <!-- evergreen:capabilities:start -->
 ![Native animation editor, editable layers and the Visual timeline group](screenshots/animation-editor-110.png)
