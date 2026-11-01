@@ -16,12 +16,14 @@ HyphenScreen by HyphenTech is a desktop workspace for software tutorials, produc
 <!-- recent-features:start -->
 ## Recent features and improvements (5 items)
 
-- **1.7.7** · Turn metrics now report the right quantities: answer and reasoning characters are separate, speed covers both, and a provider that reports only output tokens no longer reads as "0 in".
-- **1.7.6** · The chat keeps live turn data, the production log and the reasoning, and an unfinished turn stays as an Unfinished message you can continue; context uses the model's real window and compacts automatically near the limit without deleting the conversation.
-- **1.7.4** · Create animation now combines eight explanation types and ten whole-video packages. Compose manually without a model, or use the same catalog and composition tools through connected models and MCP.
-- **1.7.3** · Stop a running turn while keeping completed edits, then continue in the same conversation. Local responses are bounded and truncated output stops safely.
-- **1.7.2** · Deletes title-named projects at their actual files and prevents late saves from recreating them; recordings are preserved.
+- **1.7.8** · Poe is available as a provider with an official live catalog filtered for text tool calling; test the selected model to verify account access.
+- **1.7.8** · The production workbench separates the current stage, timestamped tool records, animation structures and results, with copyable previews.
+- **1.7.8** · Local requests automatically compact earlier history before recovery from a timeout or output limit, preserving the transcript and generated scenes.
+- **1.7.8** · Connection status is no longer counted as reasoning. Local reasoning fields, character speed, conversation estimates and reported token usage are distinguished.
+- **1.7.8** · Animation follow-ups retain animation wait settings. MiniMax uses its official live catalog and service failures preserve completed edits.
 <!-- recent-features:end -->
+
+**Mac 1.7.8: production workbench, Poe and automatic local compaction.** Poe reads its official public catalog and filters text tool-calling models; listing is not proof of account access. Expand tool arguments, native scene structures and results in the workbench; long previews are truncated. Connection status is no longer reasoning, and conversation estimates are not complete request usage. Local recovery requests compact history as needed while preserving the transcript and authored scenes. Animation follow-ups retain wait settings, and MiniMax reads its live catalog. Windows/Linux remain at the published 1.7.7; installation and publication status are recorded in release verification.
 
 
 
@@ -143,15 +145,15 @@ LocalBrain discovers its loaded language model. A live Qwen3.8 27B test generate
 These videos show the versions available when recorded. Use the current release information on this page for downloads and capabilities. Narration is in Chinese.
 <!-- evergreen:demos:end -->
 
-## Download: 1.7.7
+## Download: 1.7.8
 
 | Platform | Package | SHA-256 |
 |---|---|---|
-| macOS 13+（Apple 芯片 arm64） | [Download HyphenScreen_1.7.7_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.7/HyphenScreen_1.7.7_arm64.dmg) | `8e8469c87985a3d1146750cb5b160b9a5ec5234f00413ea3dbf073b919a8c080` |
-| Windows 10/11（x64） | [Download HyphenScreen_1.7.7_x64-setup.exe](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.7/HyphenScreen_1.7.7_x64-setup.exe) | `c0dfa0c37c2dc12c73e3885d41b89e2b80ea6b89d37ba0194a238cc1247d27f6` |
-| Linux（x86_64） | [Download HyphenScreen_1.7.7_x86_64.AppImage](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.7/HyphenScreen_1.7.7_x86_64.AppImage) | `ae9e2030d6cad72ffb26710a6133ebf043e5c0b402c7e8b6b1d5264f1867b5a5` |
-| Debian / Ubuntu（amd64） | [Download HyphenScreen_1.7.7_amd64.deb](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.7/HyphenScreen_1.7.7_amd64.deb) | `2960087f6092b52a1e94d1751963e41cdeea0f920f2738e7473afe2cf25a76ed` |
-| Arch Linux（x86_64） | [Download HyphenScreen_1.7.7_x64.pacman](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.7/HyphenScreen_1.7.7_x64.pacman) | `0c90413f7db7557d9b22c3c672fc474e46629a9a99867ce4a861d77201049350` |
+| macOS 13+（Apple 芯片 arm64） | [Download HyphenScreen_1.7.8_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.8/HyphenScreen_1.7.8_arm64.dmg) | `9ffb8491bd20842abcbda6728cc2cab4568c4d37439369f17b4733aa643f01e8` |
+| Windows 10/11（x64）· 1.7.7 版 | [Download HyphenScreen_1.7.7_x64-setup.exe](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.7/HyphenScreen_1.7.7_x64-setup.exe) | `c0dfa0c37c2dc12c73e3885d41b89e2b80ea6b89d37ba0194a238cc1247d27f6` |
+| Linux（x86_64）· 1.7.7 版 | [Download HyphenScreen_1.7.7_x86_64.AppImage](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.7/HyphenScreen_1.7.7_x86_64.AppImage) | `ae9e2030d6cad72ffb26710a6133ebf043e5c0b402c7e8b6b1d5264f1867b5a5` |
+| Debian / Ubuntu（amd64）· 1.7.7 版 | [Download HyphenScreen_1.7.7_amd64.deb](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.7/HyphenScreen_1.7.7_amd64.deb) | `2960087f6092b52a1e94d1751963e41cdeea0f920f2738e7473afe2cf25a76ed` |
+| Arch Linux（x86_64）· 1.7.7 版 | [Download HyphenScreen_1.7.7_x64.pacman](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.7/HyphenScreen_1.7.7_x64.pacman) | `0c90413f7db7557d9b22c3c672fc474e46629a9a99867ce4a861d77201049350` |
 
 <!-- evergreen:capabilities:start -->
 ![Native animation editor, editable layers and the Visual timeline group](screenshots/animation-editor-110.png)
