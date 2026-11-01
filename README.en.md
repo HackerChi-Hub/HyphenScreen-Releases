@@ -16,14 +16,16 @@ HyphenScreen by HyphenTech is a desktop workspace for software tutorials, produc
 <!-- recent-features:start -->
 ## Recent features and improvements (5 items)
 
+- **1.7.6** · The chat keeps live turn data, the production log and the reasoning, and an unfinished turn stays as an Unfinished message you can continue; context uses the model's real window and compacts automatically near the limit without deleting the conversation.
 - **1.7.4** · Create animation now combines eight explanation types and ten whole-video packages. Compose manually without a model, or use the same catalog and composition tools through connected models and MCP.
 - **1.7.3** · Stop a running turn while keeping completed edits, then continue in the same conversation. Local responses are bounded and truncated output stops safely.
 - **1.7.2** · Deletes title-named projects at their actual files and prevents late saves from recreating them; recordings are preserved.
 - **1.7.1** · Fixes the camera disappearing when cutout, blur or custom backgrounds process software-decoded recordings on Mac; existing media and edits are preserved.
-- **1.7.0** · Export watermarks default to 黑粉录屏, can be disabled, and apply consistently to MP4 and GIF.
 <!-- recent-features:end -->
 
 
+
+**Mac 1.7.6: live turn data, continuable unfinished turns, and the real context window.** While a model runs, the chat keeps this turn's status, elapsed time, first-character latency, output characters and speed, tool calls and context size in view; real token counts appear when the provider reports them. The production record is now timestamped stages and tool calls, saved with the message together with the reasoning — still readable after a session switch, a compaction or a restart — and an unfinished turn is kept as an Unfinished message you can continue. Scrolling up no longer snaps back, and switching to Media/Rec no longer discards progress. Context now uses the model's real window: 方寸智匣, llama.cpp, vLLM and LM Studio report it and are read automatically; otherwise set it in AI settings. Near the limit the older turns are compacted automatically, without deleting the conversation. The Create animation dialog gets a calmer wait-settings row, a larger close button, and an explanation of continuous scroll and detail control. Mac builds are signed locally, not notarized; Windows and Linux remain at the publicly released 1.7.4.
 
 **Windows/Linux 1.7.4: local composition and chat stopping are now included.** Locally built installers include the unified creation entry, eight explanation types, ten video packages and safe turn stopping. Packaged resources and native exports were checked separately on Windows and WSL; Mac desktop and API checks do not establish desktop verification on other systems.
 
@@ -137,15 +139,15 @@ LocalBrain discovers its loaded language model. A live Qwen3.8 27B test generate
 These videos show the versions available when recorded. Use the current release information on this page for downloads and capabilities. Narration is in Chinese.
 <!-- evergreen:demos:end -->
 
-## Download: 1.7.4
+## Download: 1.7.6
 
 | Platform | Package | SHA-256 |
 |---|---|---|
-| macOS 13+（Apple 芯片 arm64） | [Download HyphenScreen_1.7.4_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.4/HyphenScreen_1.7.4_arm64.dmg) | `8a88a46ba44b9e1f2a7e209876b91a471c581dcb37074ad13384f85a5a9e9518` |
-| Windows 10/11（x64） | [Download HyphenScreen_1.7.4_x64-setup.exe](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.4/HyphenScreen_1.7.4_x64-setup.exe) | `8eb8dd4800010dff65cb129c9c6afb911b632ca21ea7f9d235930e5c53b6b79d` |
-| Linux（x86_64） | [Download HyphenScreen_1.7.4_x86_64.AppImage](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.4/HyphenScreen_1.7.4_x86_64.AppImage) | `a11d7cd04cf2640a1946e02ba64772933a2c57833d6375b1c3ec96b9df61d590` |
-| Debian / Ubuntu（amd64） | [Download HyphenScreen_1.7.4_amd64.deb](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.4/HyphenScreen_1.7.4_amd64.deb) | `1703670d0fb0d9907674360ee82370a8f015e6c007bfc334990e728f25e837bb` |
-| Arch Linux（x86_64） | [Download HyphenScreen_1.7.4_x64.pacman](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.4/HyphenScreen_1.7.4_x64.pacman) | `2d3350edb61fef5b203a203e97e558a0962aa3b4735f4c602e05ad49ad2a84ba` |
+| macOS 13+（Apple 芯片 arm64） | [Download HyphenScreen_1.7.6_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.6/HyphenScreen_1.7.6_arm64.dmg) | `aa07cb8741312d38f8d265073a7a4629b3e1bf4b1b0be6a26d2990d9444ca415` |
+| Windows 10/11（x64）· 1.7.4 版 | [Download HyphenScreen_1.7.4_x64-setup.exe](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.4/HyphenScreen_1.7.4_x64-setup.exe) | `8eb8dd4800010dff65cb129c9c6afb911b632ca21ea7f9d235930e5c53b6b79d` |
+| Linux（x86_64）· 1.7.4 版 | [Download HyphenScreen_1.7.4_x86_64.AppImage](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.4/HyphenScreen_1.7.4_x86_64.AppImage) | `a11d7cd04cf2640a1946e02ba64772933a2c57833d6375b1c3ec96b9df61d590` |
+| Debian / Ubuntu（amd64）· 1.7.4 版 | [Download HyphenScreen_1.7.4_amd64.deb](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.4/HyphenScreen_1.7.4_amd64.deb) | `1703670d0fb0d9907674360ee82370a8f015e6c007bfc334990e728f25e837bb` |
+| Arch Linux（x86_64）· 1.7.4 版 | [Download HyphenScreen_1.7.4_x64.pacman](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.4/HyphenScreen_1.7.4_x64.pacman) | `2d3350edb61fef5b203a203e97e558a0962aa3b4735f4c602e05ad49ad2a84ba` |
 
 <!-- evergreen:capabilities:start -->
 ![Native animation editor, editable layers and the Visual timeline group](screenshots/animation-editor-110.png)
