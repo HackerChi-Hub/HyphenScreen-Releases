@@ -28,7 +28,9 @@ HyphenTech のデスクトップ録画・編集ソフトです。ソフトウェ
 
 **Mac 1.8.0：モデル統計を統一し、アニメーションの実書き込みを確認。** オンラインAPI、ローカルモデル、サブスクリプションで実行中と終了後の統計を共通化。ChatGPTの使用量、キャッシュ、推論トークンを表示します。受信平均速度からツール実行と各呼び出しの初期待機を除き、未提供の値は明示します。シーン、クリップ、明示された時間範囲を確認し、不足分を補完。失敗時は編集を保持して理由を示します。MiniMax Flashに推論強度を実際に渡し、元の思考・ツール履歴を保持。同じ位置への修正でクリップを重複作成しません。
 
-実測ではChatGPTとPoeが2回の生成を完了し、MiniMaxは中断後の継続で完了。ローカルSushiの長時間タスクは2シーンまでで、3番目は未完了でした。3件の完成プロジェクトを16秒・1080p30でネイティブ出力し、全フレームのデコードを確認。受信速度は通信バッファの影響を受け、ハードウェア推論性能とは区別します。インストールと公開結果はリリースノートを参照。WindowsとLinuxは実際の1.7.8を維持します。
+実測ではChatGPTとPoeが2回の生成を完了し、MiniMaxは中断後の継続で完了。ローカルSushiの長時間タスクは2シーンまでで、3番目は未完了でした。Macのインストール版から3件の完成プロジェクトを16秒・1080p30で再出力し、全フレームのデコードを確認。実画面で2回の読み取り専用対話、自動終了、続けての入力、統計の保持、連続再生と途中への移動を確認しました。受信速度は通信バッファの影響を受け、ハードウェア推論性能とは区別します。WindowsとLinuxも別のビルド手順で1.8.0を公開済みです。検証範囲はOSごとに記録します。
+
+![インストール版1.8.0の実際のモデル統計とアニメーションプレビュー](screenshots/model-metrics-180.png)
 
 **Mac 1.7.9：アニメーション編集を順次保存し、重複コンテキストと使用量表示を改善。** 検証済みの編集はモデルの確認終了を待たずにエディターへ反映・保存します。シーン一覧と書き込み結果は簡潔な索引・応答にし、元の記録、全レイヤー、キーフレームは必要に応じて正確に読み出せます。要求全体の推定、直近の実入力、ターン累計を区別します。自動検出したウィンドウ長を再確認し、手入力値は保持。終了時の二重適用を防ぎ、手動編集やプロジェクト切替の保護も維持します。
 
@@ -164,11 +166,11 @@ AI パネルの制作画面で内容と独自の要望を入力し、説明、�
 
 | プラットフォーム | パッケージ | SHA-256 |
 |---|---|---|
+| macOS 13+（Apple 芯片 arm64） | [ダウンロード HyphenScreen_1.8.0_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.8.0/HyphenScreen_1.8.0_arm64.dmg) | `22057996b182ca89d00c927fdda95870b513eda5dd2c06a400ede0a03c0e3d83` |
 | Windows 10/11（x64） | [ダウンロード HyphenScreen_1.8.0_x64-setup.exe](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.8.0/HyphenScreen_1.8.0_x64-setup.exe) | `792892e1c1e68bb47ea63cf0f7f990c3454eb17b8c2caf48a576b78c1c4ec450` |
 | Linux（x86_64） | [ダウンロード HyphenScreen_1.8.0_x86_64.AppImage](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.8.0/HyphenScreen_1.8.0_x86_64.AppImage) | `ec13b065229d7f84b2a53399b6b15605637671cd3ec960842dbde7e06fffad93` |
 | Debian / Ubuntu（amd64） | [ダウンロード HyphenScreen_1.8.0_amd64.deb](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.8.0/HyphenScreen_1.8.0_amd64.deb) | `f04d8f2f33236b8906cab9adf8cc23b0821bff6bd7d7ca4b229fed84df27917b` |
 | Arch Linux（x86_64） | [ダウンロード HyphenScreen_1.8.0_x64.pacman](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.8.0/HyphenScreen_1.8.0_x64.pacman) | `9a34c96b7379a9466464b6e97e14b1910c527aad5ee2cf7fedd6dadb90244f71` |
-| macOS 13+（Apple 芯片 arm64）· 1.7.9 版 | [ダウンロード HyphenScreen_1.7.9_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.9/HyphenScreen_1.7.9_arm64.dmg) | `3d61c809c0c7744b087445461444df981cebad07b525937dedb2bd42aee9cb51` |
 
 <!-- evergreen:capabilities:start -->
 ![独立アニメーション、編集可能なレイヤーとビジュアルグループ](screenshots/animation-editor-110.png)
