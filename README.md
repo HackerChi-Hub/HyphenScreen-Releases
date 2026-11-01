@@ -18,12 +18,14 @@
 <!-- recent-features:start -->
 ## 近期新增与改进（最近 5 项）
 
+- **1.7.6** · 对话留下实时数据、制作过程和思考，未完成回合可作为“未完成”消息继续；上下文按模型真实窗口使用并在接近上限时自动压缩，对话记录不删除。
 - **1.7.4** · 制作动画统一提供本地编排：八类讲解与十套整片包装，无需配置模型即可手动生成；模型与外部接口共用目录和编排工具。
 - **1.7.3** · 模型运行时可停止本轮并保留已生成内容，恢复同一对话发送；本地单次输出设限，截断时停止重复生成。
 - **1.7.2** · 修复标题命名工程删除后重新出现；按实际文件删除，防止迟到保存重建工程，录制素材保留。
 - **1.7.1** · 修复部分摄像头录制切换抠图、模糊或自定义背景后人物消失的问题，保留现有素材和剪辑。
-- **1.7.0** · 导出水印默认“黑粉录屏”，支持关闭，MP4与GIF同步生效。
 <!-- recent-features:end -->
+
+**Mac 1.7.6：对话实时数据、可继续的未完成回合与真实上下文窗口。** 模型运行时，对话上方常驻本轮状态、用时、首字延迟、输出字数与速度、工具次数和上下文；提供方上报用量时显示真实词元。制作过程改为带时间戳的阶段与工具调用记录，思考过程与记录随消息保存，切换会话、压缩或重启后仍可回看；没有执行完的回合保存为“未完成”消息，可以继续补完。往上翻历史不再被拉回底部，切换媒体／录制也不丢制作进度。上下文按模型真实窗口使用：方寸智匣、llama.cpp、vLLM、LM Studio 能上报就自动读取，读不到可在 AI 设置手填；接近上限时自动压缩较早对话，压缩不删除对话记录。制作动画弹窗收口等待设置、加大关闭按钮，并补充连续长卷与细节控制说明。Mac使用本机证书签名，未做苹果公证；Windows与Linux保留实际公开1.7.4。
 
 **Windows／Linux 1.7.4：本地编排与对话停止已同步。** 两平台安装包已包含统一制作入口、八类讲解、十套包装及停止本轮对话的修复。本轮在Windows与WSL本地打包，包内资源和原生导出单独核验；Mac桌面及接口验收不作为其他系统的桌面实测。
 
@@ -198,7 +200,9 @@ macOS导入视频遇到硬件解码失败时，会为当前素材自动尝试软
 
 Windows／Linux补包沿用相同工程删除修复，Mac开发版专项不扩大为其他系统桌面实测。本轮不自动安装或删除用户工程。
 
-**当前版本：[黑粉录屏 1.7.4 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.7.4)**（只保留最新一版）。
+**当前版本：[黑粉录屏 1.7.6 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.7.6)**（每个平台只保留最新的一版）。
+
+> 1.7.6 目前提供 macOS 安装包；Windows 继续提供 [黑粉录屏 1.7.4 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.7.4)，尚未发布 1.7.6 的 Windows 版；Linux 继续提供 [黑粉录屏 1.7.4 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.7.4)，尚未发布 1.7.6 的 Linux 版。
 
 ## 下载
 
@@ -206,13 +210,15 @@ Windows／Linux补包沿用相同工程删除修复，Mac开发版专项不扩�
 
 | 平台 | 文件 | SHA-256 |
 |---|---|---|
-| macOS 13+（Apple 芯片 arm64） | [下载 HyphenScreen_1.7.4_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.4/HyphenScreen_1.7.4_arm64.dmg) | `8a88a46ba44b9e1f2a7e209876b91a471c581dcb37074ad13384f85a5a9e9518` |
-| Windows 10/11（x64） | [下载 HyphenScreen_1.7.4_x64-setup.exe](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.4/HyphenScreen_1.7.4_x64-setup.exe) | `8eb8dd4800010dff65cb129c9c6afb911b632ca21ea7f9d235930e5c53b6b79d` |
-| Linux（x86_64） | [下载 HyphenScreen_1.7.4_x86_64.AppImage](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.4/HyphenScreen_1.7.4_x86_64.AppImage) | `a11d7cd04cf2640a1946e02ba64772933a2c57833d6375b1c3ec96b9df61d590` |
-| Debian / Ubuntu（amd64） | [下载 HyphenScreen_1.7.4_amd64.deb](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.4/HyphenScreen_1.7.4_amd64.deb) | `1703670d0fb0d9907674360ee82370a8f015e6c007bfc334990e728f25e837bb` |
-| Arch Linux（x86_64） | [下载 HyphenScreen_1.7.4_x64.pacman](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.4/HyphenScreen_1.7.4_x64.pacman) | `2d3350edb61fef5b203a203e97e558a0962aa3b4735f4c602e05ad49ad2a84ba` |
+| macOS 13+（Apple 芯片 arm64） | [下载 HyphenScreen_1.7.6_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.6/HyphenScreen_1.7.6_arm64.dmg) | `aa07cb8741312d38f8d265073a7a4629b3e1bf4b1b0be6a26d2990d9444ca415` |
+| Windows 10/11（x64）· 1.7.4 版 | [下载 HyphenScreen_1.7.4_x64-setup.exe](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.4/HyphenScreen_1.7.4_x64-setup.exe) | `8eb8dd4800010dff65cb129c9c6afb911b632ca21ea7f9d235930e5c53b6b79d` |
+| Linux（x86_64）· 1.7.4 版 | [下载 HyphenScreen_1.7.4_x86_64.AppImage](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.4/HyphenScreen_1.7.4_x86_64.AppImage) | `a11d7cd04cf2640a1946e02ba64772933a2c57833d6375b1c3ec96b9df61d590` |
+| Debian / Ubuntu（amd64）· 1.7.4 版 | [下载 HyphenScreen_1.7.4_amd64.deb](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.4/HyphenScreen_1.7.4_amd64.deb) | `1703670d0fb0d9907674360ee82370a8f015e6c007bfc334990e728f25e837bb` |
+| Arch Linux（x86_64）· 1.7.4 版 | [下载 HyphenScreen_1.7.4_x64.pacman](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.4/HyphenScreen_1.7.4_x64.pacman) | `2d3350edb61fef5b203a203e97e558a0962aa3b4735f4c602e05ad49ad2a84ba` |
 
 同一页附带各平台的 `SHA256SUMS*.txt` 与 `release-manifest.json`，可核对文件完整性与构建来源。
+
+> 下面的功能一览按 1.7.6 介绍；Windows 暂为 1.7.4，不包含之后加入的功能；Linux 暂为 1.7.4，不包含之后加入的功能，各版变化见发行页面上的发行说明。
 
 <!-- evergreen:feature-tour:start -->
 <details>
