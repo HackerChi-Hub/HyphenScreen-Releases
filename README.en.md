@@ -16,16 +16,22 @@ HyphenScreen by HyphenTech is a desktop workspace for software tutorials, produc
 <!-- recent-features:start -->
 ## Recent features and improvements (5 items)
 
-- **1.7.9** · Validated animation edits appear and save progressively while the model continues checking; no need to wait for completion or stop.
-- **1.7.9** · Scene catalogs and successful writes use compact receipts; complete layers, keyframes and original records remain available through exact reads.
-- **1.7.9** · Complete-request estimates, latest actual input and cumulative turn usage are labeled separately; missing historical counts are not invented.
-- **1.7.9** · Automatically detected context windows refresh before new requests while explicit settings are retained.
-- **1.7.9** · Final results are not applied twice; manual edits and project switches stay protected, with scene and clip counts based on actual IDs.
+- **1.8.0** · Online, local and subscription models share live and saved turn statistics; ChatGPT subscriptions report actual usage, cache hits and reasoning tokens.
+- **1.8.0** · Reception speed excludes tool execution and initial waits; missing or buffered data is labeled instead of inventing inference throughput.
+- **1.8.0** · Animation creation checks actual scenes, clips and explicit time ranges, attempts missing work, and preserves edits with clear unfinished status.
+- **1.8.0** · MiniMax Flash receives the selected reasoning effort; Anthropic transports retain original thinking, signatures and tool messages.
+- **1.8.0** · Rewriting the same scene at the same position avoids duplicate clips; fully decoded JSON is still strictly validated and manual trims stay protected.
 <!-- recent-features:end -->
+
+**Windows/Linux 1.8.0: locally built with unified model metrics, animation delivery checks, bounded completion retries and duplicate-placement fixes. See release notes for verification scope.**
+
+**Mac 1.8.0: consistent model statistics and verified animation writes.** Online APIs, local models and subscriptions share live and saved turn statistics. ChatGPT subscriptions now report actual usage, cache hits and reasoning tokens. Client reception speed excludes tool execution and each call's initial wait; unavailable data is labeled. Animation creation checks scenes, clips and explicit time ranges, attempts missing work and reports unfinished results while preserving edits. MiniMax Flash receives the selected reasoning effort and retains original thinking and tool messages. Rewriting the same scene at the same position no longer creates duplicate clips.
+
+ChatGPT and Poe completed both live generation rounds; MiniMax completed after a reported interruption and continuation. The local Sushi long task reached two scenes, with the third unfinished. Three complete projects exported native 16-second 1080p30 videos and fully decoded. Reception speed reflects transport buffering, not hardware inference throughput. Installed-build and publication results are recorded in the release notes. Windows and Linux remain at the actual 1.7.8 release.
 
 **Mac 1.7.9: save animation edits progressively, reduce repeated context and distinguish actual usage.** Validated edits reach the editor before the model finishes checking. Scene catalogs and acknowledged writes use compact summaries; original records, layers and keyframes remain available through exact reads. The header separates complete-request estimates from the latest actual input, while turn totals stay separate. Automatically detected windows refresh before a new request; explicit settings are retained. Final snapshots are not applied twice, with manual-edit and project-switch protections preserved.
 
-The installed Mac build was accepted by the user after UI verification. The full suite passed 4,751 tests, followed by 161 targeted checks after the last catalog change. A real Sushi read-only task reduced its last request from 72,593 to 26,294 input tokens (63.8%); cache state and tool counts differed, so this is not an animation-generation speed benchmark. The same three-second, 45-layer scene produced 90 identical decoded frames in the old and new builds. Windows and Linux remain at 1.7.8.
+The installed Mac build was accepted by the user after UI verification. The full suite passed 4,751 tests, followed by 161 targeted checks after the last catalog change. A real Sushi read-only task reduced its last request from 72,593 to 26,294 input tokens (63.8%); cache state and tool counts differed, so this is not an animation-generation speed benchmark. The same three-second, 45-layer scene produced 90 identical decoded frames in the old and new builds. Windows and Linux now provide 1.8.0.
 
 ![Actual native animation output from the installed 1.7.9 build](screenshots/paper-animation-179.png)
 
@@ -153,15 +159,15 @@ LocalBrain discovers its loaded language model. A live Qwen3.8 27B test generate
 These videos show the versions available when recorded. Use the current release information on this page for downloads and capabilities. Narration is in Chinese.
 <!-- evergreen:demos:end -->
 
-## Download: 1.7.9
+## Download: 1.8.0
 
 | Platform | Package | SHA-256 |
 |---|---|---|
-| macOS 13+（Apple 芯片 arm64） | [Download HyphenScreen_1.7.9_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.9/HyphenScreen_1.7.9_arm64.dmg) | `3d61c809c0c7744b087445461444df981cebad07b525937dedb2bd42aee9cb51` |
-| Windows 10/11（x64）· 1.7.8 版 | [Download HyphenScreen_1.7.8_x64-setup.exe](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.8/HyphenScreen_1.7.8_x64-setup.exe) | `8cceb6469b967c74f80956849bf5dc9cfc5f22899b99b29ece535cd3b0d930b9` |
-| Linux（x86_64）· 1.7.8 版 | [Download HyphenScreen_1.7.8_x86_64.AppImage](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.8/HyphenScreen_1.7.8_x86_64.AppImage) | `46356f2bad943fffbd702ea32a0175aa5d3864cdf3352d00164acb6f5648e192` |
-| Debian / Ubuntu（amd64）· 1.7.8 版 | [Download HyphenScreen_1.7.8_amd64.deb](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.8/HyphenScreen_1.7.8_amd64.deb) | `eb033aea0a3fa358fac6e80c87b32b73ba3523725880147ce77c74a19aa5e226` |
-| Arch Linux（x86_64）· 1.7.8 版 | [Download HyphenScreen_1.7.8_x64.pacman](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.8/HyphenScreen_1.7.8_x64.pacman) | `cedcdafe0c70824ba41308859d6056f08934ccc3b9751abb38116c8060e393c5` |
+| Windows 10/11（x64） | [Download HyphenScreen_1.8.0_x64-setup.exe](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.8.0/HyphenScreen_1.8.0_x64-setup.exe) | `792892e1c1e68bb47ea63cf0f7f990c3454eb17b8c2caf48a576b78c1c4ec450` |
+| Linux（x86_64） | [Download HyphenScreen_1.8.0_x86_64.AppImage](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.8.0/HyphenScreen_1.8.0_x86_64.AppImage) | `ec13b065229d7f84b2a53399b6b15605637671cd3ec960842dbde7e06fffad93` |
+| Debian / Ubuntu（amd64） | [Download HyphenScreen_1.8.0_amd64.deb](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.8.0/HyphenScreen_1.8.0_amd64.deb) | `f04d8f2f33236b8906cab9adf8cc23b0821bff6bd7d7ca4b229fed84df27917b` |
+| Arch Linux（x86_64） | [Download HyphenScreen_1.8.0_x64.pacman](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.8.0/HyphenScreen_1.8.0_x64.pacman) | `9a34c96b7379a9466464b6e97e14b1910c527aad5ee2cf7fedd6dadb90244f71` |
+| macOS 13+（Apple 芯片 arm64）· 1.7.9 版 | [Download HyphenScreen_1.7.9_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.9/HyphenScreen_1.7.9_arm64.dmg) | `3d61c809c0c7744b087445461444df981cebad07b525937dedb2bd42aee9cb51` |
 
 <!-- evergreen:capabilities:start -->
 ![Native animation editor, editable layers and the Visual timeline group](screenshots/animation-editor-110.png)
