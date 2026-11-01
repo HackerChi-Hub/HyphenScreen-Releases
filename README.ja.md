@@ -17,12 +17,14 @@ HyphenTech のデスクトップ録画・編集ソフトです。ソフトウェ
 <!-- recent-features:start -->
 ## 最近の機能追加と改善（5件）
 
-- **1.7.7** · ターンのライブデータを正しい指標に修正。本文と思考の文字数を分け、速度は合計で計算し、出力トークンだけを報告する提供元でも「0 入」と表示しません。
-- **1.7.6** · チャットはターンのライブデータ・制作ログ・思考を保存し、未完了ターンは「未完了」メッセージとして続行できます。コンテキストはモデルの実際のウィンドウを使い、上限付近では会話を削除せず自動圧縮します。
-- **1.7.4** · アニメーション制作に8種類の解説と10組の映像パッケージを統合。モデル設定なしで手動生成でき、接続モデルやMCPも同じカタログとツールを利用できます。
-- **1.7.3** · 実行中の応答を停止して編集結果を保持し、同じ会話を続行できます。ローカル応答の上限と切断時の停止処理を追加。
-- **1.7.2** · タイトル名のプロジェクトが削除後に再表示される問題を修正。実際のファイルを削除し、遅延保存による再作成を防ぎ、録画素材は保持します。
+- **1.7.8** · Poeを追加。公式モデル一覧からテキストのツール呼び出し対応モデルを抽出し、接続テストでアカウントの利用可否を確認できます。
+- **1.7.8** · 制作ワークベンチで現在の段階、時刻付きツール記録、アニメーション構造と結果を分けて表示し、プレビューをコピーできます。
+- **1.7.8** · ローカルモデルのタイムアウトや出力上限後は、次の要求前に過去の会話を必要に応じて自動要約し、会話と生成済みシーンを保持します。
+- **1.7.8** · 接続状態を思考文字数に含めず、ローカル思考フィールドに対応。文字速度、会話推定量、報告トークン数を区別します。
+- **1.7.8** · アニメーションの続行では待機設定を維持。MiniMaxは公式の最新モデル一覧を読み取り、障害時も完了済み編集を保持します。
 <!-- recent-features:end -->
+
+**Mac 1.7.8：制作ワークベンチ、Poeとローカル会話の自動整理。** Poeの公式一覧からテキストのツール呼び出し対応モデルを抽出します。一覧への掲載はアカウント権限の証明ではありません。ツール引数、シーン構造と結果を展開でき、長いプレビューは省略されます。接続表示を思考に数えず、会話推定量と実際のトークン用量を区別します。ローカルの続行要求前に必要に応じて会話を自動整理し、元の会話とシーンを保持します。アニメーションの待機設定とMiniMaxの最新一覧にも対応。Windows／Linuxは公開済み1.7.7を維持し、インストールと公開状況はリリース記録で確認できます。
 
 
 
@@ -144,15 +146,15 @@ AI パネルの制作画面で内容と独自の要望を入力し、説明、�
 動画は撮影時のバージョンです。現在の機能と配布パッケージはこのページのリリース情報をご確認ください。動画の解説は中国語です。
 <!-- evergreen:demos:end -->
 
-## ダウンロード: 1.7.7
+## ダウンロード: 1.7.8
 
 | プラットフォーム | パッケージ | SHA-256 |
 |---|---|---|
-| macOS 13+（Apple 芯片 arm64） | [ダウンロード HyphenScreen_1.7.7_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.7/HyphenScreen_1.7.7_arm64.dmg) | `8e8469c87985a3d1146750cb5b160b9a5ec5234f00413ea3dbf073b919a8c080` |
-| Windows 10/11（x64） | [ダウンロード HyphenScreen_1.7.7_x64-setup.exe](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.7/HyphenScreen_1.7.7_x64-setup.exe) | `c0dfa0c37c2dc12c73e3885d41b89e2b80ea6b89d37ba0194a238cc1247d27f6` |
-| Linux（x86_64） | [ダウンロード HyphenScreen_1.7.7_x86_64.AppImage](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.7/HyphenScreen_1.7.7_x86_64.AppImage) | `ae9e2030d6cad72ffb26710a6133ebf043e5c0b402c7e8b6b1d5264f1867b5a5` |
-| Debian / Ubuntu（amd64） | [ダウンロード HyphenScreen_1.7.7_amd64.deb](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.7/HyphenScreen_1.7.7_amd64.deb) | `2960087f6092b52a1e94d1751963e41cdeea0f920f2738e7473afe2cf25a76ed` |
-| Arch Linux（x86_64） | [ダウンロード HyphenScreen_1.7.7_x64.pacman](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.7/HyphenScreen_1.7.7_x64.pacman) | `0c90413f7db7557d9b22c3c672fc474e46629a9a99867ce4a861d77201049350` |
+| macOS 13+（Apple 芯片 arm64） | [ダウンロード HyphenScreen_1.7.8_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.8/HyphenScreen_1.7.8_arm64.dmg) | `9ffb8491bd20842abcbda6728cc2cab4568c4d37439369f17b4733aa643f01e8` |
+| Windows 10/11（x64）· 1.7.7 版 | [ダウンロード HyphenScreen_1.7.7_x64-setup.exe](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.7/HyphenScreen_1.7.7_x64-setup.exe) | `c0dfa0c37c2dc12c73e3885d41b89e2b80ea6b89d37ba0194a238cc1247d27f6` |
+| Linux（x86_64）· 1.7.7 版 | [ダウンロード HyphenScreen_1.7.7_x86_64.AppImage](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.7/HyphenScreen_1.7.7_x86_64.AppImage) | `ae9e2030d6cad72ffb26710a6133ebf043e5c0b402c7e8b6b1d5264f1867b5a5` |
+| Debian / Ubuntu（amd64）· 1.7.7 版 | [ダウンロード HyphenScreen_1.7.7_amd64.deb](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.7/HyphenScreen_1.7.7_amd64.deb) | `2960087f6092b52a1e94d1751963e41cdeea0f920f2738e7473afe2cf25a76ed` |
+| Arch Linux（x86_64）· 1.7.7 版 | [ダウンロード HyphenScreen_1.7.7_x64.pacman](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.7/HyphenScreen_1.7.7_x64.pacman) | `0c90413f7db7557d9b22c3c672fc474e46629a9a99867ce4a861d77201049350` |
 
 <!-- evergreen:capabilities:start -->
 ![独立アニメーション、編集可能なレイヤーとビジュアルグループ](screenshots/animation-editor-110.png)
