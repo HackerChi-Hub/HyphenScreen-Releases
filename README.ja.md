@@ -17,12 +17,18 @@ HyphenTech のデスクトップ録画・編集ソフトです。ソフトウェ
 <!-- recent-features:start -->
 ## 最近の機能追加と改善（5件）
 
-- **1.7.8** · Poeを追加。公式モデル一覧からテキストのツール呼び出し対応モデルを抽出し、接続テストでアカウントの利用可否を確認できます。
-- **1.7.8** · 制作ワークベンチで現在の段階、時刻付きツール記録、アニメーション構造と結果を分けて表示し、プレビューをコピーできます。
-- **1.7.8** · ローカルモデルのタイムアウトや出力上限後は、次の要求前に過去の会話を必要に応じて自動要約し、会話と生成済みシーンを保持します。
-- **1.7.8** · 接続状態を思考文字数に含めず、ローカル思考フィールドに対応。文字速度、会話推定量、報告トークン数を区別します。
-- **1.7.8** · アニメーションの続行では待機設定を維持。MiniMaxは公式の最新モデル一覧を読み取り、障害時も完了済み編集を保持します。
+- **1.7.9** · 検証済みのアニメーション編集を順次表示・保存し、モデルの確認終了や停止を待つ必要がなくなりました。
+- **1.7.9** · シーン一覧と書き込み結果を簡潔な索引・応答にし、全レイヤー、キーフレームと元の記録は正確に読み出せます。
+- **1.7.9** · 要求全体の推定、直近の実入力、ターン累計を区別し、過去に記録されなかった数値は作りません。
+- **1.7.9** · 自動検出したコンテキスト長を新しい要求前に再確認し、明示的な手入力設定は保持します。
+- **1.7.9** · 終了時の二重適用を防ぎ、手動編集・プロジェクト切替を保護。シーンとクリップを実際のIDで集計します。
 <!-- recent-features:end -->
+
+**Mac 1.7.9：アニメーション編集を順次保存し、重複コンテキストと使用量表示を改善。** 検証済みの編集はモデルの確認終了を待たずにエディターへ反映・保存します。シーン一覧と書き込み結果は簡潔な索引・応答にし、元の記録、全レイヤー、キーフレームは必要に応じて正確に読み出せます。要求全体の推定、直近の実入力、ターン累計を区別します。自動検出したウィンドウ長を再確認し、手入力値は保持。終了時の二重適用を防ぎ、手動編集やプロジェクト切替の保護も維持します。
+
+インストール版の画面はユーザーが確認済みです。全体テスト4,751件と最終修正後の対象テスト161件が成功。同じSushi読み取りタスクの最終入力は72,593から26,294トークンへ63.8%減少しましたが、キャッシュとツール回数が異なるため生成速度の比較値ではありません。同一の3秒・45レイヤーの場面は新旧版で90フレームすべて一致しました。WindowsとLinuxは1.7.8のままです。
+
+![インストール版1.7.9の実際のネイティブ動画出力](screenshots/paper-animation-179.png)
 
 **Windows／Linux 1.7.8：制作ワークベンチ、Poe動的一覧、ローカル続行の自動整理と待機修正を含むローカル構築版です。検証範囲はリリース記録をご確認ください。**
 
@@ -148,15 +154,15 @@ AI パネルの制作画面で内容と独自の要望を入力し、説明、�
 動画は撮影時のバージョンです。現在の機能と配布パッケージはこのページのリリース情報をご確認ください。動画の解説は中国語です。
 <!-- evergreen:demos:end -->
 
-## ダウンロード: 1.7.8
+## ダウンロード: 1.7.9
 
 | プラットフォーム | パッケージ | SHA-256 |
 |---|---|---|
-| macOS 13+（Apple 芯片 arm64） | [ダウンロード HyphenScreen_1.7.8_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.8/HyphenScreen_1.7.8_arm64.dmg) | `9ffb8491bd20842abcbda6728cc2cab4568c4d37439369f17b4733aa643f01e8` |
-| Windows 10/11（x64） | [ダウンロード HyphenScreen_1.7.8_x64-setup.exe](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.8/HyphenScreen_1.7.8_x64-setup.exe) | `8cceb6469b967c74f80956849bf5dc9cfc5f22899b99b29ece535cd3b0d930b9` |
-| Linux（x86_64） | [ダウンロード HyphenScreen_1.7.8_x86_64.AppImage](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.8/HyphenScreen_1.7.8_x86_64.AppImage) | `46356f2bad943fffbd702ea32a0175aa5d3864cdf3352d00164acb6f5648e192` |
-| Debian / Ubuntu（amd64） | [ダウンロード HyphenScreen_1.7.8_amd64.deb](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.8/HyphenScreen_1.7.8_amd64.deb) | `eb033aea0a3fa358fac6e80c87b32b73ba3523725880147ce77c74a19aa5e226` |
-| Arch Linux（x86_64） | [ダウンロード HyphenScreen_1.7.8_x64.pacman](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.8/HyphenScreen_1.7.8_x64.pacman) | `cedcdafe0c70824ba41308859d6056f08934ccc3b9751abb38116c8060e393c5` |
+| macOS 13+（Apple 芯片 arm64） | [ダウンロード HyphenScreen_1.7.9_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.9/HyphenScreen_1.7.9_arm64.dmg) | `3d61c809c0c7744b087445461444df981cebad07b525937dedb2bd42aee9cb51` |
+| Windows 10/11（x64）· 1.7.8 版 | [ダウンロード HyphenScreen_1.7.8_x64-setup.exe](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.8/HyphenScreen_1.7.8_x64-setup.exe) | `8cceb6469b967c74f80956849bf5dc9cfc5f22899b99b29ece535cd3b0d930b9` |
+| Linux（x86_64）· 1.7.8 版 | [ダウンロード HyphenScreen_1.7.8_x86_64.AppImage](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.8/HyphenScreen_1.7.8_x86_64.AppImage) | `46356f2bad943fffbd702ea32a0175aa5d3864cdf3352d00164acb6f5648e192` |
+| Debian / Ubuntu（amd64）· 1.7.8 版 | [ダウンロード HyphenScreen_1.7.8_amd64.deb](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.8/HyphenScreen_1.7.8_amd64.deb) | `eb033aea0a3fa358fac6e80c87b32b73ba3523725880147ce77c74a19aa5e226` |
+| Arch Linux（x86_64）· 1.7.8 版 | [ダウンロード HyphenScreen_1.7.8_x64.pacman](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.7.8/HyphenScreen_1.7.8_x64.pacman) | `cedcdafe0c70824ba41308859d6056f08934ccc3b9751abb38116c8060e393c5` |
 
 <!-- evergreen:capabilities:start -->
 ![独立アニメーション、編集可能なレイヤーとビジュアルグループ](screenshots/animation-editor-110.png)
