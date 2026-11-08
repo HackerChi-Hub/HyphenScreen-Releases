@@ -16,12 +16,16 @@
 <!-- recent-features:start -->
 ## 近期新增與改進（最近 5 項）
 
+- **1.8.3** · 整期方案可保存原始大綱、逐項要求、口播、螢幕文字與驗收標準。
+- **1.8.3** · 新增專業整期驗收展示；報告、局部修復與複驗需簽名授權，公開版不開放執行。
 - **1.8.2** · 修復正式安裝版中講解圖形卡片預覽無法顯示的問題。
 - **1.8.1** · 右側動畫依用途分類，提供122種可預覽、可重新設定的鏡頭。
 - **1.8.1** · 線上、本機與外部模型共用素材目錄，可查詢個別樣式並依全片內容選材。
-- **1.8.1** · 整期方案先定風格、順序與銜接，逐段寫入與核對。
-- **1.8.1** · 新增逐字裂升、漂移合攏及兩種剪輯點轉場。
 <!-- recent-features:end -->
+
+**1.8.3 整期製作契約與專業驗收。**「整期方案」保存原始大綱、模型假設、逐項要求、口播、逐字螢幕文字與驗收標準。右側動畫庫的「整期製作與驗收」統一進入規劃、製作與驗收；報告包含程式硬檢查、模型語義評審、要求追蹤、局部修復、複驗差異及 JSON／Markdown 匯出。專業執行需要簽名授權，公開版顯示功能說明但鎖定報告、匯出與複驗，一般動畫製作不受影響。
+
+![1.8.3 公開安裝版顯示專業整期驗收但鎖定執行](screenshots/episode-acceptance-183.png)
 
 **1.8.1 動畫素材庫與整期選材。** 在右側依用途選擇、預覽並加入動畫。122 種鏡頭可修改設定後重新生成，原生標題和講解圖形可在時間軸繼續編輯。已連接的線上、本機及外部模型可查詢同一素材庫，依講解與主視覺選擇樣式，安排相鄰鏡頭的銜接。各平台實際下載版本見下方。
 
@@ -163,15 +167,15 @@ macOS匯入影片遇到硬體解碼失敗時，會為目前素材嘗試軟體解
 影片示範的是拍攝時的版本；安裝套件與目前功能以本頁正式發行資訊為準。影片以中文講解。
 <!-- evergreen:demos:end -->
 
-## 下載: 1.8.2
+## 下載: 1.8.3
 
 | 平台 | 安裝套件 | SHA-256 |
 |---|---|---|
-| macOS 13+（Apple 芯片 arm64） | [下載 HyphenScreen_1.8.2_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.8.2/HyphenScreen_1.8.2_arm64.dmg) | `e5eb9ddd883bb0d5c01906f7a4d08cae9a7abdbfc7739384692cd72f12f54f9a` |
-| Windows 10/11（x64）· 1.8.0 版 | [下載 HyphenScreen_1.8.0_x64-setup.exe](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.8.0/HyphenScreen_1.8.0_x64-setup.exe) | `792892e1c1e68bb47ea63cf0f7f990c3454eb17b8c2caf48a576b78c1c4ec450` |
-| Linux（x86_64）· 1.8.0 版 | [下載 HyphenScreen_1.8.0_x86_64.AppImage](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.8.0/HyphenScreen_1.8.0_x86_64.AppImage) | `ec13b065229d7f84b2a53399b6b15605637671cd3ec960842dbde7e06fffad93` |
-| Debian / Ubuntu（amd64）· 1.8.0 版 | [下載 HyphenScreen_1.8.0_amd64.deb](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.8.0/HyphenScreen_1.8.0_amd64.deb) | `f04d8f2f33236b8906cab9adf8cc23b0821bff6bd7d7ca4b229fed84df27917b` |
-| Arch Linux（x86_64）· 1.8.0 版 | [下載 HyphenScreen_1.8.0_x64.pacman](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.8.0/HyphenScreen_1.8.0_x64.pacman) | `9a34c96b7379a9466464b6e97e14b1910c527aad5ee2cf7fedd6dadb90244f71` |
+| macOS 13+（Apple 芯片 arm64） | [下載 HyphenScreen_1.8.3_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.8.3/HyphenScreen_1.8.3_arm64.dmg) | `bbc6eb6b7b5ccc193e351da448a62367e2eb245e1cfb6dc37d231401c270f45b` |
+| Windows 10/11（x64） | [下載 HyphenScreen_1.8.3_x64-setup.exe](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.8.3/HyphenScreen_1.8.3_x64-setup.exe) | `2fe838173bac95082616bba466f008b72ed5e88938b07194afae2ca4ea939122` |
+| Linux（x86_64） | [下載 HyphenScreen_1.8.3_x86_64.AppImage](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.8.3/HyphenScreen_1.8.3_x86_64.AppImage) | `0a597d4166752ef7e24b8bfebce342e9d01022651d1ac5e0077f9becc551ef3a` |
+| Debian / Ubuntu（amd64） | [下載 HyphenScreen_1.8.3_amd64.deb](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.8.3/HyphenScreen_1.8.3_amd64.deb) | `a464c0398c4d7e6d51fd64bc9608bcd506f808a1fde93c3a0fb9d98c135f9795` |
+| Arch Linux（x86_64） | [下載 HyphenScreen_1.8.3_x64.pacman](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.8.3/HyphenScreen_1.8.3_x64.pacman) | `d1322c31d705c8e6f973c978bda0f59008f453704437b03af193cd289873e06f` |
 
 <!-- evergreen:capabilities:start -->
 ![原生動畫編輯器：可編輯圖層、視覺分組與獨立動畫片段](screenshots/animation-editor-110.png)
