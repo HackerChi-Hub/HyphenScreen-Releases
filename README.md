@@ -18,12 +18,16 @@
 <!-- recent-features:start -->
 ## 近期新增与改进（最近 5 项）
 
+- **1.8.3** · 整期方案可保存原始大纲、逐项要求、口播、屏幕文字和验收标准。
+- **1.8.3** · 新增专业整期验收展示；报告、局部修复和复验需签名授权，公开版不开放执行。
 - **1.8.2** · 修复正式安装版中讲解图形卡片预览无法显示的问题。
 - **1.8.1** · 右侧动画按用途分类，提供122种可预览、可重新配置的镜头。
 - **1.8.1** · 在线、本地和外部模型共用素材目录，检索具体样式后按整期内容选材。
-- **1.8.1** · 整期方案先定风格、顺序和衔接，逐段写入与核对。
-- **1.8.1** · 新增逐字裂升、漂移合拢和两种剪辑点转场。
 <!-- recent-features:end -->
+
+**1.8.3 整期制作契约与专业验收。**「制作动画」右侧的「整期制作与验收」直接进入整期方案，保存原始大纲、模型假设、逐项要求、口播、逐字屏幕文字和验收标准。报告默认列出问题与局部修改，也可查看逐段分析、要求追踪、人工复核、复验差异及 JSON／Markdown 导出。专业执行需要签名授权，公开版显示功能说明但锁定报告、导出和复验，普通动画制作不受影响。
+
+![1.8.3 公开安装版显示专业整期验收但锁定执行](screenshots/episode-acceptance-183.png)
 
 **1.8.1 动画素材库与整期选材。** 在右侧按用途挑选、预览和插入动画。122 种镜头可修改配置后重新生成，原生标题和讲解图形可在时间线继续编辑。接入的在线、本地及外部模型可检索同一动画库，按讲解和主视觉选择具体样式，并安排前后镜头的衔接。各平台的实际可下载版本见下方。
 
@@ -224,9 +228,7 @@ macOS导入视频遇到硬件解码失败时，会为当前素材自动尝试软
 
 Windows／Linux补包沿用相同工程删除修复，Mac开发版专项不扩大为其他系统桌面实测。本轮不自动安装或删除用户工程。
 
-**当前版本：[黑粉录屏 1.8.2 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.8.2)**（每个平台只保留最新的一版）。
-
-> 1.8.2 目前提供 macOS 安装包；Windows 继续提供 [黑粉录屏 1.8.0 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.8.0)，尚未发布 1.8.2 的 Windows 版；Linux 继续提供 [黑粉录屏 1.8.0 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.8.0)，尚未发布 1.8.2 的 Linux 版。
+**当前版本：[黑粉录屏 1.8.3 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.8.3)**（只保留最新一版）。
 
 ## 下载
 
@@ -234,15 +236,13 @@ Windows／Linux补包沿用相同工程删除修复，Mac开发版专项不扩�
 
 | 平台 | 文件 | SHA-256 |
 |---|---|---|
-| macOS 13+（Apple 芯片 arm64） | [下载 HyphenScreen_1.8.2_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.8.2/HyphenScreen_1.8.2_arm64.dmg) | `e5eb9ddd883bb0d5c01906f7a4d08cae9a7abdbfc7739384692cd72f12f54f9a` |
-| Windows 10/11（x64）· 1.8.0 版 | [下载 HyphenScreen_1.8.0_x64-setup.exe](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.8.0/HyphenScreen_1.8.0_x64-setup.exe) | `792892e1c1e68bb47ea63cf0f7f990c3454eb17b8c2caf48a576b78c1c4ec450` |
-| Linux（x86_64）· 1.8.0 版 | [下载 HyphenScreen_1.8.0_x86_64.AppImage](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.8.0/HyphenScreen_1.8.0_x86_64.AppImage) | `ec13b065229d7f84b2a53399b6b15605637671cd3ec960842dbde7e06fffad93` |
-| Debian / Ubuntu（amd64）· 1.8.0 版 | [下载 HyphenScreen_1.8.0_amd64.deb](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.8.0/HyphenScreen_1.8.0_amd64.deb) | `f04d8f2f33236b8906cab9adf8cc23b0821bff6bd7d7ca4b229fed84df27917b` |
-| Arch Linux（x86_64）· 1.8.0 版 | [下载 HyphenScreen_1.8.0_x64.pacman](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.8.0/HyphenScreen_1.8.0_x64.pacman) | `9a34c96b7379a9466464b6e97e14b1910c527aad5ee2cf7fedd6dadb90244f71` |
+| macOS 13+（Apple 芯片 arm64） | [下载 HyphenScreen_1.8.3_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.8.3/HyphenScreen_1.8.3_arm64.dmg) | `bbc6eb6b7b5ccc193e351da448a62367e2eb245e1cfb6dc37d231401c270f45b` |
+| Windows 10/11（x64） | [下载 HyphenScreen_1.8.3_x64-setup.exe](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.8.3/HyphenScreen_1.8.3_x64-setup.exe) | `2fe838173bac95082616bba466f008b72ed5e88938b07194afae2ca4ea939122` |
+| Linux（x86_64） | [下载 HyphenScreen_1.8.3_x86_64.AppImage](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.8.3/HyphenScreen_1.8.3_x86_64.AppImage) | `0a597d4166752ef7e24b8bfebce342e9d01022651d1ac5e0077f9becc551ef3a` |
+| Debian / Ubuntu（amd64） | [下载 HyphenScreen_1.8.3_amd64.deb](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.8.3/HyphenScreen_1.8.3_amd64.deb) | `a464c0398c4d7e6d51fd64bc9608bcd506f808a1fde93c3a0fb9d98c135f9795` |
+| Arch Linux（x86_64） | [下载 HyphenScreen_1.8.3_x64.pacman](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.8.3/HyphenScreen_1.8.3_x64.pacman) | `d1322c31d705c8e6f973c978bda0f59008f453704437b03af193cd289873e06f` |
 
 同一页附带各平台的 `SHA256SUMS*.txt` 与 `release-manifest.json`，可核对文件完整性与构建来源。
-
-> 下面的功能一览按 1.8.2 介绍；Windows 暂为 1.8.0，不包含之后加入的功能；Linux 暂为 1.8.0，不包含之后加入的功能，各版变化见发行页面上的发行说明。
 
 <!-- evergreen:feature-tour:start -->
 <details>
@@ -369,6 +369,10 @@ A／B 选择和刀片，J／K／L 播放，I／O 入出点，M 标记，方向�
 ![背景音乐躲避：自然背景、口播均衡、口播优先](screenshots/audio-mixing.png)
 
 音频可独立裁切、分离原声、逐段调整音量（-60 至 +36 dB），并使用低切、均衡、压缩、限幅和响度处理。人声隔离在本机处理，目前仅 macOS。音乐躲避有三种预设，可调压低幅度、提前量、停顿保持和恢复时长，让口播与背景音乐更平稳衔接。
+
+### 整期制作契约与专业验收
+
+「制作动画」右侧的「整期制作与验收」直接进入整期方案，可保存原始大纲、模型假设、必须／可选／禁止要求、逐段口播、屏幕文字与验收标准，并将要求关联到分镜。「整期验收」默认展示问题与局部修改，也可切换逐段分析、要求追踪和人工复核，保留复验差异及 JSON／Markdown 报告。专业执行需要签名授权；公开版仅显示功能说明，未授权的内部代理和外部 MCP 不能调用。普通动画制作不受影响。结构检查不等于事实、美学、声音或声画同步已经通过，仍须实际观看与听审。
 
 ### AI：订阅、本地模型与自选 API
 
