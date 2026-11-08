@@ -18,12 +18,14 @@
 <!-- recent-features:start -->
 ## 近期新增与改进（最近 5 项）
 
-- **1.8.0** · 在线、本地与订阅模型共用运行及完成统计，ChatGPT订阅补齐实际用量、缓存和思考词元。
-- **1.8.0** · 接收均速排除工具执行及各次首块等待；缺失或缓冲数据明确标注，不编造模型推理速度。
-- **1.8.0** · 动画创建核对真实场景、片段和明确目标区间，缺段自动补做，未完成会说明原因并保留成果。
-- **1.8.0** · MiniMax Flash实际传递思考档位，Anthropic通道保留完整原始思考、签名与工具消息。
-- **1.8.0** · 同场景同位置修正避免重复叠片；双重编码JSON完整解析后仍严格校验，人工裁剪受到保护。
+- **1.8.2** · 修复正式安装版中讲解图形卡片预览无法显示的问题。
+- **1.8.1** · 右侧动画按用途分类，提供122种可预览、可重新配置的镜头。
+- **1.8.1** · 在线、本地和外部模型共用素材目录，检索具体样式后按整期内容选材。
+- **1.8.1** · 整期方案先定风格、顺序和衔接，逐段写入与核对。
+- **1.8.1** · 新增逐字裂升、漂移合拢和两种剪辑点转场。
 <!-- recent-features:end -->
+
+**1.8.1 动画素材库与整期选材。** 在右侧按用途挑选、预览和插入动画。122 种镜头可修改配置后重新生成，原生标题和讲解图形可在时间线继续编辑。接入的在线、本地及外部模型可检索同一动画库，按讲解和主视觉选择具体样式，并安排前后镜头的衔接。各平台的实际可下载版本见下方。
 
 **Windows／Linux 1.8.0：已本地构建，包含统一模型统计、动画交付核验、自动补做和重复放置修复。验证范围见发行记录。**
 
@@ -222,7 +224,9 @@ macOS导入视频遇到硬件解码失败时，会为当前素材自动尝试软
 
 Windows／Linux补包沿用相同工程删除修复，Mac开发版专项不扩大为其他系统桌面实测。本轮不自动安装或删除用户工程。
 
-**当前版本：[黑粉录屏 1.8.0 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.8.0)**（只保留最新一版）。
+**当前版本：[黑粉录屏 1.8.2 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.8.2)**（每个平台只保留最新的一版）。
+
+> 1.8.2 目前提供 macOS 安装包；Windows 继续提供 [黑粉录屏 1.8.0 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.8.0)，尚未发布 1.8.2 的 Windows 版；Linux 继续提供 [黑粉录屏 1.8.0 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.8.0)，尚未发布 1.8.2 的 Linux 版。
 
 ## 下载
 
@@ -230,13 +234,15 @@ Windows／Linux补包沿用相同工程删除修复，Mac开发版专项不扩�
 
 | 平台 | 文件 | SHA-256 |
 |---|---|---|
-| macOS 13+（Apple 芯片 arm64） | [下载 HyphenScreen_1.8.0_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.8.0/HyphenScreen_1.8.0_arm64.dmg) | `22057996b182ca89d00c927fdda95870b513eda5dd2c06a400ede0a03c0e3d83` |
-| Windows 10/11（x64） | [下载 HyphenScreen_1.8.0_x64-setup.exe](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.8.0/HyphenScreen_1.8.0_x64-setup.exe) | `792892e1c1e68bb47ea63cf0f7f990c3454eb17b8c2caf48a576b78c1c4ec450` |
-| Linux（x86_64） | [下载 HyphenScreen_1.8.0_x86_64.AppImage](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.8.0/HyphenScreen_1.8.0_x86_64.AppImage) | `ec13b065229d7f84b2a53399b6b15605637671cd3ec960842dbde7e06fffad93` |
-| Debian / Ubuntu（amd64） | [下载 HyphenScreen_1.8.0_amd64.deb](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.8.0/HyphenScreen_1.8.0_amd64.deb) | `f04d8f2f33236b8906cab9adf8cc23b0821bff6bd7d7ca4b229fed84df27917b` |
-| Arch Linux（x86_64） | [下载 HyphenScreen_1.8.0_x64.pacman](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.8.0/HyphenScreen_1.8.0_x64.pacman) | `9a34c96b7379a9466464b6e97e14b1910c527aad5ee2cf7fedd6dadb90244f71` |
+| macOS 13+（Apple 芯片 arm64） | [下载 HyphenScreen_1.8.2_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.8.2/HyphenScreen_1.8.2_arm64.dmg) | `e5eb9ddd883bb0d5c01906f7a4d08cae9a7abdbfc7739384692cd72f12f54f9a` |
+| Windows 10/11（x64）· 1.8.0 版 | [下载 HyphenScreen_1.8.0_x64-setup.exe](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.8.0/HyphenScreen_1.8.0_x64-setup.exe) | `792892e1c1e68bb47ea63cf0f7f990c3454eb17b8c2caf48a576b78c1c4ec450` |
+| Linux（x86_64）· 1.8.0 版 | [下载 HyphenScreen_1.8.0_x86_64.AppImage](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.8.0/HyphenScreen_1.8.0_x86_64.AppImage) | `ec13b065229d7f84b2a53399b6b15605637671cd3ec960842dbde7e06fffad93` |
+| Debian / Ubuntu（amd64）· 1.8.0 版 | [下载 HyphenScreen_1.8.0_amd64.deb](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.8.0/HyphenScreen_1.8.0_amd64.deb) | `f04d8f2f33236b8906cab9adf8cc23b0821bff6bd7d7ca4b229fed84df27917b` |
+| Arch Linux（x86_64）· 1.8.0 版 | [下载 HyphenScreen_1.8.0_x64.pacman](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.8.0/HyphenScreen_1.8.0_x64.pacman) | `9a34c96b7379a9466464b6e97e14b1910c527aad5ee2cf7fedd6dadb90244f71` |
 
 同一页附带各平台的 `SHA256SUMS*.txt` 与 `release-manifest.json`，可核对文件完整性与构建来源。
+
+> 下面的功能一览按 1.8.2 介绍；Windows 暂为 1.8.0，不包含之后加入的功能；Linux 暂为 1.8.0，不包含之后加入的功能，各版变化见发行页面上的发行说明。
 
 <!-- evergreen:feature-tour:start -->
 <details>
