@@ -17,11 +17,11 @@ HyphenTech のデスクトップ録画・編集ソフトです。ソフトウェ
 <!-- recent-features:start -->
 ## 最近の機能追加と改善（5件）
 
-- **1.8.3** · 整期プランに原案、追跡可能な要件、ナレーション、画面文字、検収基準を保存できます。
-- **1.8.3** · プロ向け整期検収の案内を追加。レポート、部分修正、再検査には署名ライセンスが必要で、公開版では実行できません。
-- **1.8.2** · パッケージ版で解説グラフィックカードのプレビューが表示されない問題を修正。
-- **1.8.1** · 用途別に122種類のショットをプレビューし、設定を変更できます。
-- **1.8.1** · オンライン、ローカル、外部モデルは同じ素材を検索し、動画全体に合うスタイルを選べます。
+- **1.8.7** · 全編パッケージのプレビューに、選んだレイアウトと配色を反映します。
+- **1.8.7** · ショット候補の実例を再生でき、ネイティブアニメーションと重ね合わせテンプレートもプレビューできます。
+- **1.8.7** · 整期ワークベンチで全編または各区間のスタイルを比較できます。署名ライセンスが必要で、販売は未開始です。
+- **1.8.7** · 隣接するショットの連続再生が前に戻る問題を修正しました。
+- **1.8.7** · DeepSeek 専用の設定画面から、公式モデル一覧の取得と会話・ツール呼び出しのテストができます。
 <!-- recent-features:end -->
 
 **1.8.3 整期制作契約とプロ向け検収。** 整期プランには原案、モデルの仮定、追跡可能な要件、ナレーション、画面文字、検収基準を保存できます。アニメーションライブラリの整期制作・検収ボタンから、計画・制作・検収の画面を開けます。プログラム検査とモデル評価を分けたレポート、要件追跡、部分修正、再検査の差分、JSON／Markdown 書き出しに対応します。実行には署名ライセンスが必要です。公開版では機能案内を表示しますが、レポート・書き出し・再検査はロックされます。通常のアニメーション制作には影響しません。
@@ -168,15 +168,15 @@ AI パネルの制作画面で内容と独自の要望を入力し、説明、�
 動画は撮影時のバージョンです。現在の機能と配布パッケージはこのページのリリース情報をご確認ください。動画の解説は中国語です。
 <!-- evergreen:demos:end -->
 
-## ダウンロード: 1.8.3
+## ダウンロード: 1.8.7
 
 | プラットフォーム | パッケージ | SHA-256 |
 |---|---|---|
-| macOS 13+（Apple 芯片 arm64） | [ダウンロード HyphenScreen_1.8.3_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.8.3/HyphenScreen_1.8.3_arm64.dmg) | `bbc6eb6b7b5ccc193e351da448a62367e2eb245e1cfb6dc37d231401c270f45b` |
-| Windows 10/11（x64） | [ダウンロード HyphenScreen_1.8.3_x64-setup.exe](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.8.3/HyphenScreen_1.8.3_x64-setup.exe) | `2fe838173bac95082616bba466f008b72ed5e88938b07194afae2ca4ea939122` |
-| Linux（x86_64） | [ダウンロード HyphenScreen_1.8.3_x86_64.AppImage](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.8.3/HyphenScreen_1.8.3_x86_64.AppImage) | `0a597d4166752ef7e24b8bfebce342e9d01022651d1ac5e0077f9becc551ef3a` |
-| Debian / Ubuntu（amd64） | [ダウンロード HyphenScreen_1.8.3_amd64.deb](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.8.3/HyphenScreen_1.8.3_amd64.deb) | `a464c0398c4d7e6d51fd64bc9608bcd506f808a1fde93c3a0fb9d98c135f9795` |
-| Arch Linux（x86_64） | [ダウンロード HyphenScreen_1.8.3_x64.pacman](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.8.3/HyphenScreen_1.8.3_x64.pacman) | `d1322c31d705c8e6f973c978bda0f59008f453704437b03af193cd289873e06f` |
+| macOS 13+（Apple 芯片 arm64） | [ダウンロード HyphenScreen_1.8.7_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.8.7/HyphenScreen_1.8.7_arm64.dmg) | `09c5880df09b847173cc55ab83c92d81256ec573506545b496ed8731eb7a5814` |
+| Windows 10/11（x64） | [ダウンロード HyphenScreen_1.8.7_x64-setup.exe](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.8.7/HyphenScreen_1.8.7_x64-setup.exe) | `69998f868288146159230b5e40a4ddcd713c07f3138ac8e1ab262cb086f7002f` |
+| Linux（x86_64） | [ダウンロード HyphenScreen_1.8.7_x86_64.AppImage](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.8.7/HyphenScreen_1.8.7_x86_64.AppImage) | `5b3e5d60f3bab156fdfb32e3ec828a50dc7b3f6eeedfa1a1afd1de6a448bf958` |
+| Debian / Ubuntu（amd64） | [ダウンロード HyphenScreen_1.8.7_amd64.deb](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.8.7/HyphenScreen_1.8.7_amd64.deb) | `150261527bed3776295e7e615d850b8920ade1a30ca327ede339805c3c640a30` |
+| Arch Linux（x86_64） | [ダウンロード HyphenScreen_1.8.7_x64.pacman](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.8.7/HyphenScreen_1.8.7_x64.pacman) | `34cc1d0e1c0a4486aba7b5c0f60a74f913f19f20fc4979f91e8dafa647138691` |
 
 <!-- evergreen:capabilities:start -->
 ![独立アニメーション、編集可能なレイヤーとビジュアルグループ](screenshots/animation-editor-110.png)
