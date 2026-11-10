@@ -16,9 +16,9 @@ HyphenScreen by HyphenTech is a desktop workspace for software tutorials, produc
 <!-- recent-features:start -->
 ## Recent features and improvements (5 items)
 
+- **1.8.9** · The command line and external agents can export native Episode Workbench projects with animations, timeline audio and music ducking.
 - **1.8.8** · DeepSeek can recover from incompatible animation tool arguments after receiving guidance on the supported parameters.
 - **1.8.7** · Whole-video packaging previews now show the selected layout and color palette.
-- **1.8.7** · Shot candidates play their rendered examples. Native animations and overlay templates have preview artwork.
 - **1.8.7** · The Episode Workbench compares current and proposed looks for a whole episode or a single segment. It requires a signed license and is not yet available to purchase.
 - **1.8.7** · DeepSeek has its own settings page, with the official model catalog and a chat and tool-call test.
 <!-- recent-features:end -->
@@ -167,15 +167,15 @@ LocalBrain discovers its loaded language model. A live Qwen3.8 27B test generate
 These videos show the versions available when recorded. Use the current release information on this page for downloads and capabilities. Narration is in Chinese.
 <!-- evergreen:demos:end -->
 
-## Download: 1.8.8
+## Download: 1.8.9
 
 | Platform | Package | SHA-256 |
 |---|---|---|
-| macOS 13+（Apple 芯片 arm64） | [Download HyphenScreen_1.8.8_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.8.8/HyphenScreen_1.8.8_arm64.dmg) | `8a6f0f60b8f3cf4beac7841c04ec8d91810e1757bf609c61743c49d580bba5ff` |
-| Windows 10/11（x64） | [Download HyphenScreen_1.8.8_x64-setup.exe](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.8.8/HyphenScreen_1.8.8_x64-setup.exe) | `81ea85b3b59e9786bfb66b9aad89f45bb11b774cacb0a6d7e0ceaf5f1c4d72a8` |
-| Linux（x86_64） | [Download HyphenScreen_1.8.8_x86_64.AppImage](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.8.8/HyphenScreen_1.8.8_x86_64.AppImage) | `006727c6508894db9814fc47c188b6d675f2a6f1cd8ccd3ea263c7f6a9bbc88c` |
-| Debian / Ubuntu（amd64） | [Download HyphenScreen_1.8.8_amd64.deb](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.8.8/HyphenScreen_1.8.8_amd64.deb) | `4c2f744132e2e4961ebe2e6a6c06d37f0f752423559e57d1338de932c914f1f5` |
-| Arch Linux（x86_64） | [Download HyphenScreen_1.8.8_x64.pacman](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.8.8/HyphenScreen_1.8.8_x64.pacman) | `6bc75fc91897ce2822630a530471e882016af3a3350cc76cfc5c4c720fd0912c` |
+| macOS 13+（Apple 芯片 arm64） | [Download HyphenScreen_1.8.9_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.8.9/HyphenScreen_1.8.9_arm64.dmg) | `f5699d3c3f46687f0be77348f45c922e6c208cb16dd90a851704d2be29fc7885` |
+| Windows 10/11（x64） | [Download HyphenScreen_1.8.9_x64-setup.exe](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.8.9/HyphenScreen_1.8.9_x64-setup.exe) | `2932e13ff6f96d9234663e46619db51a3f1cc3fd4905f072aa9c9d15ee86f7c8` |
+| Linux（x86_64） | [Download HyphenScreen_1.8.9_x86_64.AppImage](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.8.9/HyphenScreen_1.8.9_x86_64.AppImage) | `3ae726b091b2a22b02ce4d72f7601752ae8cd4bb6ab6904eadb278f5df3991c2` |
+| Debian / Ubuntu（amd64） | [Download HyphenScreen_1.8.9_amd64.deb](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.8.9/HyphenScreen_1.8.9_amd64.deb) | `37087859f191cfa6eb2c672456057c48feb81410b1a4959944db3e933fe5f98a` |
+| Arch Linux（x86_64） | [Download HyphenScreen_1.8.9_x64.pacman](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.8.9/HyphenScreen_1.8.9_x64.pacman) | `c6a84a68a0fbd62ef7867faea673d0505f0249d2a96678aa40c897459380d427` |
 
 <!-- evergreen:capabilities:start -->
 ![Native animation editor, editable layers and the Visual timeline group](screenshots/animation-editor-110.png)
