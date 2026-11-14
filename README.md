@@ -8,7 +8,7 @@
 黑粉录屏是黑粉科技开发的桌面录屏与智能剪辑软件，适合软件教程、产品演示、课程录制和口播分享。在同一个窗口录制屏幕、摄像头与声音，完成多轨剪辑、本地字幕、原生动画和横竖屏导出；也可以连接自己的模型，用自然语言辅助编辑。支持 macOS、Windows 与 Linux，具体平台差异和已发布安装包见下方。
 
 
-软件可免费下载使用。Mac、Windows与Linux1.7.0的导出水印默认显示“黑粉录屏”，支持关闭和自定义。云端AI服务按所选订阅或API条件使用。
+软件可免费下载使用。当前成片统一显示「黑粉科技」字标与品牌标志，水印去除和替换暂未开放。云端 AI 服务按所选订阅或接口条件使用。
 
 <p align="center"><a href="README.md">简体中文</a> | <a href="README.zh-TW.md">繁體中文</a> | <a href="README.en.md">English</a> | <a href="README.ja.md">日本語</a></p>
 
@@ -18,12 +18,16 @@
 <!-- recent-features:start -->
 ## 近期新增与改进（最近 5 项）
 
+- **1.9.0** · 满足硬件条件的 Mac 可并行生成最多四个独立镜头，完成顺序不影响入轨顺序。
+- **1.9.0** · 整期工作台新增成片体检，可检查实际导出文件并定位至工程时间线。需签名授权，暂未开放购买。
+- **1.9.0** · 内置与外部编辑接口可按名称搜索工程实景、录屏或原图，也能筛选可接视频或截图的镜头模板。
 - **1.8.9** · 命令行和外部智能代理可直接导出整期工作台工程，保留原生动画、时间线音轨和人声避让。
 - **1.8.8** · 修复 DeepSeek 动画工具调用因参数不兼容而中断的问题。收到参数提示后，模型可修正并继续。
-- **1.8.7** · 整片包装按所选版式和配色显示真实范例，修复部分配色无变化。
-- **1.8.7** · 整期工作台支持整期与单段的风格对照。该功能需签名授权，暂未开放购买。
-- **1.8.7** · DeepSeek 有独立配置入口，可读取官方模型目录并测试对话及工具调用。
 <!-- recent-features:end -->
+
+**1.9.0 镜头并行与成片体检。** 在满足硬件条件的 Mac 上，镜头编排可同时生成最多四个独立镜头，并按原顺序交付。本机四镜测试从 103.81 秒缩短至 78.41 秒。「整期工作台 → 成片验收 → 成片体检」可检测导出文件的响度、峰值、静音、黑帧和冻结，并按时码回到工程。整期工作台需签名授权，暂未开放购买。
+
+![成片体检开发版实测，检测测试视频中的黑场并提供定位](screenshots/episode-export-check-190.png)
 
 **1.8.3 整期制作契约与专业验收。**「制作动画」右侧的「整期制作与验收」直接进入整期方案，保存原始大纲、模型假设、逐项要求、口播、逐字屏幕文字和验收标准。报告默认列出问题与局部修改，也可查看逐段分析、要求追踪、人工复核、复验差异及 JSON／Markdown 导出。专业执行需要签名授权，公开版显示功能说明但锁定报告、导出和复验，普通动画制作不受影响。
 
@@ -69,7 +73,7 @@
 
 **1.7.1：摄像头背景切换修复。** Mac上部分实际摄像头录制使用软件解码，切到抠图、模糊或自定义背景后人物可能消失。本版修复分割遮罩与视频帧的关联，保留现有素材、剪辑和分割模型；无需重录。Windows与Linux现已本地构建至1.7.1；摄像头背景修复仅适用于Mac，不扩大为其他平台的修复或实测。
 
-**1.7.0：导出水印由你决定。** Mac的「导出 → 导出水印」默认显示“黑粉录屏”，可以关闭，也可以设置自己的文字、本机PNG／JPEG／WebP图片或两者组合。四个范例可直接套用，支持五种位置、大小和不透明度；文字随画面明暗适配。设置会在真正导出时记住，MP4与GIF使用同一原生叠加路径。本版没有收费限制；Windows／Linux1.7.0已同步上述水印设置。实际原生及应用命令行输出已核验，桌面鼠标导出流程因系统取屏故障未记通过。
+**历史记录 1.7.0：可自定义导出水印。** 当时的导出设置支持关闭、自定义文字和本机图片。下方图片展示旧版界面，当前版本使用统一的黑粉科技品牌水印。
 
 ![默认、关闭、自定义文字和图片水印的实际输出](screenshots/export-watermark-170.jpg)
 
@@ -228,7 +232,7 @@ macOS导入视频遇到硬件解码失败时，会为当前素材自动尝试软
 
 Windows／Linux补包沿用相同工程删除修复，Mac开发版专项不扩大为其他系统桌面实测。本轮不自动安装或删除用户工程。
 
-**当前版本：[黑粉录屏 1.8.9 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.8.9)**（只保留最新一版）。
+**当前版本：[黑粉录屏 1.9.0 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.9.0)**（只保留最新一版）。
 
 ## 下载
 
@@ -236,11 +240,11 @@ Windows／Linux补包沿用相同工程删除修复，Mac开发版专项不扩�
 
 | 平台 | 文件 | SHA-256 |
 |---|---|---|
-| macOS 13+（Apple 芯片 arm64） | [下载 HyphenScreen_1.8.9_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.8.9/HyphenScreen_1.8.9_arm64.dmg) | `f5699d3c3f46687f0be77348f45c922e6c208cb16dd90a851704d2be29fc7885` |
-| Windows 10/11（x64） | [下载 HyphenScreen_1.8.9_x64-setup.exe](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.8.9/HyphenScreen_1.8.9_x64-setup.exe) | `2932e13ff6f96d9234663e46619db51a3f1cc3fd4905f072aa9c9d15ee86f7c8` |
-| Linux（x86_64） | [下载 HyphenScreen_1.8.9_x86_64.AppImage](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.8.9/HyphenScreen_1.8.9_x86_64.AppImage) | `3ae726b091b2a22b02ce4d72f7601752ae8cd4bb6ab6904eadb278f5df3991c2` |
-| Debian / Ubuntu（amd64） | [下载 HyphenScreen_1.8.9_amd64.deb](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.8.9/HyphenScreen_1.8.9_amd64.deb) | `37087859f191cfa6eb2c672456057c48feb81410b1a4959944db3e933fe5f98a` |
-| Arch Linux（x86_64） | [下载 HyphenScreen_1.8.9_x64.pacman](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.8.9/HyphenScreen_1.8.9_x64.pacman) | `c6a84a68a0fbd62ef7867faea673d0505f0249d2a96678aa40c897459380d427` |
+| macOS 13+（Apple 芯片 arm64） | [下载 HyphenScreen_1.9.0_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.0/HyphenScreen_1.9.0_arm64.dmg) | `1d6423ea535f0ab8d62513328b9ffae8a649c5aac360ba67adeec22dd727c68c` |
+| Windows 10/11（x64） | [下载 HyphenScreen_1.9.0_x64-setup.exe](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.0/HyphenScreen_1.9.0_x64-setup.exe) | `5b548dda21efa241a13501538bdf271039788f74fe33931ad09239215790958e` |
+| Linux（x86_64） | [下载 HyphenScreen_1.9.0_x86_64.AppImage](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.0/HyphenScreen_1.9.0_x86_64.AppImage) | `b5f8094d7b78460569bec265deb3fe1cf54c0da930b0d6343a6c92d9da2cfc4b` |
+| Debian / Ubuntu（amd64） | [下载 HyphenScreen_1.9.0_amd64.deb](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.0/HyphenScreen_1.9.0_amd64.deb) | `5e7d6eea9ee339427daa75daf913145040afed8497452b7ceae6cd1fd2c83fa8` |
+| Arch Linux（x86_64） | [下载 HyphenScreen_1.9.0_x64.pacman](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.0/HyphenScreen_1.9.0_x64.pacman) | `705f7a40c2675cdbf6966d4c09410058f6a0f3d70f4fa04a282df3b1d232a8b6` |
 
 同一页附带各平台的 `SHA256SUMS*.txt` 与 `release-manifest.json`，可核对文件完整性与构建来源。
 
