@@ -16,12 +16,16 @@ HyphenScreen by HyphenTech is a desktop workspace for software tutorials, produc
 <!-- recent-features:start -->
 ## Recent features and improvements (5 items)
 
+- **1.9.0** · Supported Macs can generate up to four independent shots in parallel and deliver them in timeline order.
+- **1.9.0** · Check an exported video in the Episode Workbench and jump to the issue on the project timeline. A signed license is required and purchase is not yet available.
+- **1.9.0** · The built-in and external editing interfaces can search project footage, recordings and stills, and filter templates by video or screenshot support.
 - **1.8.9** · The command line and external agents can export native Episode Workbench projects with animations, timeline audio and music ducking.
 - **1.8.8** · DeepSeek can recover from incompatible animation tool arguments after receiving guidance on the supported parameters.
-- **1.8.7** · Whole-video packaging previews now show the selected layout and color palette.
-- **1.8.7** · The Episode Workbench compares current and proposed looks for a whole episode or a single segment. It requires a signed license and is not yet available to purchase.
-- **1.8.7** · DeepSeek has its own settings page, with the official model catalog and a chat and tool-call test.
 <!-- recent-features:end -->
+
+**1.9.0 Parallel shot generation and export checks.** On supported Macs, shot composition can generate up to four independent shots at once and deliver them in timeline order. The four-shot test on one Mac went from 103.81 to 78.41 seconds. In the Episode Workbench, check the exported file for loudness, peaks, silence, black frames and freezes, then jump back to the relevant position in the project. The Episode Workbench requires a signed license and is not yet available to purchase.
+
+![Development build checking a test export and locating a black section](screenshots/episode-export-check-190.png)
 
 **1.8.3 episode contracts and professional acceptance.** Episode plans retain the original brief, model assumptions, traceable requirements, narration, exact on-screen text and acceptance criteria. The animation library's Episode planning and acceptance button opens one workspace for planning, composition and review. Reports separate programmatic checks from model reviews and include requirement tracing, targeted repairs, re-check differences and JSON/Markdown export. Professional execution requires a signed license. The public build shows the feature but locks reports, export and re-checks; ordinary animation creation is unaffected.
 
@@ -67,7 +71,7 @@ The installed Mac build was accepted by the user after UI verification. The full
 
 **1.7.1: webcam background fix on Mac.** Fixes disappearing people when software-decoded webcam recordings use cutout, blur or custom backgrounds. Existing media and edits are preserved. This is a Mac-specific fix; other platform versions and verification scope are listed in the downloads and release notes.
 
-**1.7.0: choose your export watermark.** Mac defaults to 黑粉录屏, with an off switch, custom text, local PNG/JPEG/WebP images or both. Four editable examples, five positions, size and opacity controls cover common uses; text adapts to the picture brightness. Settings are remembered on actual export, with one native overlay path for MP4 and GIF. No paid entitlement is active in this release. Windows/Linux 1.7.0 now include these watermark settings. Native and application CLI outputs were verified; desktop mouse-driven export remains unverified because macOS screen capture failed.
+**Historical note for 1.7.0.** That version supported optional custom export watermarks. The screenshots below show the older controls. Current exports carry the HyphenTech wordmark and logo.
 
 ![Actual default, disabled, custom text and image watermark outputs](screenshots/export-watermark-170.jpg)
 
@@ -167,15 +171,15 @@ LocalBrain discovers its loaded language model. A live Qwen3.8 27B test generate
 These videos show the versions available when recorded. Use the current release information on this page for downloads and capabilities. Narration is in Chinese.
 <!-- evergreen:demos:end -->
 
-## Download: 1.8.9
+## Download: 1.9.0
 
 | Platform | Package | SHA-256 |
 |---|---|---|
-| macOS 13+（Apple 芯片 arm64） | [Download HyphenScreen_1.8.9_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.8.9/HyphenScreen_1.8.9_arm64.dmg) | `f5699d3c3f46687f0be77348f45c922e6c208cb16dd90a851704d2be29fc7885` |
-| Windows 10/11（x64） | [Download HyphenScreen_1.8.9_x64-setup.exe](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.8.9/HyphenScreen_1.8.9_x64-setup.exe) | `2932e13ff6f96d9234663e46619db51a3f1cc3fd4905f072aa9c9d15ee86f7c8` |
-| Linux（x86_64） | [Download HyphenScreen_1.8.9_x86_64.AppImage](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.8.9/HyphenScreen_1.8.9_x86_64.AppImage) | `3ae726b091b2a22b02ce4d72f7601752ae8cd4bb6ab6904eadb278f5df3991c2` |
-| Debian / Ubuntu（amd64） | [Download HyphenScreen_1.8.9_amd64.deb](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.8.9/HyphenScreen_1.8.9_amd64.deb) | `37087859f191cfa6eb2c672456057c48feb81410b1a4959944db3e933fe5f98a` |
-| Arch Linux（x86_64） | [Download HyphenScreen_1.8.9_x64.pacman](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.8.9/HyphenScreen_1.8.9_x64.pacman) | `c6a84a68a0fbd62ef7867faea673d0505f0249d2a96678aa40c897459380d427` |
+| macOS 13+（Apple 芯片 arm64） | [Download HyphenScreen_1.9.0_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.0/HyphenScreen_1.9.0_arm64.dmg) | `1d6423ea535f0ab8d62513328b9ffae8a649c5aac360ba67adeec22dd727c68c` |
+| Windows 10/11（x64） | [Download HyphenScreen_1.9.0_x64-setup.exe](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.0/HyphenScreen_1.9.0_x64-setup.exe) | `5b548dda21efa241a13501538bdf271039788f74fe33931ad09239215790958e` |
+| Linux（x86_64） | [Download HyphenScreen_1.9.0_x86_64.AppImage](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.0/HyphenScreen_1.9.0_x86_64.AppImage) | `b5f8094d7b78460569bec265deb3fe1cf54c0da930b0d6343a6c92d9da2cfc4b` |
+| Debian / Ubuntu（amd64） | [Download HyphenScreen_1.9.0_amd64.deb](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.0/HyphenScreen_1.9.0_amd64.deb) | `5e7d6eea9ee339427daa75daf913145040afed8497452b7ceae6cd1fd2c83fa8` |
+| Arch Linux（x86_64） | [Download HyphenScreen_1.9.0_x64.pacman](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.0/HyphenScreen_1.9.0_x64.pacman) | `705f7a40c2675cdbf6966d4c09410058f6a0f3d70f4fa04a282df3b1d232a8b6` |
 
 <!-- evergreen:capabilities:start -->
 ![Native animation editor, editable layers and the Visual timeline group](screenshots/animation-editor-110.png)
@@ -237,7 +241,7 @@ API options include Kimi subscription (endpoint and model pre-filled), OpenAI, C
 
 Export MP4 or GIF with selectable resolution, frame rate and H.264/H.265 encoding. “Upscale” indicates resizing beyond source dimensions; it does not recover missing source detail. Output checks inspect loudness, silence, black/frozen frames, duration and text boundaries. Automatic sensitive-text detection and OCR output readback currently require macOS; manual redaction is available across platforms.
 
-**Export watermark:** Mac 1.7.0 defaults to 黑粉录屏 and offers off, custom text and local images. This applies to MP4 and GIF exports; normal editor previews remain unchanged. Windows/Linux 1.7.0 offer the same optional, customizable watermark settings.
+**Export watermark:** Current MP4 and GIF exports carry the HyphenTech wordmark and logo. Watermark removal and replacement are not available yet.
 
 Choose separate project, recording and cache directories, including external drives. Manage cache categories and restore named or automatic project-history checkpoints.
 
