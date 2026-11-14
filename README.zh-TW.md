@@ -16,12 +16,16 @@
 <!-- recent-features:start -->
 ## 近期新增與改進（最近 5 項）
 
+- **1.9.0** · 符合硬體條件的 Mac 可並行產生最多四個獨立鏡頭，依原順序加入時間軸。
+- **1.9.0** · 整期工作台新增成片檢查，可檢查實際匯出檔案並定位至專案時間軸。需簽章授權，暫未開放購買。
+- **1.9.0** · 內建與外部編輯介面可搜尋專案實拍、錄屏或原圖，也可篩選支援影片或截圖的鏡頭範本。
 - **1.8.9** · 命令列與外部代理可直接匯出整期工作台專案，保留原生動畫、時間軸音軌及人聲避讓。
 - **1.8.8** · 修正 DeepSeek 動畫工具呼叫因參數不相容而中斷的問題。收到參數提示後，模型可修正並繼續。
-- **1.8.7** · 整片包裝依所選版式與配色顯示實際範例，修正部分配色沒有變化。
-- **1.8.7** · 整期工作台支援整期與單段的風格對照。需簽名授權，暫未開放購買。
-- **1.8.7** · DeepSeek 有獨立設定入口，可讀取官方模型目錄並測試對話及工具呼叫。
 <!-- recent-features:end -->
+
+**1.9.0 鏡頭並行與成片檢查。** 符合硬體條件的 Mac 可同時產生最多四個獨立鏡頭，並按原順序交付。本機四鏡測試從 103.81 秒縮短至 78.41 秒。整期工作台可檢查匯出檔案的響度、峰值、靜音、黑畫面與凍結畫面，並依時間碼回到專案。整期工作台需簽章授權，暫未開放購買。
+
+![成片檢查開發版實測，辨識測試影片的黑畫面並提供定位](screenshots/episode-export-check-190.png)
 
 **1.8.3 整期製作契約與專業驗收。**「整期方案」保存原始大綱、模型假設、逐項要求、口播、逐字螢幕文字與驗收標準。右側動畫庫的「整期製作與驗收」統一進入規劃、製作與驗收；報告包含程式硬檢查、模型語義評審、要求追蹤、局部修復、複驗差異及 JSON／Markdown 匯出。專業執行需要簽名授權，公開版顯示功能說明但鎖定報告、匯出與複驗，一般動畫製作不受影響。
 
@@ -67,7 +71,7 @@
 
 **1.7.1：摄像头背景切换修复。** Mac上部分实际摄像头录制使用软件解码，切到抠图、模糊或自定义背景后人物可能消失。本版修复分割遮罩与视频帧的关联，保留现有素材、剪辑和分割模型；无需重录。Windows与Linux现已本地构建至1.7.1；摄像头背景修复仅适用于Mac，不扩大为其他平台的修复或实测。
 
-**1.7.0：匯出浮水印由你決定。** Mac的匯出設定預設顯示「黑粉录屏」，可關閉，也可設定自己的文字、本機PNG／JPEG／WebP圖片或兩者組合。四個範例可直接套用，支援五種位置、大小與不透明度；文字隨畫面明暗調整。實際匯出時儲存設定，MP4與GIF共用原生疊加路徑。本版尚無收費限制；Windows／Linux1.7.0已同步上述浮水印設定。已核驗原生及應用程式命令列輸出，桌面滑鼠匯出流程因系統擷取畫面故障未記為通過。
+**歷史記錄 1.7.0。** 當時的匯出設定支援關閉、自訂文字與本機圖片。下方畫面來自舊版，目前的 MP4 與 GIF 成品統一顯示黑粉科技字標與品牌標誌，移除和替換暫未開放。
 
 ![預設、關閉、自訂文字與圖片浮水印的實際輸出](screenshots/export-watermark-170.jpg)
 
@@ -167,15 +171,15 @@ macOS匯入影片遇到硬體解碼失敗時，會為目前素材嘗試軟體解
 影片示範的是拍攝時的版本；安裝套件與目前功能以本頁正式發行資訊為準。影片以中文講解。
 <!-- evergreen:demos:end -->
 
-## 下載: 1.8.9
+## 下載: 1.9.0
 
 | 平台 | 安裝套件 | SHA-256 |
 |---|---|---|
-| macOS 13+（Apple 芯片 arm64） | [下載 HyphenScreen_1.8.9_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.8.9/HyphenScreen_1.8.9_arm64.dmg) | `f5699d3c3f46687f0be77348f45c922e6c208cb16dd90a851704d2be29fc7885` |
-| Windows 10/11（x64） | [下載 HyphenScreen_1.8.9_x64-setup.exe](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.8.9/HyphenScreen_1.8.9_x64-setup.exe) | `2932e13ff6f96d9234663e46619db51a3f1cc3fd4905f072aa9c9d15ee86f7c8` |
-| Linux（x86_64） | [下載 HyphenScreen_1.8.9_x86_64.AppImage](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.8.9/HyphenScreen_1.8.9_x86_64.AppImage) | `3ae726b091b2a22b02ce4d72f7601752ae8cd4bb6ab6904eadb278f5df3991c2` |
-| Debian / Ubuntu（amd64） | [下載 HyphenScreen_1.8.9_amd64.deb](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.8.9/HyphenScreen_1.8.9_amd64.deb) | `37087859f191cfa6eb2c672456057c48feb81410b1a4959944db3e933fe5f98a` |
-| Arch Linux（x86_64） | [下載 HyphenScreen_1.8.9_x64.pacman](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.8.9/HyphenScreen_1.8.9_x64.pacman) | `c6a84a68a0fbd62ef7867faea673d0505f0249d2a96678aa40c897459380d427` |
+| macOS 13+（Apple 芯片 arm64） | [下載 HyphenScreen_1.9.0_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.0/HyphenScreen_1.9.0_arm64.dmg) | `1d6423ea535f0ab8d62513328b9ffae8a649c5aac360ba67adeec22dd727c68c` |
+| Windows 10/11（x64） | [下載 HyphenScreen_1.9.0_x64-setup.exe](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.0/HyphenScreen_1.9.0_x64-setup.exe) | `5b548dda21efa241a13501538bdf271039788f74fe33931ad09239215790958e` |
+| Linux（x86_64） | [下載 HyphenScreen_1.9.0_x86_64.AppImage](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.0/HyphenScreen_1.9.0_x86_64.AppImage) | `b5f8094d7b78460569bec265deb3fe1cf54c0da930b0d6343a6c92d9da2cfc4b` |
+| Debian / Ubuntu（amd64） | [下載 HyphenScreen_1.9.0_amd64.deb](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.0/HyphenScreen_1.9.0_amd64.deb) | `5e7d6eea9ee339427daa75daf913145040afed8497452b7ceae6cd1fd2c83fa8` |
+| Arch Linux（x86_64） | [下載 HyphenScreen_1.9.0_x64.pacman](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.0/HyphenScreen_1.9.0_x64.pacman) | `705f7a40c2675cdbf6966d4c09410058f6a0f3d70f4fa04a282df3b1d232a8b6` |
 
 <!-- evergreen:capabilities:start -->
 ![原生動畫編輯器：可編輯圖層、視覺分組與獨立動畫片段](screenshots/animation-editor-110.png)
