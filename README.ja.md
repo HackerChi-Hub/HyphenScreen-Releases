@@ -17,12 +17,14 @@ HyphenTech のデスクトップ録画・編集ソフトです。ソフトウェ
 <!-- recent-features:start -->
 ## 最近の機能追加と改善（5件）
 
+- **1.9.1** · 映像パッケージが7レイアウト（オープニング・章・小見出し・リスト・フォーカス・数値・エンディング）に拡充し、整期ワークベンチのテーマ一括反映と未制作区間の一括生成に対応（署名付きライセンスが必要）。
+- **1.9.1** · ネイティブアニメーションと編集ツールで明示的なカメラワーク・レイヤー視差・カット間の被写体位置合わせとズーム接続に対応。
+- **1.9.1** · 画面録画やマルチトラック編集でクリップを切り替えた際のプレビューキャンバス保持と再生位置同期を修正。
 - **1.9.0** · 対応する Mac では、最大四つの独立したショットを並列で生成し、元の順序でタイムラインに追加できます。
 - **1.9.0** · 整期ワークベンチで書き出した動画を検査し、問題の位置へ移動できます。署名付きライセンスが必要で、販売はまだ開始していません。
-- **1.9.0** · 内蔵・外部の編集インターフェースから、実写・画面録画・静止画を検索し、動画やスクリーンショットに対応するテンプレートを絞り込めます。
-- **1.8.9** · コマンドラインと外部エージェントから、アニメーション、音声トラック、ダッキングを含む整期ワークベンチのプロジェクトを書き出せます。
-- **1.8.8** · DeepSeek のアニメーションツールが未対応の引数で中断する問題を修正しました。引数の案内に沿ってモデルが修正し、続行できます。
 <!-- recent-features:end -->
+
+**1.9.1 映像パッケージの7レイアウト化、連続カメラワークと録画プレビュー修正。** 10組の映像パッケージに章・小見出し・エンディングの3レイアウトを追加し、計7レイアウトになりました。整期ワークベンチ（署名付きライセンスが必要・販売未開始）では、未ロックのネイティブシーンへのマスターテーマ反映とローカル未制作区間の一括生成に対応します。ネイティブアニメーションと編集ツールにカメラ移動・レイヤー視差・カット間の被写体位置合わせを追加し、マルチトラック録画でクリップを切り替えた際のプレビュー保持と再生位置同期も修正しました。
 
 **1.9.0 ショットの並列生成と書き出しチェック。** 対応する Mac では、最大四つの独立したショットを並列で生成し、元の順序で取得できます。同じ Mac での四ショットのテストは 103.81 秒から 78.41 秒になりました。整期ワークベンチでは、書き出した動画のラウドネス、ピーク、無音、黒画面、フリーズを調べ、該当する位置をプロジェクトのタイムラインで表示できます。整期ワークベンチには署名付きライセンスが必要で、販売はまだ開始していません。
 
@@ -172,15 +174,15 @@ AI パネルの制作画面で内容と独自の要望を入力し、説明、�
 動画は撮影時のバージョンです。現在の機能と配布パッケージはこのページのリリース情報をご確認ください。動画の解説は中国語です。
 <!-- evergreen:demos:end -->
 
-## ダウンロード: 1.9.0
+## ダウンロード: 1.9.1
 
 | プラットフォーム | パッケージ | SHA-256 |
 |---|---|---|
-| macOS 13+（Apple 芯片 arm64） | [ダウンロード HyphenScreen_1.9.0_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.0/HyphenScreen_1.9.0_arm64.dmg) | `1d6423ea535f0ab8d62513328b9ffae8a649c5aac360ba67adeec22dd727c68c` |
-| Windows 10/11（x64） | [ダウンロード HyphenScreen_1.9.0_x64-setup.exe](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.0/HyphenScreen_1.9.0_x64-setup.exe) | `5b548dda21efa241a13501538bdf271039788f74fe33931ad09239215790958e` |
-| Linux（x86_64） | [ダウンロード HyphenScreen_1.9.0_x86_64.AppImage](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.0/HyphenScreen_1.9.0_x86_64.AppImage) | `b5f8094d7b78460569bec265deb3fe1cf54c0da930b0d6343a6c92d9da2cfc4b` |
-| Debian / Ubuntu（amd64） | [ダウンロード HyphenScreen_1.9.0_amd64.deb](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.0/HyphenScreen_1.9.0_amd64.deb) | `5e7d6eea9ee339427daa75daf913145040afed8497452b7ceae6cd1fd2c83fa8` |
-| Arch Linux（x86_64） | [ダウンロード HyphenScreen_1.9.0_x64.pacman](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.0/HyphenScreen_1.9.0_x64.pacman) | `705f7a40c2675cdbf6966d4c09410058f6a0f3d70f4fa04a282df3b1d232a8b6` |
+| macOS 13+（Apple 芯片 arm64） | [ダウンロード HyphenScreen_1.9.1_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.1/HyphenScreen_1.9.1_arm64.dmg) | `c1eccb1403e8eb560ed57798aa7eace73551dbc71e1b8e74abb97ab018f782ff` |
+| Windows 10/11（x64） | [ダウンロード HyphenScreen_1.9.1_x64-setup.exe](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.1/HyphenScreen_1.9.1_x64-setup.exe) | `dcfb5f16b7b0f4e557cb87c316a7547e87192a24e693ab4103a8209c626846a4` |
+| Linux（x86_64） | [ダウンロード HyphenScreen_1.9.1_x86_64.AppImage](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.1/HyphenScreen_1.9.1_x86_64.AppImage) | `87430027aeecbda02db1855d14f14c65085e83f5360f7805d731b2eb751d7813` |
+| Debian / Ubuntu（amd64） | [ダウンロード HyphenScreen_1.9.1_amd64.deb](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.1/HyphenScreen_1.9.1_amd64.deb) | `94d2f75b9c888ac4201b0ca9c5992baf69767397a48c1afb40ea4886ac9c5c57` |
+| Arch Linux（x86_64） | [ダウンロード HyphenScreen_1.9.1_x64.pacman](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.1/HyphenScreen_1.9.1_x64.pacman) | `03b7b5f290e7e9ea6d8cf57c1cebafa356f9851ec85b980ec96a28c7c21248f3` |
 
 <!-- evergreen:capabilities:start -->
 ![独立アニメーション、編集可能なレイヤーとビジュアルグループ](screenshots/animation-editor-110.png)
