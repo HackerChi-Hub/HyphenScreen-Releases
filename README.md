@@ -18,12 +18,14 @@
 <!-- recent-features:start -->
 ## 近期新增与改进（最近 5 项）
 
+- **1.9.1** · 十套整片包装扩充至开场、章节、小节、清单、聚焦、数字、片尾七种版式；整期工作台支持母版换肤与待做段落批量落轨（整期工作台需签名授权，暂未开放购买）。
+- **1.9.1** · 原生动画与编辑接口支持推拉摇移、图层视差等显式连续运镜，以及跨切点主体识别与同轴缩放衔接。
+- **1.9.1** · 修复录屏与多轨工程切换片段时的预览画布挂载和播放头源时间同步，避免切段后停在旧帧。
 - **1.9.0** · 满足硬件条件的 Mac 可并行生成最多四个独立镜头，完成顺序不影响入轨顺序。
 - **1.9.0** · 整期工作台新增成片体检，可检查实际导出文件并定位至工程时间线。需签名授权，暂未开放购买。
-- **1.9.0** · 内置与外部编辑接口可按名称搜索工程实景、录屏或原图，也能筛选可接视频或截图的镜头模板。
-- **1.8.9** · 命令行和外部智能代理可直接导出整期工作台工程，保留原生动画、时间线音轨和人声避让。
-- **1.8.8** · 修复 DeepSeek 动画工具调用因参数不兼容而中断的问题。收到参数提示后，模型可修正并继续。
 <!-- recent-features:end -->
+
+**1.9.1 包装七版式、连续运镜与录屏预览修复。** 十套整片包装在开场、清单、聚焦、数字之外新增章节、小节与片尾三种结构版式；整期工作台（需签名授权，暂未开放购买）支持主视觉母版换肤与待做本地段落批量生成落轨。原生动画与编辑接口新增推拉摇移、图层视差及跨切点主体承接运镜；多轨与录屏切换片段时保持预览画布挂载并立即同步播放头源时间。
 
 **1.9.0 镜头并行与成片体检。** 在满足硬件条件的 Mac 上，镜头编排可同时生成最多四个独立镜头，并按原顺序交付。本机四镜测试从 103.81 秒缩短至 78.41 秒。「整期工作台 → 成片验收 → 成片体检」可检测导出文件的响度、峰值、静音、黑帧和冻结，并按时码回到工程。整期工作台需签名授权，暂未开放购买。
 
@@ -232,7 +234,7 @@ macOS导入视频遇到硬件解码失败时，会为当前素材自动尝试软
 
 Windows／Linux补包沿用相同工程删除修复，Mac开发版专项不扩大为其他系统桌面实测。本轮不自动安装或删除用户工程。
 
-**当前版本：[黑粉录屏 1.9.0 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.9.0)**（只保留最新一版）。
+**当前版本：[黑粉录屏 1.9.1 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.9.1)**（只保留最新一版）。
 
 ## 下载
 
@@ -240,11 +242,11 @@ Windows／Linux补包沿用相同工程删除修复，Mac开发版专项不扩�
 
 | 平台 | 文件 | SHA-256 |
 |---|---|---|
-| macOS 13+（Apple 芯片 arm64） | [下载 HyphenScreen_1.9.0_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.0/HyphenScreen_1.9.0_arm64.dmg) | `1d6423ea535f0ab8d62513328b9ffae8a649c5aac360ba67adeec22dd727c68c` |
-| Windows 10/11（x64） | [下载 HyphenScreen_1.9.0_x64-setup.exe](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.0/HyphenScreen_1.9.0_x64-setup.exe) | `5b548dda21efa241a13501538bdf271039788f74fe33931ad09239215790958e` |
-| Linux（x86_64） | [下载 HyphenScreen_1.9.0_x86_64.AppImage](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.0/HyphenScreen_1.9.0_x86_64.AppImage) | `b5f8094d7b78460569bec265deb3fe1cf54c0da930b0d6343a6c92d9da2cfc4b` |
-| Debian / Ubuntu（amd64） | [下载 HyphenScreen_1.9.0_amd64.deb](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.0/HyphenScreen_1.9.0_amd64.deb) | `5e7d6eea9ee339427daa75daf913145040afed8497452b7ceae6cd1fd2c83fa8` |
-| Arch Linux（x86_64） | [下载 HyphenScreen_1.9.0_x64.pacman](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.0/HyphenScreen_1.9.0_x64.pacman) | `705f7a40c2675cdbf6966d4c09410058f6a0f3d70f4fa04a282df3b1d232a8b6` |
+| macOS 13+（Apple 芯片 arm64） | [下载 HyphenScreen_1.9.1_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.1/HyphenScreen_1.9.1_arm64.dmg) | `c1eccb1403e8eb560ed57798aa7eace73551dbc71e1b8e74abb97ab018f782ff` |
+| Windows 10/11（x64） | [下载 HyphenScreen_1.9.1_x64-setup.exe](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.1/HyphenScreen_1.9.1_x64-setup.exe) | `dcfb5f16b7b0f4e557cb87c316a7547e87192a24e693ab4103a8209c626846a4` |
+| Linux（x86_64） | [下载 HyphenScreen_1.9.1_x86_64.AppImage](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.1/HyphenScreen_1.9.1_x86_64.AppImage) | `87430027aeecbda02db1855d14f14c65085e83f5360f7805d731b2eb751d7813` |
+| Debian / Ubuntu（amd64） | [下载 HyphenScreen_1.9.1_amd64.deb](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.1/HyphenScreen_1.9.1_amd64.deb) | `94d2f75b9c888ac4201b0ca9c5992baf69767397a48c1afb40ea4886ac9c5c57` |
+| Arch Linux（x86_64） | [下载 HyphenScreen_1.9.1_x64.pacman](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.1/HyphenScreen_1.9.1_x64.pacman) | `03b7b5f290e7e9ea6d8cf57c1cebafa356f9851ec85b980ec96a28c7c21248f3` |
 
 同一页附带各平台的 `SHA256SUMS*.txt` 与 `release-manifest.json`，可核对文件完整性与构建来源。
 
