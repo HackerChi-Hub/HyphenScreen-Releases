@@ -16,12 +16,14 @@ HyphenScreen by HyphenTech is a desktop workspace for software tutorials, produc
 <!-- recent-features:start -->
 ## Recent features and improvements (5 items)
 
+- **1.9.1** · Whole-video packaging expands to seven layouts (opener, chapter, subhead, list, focus, metric and outro), with Episode Workbench master-theme restyling and batch segment generation (signed license required).
+- **1.9.1** · Native animations and editing tools add explicit camera rigs with per-layer parallax plus cross-cut subject detection and coaxial zoom continuity.
+- **1.9.1** · Multi-track recording preview keeps the compositor canvas mounted and syncs playhead source timing immediately across clip switches.
 - **1.9.0** · Supported Macs can generate up to four independent shots in parallel and deliver them in timeline order.
 - **1.9.0** · Check an exported video in the Episode Workbench and jump to the issue on the project timeline. A signed license is required and purchase is not yet available.
-- **1.9.0** · The built-in and external editing interfaces can search project footage, recordings and stills, and filter templates by video or screenshot support.
-- **1.8.9** · The command line and external agents can export native Episode Workbench projects with animations, timeline audio and music ducking.
-- **1.8.8** · DeepSeek can recover from incompatible animation tool arguments after receiving guidance on the supported parameters.
 <!-- recent-features:end -->
+
+**1.9.1 Seven packaging layouts, explicit camera continuity and recording preview fixes.** Each of the ten whole-video packages now includes chapter, subhead and outro layouts alongside opener, list, focus and metric. In the Episode Workbench (signed license required; purchase not yet available), unlocked native scenes can adopt the episode master theme and pending local segments can be generated in batch. Native animations and editing tools support explicit camera motion, per-layer parallax and cross-cut subject alignment with coaxial zoom transitions. Switching clips in multi-track recording projects keeps the native preview canvas mounted and syncs playhead timing immediately.
 
 **1.9.0 Parallel shot generation and export checks.** On supported Macs, shot composition can generate up to four independent shots at once and deliver them in timeline order. The four-shot test on one Mac went from 103.81 to 78.41 seconds. In the Episode Workbench, check the exported file for loudness, peaks, silence, black frames and freezes, then jump back to the relevant position in the project. The Episode Workbench requires a signed license and is not yet available to purchase.
 
@@ -171,15 +173,15 @@ LocalBrain discovers its loaded language model. A live Qwen3.8 27B test generate
 These videos show the versions available when recorded. Use the current release information on this page for downloads and capabilities. Narration is in Chinese.
 <!-- evergreen:demos:end -->
 
-## Download: 1.9.0
+## Download: 1.9.1
 
 | Platform | Package | SHA-256 |
 |---|---|---|
-| macOS 13+（Apple 芯片 arm64） | [Download HyphenScreen_1.9.0_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.0/HyphenScreen_1.9.0_arm64.dmg) | `1d6423ea535f0ab8d62513328b9ffae8a649c5aac360ba67adeec22dd727c68c` |
-| Windows 10/11（x64） | [Download HyphenScreen_1.9.0_x64-setup.exe](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.0/HyphenScreen_1.9.0_x64-setup.exe) | `5b548dda21efa241a13501538bdf271039788f74fe33931ad09239215790958e` |
-| Linux（x86_64） | [Download HyphenScreen_1.9.0_x86_64.AppImage](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.0/HyphenScreen_1.9.0_x86_64.AppImage) | `b5f8094d7b78460569bec265deb3fe1cf54c0da930b0d6343a6c92d9da2cfc4b` |
-| Debian / Ubuntu（amd64） | [Download HyphenScreen_1.9.0_amd64.deb](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.0/HyphenScreen_1.9.0_amd64.deb) | `5e7d6eea9ee339427daa75daf913145040afed8497452b7ceae6cd1fd2c83fa8` |
-| Arch Linux（x86_64） | [Download HyphenScreen_1.9.0_x64.pacman](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.0/HyphenScreen_1.9.0_x64.pacman) | `705f7a40c2675cdbf6966d4c09410058f6a0f3d70f4fa04a282df3b1d232a8b6` |
+| macOS 13+（Apple 芯片 arm64） | [Download HyphenScreen_1.9.1_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.1/HyphenScreen_1.9.1_arm64.dmg) | `c1eccb1403e8eb560ed57798aa7eace73551dbc71e1b8e74abb97ab018f782ff` |
+| Windows 10/11（x64） | [Download HyphenScreen_1.9.1_x64-setup.exe](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.1/HyphenScreen_1.9.1_x64-setup.exe) | `dcfb5f16b7b0f4e557cb87c316a7547e87192a24e693ab4103a8209c626846a4` |
+| Linux（x86_64） | [Download HyphenScreen_1.9.1_x86_64.AppImage](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.1/HyphenScreen_1.9.1_x86_64.AppImage) | `87430027aeecbda02db1855d14f14c65085e83f5360f7805d731b2eb751d7813` |
+| Debian / Ubuntu（amd64） | [Download HyphenScreen_1.9.1_amd64.deb](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.1/HyphenScreen_1.9.1_amd64.deb) | `94d2f75b9c888ac4201b0ca9c5992baf69767397a48c1afb40ea4886ac9c5c57` |
+| Arch Linux（x86_64） | [Download HyphenScreen_1.9.1_x64.pacman](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.1/HyphenScreen_1.9.1_x64.pacman) | `03b7b5f290e7e9ea6d8cf57c1cebafa356f9851ec85b980ec96a28c7c21248f3` |
 
 <!-- evergreen:capabilities:start -->
 ![Native animation editor, editable layers and the Visual timeline group](screenshots/animation-editor-110.png)
