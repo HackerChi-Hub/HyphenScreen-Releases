@@ -16,12 +16,14 @@ HyphenScreen by HyphenTech is a desktop workspace for software tutorials, produc
 <!-- recent-features:start -->
 ## Recent features and improvements (5 items)
 
+- **1.9.3** · Refines compact-window layout and primary button contrast, keeps animation editor tabs on one row, seeks newly inserted animations to a visible frame and adds video thumbnails on the Media stage.
+- **1.9.3** · Adds forward/inverse camera projection for on-canvas 2.5D rig dragging, smoother coaxial seam matching, lossless reversible master-theme switching and packaging track reuse.
+- **1.9.3** · Preserves Source export resolution when standalone animations overhang recordings, restores repeated-sentence speech cleanup on word-level transcripts, extends redaction across video tracks and serializes background document writes.
 - **1.9.1** · Whole-video packaging expands to seven layouts (opener, chapter, subhead, list, focus, metric and outro), with Episode Workbench master-theme restyling and batch segment generation (signed license required).
 - **1.9.1** · Native animations and editing tools add explicit camera rigs with per-layer parallax plus cross-cut subject detection and coaxial zoom continuity.
-- **1.9.1** · Multi-track recording preview keeps the compositor canvas mounted and syncs playhead source timing immediately across clip switches.
-- **1.9.0** · Supported Macs can generate up to four independent shots in parallel and deliver them in timeline order.
-- **1.9.0** · Check an exported video in the Episode Workbench and jump to the issue on the project timeline. A signed license is required and purchase is not yet available.
 <!-- recent-features:end -->
+
+**1.9.3 Layout polish, 2.5D camera drag projection and Source export / transcript fixes.** Compact `1280×800` windows keep the right tool rail, two-column motion gallery, empty-state prompts and timeline `0:00` ruler unclipped, with high-contrast white labels on primary buttons, single-row animation editor tabs, visible-frame preview on insert and Media-stage video thumbnails. On-canvas dragging now projects through 2.5D camera rigs, cross-cut coaxial seams avoid double-zoom overshoot, master themes switch losslessly in both directions and packaging inserts reuse non-overlapping tracks. Source exports keep full `1080p`/`4K` resolution when standalone animations overhang recordings, word-level transcripts retain sentence segments for repeated-take cleanup, sensitive-info redaction covers upper video tracks and background writes serialize cleanly.
 
 **1.9.1 Seven packaging layouts, explicit camera continuity and recording preview fixes.** Each of the ten whole-video packages now includes chapter, subhead and outro layouts alongside opener, list, focus and metric. In the Episode Workbench (signed license required; purchase not yet available), unlocked native scenes can adopt the episode master theme and pending local segments can be generated in batch. Native animations and editing tools support explicit camera motion, per-layer parallax and cross-cut subject alignment with coaxial zoom transitions. Switching clips in multi-track recording projects keeps the native preview canvas mounted and syncs playhead timing immediately.
 
@@ -173,15 +175,15 @@ LocalBrain discovers its loaded language model. A live Qwen3.8 27B test generate
 These videos show the versions available when recorded. Use the current release information on this page for downloads and capabilities. Narration is in Chinese.
 <!-- evergreen:demos:end -->
 
-## Download: 1.9.1
+## Download: 1.9.3
 
 | Platform | Package | SHA-256 |
 |---|---|---|
-| macOS 13+（Apple 芯片 arm64） | [Download HyphenScreen_1.9.1_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.1/HyphenScreen_1.9.1_arm64.dmg) | `c1eccb1403e8eb560ed57798aa7eace73551dbc71e1b8e74abb97ab018f782ff` |
-| Windows 10/11（x64） | [Download HyphenScreen_1.9.1_x64-setup.exe](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.1/HyphenScreen_1.9.1_x64-setup.exe) | `dcfb5f16b7b0f4e557cb87c316a7547e87192a24e693ab4103a8209c626846a4` |
-| Linux（x86_64） | [Download HyphenScreen_1.9.1_x86_64.AppImage](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.1/HyphenScreen_1.9.1_x86_64.AppImage) | `87430027aeecbda02db1855d14f14c65085e83f5360f7805d731b2eb751d7813` |
-| Debian / Ubuntu（amd64） | [Download HyphenScreen_1.9.1_amd64.deb](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.1/HyphenScreen_1.9.1_amd64.deb) | `94d2f75b9c888ac4201b0ca9c5992baf69767397a48c1afb40ea4886ac9c5c57` |
-| Arch Linux（x86_64） | [Download HyphenScreen_1.9.1_x64.pacman](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.1/HyphenScreen_1.9.1_x64.pacman) | `03b7b5f290e7e9ea6d8cf57c1cebafa356f9851ec85b980ec96a28c7c21248f3` |
+| macOS 13+（Apple 芯片 arm64） | [Download HyphenScreen_1.9.3_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.3/HyphenScreen_1.9.3_arm64.dmg) | `1a6245d7e1a88f3dd74edd4afb5c323fdbccd627a7bdb58271aa5e8c7a229752` |
+| Windows 10/11（x64） | [Download HyphenScreen_1.9.3_x64-setup.exe](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.3/HyphenScreen_1.9.3_x64-setup.exe) | `64af697c14fdbad70407342a3a04413bb55f760ebe353eaad5a70431d1da0a48` |
+| Linux（x86_64） | [Download HyphenScreen_1.9.3_x86_64.AppImage](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.3/HyphenScreen_1.9.3_x86_64.AppImage) | `af15828b0c4ced9f4cf0eaa232ec08b371d01b27c9f54624d140e46b2fcbccfb` |
+| Debian / Ubuntu（amd64） | [Download HyphenScreen_1.9.3_amd64.deb](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.3/HyphenScreen_1.9.3_amd64.deb) | `dad2e7da912189d273969a635fef9aebabb63f91afc9491d397ba1789fdb0b47` |
+| Arch Linux（x86_64） | [Download HyphenScreen_1.9.3_x64.pacman](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.3/HyphenScreen_1.9.3_x64.pacman) | `f9423be0e822720769cf1090534eac751a961507d0109866ab23a93bb7a6723e` |
 
 <!-- evergreen:capabilities:start -->
 ![Native animation editor, editable layers and the Visual timeline group](screenshots/animation-editor-110.png)
