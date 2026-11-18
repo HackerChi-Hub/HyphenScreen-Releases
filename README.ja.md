@@ -17,12 +17,14 @@ HyphenTech のデスクトップ録画・編集ソフトです。ソフトウェ
 <!-- recent-features:start -->
 ## 最近の機能追加と改善（5件）
 
+- **1.9.3** · コンパクト画面のレイアウトと主ボタンの視認性を改善し、アニメーション編集タブを1行に統合、挿入直後の可視フレーム移動とメディア画面の動画サムネイル表示に対応。
+- **1.9.3** · 2.5Dカメラ設定時のキャンバス直接ドラッグ投影補正、カット間ズーム接続の過大倍率防止と許容誤差照合、可逆的なマスターテーマ切替とパッケージトラック再利用に対応。
+- **1.9.3** · 単独アニメーション区間を含むプロジェクトの元画質書き出し解像度維持、単語単位文字起こしでの重複発話整理の復旧、複数映像トラックの自動モザイクと直列保存キューを強化。
 - **1.9.1** · 映像パッケージが7レイアウト（オープニング・章・小見出し・リスト・フォーカス・数値・エンディング）に拡充し、整期ワークベンチのテーマ一括反映と未制作区間の一括生成に対応（署名付きライセンスが必要）。
 - **1.9.1** · ネイティブアニメーションと編集ツールで明示的なカメラワーク・レイヤー視差・カット間の被写体位置合わせとズーム接続に対応。
-- **1.9.1** · 画面録画やマルチトラック編集でクリップを切り替えた際のプレビューキャンバス保持と再生位置同期を修正。
-- **1.9.0** · 対応する Mac では、最大四つの独立したショットを並列で生成し、元の順序でタイムラインに追加できます。
-- **1.9.0** · 整期ワークベンチで書き出した動画を検査し、問題の位置へ移動できます。署名付きライセンスが必要で、販売はまだ開始していません。
 <!-- recent-features:end -->
+
+**1.9.3 レイアウト改善、2.5Dカメラドラッグ補正と元画質書き出し・文字起こし修正。** `1280×800` などのコンパクト画面でのツールバー・2列アニメーションギャラリー・タイムライン `0:00` 目盛りの見切れを解消し、主ボタンの白文字コントラスト、1行に収まるアニメーション編集タブ、挿入時の可視フレーム自動移動、メディア画面の動画サムネイルを整えました。2.5Dカメラ設定時のキャンバス直接ドラッグ投影補正、カット間ズーム接続の二重拡大防止、可逆的なマスターテーマ切替、パッケージトラックの再利用に対応し、単独アニメーションを含む場合の元画質書き出し解像度低下、単語単位文字起こしでの重複発話整理、複数映像トラックの自動モザイク、バックグラウンド保存の直列化を修正しました。
 
 **1.9.1 映像パッケージの7レイアウト化、連続カメラワークと録画プレビュー修正。** 10組の映像パッケージに章・小見出し・エンディングの3レイアウトを追加し、計7レイアウトになりました。整期ワークベンチ（署名付きライセンスが必要・販売未開始）では、未ロックのネイティブシーンへのマスターテーマ反映とローカル未制作区間の一括生成に対応します。ネイティブアニメーションと編集ツールにカメラ移動・レイヤー視差・カット間の被写体位置合わせを追加し、マルチトラック録画でクリップを切り替えた際のプレビュー保持と再生位置同期も修正しました。
 
@@ -174,15 +176,15 @@ AI パネルの制作画面で内容と独自の要望を入力し、説明、�
 動画は撮影時のバージョンです。現在の機能と配布パッケージはこのページのリリース情報をご確認ください。動画の解説は中国語です。
 <!-- evergreen:demos:end -->
 
-## ダウンロード: 1.9.1
+## ダウンロード: 1.9.3
 
 | プラットフォーム | パッケージ | SHA-256 |
 |---|---|---|
-| macOS 13+（Apple 芯片 arm64） | [ダウンロード HyphenScreen_1.9.1_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.1/HyphenScreen_1.9.1_arm64.dmg) | `c1eccb1403e8eb560ed57798aa7eace73551dbc71e1b8e74abb97ab018f782ff` |
-| Windows 10/11（x64） | [ダウンロード HyphenScreen_1.9.1_x64-setup.exe](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.1/HyphenScreen_1.9.1_x64-setup.exe) | `dcfb5f16b7b0f4e557cb87c316a7547e87192a24e693ab4103a8209c626846a4` |
-| Linux（x86_64） | [ダウンロード HyphenScreen_1.9.1_x86_64.AppImage](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.1/HyphenScreen_1.9.1_x86_64.AppImage) | `87430027aeecbda02db1855d14f14c65085e83f5360f7805d731b2eb751d7813` |
-| Debian / Ubuntu（amd64） | [ダウンロード HyphenScreen_1.9.1_amd64.deb](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.1/HyphenScreen_1.9.1_amd64.deb) | `94d2f75b9c888ac4201b0ca9c5992baf69767397a48c1afb40ea4886ac9c5c57` |
-| Arch Linux（x86_64） | [ダウンロード HyphenScreen_1.9.1_x64.pacman](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.1/HyphenScreen_1.9.1_x64.pacman) | `03b7b5f290e7e9ea6d8cf57c1cebafa356f9851ec85b980ec96a28c7c21248f3` |
+| macOS 13+（Apple 芯片 arm64） | [ダウンロード HyphenScreen_1.9.3_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.3/HyphenScreen_1.9.3_arm64.dmg) | `1a6245d7e1a88f3dd74edd4afb5c323fdbccd627a7bdb58271aa5e8c7a229752` |
+| Windows 10/11（x64） | [ダウンロード HyphenScreen_1.9.3_x64-setup.exe](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.3/HyphenScreen_1.9.3_x64-setup.exe) | `64af697c14fdbad70407342a3a04413bb55f760ebe353eaad5a70431d1da0a48` |
+| Linux（x86_64） | [ダウンロード HyphenScreen_1.9.3_x86_64.AppImage](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.3/HyphenScreen_1.9.3_x86_64.AppImage) | `af15828b0c4ced9f4cf0eaa232ec08b371d01b27c9f54624d140e46b2fcbccfb` |
+| Debian / Ubuntu（amd64） | [ダウンロード HyphenScreen_1.9.3_amd64.deb](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.3/HyphenScreen_1.9.3_amd64.deb) | `dad2e7da912189d273969a635fef9aebabb63f91afc9491d397ba1789fdb0b47` |
+| Arch Linux（x86_64） | [ダウンロード HyphenScreen_1.9.3_x64.pacman](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.3/HyphenScreen_1.9.3_x64.pacman) | `f9423be0e822720769cf1090534eac751a961507d0109866ab23a93bb7a6723e` |
 
 <!-- evergreen:capabilities:start -->
 ![独立アニメーション、編集可能なレイヤーとビジュアルグループ](screenshots/animation-editor-110.png)
