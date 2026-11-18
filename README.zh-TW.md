@@ -16,12 +16,14 @@
 <!-- recent-features:start -->
 ## 近期新增與改進（最近 5 項）
 
+- **1.9.3** · 最佳化緊湊視窗排版與主按鈕對比度，單行整合動畫編輯分頁，插入首格透明動畫時自動定位可見影格並補齊媒體頁影片縮圖。
+- **1.9.3** · 補齊 2.5D 運鏡畫布正逆投影拖曳、同軸銜接防過衝與容差比對，支援母版深淺無損往返換膚及包裝軌道複用。
+- **1.9.3** · 修正含獨立動畫片頭或片尾專案的原畫匯出解析度降級，恢復詞級轉寫下的口播重複句清理，擴充多軌錄屏自動打碼並統一序列寫入佇列。
 - **1.9.1** · 十套整片包裝擴充至開場、章節、小節、清單、聚焦、數字、片尾七種版面；整期工作台支援母版換膚與待做段落批次落軌（需簽章授權，暫未開放購買）。
 - **1.9.1** · 原生動畫與編輯介面支援推拉搖移、圖層視差等顯式連續運鏡，以及跨切點主體辨識與同軸縮放銜接。
-- **1.9.1** · 修正錄屏與多軌專案切換片段時的預覽畫布掛載與播放頭時間同步，避免切段後停在舊畫面。
-- **1.9.0** · 符合硬體條件的 Mac 可並行產生最多四個獨立鏡頭，依原順序加入時間軸。
-- **1.9.0** · 整期工作台新增成片檢查，可檢查實際匯出檔案並定位至專案時間軸。需簽章授權，暫未開放購買。
 <!-- recent-features:end -->
+
+**1.9.3 介面排版打磨、運鏡投影閉環與原畫匯出／轉寫修正。** 改善 `1280×800` 緊湊視窗排版、右側動畫庫完整雙欄等寬顯示與主按鈕對比度，單行排列動畫編輯分頁，插入動畫自動停在可見影格並補齊媒體頁影片縮圖。補齊 2.5D 運鏡畫布直接拖曳的正逆投影、同軸銜接防過衝與容差比對、母版深淺無損往返換膚及包裝軌道複用。修正含獨立動畫片頭／片尾時原畫匯出誤降 720p 的問題，恢復詞級轉寫下的口播重複句清理，擴充多軌錄屏敏感資訊打碼，並將背景轉寫與時間軸修改統一收斂至序列寫入佇列。
 
 **1.9.1 包裝七版面、連續運鏡與錄屏預覽修正。** 十套整片包裝在開場、清單、聚焦、數字之外新增章節、小節與片尾三種版面；整期工作台（需簽章授權，暫未開放購買）支援主視覺母版換膚與待做本機段落批次產生落軌。原生動畫與編輯介面新增推拉搖移、圖層視差及跨切點主體承接運鏡；多軌與錄屏切換片段時維持預覽畫布掛載並立即同步播放頭來源時間。
 
@@ -173,15 +175,15 @@ macOS匯入影片遇到硬體解碼失敗時，會為目前素材嘗試軟體解
 影片示範的是拍攝時的版本；安裝套件與目前功能以本頁正式發行資訊為準。影片以中文講解。
 <!-- evergreen:demos:end -->
 
-## 下載: 1.9.1
+## 下載: 1.9.3
 
 | 平台 | 安裝套件 | SHA-256 |
 |---|---|---|
-| macOS 13+（Apple 芯片 arm64） | [下載 HyphenScreen_1.9.1_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.1/HyphenScreen_1.9.1_arm64.dmg) | `c1eccb1403e8eb560ed57798aa7eace73551dbc71e1b8e74abb97ab018f782ff` |
-| Windows 10/11（x64） | [下載 HyphenScreen_1.9.1_x64-setup.exe](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.1/HyphenScreen_1.9.1_x64-setup.exe) | `dcfb5f16b7b0f4e557cb87c316a7547e87192a24e693ab4103a8209c626846a4` |
-| Linux（x86_64） | [下載 HyphenScreen_1.9.1_x86_64.AppImage](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.1/HyphenScreen_1.9.1_x86_64.AppImage) | `87430027aeecbda02db1855d14f14c65085e83f5360f7805d731b2eb751d7813` |
-| Debian / Ubuntu（amd64） | [下載 HyphenScreen_1.9.1_amd64.deb](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.1/HyphenScreen_1.9.1_amd64.deb) | `94d2f75b9c888ac4201b0ca9c5992baf69767397a48c1afb40ea4886ac9c5c57` |
-| Arch Linux（x86_64） | [下載 HyphenScreen_1.9.1_x64.pacman](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.1/HyphenScreen_1.9.1_x64.pacman) | `03b7b5f290e7e9ea6d8cf57c1cebafa356f9851ec85b980ec96a28c7c21248f3` |
+| macOS 13+（Apple 芯片 arm64） | [下載 HyphenScreen_1.9.3_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.3/HyphenScreen_1.9.3_arm64.dmg) | `1a6245d7e1a88f3dd74edd4afb5c323fdbccd627a7bdb58271aa5e8c7a229752` |
+| Windows 10/11（x64） | [下載 HyphenScreen_1.9.3_x64-setup.exe](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.3/HyphenScreen_1.9.3_x64-setup.exe) | `64af697c14fdbad70407342a3a04413bb55f760ebe353eaad5a70431d1da0a48` |
+| Linux（x86_64） | [下載 HyphenScreen_1.9.3_x86_64.AppImage](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.3/HyphenScreen_1.9.3_x86_64.AppImage) | `af15828b0c4ced9f4cf0eaa232ec08b371d01b27c9f54624d140e46b2fcbccfb` |
+| Debian / Ubuntu（amd64） | [下載 HyphenScreen_1.9.3_amd64.deb](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.3/HyphenScreen_1.9.3_amd64.deb) | `dad2e7da912189d273969a635fef9aebabb63f91afc9491d397ba1789fdb0b47` |
+| Arch Linux（x86_64） | [下載 HyphenScreen_1.9.3_x64.pacman](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.3/HyphenScreen_1.9.3_x64.pacman) | `f9423be0e822720769cf1090534eac751a961507d0109866ab23a93bb7a6723e` |
 
 <!-- evergreen:capabilities:start -->
 ![原生動畫編輯器：可編輯圖層、視覺分組與獨立動畫片段](screenshots/animation-editor-110.png)
