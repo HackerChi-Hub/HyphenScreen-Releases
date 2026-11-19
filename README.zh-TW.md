@@ -16,12 +16,14 @@
 <!-- recent-features:start -->
 ## 近期新增與改進（最近 5 項）
 
-- **1.9.3** · 最佳化緊湊視窗排版與主按鈕對比度，單行整合動畫編輯分頁，插入首格透明動畫時自動定位可見影格並補齊媒體頁影片縮圖。
+- **1.9.4** · 修正 macOS 背景 MCP 編輯介面常駐時開啟桌面版出現兩個 Dock 圖示的問題，並省去無介面執行期間閒置的 GPU 與網路輔助子行程。
+- **1.9.3** · 最佳化緊湊視窗排版、右側動畫庫完整雙欄等寬顯示與主按鈕對比度，單行整合動畫編輯分頁，插入動畫時自動定位可見影格並補齊媒體頁影片縮圖。
 - **1.9.3** · 補齊 2.5D 運鏡畫布正逆投影拖曳、同軸銜接防過衝與容差比對，支援母版深淺無損往返換膚及包裝軌道複用。
 - **1.9.3** · 修正含獨立動畫片頭或片尾專案的原畫匯出解析度降級，恢復詞級轉寫下的口播重複句清理，擴充多軌錄屏自動打碼並統一序列寫入佇列。
-- **1.9.1** · 十套整片包裝擴充至開場、章節、小節、清單、聚焦、數字、片尾七種版面；整期工作台支援母版換膚與待做段落批次落軌（需簽章授權，暫未開放購買）。
-- **1.9.1** · 原生動畫與編輯介面支援推拉搖移、圖層視差等顯式連續運鏡，以及跨切點主體辨識與同軸縮放銜接。
+- **1.9.1** · 十套整片包裝擴充至開場、章節、小節、清單、聚焦、數字、片尾七種版面，原生動畫與編輯介面支援推拉搖移、圖層視差與跨切點同軸銜接。
 <!-- recent-features:end -->
+
+**1.9.4 修正 macOS Dock 雙圖示與背景介面閒置開銷。** 外部 AI 工具在背景掛載 MCP 編輯介面（`api`）時，原生啟動分發器會將其與 `info`、`pack`、`help` 直接導向純 Node 執行環境，不再佔用 macOS `LaunchServices` 的主程式圖示槽位；點擊開啟桌面版始終維持單一 Dock 圖示，並省去無介面待命期間的 GPU 與網路輔助子行程。
 
 **1.9.3 介面排版打磨、運鏡投影閉環與原畫匯出／轉寫修正。** 改善 `1280×800` 緊湊視窗排版、右側動畫庫完整雙欄等寬顯示與主按鈕對比度，單行排列動畫編輯分頁，插入動畫自動停在可見影格並補齊媒體頁影片縮圖。補齊 2.5D 運鏡畫布直接拖曳的正逆投影、同軸銜接防過衝與容差比對、母版深淺無損往返換膚及包裝軌道複用。修正含獨立動畫片頭／片尾時原畫匯出誤降 720p 的問題，恢復詞級轉寫下的口播重複句清理，擴充多軌錄屏敏感資訊打碼，並將背景轉寫與時間軸修改統一收斂至序列寫入佇列。
 
@@ -175,15 +177,15 @@ macOS匯入影片遇到硬體解碼失敗時，會為目前素材嘗試軟體解
 影片示範的是拍攝時的版本；安裝套件與目前功能以本頁正式發行資訊為準。影片以中文講解。
 <!-- evergreen:demos:end -->
 
-## 下載: 1.9.3
+## 下載: 1.9.4
 
 | 平台 | 安裝套件 | SHA-256 |
 |---|---|---|
-| macOS 13+（Apple 芯片 arm64） | [下載 HyphenScreen_1.9.3_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.3/HyphenScreen_1.9.3_arm64.dmg) | `1a6245d7e1a88f3dd74edd4afb5c323fdbccd627a7bdb58271aa5e8c7a229752` |
-| Windows 10/11（x64） | [下載 HyphenScreen_1.9.3_x64-setup.exe](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.3/HyphenScreen_1.9.3_x64-setup.exe) | `64af697c14fdbad70407342a3a04413bb55f760ebe353eaad5a70431d1da0a48` |
-| Linux（x86_64） | [下載 HyphenScreen_1.9.3_x86_64.AppImage](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.3/HyphenScreen_1.9.3_x86_64.AppImage) | `af15828b0c4ced9f4cf0eaa232ec08b371d01b27c9f54624d140e46b2fcbccfb` |
-| Debian / Ubuntu（amd64） | [下載 HyphenScreen_1.9.3_amd64.deb](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.3/HyphenScreen_1.9.3_amd64.deb) | `dad2e7da912189d273969a635fef9aebabb63f91afc9491d397ba1789fdb0b47` |
-| Arch Linux（x86_64） | [下載 HyphenScreen_1.9.3_x64.pacman](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.3/HyphenScreen_1.9.3_x64.pacman) | `f9423be0e822720769cf1090534eac751a961507d0109866ab23a93bb7a6723e` |
+| macOS 13+（Apple 芯片 arm64） | [下載 HyphenScreen_1.9.4_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.4/HyphenScreen_1.9.4_arm64.dmg) | `8c0e784d258419bdb8193c924f5c602c2cb9cc688238633aadae35b7e98a8411` |
+| Windows 10/11（x64） | [下載 HyphenScreen_1.9.4_x64-setup.exe](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.4/HyphenScreen_1.9.4_x64-setup.exe) | `da6591ec79585922aa6f1a4d74b05660bb7c63162fae7617e94ec69de938e439` |
+| Linux（x86_64） | [下載 HyphenScreen_1.9.4_x86_64.AppImage](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.4/HyphenScreen_1.9.4_x86_64.AppImage) | `e9df97d5dda36dde03be5e797636c7c5c7c4c38b951655802c65638d5d152455` |
+| Debian / Ubuntu（amd64） | [下載 HyphenScreen_1.9.4_amd64.deb](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.4/HyphenScreen_1.9.4_amd64.deb) | `97fd32d94dac29bacc41e2ef840a2129a1ad65c6c5afe6700305703e200d81bb` |
+| Arch Linux（x86_64） | [下載 HyphenScreen_1.9.4_x64.pacman](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.4/HyphenScreen_1.9.4_x64.pacman) | `5c0e2d85152491f4af92728a91affae442569db3b5f6bd38f9fe71f90e4fb672` |
 
 <!-- evergreen:capabilities:start -->
 ![原生動畫編輯器：可編輯圖層、視覺分組與獨立動畫片段](screenshots/animation-editor-110.png)
