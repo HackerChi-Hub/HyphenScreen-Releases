@@ -18,12 +18,14 @@
 <!-- recent-features:start -->
 ## 近期新增与改进（最近 5 项）
 
-- **1.9.3** · 优化紧凑窗口排版与主按钮对比度，单行整合动画编辑页签，插入首帧透明动画时自动定位可见帧并补齐媒体页视频缩略图。
+- **1.9.4** · 修复 macOS 后台 MCP 编辑接口常驻时打开桌面版出现两个程序坞（Dock）图标的问题，并省去无界面接口闲置时的 GPU 与网络辅助子进程。
+- **1.9.3** · 优化紧凑窗口排版、右侧动画库完整双列等宽显示与主按钮对比度，单行整合动画编辑页签，插入动画时自动定位可见帧并补齐媒体页视频缩略图。
 - **1.9.3** · 补齐 2.5D 运镜画布正逆投影拖拽、同轴衔接防过冲与容差匹配，支持母版深浅无损往返换肤及包装轨道复用。
 - **1.9.3** · 修复含独立动画片头或片尾工程的原画导出分辨率降级，恢复词级转写下的口播重复句清理，扩展多轨录屏自动打码并统一串行写盘队列。
-- **1.9.1** · 十套整片包装扩充至开场、章节、小节、清单、聚焦、数字、片尾七种版式；整期工作台支持母版换肤与待做段落批量落轨（整期工作台需签名授权，暂未开放购买）。
-- **1.9.1** · 原生动画与编辑接口支持推拉摇移、图层视差等显式连续运镜，以及跨切点主体识别与同轴缩放衔接。
+- **1.9.1** · 十套整片包装扩充至开场、章节、小节、清单、聚焦、数字、片尾七种版式，原生动画与编辑接口支持推拉摇移、图层视差与跨切点同轴衔接。
 <!-- recent-features:end -->
+
+**1.9.4 修复 macOS 程序坞（Dock）双图标与后台接口空闲开销。** 外部 AI 客户端在后台常驻挂载 MCP 编辑接口（`api`）时，启动分发器将其与 `info`、`pack`、`help` 直接路由至纯 Node 宿主，不再向 macOS `LaunchServices` 注册主应用包身份而抢占固定的程序坞图标槽位；点击打开桌面版始终保持单个图标，并省去无界面会话闲置时的 GPU 与网络辅助子进程。
 
 **1.9.3 界面排版打磨、运镜投影闭环与原画导出／转写修复。** 优化 `1280×800` 紧凑窗口排版、右侧动画库完整双列等宽显示与主按钮对比度，单行排布动画编辑页签，插入动画自动停在可见帧并补齐媒体页视频缩略图。补齐 2.5D 运镜画布直接拖拽的正逆投影、同轴衔接防过冲与容差匹配、母版深浅无损往返换肤及包装轨道复用。修复含独立动画片头／片尾时原画导出误降 720p 的问题，恢复词级转写下的口播重复句清理，扩展多轨录屏敏感信息打码，并将后台转写与时间线修改统一收口至串行写盘队列。
 
@@ -236,7 +238,7 @@ macOS导入视频遇到硬件解码失败时，会为当前素材自动尝试软
 
 Windows／Linux补包沿用相同工程删除修复，Mac开发版专项不扩大为其他系统桌面实测。本轮不自动安装或删除用户工程。
 
-**当前版本：[黑粉录屏 1.9.3 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.9.3)**（只保留最新一版）。
+**当前版本：[黑粉录屏 1.9.4 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.9.4)**（只保留最新一版）。
 
 ## 下载
 
@@ -244,11 +246,11 @@ Windows／Linux补包沿用相同工程删除修复，Mac开发版专项不扩�
 
 | 平台 | 文件 | SHA-256 |
 |---|---|---|
-| macOS 13+（Apple 芯片 arm64） | [下载 HyphenScreen_1.9.3_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.3/HyphenScreen_1.9.3_arm64.dmg) | `1a6245d7e1a88f3dd74edd4afb5c323fdbccd627a7bdb58271aa5e8c7a229752` |
-| Windows 10/11（x64） | [下载 HyphenScreen_1.9.3_x64-setup.exe](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.3/HyphenScreen_1.9.3_x64-setup.exe) | `64af697c14fdbad70407342a3a04413bb55f760ebe353eaad5a70431d1da0a48` |
-| Linux（x86_64） | [下载 HyphenScreen_1.9.3_x86_64.AppImage](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.3/HyphenScreen_1.9.3_x86_64.AppImage) | `af15828b0c4ced9f4cf0eaa232ec08b371d01b27c9f54624d140e46b2fcbccfb` |
-| Debian / Ubuntu（amd64） | [下载 HyphenScreen_1.9.3_amd64.deb](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.3/HyphenScreen_1.9.3_amd64.deb) | `dad2e7da912189d273969a635fef9aebabb63f91afc9491d397ba1789fdb0b47` |
-| Arch Linux（x86_64） | [下载 HyphenScreen_1.9.3_x64.pacman](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.3/HyphenScreen_1.9.3_x64.pacman) | `f9423be0e822720769cf1090534eac751a961507d0109866ab23a93bb7a6723e` |
+| macOS 13+（Apple 芯片 arm64） | [下载 HyphenScreen_1.9.4_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.4/HyphenScreen_1.9.4_arm64.dmg) | `8c0e784d258419bdb8193c924f5c602c2cb9cc688238633aadae35b7e98a8411` |
+| Windows 10/11（x64） | [下载 HyphenScreen_1.9.4_x64-setup.exe](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.4/HyphenScreen_1.9.4_x64-setup.exe) | `da6591ec79585922aa6f1a4d74b05660bb7c63162fae7617e94ec69de938e439` |
+| Linux（x86_64） | [下载 HyphenScreen_1.9.4_x86_64.AppImage](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.4/HyphenScreen_1.9.4_x86_64.AppImage) | `e9df97d5dda36dde03be5e797636c7c5c7c4c38b951655802c65638d5d152455` |
+| Debian / Ubuntu（amd64） | [下载 HyphenScreen_1.9.4_amd64.deb](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.4/HyphenScreen_1.9.4_amd64.deb) | `97fd32d94dac29bacc41e2ef840a2129a1ad65c6c5afe6700305703e200d81bb` |
+| Arch Linux（x86_64） | [下载 HyphenScreen_1.9.4_x64.pacman](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.4/HyphenScreen_1.9.4_x64.pacman) | `5c0e2d85152491f4af92728a91affae442569db3b5f6bd38f9fe71f90e4fb672` |
 
 同一页附带各平台的 `SHA256SUMS*.txt` 与 `release-manifest.json`，可核对文件完整性与构建来源。
 
