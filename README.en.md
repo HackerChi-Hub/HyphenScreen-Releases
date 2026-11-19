@@ -16,12 +16,14 @@ HyphenScreen by HyphenTech is a desktop workspace for software tutorials, produc
 <!-- recent-features:start -->
 ## Recent features and improvements (5 items)
 
-- **1.9.3** · Refines compact-window layout and primary button contrast, keeps animation editor tabs on one row, seeks newly inserted animations to a visible frame and adds video thumbnails on the Media stage.
+- **1.9.4** · Fixes duplicate macOS Dock icons when opening the desktop app alongside a background MCP api bridge, and eliminates idle GPU and network helper processes in headless runs.
+- **1.9.3** · Refines compact-window layout, uniform two-column animation library cards and primary button contrast, keeps animation editor tabs on one row and adds Media-stage video thumbnails.
 - **1.9.3** · Adds forward/inverse camera projection for on-canvas 2.5D rig dragging, smoother coaxial seam matching, lossless reversible master-theme switching and packaging track reuse.
 - **1.9.3** · Preserves Source export resolution when standalone animations overhang recordings, restores repeated-sentence speech cleanup on word-level transcripts, extends redaction across video tracks and serializes background document writes.
-- **1.9.1** · Whole-video packaging expands to seven layouts (opener, chapter, subhead, list, focus, metric and outro), with Episode Workbench master-theme restyling and batch segment generation (signed license required).
-- **1.9.1** · Native animations and editing tools add explicit camera rigs with per-layer parallax plus cross-cut subject detection and coaxial zoom continuity.
+- **1.9.1** · Whole-video packaging expands to seven layouts (opener, chapter, subhead, list, focus, metric and outro), with explicit 2.5D camera rigs, per-layer parallax and cross-cut coaxial zoom continuity.
 <!-- recent-features:end -->
+
+**1.9.4 Single macOS Dock icon alongside background MCP bridges.** A native bundle launcher routes headless MCP (`api`), `info`, `pack` and `help` commands directly into a pure-Node runtime instead of registering a second `com.hyphentech.hyphenscreen` AppKit instance in macOS LaunchServices. Opening the desktop app while an AI client holds a background `api` session now keeps a single Dock icon and eliminates idle Chromium GPU and network helper processes.
 
 **1.9.3 Layout polish, 2.5D camera drag projection and Source export / transcript fixes.** Compact `1280×800` windows keep the right tool rail, two-column motion gallery, empty-state prompts and timeline `0:00` ruler unclipped, with high-contrast white labels on primary buttons, single-row animation editor tabs, visible-frame preview on insert and Media-stage video thumbnails. On-canvas dragging now projects through 2.5D camera rigs, cross-cut coaxial seams avoid double-zoom overshoot, master themes switch losslessly in both directions and packaging inserts reuse non-overlapping tracks. Source exports keep full `1080p`/`4K` resolution when standalone animations overhang recordings, word-level transcripts retain sentence segments for repeated-take cleanup, sensitive-info redaction covers upper video tracks and background writes serialize cleanly.
 
@@ -175,15 +177,15 @@ LocalBrain discovers its loaded language model. A live Qwen3.8 27B test generate
 These videos show the versions available when recorded. Use the current release information on this page for downloads and capabilities. Narration is in Chinese.
 <!-- evergreen:demos:end -->
 
-## Download: 1.9.3
+## Download: 1.9.4
 
 | Platform | Package | SHA-256 |
 |---|---|---|
-| macOS 13+（Apple 芯片 arm64） | [Download HyphenScreen_1.9.3_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.3/HyphenScreen_1.9.3_arm64.dmg) | `1a6245d7e1a88f3dd74edd4afb5c323fdbccd627a7bdb58271aa5e8c7a229752` |
-| Windows 10/11（x64） | [Download HyphenScreen_1.9.3_x64-setup.exe](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.3/HyphenScreen_1.9.3_x64-setup.exe) | `64af697c14fdbad70407342a3a04413bb55f760ebe353eaad5a70431d1da0a48` |
-| Linux（x86_64） | [Download HyphenScreen_1.9.3_x86_64.AppImage](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.3/HyphenScreen_1.9.3_x86_64.AppImage) | `af15828b0c4ced9f4cf0eaa232ec08b371d01b27c9f54624d140e46b2fcbccfb` |
-| Debian / Ubuntu（amd64） | [Download HyphenScreen_1.9.3_amd64.deb](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.3/HyphenScreen_1.9.3_amd64.deb) | `dad2e7da912189d273969a635fef9aebabb63f91afc9491d397ba1789fdb0b47` |
-| Arch Linux（x86_64） | [Download HyphenScreen_1.9.3_x64.pacman](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.3/HyphenScreen_1.9.3_x64.pacman) | `f9423be0e822720769cf1090534eac751a961507d0109866ab23a93bb7a6723e` |
+| macOS 13+（Apple 芯片 arm64） | [Download HyphenScreen_1.9.4_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.4/HyphenScreen_1.9.4_arm64.dmg) | `8c0e784d258419bdb8193c924f5c602c2cb9cc688238633aadae35b7e98a8411` |
+| Windows 10/11（x64） | [Download HyphenScreen_1.9.4_x64-setup.exe](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.4/HyphenScreen_1.9.4_x64-setup.exe) | `da6591ec79585922aa6f1a4d74b05660bb7c63162fae7617e94ec69de938e439` |
+| Linux（x86_64） | [Download HyphenScreen_1.9.4_x86_64.AppImage](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.4/HyphenScreen_1.9.4_x86_64.AppImage) | `e9df97d5dda36dde03be5e797636c7c5c7c4c38b951655802c65638d5d152455` |
+| Debian / Ubuntu（amd64） | [Download HyphenScreen_1.9.4_amd64.deb](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.4/HyphenScreen_1.9.4_amd64.deb) | `97fd32d94dac29bacc41e2ef840a2129a1ad65c6c5afe6700305703e200d81bb` |
+| Arch Linux（x86_64） | [Download HyphenScreen_1.9.4_x64.pacman](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.4/HyphenScreen_1.9.4_x64.pacman) | `5c0e2d85152491f4af92728a91affae442569db3b5f6bd38f9fe71f90e4fb672` |
 
 <!-- evergreen:capabilities:start -->
 ![Native animation editor, editable layers and the Visual timeline group](screenshots/animation-editor-110.png)
