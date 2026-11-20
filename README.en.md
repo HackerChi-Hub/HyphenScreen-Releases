@@ -16,12 +16,14 @@ HyphenScreen by HyphenTech is a desktop workspace for software tutorials, produc
 <!-- recent-features:start -->
 ## Recent features and improvements (5 items)
 
+- **1.9.5** · Restores the macOS menu-bar Camera Video Effects icon (Center Stage and Portrait background blur) and persists microphone, system audio and camera switches across restarts.
 - **1.9.4** · Fixes duplicate macOS Dock icons when opening the desktop app alongside a background MCP api bridge, and eliminates idle GPU and network helper processes in headless runs.
 - **1.9.3** · Refines compact-window layout, uniform two-column animation library cards and primary button contrast, keeps animation editor tabs on one row and adds Media-stage video thumbnails.
 - **1.9.3** · Adds forward/inverse camera projection for on-canvas 2.5D rig dragging, smoother coaxial seam matching, lossless reversible master-theme switching and packaging track reuse.
 - **1.9.3** · Preserves Source export resolution when standalone animations overhang recordings, restores repeated-sentence speech cleanup on word-level transcripts, extends redaction across video tracks and serializes background document writes.
-- **1.9.1** · Whole-video packaging expands to seven layouts (opener, chapter, subhead, list, focus, metric and outro), with explicit 2.5D camera rigs, per-layer parallax and cross-cut coaxial zoom continuity.
 <!-- recent-features:end -->
+
+**1.9.5 Restores macOS menu-bar Camera Video Effects and persists audio/camera switches.** Consolidates the macOS bundle executable into a single binary calling `ElectronMain` for desktop sessions and `ElectronInitializeICUandStartNode` for headless commands, so macOS Control Center attributes active webcam capture to `com.hyphentech.hyphenscreen` and displays the menu-bar Video Effects controls (Center Stage, Portrait background blur and Studio Light) while keeping a single Dock icon alongside background MCP bridges. Microphone, system audio and camera switches and selected devices now persist across app restarts. macOS ships 1.9.5; Windows and Linux currently ship 1.9.4 as listed in the download table below.
 
 **1.9.4 Single macOS Dock icon alongside background MCP bridges.** A native bundle launcher routes headless MCP (`api`), `info`, `pack` and `help` commands directly into a pure-Node runtime instead of registering a second `com.hyphentech.hyphenscreen` AppKit instance in macOS LaunchServices. Opening the desktop app while an AI client holds a background `api` session now keeps a single Dock icon and eliminates idle Chromium GPU and network helper processes.
 
@@ -177,15 +179,15 @@ LocalBrain discovers its loaded language model. A live Qwen3.8 27B test generate
 These videos show the versions available when recorded. Use the current release information on this page for downloads and capabilities. Narration is in Chinese.
 <!-- evergreen:demos:end -->
 
-## Download: 1.9.4
+## Download: 1.9.5
 
 | Platform | Package | SHA-256 |
 |---|---|---|
-| macOS 13+（Apple 芯片 arm64） | [Download HyphenScreen_1.9.4_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.4/HyphenScreen_1.9.4_arm64.dmg) | `8c0e784d258419bdb8193c924f5c602c2cb9cc688238633aadae35b7e98a8411` |
-| Windows 10/11（x64） | [Download HyphenScreen_1.9.4_x64-setup.exe](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.4/HyphenScreen_1.9.4_x64-setup.exe) | `da6591ec79585922aa6f1a4d74b05660bb7c63162fae7617e94ec69de938e439` |
-| Linux（x86_64） | [Download HyphenScreen_1.9.4_x86_64.AppImage](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.4/HyphenScreen_1.9.4_x86_64.AppImage) | `e9df97d5dda36dde03be5e797636c7c5c7c4c38b951655802c65638d5d152455` |
-| Debian / Ubuntu（amd64） | [Download HyphenScreen_1.9.4_amd64.deb](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.4/HyphenScreen_1.9.4_amd64.deb) | `97fd32d94dac29bacc41e2ef840a2129a1ad65c6c5afe6700305703e200d81bb` |
-| Arch Linux（x86_64） | [Download HyphenScreen_1.9.4_x64.pacman](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.4/HyphenScreen_1.9.4_x64.pacman) | `5c0e2d85152491f4af92728a91affae442569db3b5f6bd38f9fe71f90e4fb672` |
+| macOS 13+（Apple 芯片 arm64） | [Download HyphenScreen_1.9.5_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.5/HyphenScreen_1.9.5_arm64.dmg) | `ea9e86d9701fd0de1bcdf3babf80db7f6bf1e4e11d1a965b3b2dff3104d1cb6e` |
+| Windows 10/11（x64）· 1.9.4 版 | [Download HyphenScreen_1.9.4_x64-setup.exe](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.4/HyphenScreen_1.9.4_x64-setup.exe) | `da6591ec79585922aa6f1a4d74b05660bb7c63162fae7617e94ec69de938e439` |
+| Linux（x86_64）· 1.9.4 版 | [Download HyphenScreen_1.9.4_x86_64.AppImage](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.4/HyphenScreen_1.9.4_x86_64.AppImage) | `e9df97d5dda36dde03be5e797636c7c5c7c4c38b951655802c65638d5d152455` |
+| Debian / Ubuntu（amd64）· 1.9.4 版 | [Download HyphenScreen_1.9.4_amd64.deb](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.4/HyphenScreen_1.9.4_amd64.deb) | `97fd32d94dac29bacc41e2ef840a2129a1ad65c6c5afe6700305703e200d81bb` |
+| Arch Linux（x86_64）· 1.9.4 版 | [Download HyphenScreen_1.9.4_x64.pacman](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.4/HyphenScreen_1.9.4_x64.pacman) | `5c0e2d85152491f4af92728a91affae442569db3b5f6bd38f9fe71f90e4fb672` |
 
 <!-- evergreen:capabilities:start -->
 ![Native animation editor, editable layers and the Visual timeline group](screenshots/animation-editor-110.png)
