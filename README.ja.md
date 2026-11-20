@@ -17,12 +17,14 @@ HyphenTech のデスクトップ録画・編集ソフトです。ソフトウェ
 <!-- recent-features:start -->
 ## 最近の機能追加と改善（5件）
 
+- **1.9.5** · macOSメニューバーのカメラ「ビデオエフェクト」アイコン（センターフレーム・背景ぼかし）表示を復旧し、マイク・システム音声・カメラのON/OFFと選択デバイスを再起動後も保持。
 - **1.9.4** · macOSでバックグラウンドのMCP api接続中にデスクトップ版を起動した際Dockアイコンが2つ表示される問題を修正し、ヘッドレス待受時の不要なGPU・ネットワーク補助プロセスを削減。
 - **1.9.3** · コンパクト画面レイアウト、右側アニメーションライブラリの等幅2列表示、主ボタンの視認性を改善し、編集タブの1行化とメディア画面の動画サムネイル表示に対応。
 - **1.9.3** · 2.5Dカメラ設定時のキャンバス直接ドラッグ投影補正、カット間ズーム接続の過大倍率防止と許容誤差照合、可逆的なマスターテーマ切替とパッケージトラック再利用に対応。
 - **1.9.3** · 単独アニメーション区間を含むプロジェクトの元画質書き出し解像度維持、単語単位文字起こしでの重複発話整理の復旧、複数映像トラックの自動モザイクと直列保存キューを強化。
-- **1.9.1** · 映像パッケージが7レイアウトに拡充し、ネイティブアニメーションと編集ツールで明示的なカメラワーク・レイヤー視差・カット間のズーム接続に対応。
 <!-- recent-features:end -->
+
+**1.9.5 macOSメニューバーのカメラ「ビデオエフェクト」アイコン復旧と音声・カメラ設定の保持。** macOSメイン実行ファイルを単一バイナリ（デスクトップ起動は `ElectronMain`、ヘッドレスコマンドは `ElectronInitializeICUandStartNode`）に統合し、カメラ起動時にmacOSコントロールセンターが `com.hyphentech.hyphenscreen` として認識してメニューバーのビデオエフェクト（センターフレーム、背景ぼかし、スタジオ照明）を表示するよう修正しました（バックグラウンドMCP接続時の単一Dockアイコンも維持）。マイク・システム音声・カメラのON/OFFと選択デバイスも再起動後に自動復元されます。macOS版は 1.9.5、Windows／Linux版は現在 1.9.4 を提供しています（詳細はダウンロード表を参照）。
 
 **1.9.4 macOSのDock二重アイコン解消とヘッドレス待受の軽量化。** 外部AIクライアントがバックグラウンドでMCP `api` を接続している際、`api`・`info`・`pack`・`help` をネイティブ起動ディスパッチャから純粋なNodeランタイムへ直接ルーティングし、macOS LaunchServices 上のメインアプリ枠を占有しないよう改善しました。デスクトップ版を開いてもDockアイコンは常に1つに保たれ、待受中の不要なGPU・ネットワーク補助プロセスも削減されます。
 
@@ -178,15 +180,15 @@ AI パネルの制作画面で内容と独自の要望を入力し、説明、�
 動画は撮影時のバージョンです。現在の機能と配布パッケージはこのページのリリース情報をご確認ください。動画の解説は中国語です。
 <!-- evergreen:demos:end -->
 
-## ダウンロード: 1.9.4
+## ダウンロード: 1.9.5
 
 | プラットフォーム | パッケージ | SHA-256 |
 |---|---|---|
-| macOS 13+（Apple 芯片 arm64） | [ダウンロード HyphenScreen_1.9.4_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.4/HyphenScreen_1.9.4_arm64.dmg) | `8c0e784d258419bdb8193c924f5c602c2cb9cc688238633aadae35b7e98a8411` |
-| Windows 10/11（x64） | [ダウンロード HyphenScreen_1.9.4_x64-setup.exe](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.4/HyphenScreen_1.9.4_x64-setup.exe) | `da6591ec79585922aa6f1a4d74b05660bb7c63162fae7617e94ec69de938e439` |
-| Linux（x86_64） | [ダウンロード HyphenScreen_1.9.4_x86_64.AppImage](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.4/HyphenScreen_1.9.4_x86_64.AppImage) | `e9df97d5dda36dde03be5e797636c7c5c7c4c38b951655802c65638d5d152455` |
-| Debian / Ubuntu（amd64） | [ダウンロード HyphenScreen_1.9.4_amd64.deb](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.4/HyphenScreen_1.9.4_amd64.deb) | `97fd32d94dac29bacc41e2ef840a2129a1ad65c6c5afe6700305703e200d81bb` |
-| Arch Linux（x86_64） | [ダウンロード HyphenScreen_1.9.4_x64.pacman](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.4/HyphenScreen_1.9.4_x64.pacman) | `5c0e2d85152491f4af92728a91affae442569db3b5f6bd38f9fe71f90e4fb672` |
+| macOS 13+（Apple 芯片 arm64） | [ダウンロード HyphenScreen_1.9.5_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.5/HyphenScreen_1.9.5_arm64.dmg) | `ea9e86d9701fd0de1bcdf3babf80db7f6bf1e4e11d1a965b3b2dff3104d1cb6e` |
+| Windows 10/11（x64）· 1.9.4 版 | [ダウンロード HyphenScreen_1.9.4_x64-setup.exe](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.4/HyphenScreen_1.9.4_x64-setup.exe) | `da6591ec79585922aa6f1a4d74b05660bb7c63162fae7617e94ec69de938e439` |
+| Linux（x86_64）· 1.9.4 版 | [ダウンロード HyphenScreen_1.9.4_x86_64.AppImage](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.4/HyphenScreen_1.9.4_x86_64.AppImage) | `e9df97d5dda36dde03be5e797636c7c5c7c4c38b951655802c65638d5d152455` |
+| Debian / Ubuntu（amd64）· 1.9.4 版 | [ダウンロード HyphenScreen_1.9.4_amd64.deb](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.4/HyphenScreen_1.9.4_amd64.deb) | `97fd32d94dac29bacc41e2ef840a2129a1ad65c6c5afe6700305703e200d81bb` |
+| Arch Linux（x86_64）· 1.9.4 版 | [ダウンロード HyphenScreen_1.9.4_x64.pacman](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.4/HyphenScreen_1.9.4_x64.pacman) | `5c0e2d85152491f4af92728a91affae442569db3b5f6bd38f9fe71f90e4fb672` |
 
 <!-- evergreen:capabilities:start -->
 ![独立アニメーション、編集可能なレイヤーとビジュアルグループ](screenshots/animation-editor-110.png)
