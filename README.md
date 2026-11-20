@@ -18,12 +18,14 @@
 <!-- recent-features:start -->
 ## 近期新增与改进（最近 5 项）
 
+- **1.9.5** · 恢复 macOS 菜单栏摄像头「视频效果」控制中心图标（人像居中、背景模糊），并自动记住麦克风、系统声音与摄像头的开启状态及所选设备。
 - **1.9.4** · 修复 macOS 后台 MCP 编辑接口常驻时打开桌面版出现两个程序坞（Dock）图标的问题，并省去无界面接口闲置时的 GPU 与网络辅助子进程。
 - **1.9.3** · 优化紧凑窗口排版、右侧动画库完整双列等宽显示与主按钮对比度，单行整合动画编辑页签，插入动画时自动定位可见帧并补齐媒体页视频缩略图。
 - **1.9.3** · 补齐 2.5D 运镜画布正逆投影拖拽、同轴衔接防过冲与容差匹配，支持母版深浅无损往返换肤及包装轨道复用。
 - **1.9.3** · 修复含独立动画片头或片尾工程的原画导出分辨率降级，恢复词级转写下的口播重复句清理，扩展多轨录屏自动打码并统一串行写盘队列。
-- **1.9.1** · 十套整片包装扩充至开场、章节、小节、清单、聚焦、数字、片尾七种版式，原生动画与编辑接口支持推拉摇移、图层视差与跨切点同轴衔接。
 <!-- recent-features:end -->
+
+**1.9.5 恢复 macOS 摄像头菜单栏视频效果图标，并记住音频与摄像头开关。** 将 macOS 主可执行文件收口为单二进制直接调用 `ElectronMain` 与 `ElectronInitializeICUandStartNode`，使开启摄像头时系统控制中心按主应用包标识 `com.hyphentech.hyphenscreen` 正常显示右上角菜单栏摄像头图标（可直接调整人像居中、背景模糊与摄影室灯光），同时继续保持后台 MCP 接口零程序坞（Dock）占槽与单图标体验。麦克风、系统声音与摄像头的开启状态及所选设备在关闭重开后自动恢复。Mac 提供 1.9.5，Windows 与 Linux 当前提供 1.9.4，各平台实际安装包见下方下载表。
 
 **1.9.4 修复 macOS 程序坞（Dock）双图标与后台接口空闲开销。** 外部 AI 客户端在后台常驻挂载 MCP 编辑接口（`api`）时，启动分发器将其与 `info`、`pack`、`help` 直接路由至纯 Node 宿主，不再向 macOS `LaunchServices` 注册主应用包身份而抢占固定的程序坞图标槽位；点击打开桌面版始终保持单个图标，并省去无界面会话闲置时的 GPU 与网络辅助子进程。
 
@@ -238,7 +240,9 @@ macOS导入视频遇到硬件解码失败时，会为当前素材自动尝试软
 
 Windows／Linux补包沿用相同工程删除修复，Mac开发版专项不扩大为其他系统桌面实测。本轮不自动安装或删除用户工程。
 
-**当前版本：[黑粉录屏 1.9.4 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.9.4)**（只保留最新一版）。
+**当前版本：[黑粉录屏 1.9.5 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.9.5)**（每个平台只保留最新的一版）。
+
+> 1.9.5 目前提供 macOS 安装包；Windows 继续提供 [黑粉录屏 1.9.4 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.9.4)，尚未发布 1.9.5 的 Windows 版；Linux 继续提供 [黑粉录屏 1.9.4 · 正式版](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/tag/v1.9.4)，尚未发布 1.9.5 的 Linux 版。
 
 ## 下载
 
@@ -246,13 +250,15 @@ Windows／Linux补包沿用相同工程删除修复，Mac开发版专项不扩�
 
 | 平台 | 文件 | SHA-256 |
 |---|---|---|
-| macOS 13+（Apple 芯片 arm64） | [下载 HyphenScreen_1.9.4_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.4/HyphenScreen_1.9.4_arm64.dmg) | `8c0e784d258419bdb8193c924f5c602c2cb9cc688238633aadae35b7e98a8411` |
-| Windows 10/11（x64） | [下载 HyphenScreen_1.9.4_x64-setup.exe](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.4/HyphenScreen_1.9.4_x64-setup.exe) | `da6591ec79585922aa6f1a4d74b05660bb7c63162fae7617e94ec69de938e439` |
-| Linux（x86_64） | [下载 HyphenScreen_1.9.4_x86_64.AppImage](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.4/HyphenScreen_1.9.4_x86_64.AppImage) | `e9df97d5dda36dde03be5e797636c7c5c7c4c38b951655802c65638d5d152455` |
-| Debian / Ubuntu（amd64） | [下载 HyphenScreen_1.9.4_amd64.deb](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.4/HyphenScreen_1.9.4_amd64.deb) | `97fd32d94dac29bacc41e2ef840a2129a1ad65c6c5afe6700305703e200d81bb` |
-| Arch Linux（x86_64） | [下载 HyphenScreen_1.9.4_x64.pacman](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.4/HyphenScreen_1.9.4_x64.pacman) | `5c0e2d85152491f4af92728a91affae442569db3b5f6bd38f9fe71f90e4fb672` |
+| macOS 13+（Apple 芯片 arm64） | [下载 HyphenScreen_1.9.5_arm64.dmg](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.5/HyphenScreen_1.9.5_arm64.dmg) | `ea9e86d9701fd0de1bcdf3babf80db7f6bf1e4e11d1a965b3b2dff3104d1cb6e` |
+| Windows 10/11（x64）· 1.9.4 版 | [下载 HyphenScreen_1.9.4_x64-setup.exe](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.4/HyphenScreen_1.9.4_x64-setup.exe) | `da6591ec79585922aa6f1a4d74b05660bb7c63162fae7617e94ec69de938e439` |
+| Linux（x86_64）· 1.9.4 版 | [下载 HyphenScreen_1.9.4_x86_64.AppImage](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.4/HyphenScreen_1.9.4_x86_64.AppImage) | `e9df97d5dda36dde03be5e797636c7c5c7c4c38b951655802c65638d5d152455` |
+| Debian / Ubuntu（amd64）· 1.9.4 版 | [下载 HyphenScreen_1.9.4_amd64.deb](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.4/HyphenScreen_1.9.4_amd64.deb) | `97fd32d94dac29bacc41e2ef840a2129a1ad65c6c5afe6700305703e200d81bb` |
+| Arch Linux（x86_64）· 1.9.4 版 | [下载 HyphenScreen_1.9.4_x64.pacman](https://github.com/HackerChi-Hub/HyphenScreen-Releases/releases/download/v1.9.4/HyphenScreen_1.9.4_x64.pacman) | `5c0e2d85152491f4af92728a91affae442569db3b5f6bd38f9fe71f90e4fb672` |
 
 同一页附带各平台的 `SHA256SUMS*.txt` 与 `release-manifest.json`，可核对文件完整性与构建来源。
+
+> 下面的功能一览按 1.9.5 介绍；Windows 暂为 1.9.4，不包含之后加入的功能；Linux 暂为 1.9.4，不包含之后加入的功能，各版变化见发行页面上的发行说明。
 
 <!-- evergreen:feature-tour:start -->
 <details>
